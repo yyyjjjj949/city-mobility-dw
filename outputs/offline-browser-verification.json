@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "pages": [
+    {
+      "path": "outputs/项目总入口.html",
+      "passed": true,
+      "missing": [],
+      "heading": [
+        "城市出行 · 离线数仓"
+      ]
+    },
+    {
+      "path": "outputs/运行状态.html",
+      "passed": true,
+      "missing": [],
+      "heading": [
+        "城市出行 · 运行状态"
+      ]
+    },
+    {
+      "path": "outputs/marts/六月历史指标与看板.html",
+      "passed": true,
+      "missing": [],
+      "heading": [
+        "城市出行 · 六月历史分析"
+      ]
+    },
+    {
+      "path": "docs/diagrams/设计图预览.html",
+      "passed": true,
+      "missing": [],
+      "heading": [
+        "城市出行数仓设计图"
+      ]
+    }
+  ],
+  "errors": []
+}

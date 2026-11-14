@@ -1,0 +1,83 @@
+[
+  {
+    "path": "data/samples/taxi_2025-06_first25.json",
+    "source_id": "tlc_yellow",
+    "source_url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-06.parquet",
+    "bytes": 14769,
+    "sha256": "fc0228060efc517db1d0505d559d6f71e6f7b7e08de99975c6bb95ccb040ba9b",
+    "method": "First 25 source rows, extracted by Parquet byte ranges; no full-file SHA-256 available",
+    "retrieval_evidence": "work/source-discovery/*-profile.json and source-probes.json"
+  },
+  {
+    "path": "data/samples/bike_2025-06_first25.csv",
+    "source_id": "citibike_trips",
+    "source_url": "https://s3.amazonaws.com/tripdata/202506-citibike-tripdata.zip",
+    "bytes": 5090,
+    "sha256": "3ce384fe1a056889b72237fe6aaec91524f7a86751bab5f958707f1e5339226f",
+    "method": "First 25 records of the first CSV member; not representative; source archive not fully downloaded or CRC-validated; member=202506-citibike-tripdata_2.csv",
+    "retrieval_evidence": "work/source-discovery/*-profile.json and source-probes.json"
+  },
+  {
+    "path": "data/samples/weather_2025-06_to_08.json",
+    "source_id": "noaa_daily",
+    "source_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=daily-summaries&stations=USW00094728&startDate=2025-06-01&endDate=2025-08-31&format=json&units=metric&includeAttributes=true",
+    "bytes": 43074,
+    "sha256": "3c0449733ca5396c8047c2bbad5e2c40427c8b848f776a44c8b3d589b9791ad6",
+    "method": "Complete requested daily subset; no synthetic rows",
+    "retrieval_evidence": "work/source-discovery/*-profile.json and source-probes.json"
+  },
+  {
+    "path": "data/samples/taxi_zone_lookup.csv",
+    "source_id": "taxi_zones",
+    "source_url": "https://d37ci6vzurychx.cloudfront.net/misc/taxi_zone_lookup.csv",
+    "bytes": 12331,
+    "sha256": "1a99e105092230f8620f301edcca7f80d3080642ff404d28ed957d3fa222c8ed",
+    "method": "Complete lookup file",
+    "retrieval_evidence": "work/source-discovery/*-profile.json and source-probes.json"
+  },
+  {
+    "path": "data/samples/taxi_zones.zip",
+    "source_id": "taxi_zones",
+    "source_url": "https://d37ci6vzurychx.cloudfront.net/misc/taxi_zones.zip",
+    "bytes": 1022574,
+    "sha256": "f6d711917bb4340f8f644d5366c51665489eb2d426dd1a4a55677721ae5adf17",
+    "method": "Complete geometry archive",
+    "retrieval_evidence": "work/source-discovery/*-profile.json and source-probes.json"
+  },
+  {
+    "path": "data/samples/gbfs_discovery.json",
+    "source_id": "citibike_gbfs",
+    "source_url": "https://gbfs.citibikenyc.com/gbfs/2.3/gbfs.json",
+    "bytes": 3589,
+    "sha256": "904a70b376a2515357c3f0e91ed44c4548788bbfa3172ef6086419e2a0058da6",
+    "method": "Single actual discovery response",
+    "retrieval_evidence": "work/source-discovery/*-profile.json and source-probes.json"
+  },
+  {
+    "path": "data/samples/gbfs_station_information.json",
+    "source_id": "citibike_gbfs",
+    "source_url": "https://gbfs.lyft.com/gbfs/2.3/bkn/en/station_information.json",
+    "bytes": 801063,
+    "sha256": "28be911f1cf73e2561ea2b50407ed26b34354f2a3236c157688a6760f5e5c14b",
+    "method": "Single complete actual API response, snapshot captured on 2026-11-01",
+    "retrieval_evidence": "work/source-discovery/*-profile.json and source-probes.json"
+  },
+  {
+    "path": "data/samples/gbfs_station_status.json",
+    "source_id": "citibike_gbfs",
+    "source_url": "https://gbfs.lyft.com/gbfs/2.3/bkn/en/station_status.json",
+    "bytes": 1078227,
+    "sha256": "b1fe90a23a48df4ceec51631eed0c9353da4e65d745ebf779b452c27090bc6e7",
+    "method": "Single complete actual API response, snapshot captured on 2026-11-01",
+    "retrieval_evidence": "work/source-discovery/*-profile.json and source-probes.json"
+  },
+  {
+    "path": "data/samples/gbfs_system_information.json",
+    "source_id": "citibike_gbfs",
+    "source_url": "https://gbfs.lyft.com/gbfs/2.3/bkn/en/system_information.json",
+    "bytes": 312,
+    "sha256": "ecba2aa114ec417669449f0f69205a9e01ca1b97e6787f0b6b8397b8567dd2a4",
+    "method": "Single complete actual API response, snapshot captured on 2026-11-01",
+    "retrieval_evidence": "work/source-discovery/*-profile.json and source-probes.json"
+  }
+]

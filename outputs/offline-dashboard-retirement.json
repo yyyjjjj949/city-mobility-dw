@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "removed": {
+    "dashboards": [
+      5
+    ],
+    "charts": [
+      24,
+      27,
+      28,
+      20,
+      21,
+      22,
+      23,
+      25,
+      26
+    ],
+    "datasets": [
+      {
+        "id": 21,
+        "name": "city_station_current"
+      },
+      {
+        "id": 22,
+        "name": "bi_station_hour"
+      }
+    ]
+  },
+  "historical_dashboards": 4,
+  "historical_charts": 19
+}

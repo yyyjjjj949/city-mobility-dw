@@ -1,0 +1,230 @@
+{
+  "checked_at_utc": "2026-11-03T10:17:22.259603+00:00",
+  "passed": true,
+  "model_version": "2.0-offline",
+  "contract_sha256": "b3a60f67820e6db9184fb5896b7379eedb060fa1e8e968da5fa0870bd4c43296",
+  "tables": 28,
+  "dimensions": 7,
+  "core_facts": 2,
+  "dictionary_columns": 370,
+  "logical_reference_types_checked": true,
+  "dst_regression_cases": [
+    "unique",
+    "ambiguous",
+    "nonexistent"
+  ],
+  "source_sample_schema_checked": true,
+  "spark": {
+    "passed": true,
+    "spark_version": "4.0.5",
+    "timezone": "UTC",
+    "isolated_run_id": "4f126b79f2",
+    "tables": [
+      {
+        "table": "ops.ingest_batch",
+        "columns": 16,
+        "partition": [],
+        "empty": true
+      },
+      {
+        "table": "ops.source_object",
+        "columns": 13,
+        "partition": [],
+        "empty": true
+      },
+      {
+        "table": "ops.quality_result",
+        "columns": 11,
+        "partition": [],
+        "empty": true
+      },
+      {
+        "table": "ops.quarantine_record",
+        "columns": 9,
+        "partition": [
+          "source_id",
+          "source_period"
+        ],
+        "empty": true
+      },
+      {
+        "table": "ops.publication",
+        "columns": 8,
+        "partition": [],
+        "empty": true
+      },
+      {
+        "table": "ods.source_record",
+        "columns": 11,
+        "partition": [
+          "source_id",
+          "source_period"
+        ],
+        "empty": true
+      },
+      {
+        "table": "dwd.dim_date",
+        "columns": 12,
+        "partition": [],
+        "empty": true
+      },
+      {
+        "table": "dwd.dim_time",
+        "columns": 5,
+        "partition": [],
+        "empty": true
+      },
+      {
+        "table": "dwd.dim_zone",
+        "columns": 8,
+        "partition": [],
+        "empty": true
+      },
+      {
+        "table": "dwd.dim_station",
+        "columns": 14,
+        "partition": [
+          "namespace"
+        ],
+        "empty": true
+      },
+      {
+        "table": "dwd.dim_transport",
+        "columns": 3,
+        "partition": [],
+        "empty": true
+      },
+      {
+        "table": "dwd.dim_bike_type",
+        "columns": 2,
+        "partition": [],
+        "empty": true
+      },
+      {
+        "table": "dwd.dim_weather_daily",
+        "columns": 11,
+        "partition": [],
+        "empty": true
+      },
+      {
+        "table": "dwd.fact_taxi_trip",
+        "columns": 48,
+        "partition": [
+          "service_date"
+        ],
+        "empty": true
+      },
+      {
+        "table": "dwd.fact_bike_trip",
+        "columns": 39,
+        "partition": [
+          "service_date"
+        ],
+        "empty": true
+      },
+      {
+        "table": "dws.trip_day",
+        "columns": 15,
+        "partition": [
+          "service_date"
+        ],
+        "empty": true
+      },
+      {
+        "table": "dws.zone_hour",
+        "columns": 12,
+        "partition": [
+          "event_date"
+        ],
+        "empty": true
+      },
+      {
+        "table": "dws.od_day",
+        "columns": 9,
+        "partition": [
+          "service_date"
+        ],
+        "empty": true
+      },
+      {
+        "table": "dws.weather_group",
+        "columns": 10,
+        "partition": [
+          "month_start"
+        ],
+        "empty": true
+      },
+      {
+        "table": "ads.trip_day",
+        "columns": 17,
+        "partition": [
+          "service_date"
+        ],
+        "empty": true
+      },
+      {
+        "table": "ads.zone_hour",
+        "columns": 13,
+        "partition": [
+          "event_date"
+        ],
+        "empty": true
+      },
+      {
+        "table": "ads.od_day",
+        "columns": 9,
+        "partition": [
+          "service_date"
+        ],
+        "empty": true
+      },
+      {
+        "table": "ads.weather_group",
+        "columns": 11,
+        "partition": [
+          "month_start"
+        ],
+        "empty": true
+      },
+      {
+        "table": "ads.quality_batch",
+        "columns": 14,
+        "partition": [],
+        "empty": true
+      },
+      {
+        "table": "ads.quality_rule",
+        "columns": 13,
+        "partition": [],
+        "empty": true
+      },
+      {
+        "table": "dws.trip_hour",
+        "columns": 16,
+        "partition": [
+          "service_date"
+        ],
+        "empty": true
+      },
+      {
+        "table": "ads.trip_hour",
+        "columns": 18,
+        "partition": [
+          "service_date"
+        ],
+        "empty": true
+      }
+    ],
+    "idempotent_ddl": true,
+    "business_tables_initialized": false
+  },
+  "clickhouse": {
+    "tables": 8,
+    "views": 7,
+    "ddl_idempotent": true,
+    "all_serving_tables_empty": true,
+    "check_database": "modelcheck_4f126b79f2"
+  },
+  "business_tables_initialized": false,
+  "full_month_business_data_loaded": false
+}

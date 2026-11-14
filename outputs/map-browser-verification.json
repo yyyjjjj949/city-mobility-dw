@@ -1,0 +1,47 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "name": "offline_full_month_totals_and_262_regions",
+      "passed": true
+    },
+    {
+      "name": "date_transport_borough_SQL_crosscheck_and_reload",
+      "passed": true,
+      "expected": {
+        "filtered": 740862,
+        "total": 1172008
+      }
+    },
+    {
+      "name": "filtered_CSV_sum_matches_SQL",
+      "passed": true,
+      "rows": 69
+    },
+    {
+      "name": "invalid_date_does_not_change_results",
+      "passed": true
+    },
+    {
+      "name": "keyboard_map_selection_and_linked_ranking",
+      "passed": true
+    },
+    {
+      "name": "zoom_buttons",
+      "passed": true
+    },
+    {
+      "name": "invalid_URL_restores_valid_default",
+      "passed": true
+    },
+    {
+      "name": "mobile_layout_and_tap_controls",
+      "passed": true
+    },
+    {
+      "name": "Superset_served_map_entry",
+      "passed": true
+    }
+  ],
+  "errors": []
+}

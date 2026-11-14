@@ -1,0 +1,21 @@
+origin_zone_name,destination_zone_name,transport_code,monthly_trips
+East Village,East Village,citibike,38956
+East Chelsea,East Chelsea,citibike,26584
+Williamsburg (North Side),Williamsburg (North Side),citibike,26331
+Greenpoint,Greenpoint,citibike,25713
+Greenpoint,Williamsburg (North Side),citibike,25166
+Astoria,Astoria,citibike,25067
+Williamsburg (North Side),Greenpoint,citibike,24729
+Park Slope,Park Slope,citibike,24587
+Upper East Side South,Upper East Side North,taxi_yellow,23947
+Central Park,Central Park,citibike,20464
+Upper East Side North,Upper East Side South,taxi_yellow,20363
+Long Island City/Hunters Point,Long Island City/Hunters Point,citibike,20082
+Crown Heights North,Crown Heights North,citibike,19052
+Upper East Side South,Upper East Side South,taxi_yellow,17459
+Williamsburg (North Side),Williamsburg (South Side),citibike,15870
+Williamsburg (South Side),Williamsburg (North Side),citibike,15244
+Upper East Side North,Upper East Side North,taxi_yellow,15208
+Fort Greene,Fort Greene,citibike,14996
+Steinway,Steinway,citibike,14890
+Bushwick South,Bushwick South,citibike,14673

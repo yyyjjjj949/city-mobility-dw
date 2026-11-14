@@ -1,0 +1,49 @@
+{
+  "version": "2.0-offline",
+  "rule": "All fields remain in ods.source_record.payload_json; targets below describe typed or dimension projections, not destructive replacement.",
+  "tlc_yellow": {
+    "VendorID": "dwd.fact_taxi_trip.vendor_id",
+    "tpep_pickup_datetime": "dwd.fact_taxi_trip.started_at_raw",
+    "tpep_dropoff_datetime": "dwd.fact_taxi_trip.ended_at_raw",
+    "passenger_count": "dwd.fact_taxi_trip.passenger_count",
+    "trip_distance": "dwd.fact_taxi_trip.distance_miles",
+    "RatecodeID": "dwd.fact_taxi_trip.rate_code_id",
+    "store_and_fwd_flag": "dwd.fact_taxi_trip.store_and_forward_flag",
+    "PULocationID": "dwd.fact_taxi_trip.origin_zone_id_raw",
+    "DOLocationID": "dwd.fact_taxi_trip.destination_zone_id_raw",
+    "payment_type": "dwd.fact_taxi_trip.payment_type",
+    "fare_amount": "dwd.fact_taxi_trip.fare_amount_usd",
+    "extra": "dwd.fact_taxi_trip.extra_usd",
+    "mta_tax": "dwd.fact_taxi_trip.mta_tax_usd",
+    "tip_amount": "dwd.fact_taxi_trip.tip_amount_usd",
+    "tolls_amount": "dwd.fact_taxi_trip.tolls_amount_usd",
+    "improvement_surcharge": "dwd.fact_taxi_trip.improvement_surcharge_usd",
+    "total_amount": "dwd.fact_taxi_trip.total_amount_usd",
+    "congestion_surcharge": "dwd.fact_taxi_trip.congestion_surcharge_usd",
+    "Airport_fee": "dwd.fact_taxi_trip.airport_fee_usd",
+    "cbd_congestion_fee": "dwd.fact_taxi_trip.cbd_congestion_fee_usd"
+  },
+  "citibike_trips": {
+    "ride_id": "dwd.fact_bike_trip.ride_id",
+    "rideable_type": "dwd.fact_bike_trip.bike_type_raw",
+    "started_at": "dwd.fact_bike_trip.started_at_raw",
+    "ended_at": "dwd.fact_bike_trip.ended_at_raw",
+    "start_station_name": "dwd.dim_station.station_name",
+    "start_station_id": "dwd.fact_bike_trip.origin_station_id_raw",
+    "end_station_name": "dwd.dim_station.station_name",
+    "end_station_id": "dwd.fact_bike_trip.destination_station_id_raw",
+    "start_lat": "dwd.fact_bike_trip.origin_latitude",
+    "start_lng": "dwd.fact_bike_trip.origin_longitude",
+    "end_lat": "dwd.fact_bike_trip.destination_latitude",
+    "end_lng": "dwd.fact_bike_trip.destination_longitude",
+    "member_casual": "dwd.fact_bike_trip.member_type"
+  },
+  "noaa_daily": {
+    "STATION": "dwd.dim_weather_daily.weather_station_id",
+    "DATE": "dwd.dim_weather_daily.observation_date",
+    "TMAX": "dwd.dim_weather_daily.temperature_max_c",
+    "TMIN": "dwd.dim_weather_daily.temperature_min_c",
+    "PRCP": "dwd.dim_weather_daily.precipitation_mm",
+    "AWND": "dwd.dim_weather_daily.wind_speed_mps"
+  }
+}

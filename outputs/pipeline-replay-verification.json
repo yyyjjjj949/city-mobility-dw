@@ -1,0 +1,271 @@
+{
+  "passed": true,
+  "started_at_utc": "2026-11-14T10:01:19.622183+00:00",
+  "finished_at_utc": "2026-11-14T10:02:39.226524+00:00",
+  "before": {
+    "dwd_run_id": "27cd1a6bc1ff46f9933aad9065f46797",
+    "release_id": "fa3ddf3a864140a7b6893836d3215a39",
+    "dwd_versions": {
+      "dwd.dim_zone": 3,
+      "dwd.dim_date": 4,
+      "dwd.dim_time": 3,
+      "dwd.dim_transport": 3,
+      "dwd.dim_weather_daily": 3,
+      "dwd.fact_taxi_trip": 2,
+      "dwd.fact_bike_trip": 2,
+      "dwd.dim_station": 29,
+      "dwd.dim_bike_type": 2
+    },
+    "marts_versions": {
+      "dws.trip_day": 4,
+      "dws.trip_hour": 4,
+      "dws.zone_hour": 4,
+      "dws.od_day": 4,
+      "dws.weather_group": 4,
+      "ads.trip_day": 4,
+      "ads.trip_hour": 4,
+      "ads.zone_hour": 4,
+      "ads.od_day": 4,
+      "ads.weather_group": 4,
+      "ads.quality_batch": 4,
+      "ads.quality_rule": 4
+    },
+    "pointers": [
+      {
+        "dataset_id": "historical",
+        "release_id": "fa3ddf3a864140a7b6893836d3215a39"
+      },
+      {
+        "dataset_id": "quality",
+        "release_id": "fa3ddf3a864140a7b6893836d3215a39"
+      }
+    ]
+  },
+  "after": {
+    "dwd_run_id": "27cd1a6bc1ff46f9933aad9065f46797",
+    "release_id": "fa3ddf3a864140a7b6893836d3215a39",
+    "dwd_versions": {
+      "dwd.dim_zone": 3,
+      "dwd.dim_date": 4,
+      "dwd.dim_time": 3,
+      "dwd.dim_transport": 3,
+      "dwd.dim_weather_daily": 3,
+      "dwd.fact_taxi_trip": 2,
+      "dwd.fact_bike_trip": 2,
+      "dwd.dim_station": 29,
+      "dwd.dim_bike_type": 2
+    },
+    "marts_versions": {
+      "dws.trip_day": 4,
+      "dws.trip_hour": 4,
+      "dws.zone_hour": 4,
+      "dws.od_day": 4,
+      "dws.weather_group": 4,
+      "ads.trip_day": 4,
+      "ads.trip_hour": 4,
+      "ads.zone_hour": 4,
+      "ads.od_day": 4,
+      "ads.weather_group": 4,
+      "ads.quality_batch": 4,
+      "ads.quality_rule": 4
+    },
+    "pointers": [
+      {
+        "dataset_id": "historical",
+        "release_id": "fa3ddf3a864140a7b6893836d3215a39"
+      },
+      {
+        "dataset_id": "quality",
+        "release_id": "fa3ddf3a864140a7b6893836d3215a39"
+      }
+    ]
+  },
+  "fresh_reuse_receipts": true,
+  "receipts": {
+    "ods": {
+      "passed": true,
+      "run_id": "9e7e1d472b4544c1b7fcb9661717fd41",
+      "reused_run_id": "5442a761bb054513aa6b84e6d87373a4",
+      "month": "2025-06",
+      "verified_ods_version": 28,
+      "source_sha256_checked": 5,
+      "inserted_rows": 0,
+      "checked_at_utc": "2026-11-14T10:01:30.313129+00:00"
+    },
+    "dwd": {
+      "passed": true,
+      "run_id": "27cd1a6bc1ff46f9933aad9065f46797",
+      "input_fingerprint": "b9b5e9f3c9ee4c8cd6c746c53f6431b08273f574d869fb030d85cdd811f88099",
+      "all_output_versions_unchanged": true,
+      "checked_at_utc": "2026-11-14T10:01:38.076603+00:00"
+    },
+    "marts": {
+      "passed": true,
+      "release_id": "fa3ddf3a864140a7b6893836d3215a39",
+      "versions_unchanged": true,
+      "active_pointer_unchanged": true,
+      "checked_at_utc": "2026-11-14T10:02:02.625690+00:00"
+    }
+  },
+  "airflow": {
+    "passed": true,
+    "checked_at_utc": "2026-11-14T10:02:38.833382+00:00",
+    "import_errors": 0,
+    "scheduler_runs": [
+      {
+        "dag_id": "city_mobility_historical_daily",
+        "dag_run_id": "acceptance_6df5741432d74368b5f5fe398ea1b13b",
+        "schedule": "At 02:00",
+        "state": "success",
+        "start_date": "2026-11-14T10:01:20.374546Z",
+        "end_date": "2026-11-14T10:02:37.524859Z",
+        "tasks": [
+          {
+            "task_id": "ingest_ods",
+            "state": "success",
+            "try_number": 1
+          },
+          {
+            "task_id": "verify_ods",
+            "state": "success",
+            "try_number": 1
+          },
+          {
+            "task_id": "build_dwd",
+            "state": "success",
+            "try_number": 1
+          },
+          {
+            "task_id": "verify_dwd",
+            "state": "success",
+            "try_number": 1
+          },
+          {
+            "task_id": "build_marts",
+            "state": "success",
+            "try_number": 1
+          },
+          {
+            "task_id": "register_dashboards",
+            "state": "success",
+            "try_number": 1
+          },
+          {
+            "task_id": "verify_charts",
+            "state": "success",
+            "try_number": 1
+          },
+          {
+            "task_id": "export_map",
+            "state": "success",
+            "try_number": 1
+          },
+          {
+            "task_id": "export_preview",
+            "state": "success",
+            "try_number": 1
+          },
+          {
+            "task_id": "inspect_project",
+            "state": "success",
+            "try_number": 1
+          }
+        ]
+      },
+      {
+        "dag_id": "city_mobility_health_monitor",
+        "dag_run_id": "acceptance_8fd3cf419e8d49adae1a93c012ccca1f",
+        "schedule": "Every 5 minutes",
+        "state": "success",
+        "start_date": "2026-11-14T10:01:24.843603Z",
+        "end_date": "2026-11-14T10:01:35.077115Z",
+        "tasks": [
+          {
+            "task_id": "inspect_project",
+            "state": "success",
+            "try_number": 1
+          }
+        ]
+      }
+    ],
+    "scheduled_monitor_runs": [
+      {
+        "dag_run_id": "scheduled__2026-11-14T10:00:00+00:00",
+        "state": "success",
+        "tasks": [
+          {
+            "task_id": "inspect_project",
+            "state": "success",
+            "try_number": 2
+          }
+        ]
+      },
+      {
+        "dag_run_id": "scheduled__2026-11-14T09:55:00+00:00",
+        "state": "success",
+        "tasks": [
+          {
+            "task_id": "inspect_project",
+            "state": "success",
+            "try_number": 1
+          }
+        ]
+      },
+      {
+        "dag_run_id": "scheduled__2026-11-14T09:50:00+00:00",
+        "state": "failed",
+        "tasks": [
+          {
+            "task_id": "inspect_project",
+            "state": "failed",
+            "try_number": 2
+          }
+        ]
+      },
+      {
+        "dag_run_id": "scheduled__2026-11-14T09:40:00+00:00",
+        "state": "failed",
+        "tasks": [
+          {
+            "task_id": "inspect_project",
+            "state": "failed",
+            "try_number": 2
+          }
+        ]
+      },
+      {
+        "dag_run_id": "scheduled__2026-11-14T09:30:00+00:00",
+        "state": "failed",
+        "tasks": [
+          {
+            "task_id": "inspect_project",
+            "state": "failed",
+            "try_number": 2
+          }
+        ]
+      },
+      {
+        "dag_run_id": "scheduled__2026-11-14T09:25:00+00:00",
+        "state": "failed",
+        "tasks": [
+          {
+            "task_id": "inspect_project",
+            "state": "failed",
+            "try_number": 2
+          }
+        ]
+      },
+      {
+        "dag_run_id": "scheduled__2026-11-14T06:45:00+00:00",
+        "state": "failed",
+        "tasks": [
+          {
+            "task_id": "inspect_project",
+            "state": "failed",
+            "try_number": 2
+          }
+        ]
+      }
+    ]
+  }
+}

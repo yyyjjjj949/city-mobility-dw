@@ -1,0 +1,80 @@
+source,field,source_type_or_json_type,real_example,note
+tlc_yellow,VendorID,int32,1,
+tlc_yellow,tpep_pickup_datetime,timestamp[us],2025-06-01 00:02:50,
+tlc_yellow,tpep_dropoff_datetime,timestamp[us],2025-06-01 00:39:51,
+tlc_yellow,passenger_count,int64,1,
+tlc_yellow,trip_distance,double,10.0,
+tlc_yellow,RatecodeID,int64,1,
+tlc_yellow,store_and_fwd_flag,large_string,N,
+tlc_yellow,PULocationID,int32,138,
+tlc_yellow,DOLocationID,int32,50,
+tlc_yellow,payment_type,int64,1,
+tlc_yellow,fare_amount,double,47.8,
+tlc_yellow,extra,double,11.0,
+tlc_yellow,mta_tax,double,0.5,
+tlc_yellow,tip_amount,double,20.15,
+tlc_yellow,tolls_amount,double,6.94,
+tlc_yellow,improvement_surcharge,double,1.0,
+tlc_yellow,total_amount,double,87.39,
+tlc_yellow,congestion_surcharge,double,2.5,
+tlc_yellow,Airport_fee,double,1.75,
+tlc_yellow,cbd_congestion_fee,double,0.75,
+citibike_trips,ride_id,str,0B6F030FB2118EDE,
+citibike_trips,rideable_type,str,electric_bike,
+citibike_trips,started_at,str,2025-06-07 19:21:30.108,
+citibike_trips,ended_at,str,2025-06-07 19:25:05.298,
+citibike_trips,start_station_name,str,E 7 St & Ave C,
+citibike_trips,start_station_id,str,5545.01,保留字符串与小数点，不能转整数
+citibike_trips,end_station_name,str,Suffolk St & Stanton St,
+citibike_trips,end_station_id,str,5445.02,保留字符串与小数点，不能转整数
+citibike_trips,start_lat,str,40.72412944090093,
+citibike_trips,start_lng,str,-73.97901266813278,
+citibike_trips,end_lat,str,40.72066442,
+citibike_trips,end_lng,str,-73.98517977,
+citibike_trips,member_casual,str,member,
+taxi_zones,LocationID,str,1,
+taxi_zones,Borough,str,EWR,
+taxi_zones,Zone,str,Newark Airport,
+taxi_zones,service_zone,str,EWR,
+noaa_daily,WSF2,str,6.7,
+noaa_daily,WSF5_ATTRIBUTES,str,",,W",保留测量标志、质量标志、来源及可能的观测时间
+noaa_daily,STATION,str,USW00094728,
+noaa_daily,WSF5,str,11.6,
+noaa_daily,SNOW,str,0.0,
+noaa_daily,PRCP_ATTRIBUTES,str,",,W,2400",保留测量标志、质量标志、来源及可能的观测时间
+noaa_daily,SNOW_ATTRIBUTES,str,",,W,2400",保留测量标志、质量标志、来源及可能的观测时间
+noaa_daily,PRCP,str,0.0,API units=metric，已经转换单位
+noaa_daily,WDF2_ATTRIBUTES,str,",,W",保留测量标志、质量标志、来源及可能的观测时间
+noaa_daily,AWND_ATTRIBUTES,str,",,W",保留测量标志、质量标志、来源及可能的观测时间
+noaa_daily,SNWD_ATTRIBUTES,str,",,W,2400",保留测量标志、质量标志、来源及可能的观测时间
+noaa_daily,SNWD,str,0.0,
+noaa_daily,DATE,str,2025-06-01,
+noaa_daily,WDF2,str,  250,
+noaa_daily,WDF5_ATTRIBUTES,str,",,W",保留测量标志、质量标志、来源及可能的观测时间
+noaa_daily,AWND,str,3.0,API units=metric，已经转换单位
+noaa_daily,WDF5,str,  230,
+noaa_daily,TMAX,str,18.9,API units=metric，已经转换单位
+noaa_daily,TMAX_ATTRIBUTES,str,",,W",保留测量标志、质量标志、来源及可能的观测时间
+noaa_daily,TMIN,str,10.0,API units=metric，已经转换单位
+noaa_daily,WSF2_ATTRIBUTES,str,",,W",保留测量标志、质量标志、来源及可能的观测时间
+noaa_daily,TMIN_ATTRIBUTES,str,",,W",保留测量标志、质量标志、来源及可能的观测时间
+gbfs_station_information,station_id,str,66dc292c-0aca-11e7-82f6-3863bb44ef7c,
+gbfs_station_information,name,str,Broadway & W 41 St,
+gbfs_station_information,short_name,str,6560.01,
+gbfs_station_information,lon,float,-73.98658032,
+gbfs_station_information,lat,float,40.75513557,
+gbfs_station_information,region_id,str,71,
+gbfs_station_information,capacity,int,55,
+gbfs_station_information,rental_uris,dict,"{""android"": ""https://bkn.lft.to/lastmile_qr_scan"", ""ios"": ""https://bkn.lft.to/lastmile_qr_scan""}",
+gbfs_station_information,is_charging,bool,False,
+gbfs_station_status,station_id,str,66dc292c-0aca-11e7-82f6-3863bb44ef7c,
+gbfs_station_status,num_bikes_available,int,0,
+gbfs_station_status,num_bikes_disabled,int,0,
+gbfs_station_status,num_docks_available,int,0,
+gbfs_station_status,num_docks_disabled,int,0,
+gbfs_station_status,is_installed,int,0,本行来自停用站点；零车辆不能直接判为缺车
+gbfs_station_status,is_renting,int,0,本行来自停用站点；零车辆不能直接判为缺车
+gbfs_station_status,is_returning,int,0,本行来自停用站点；零车辆不能直接判为缺车
+gbfs_station_status,last_reported,int,86400,本行来自停用站点；零车辆不能直接判为缺车
+gbfs_station_status,vehicle_types_available,list,"[{""vehicle_type_id"": ""1"", ""count"": 0}, {""vehicle_type_id"": ""2"", ""count"": 0}]",
+gbfs_station_status,num_ebikes_available,int,0,

@@ -1,0 +1,21 @@
+{
+  "superset_health": {
+    "status": 200,
+    "body": "OK"
+  },
+  "airflow_health": {
+    "status": 200,
+    "body": "{\"metadatabase\":{\"status\":\"healthy\"},\"scheduler\":{\"status\":\"healthy\",\"latest_scheduler_heartbeat\":\"2026-11-01T07:58:19.052235+00:00\"},\"triggerer\":{\"status\":\"healthy\",\"latest_triggerer_heartbeat\":\"2026-11-01T07:58:16.782957+00:00\"},\"dag_processor\":{\"status\":\"healthy\",\"latest_dag_processor_heartbeat\":\"2026-11-01T07:58:15.876613+00:00\"}}"
+  },
+  "superset_login": {
+    "success": true
+  },
+  "superset_clickhouse_registered": true,
+  "airflow_login": {
+    "success": true
+  },
+  "clickhouse_query": {
+    "success": true,
+    "version": "25.8.33.6"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "passed": true,
+  "dashboards": [
+    {
+      "slug": "city-mobility-overview",
+      "charts": 7,
+      "canvases": 4,
+      "alerts": [],
+      "errors": [],
+      "body": "Dashboards\nCharts\nDatasets\nSQL\nSettings\nFilters and controls\n出发日期范围\nNo filter\n交通方式\n2 options\nApply filters\nClear all\n城市出行 · 历史总览\nPublished\nProject Admin\n3 hours ago\nEdit dashboard\n\n2025 年 6 月｜纽约当地时间 · 真实完整月度数据 · Yellow Taxi + Citi Bike。合计表示已接入两类记录，不能解释为全市总出行量。\n\n支持日期、交通方式筛选。小时图为各小时选中日期总量 ÷ 选中有效日期数；平均时长、距离均用有效分子分母计算。固定方式KPI与交通方式筛选取交集，无记录显示空值。\n\n已接入两类有效行程\n9,012,795\n2025 年 6 月 · 按纽约开始日期\n黄色出租车行程\n4,254,337\n共享单车骑行\n4,758,458\n每日出发行程趋势\n纽约当地小时 · 日均出发量\n每日平均行程时长\n每日出租车平均距离（有效距离记录）",
+      "passed": true
+    },
+    {
+      "slug": "city-mobility-spatial",
+      "charts": 4,
+      "canvases": 2,
+      "alerts": [],
+      "errors": [],
+      "body": "Dashboards\nCharts\nDatasets\nSQL\nSettings\nFilters and controls\n出发日期范围\nNo filter\n交通方式\n2 options\n出发行政区（区域图）\n5 options\nApply filters\nClear all\n城市出行 · 区域与 OD\nPublished\nProject Admin\n3 hours ago\nEdit dashboard\n\n2025 年 6 月｜纽约当地时间 · 真实完整月度数据 · Yellow Taxi + Citi Bike。合计表示已接入两类记录，不能解释为全市总出行量。\n\n打开地图与联动筛选 · 支持日期、方式、行政区及区域选择、CSV导出。\n\n看板日期与交通方式影响全部图表；行政区仅影响区域出发图，不改变OD或全局覆盖率。完整事件到达量和净流入暂不发布；区域与 OD 仅计符合空间条件的记录。\n\n出发量最多的 15 个纽约区域\n各行政区出发量\n热门 OD · 前 20 条\nSelect page size\nShow \n20\n entries per page\nroute\n\t\ntransport_name\n\t\n行程数\nEast Village → East Village\t共享单车\t\n39k\nEast Chelsea → East Chelsea\t共享单车\t\n26.6k\nWilliamsburg (North Side) → Williamsburg (North Side)\t共享单车\t\n26.3k\nGreenpoint → Greenpoint\t共享单车\t\n25.7k\nGreenpoint → Williamsburg (North Side)\t共享单车\t\n25.2k\nAstoria → Astoria\t共享单车\t\n25.1k\nWilliamsburg (North Side) → Greenpoint\t共享单车\t\n24.7k\nPark Slope → Park Slope\t共享单车\t\n24.6k\nUpper East Side South → Upper East Side North\t黄色出租车\t\n23.9k\nCentral Park → Central Park\t共享单车\t\n20.5k\nUpper East Side North → Upper East Side South\t黄色出租车\t\n20.4k\nLong Island City/Hunters Point → Long Island City/Hunters Point\t共享单车\t\n20.1k\nCrown Heights North → Crown Heights North\t共享单车\t\n19.1k\nUpper East Side South → Upper East Side South\t黄色出租车\t\n17.5k\nWilliamsburg (North Side) → Williamsburg (South Side)\t共享单车\t\n15.9k\nWilliamsburg (South Side) → Williamsburg (North Side)\t共享单车\t\n15.2k\nUpper East Side North → Upper East Side North\t黄色出租车\t\n15.2k\nFort Greene → Fort Greene\t共享单车\t\n15k\nSteinway → Steinway\t共享单车\t\n14.9k\nBushwick South → Bushwick South\t共享单车\t\n14.7k\n区域匹配覆盖率\nSelect page size\nShow \n20\n entries per page\ntransport_name\n\t\n起点覆盖率\n\t\n终点覆盖率\n\t\n双端覆盖率\n共享单车\t\n99.96%\t\n99.64%\t\n99.60%\n黄色出租车\t\n99.79%\t\n99.16%\t\n99.07%",
+      "passed": true
+    },
+    {
+      "slug": "city-mobility-weather",
+      "charts": 3,
+      "canvases": 2,
+      "alerts": [],
+      "errors": [],
+      "body": "Dashboards\nCharts\nDatasets\nSQL\nSettings\nFilters and controls\n交通方式\n2 options\nApply filters\nClear all\n城市出行 · 天气对比\nPublished\nProject Admin\n3 hours ago\nEdit dashboard\n\n2025 年 6 月｜纽约当地时间 · 真实完整月度数据 · Yellow Taxi + Citi Bike。合计表示已接入两类记录，不能解释为全市总出行量。\n\n以 NOAA 中央公园日天气为背景，按周一至周五/周末分组。微量降水独立展示；基准为同月、同方式、同周类型的无可测降水日。样本量有限，比较不表示因果。\n\n周一至周五 · 不同降水组的日均出行量\n周末 · 不同降水组的日均出行量\n天气对比样本与需求比率\nSelect page size\nShow \n20\n entries per page\ntransport_name\n\t\nweek_type\n\t\nweather_label\n\t\n完整样本天数\n\t\n日均行程数\n\t\n相对无可测降水日比率\n黄色出租车\t周一至周五\t未记录可测降水\t\n11\t\n148,055\t\n1.000\n共享单车\t周一至周五\t未记录可测降水\t\n11\t\n178,169\t\n1.000\n共享单车\t周一至周五\t可测降水\t\n8\t\n154,636\t\n0.868\n黄色出租车\t周一至周五\t可测降水\t\n8\t\n138,937\t\n0.938\n黄色出租车\t周末\t可测降水\t\n5\t\n140,567\t\n1.023\n共享单车\t周末\t可测降水\t\n5\t\n122,886\t\n0.789\n共享单车\t周末\t未记录可测降水\t\n3\t\n155,711\t\n1.000\n黄色出租车\t周末\t未记录可测降水\t\n3\t\n137,449\t\n1.000\n共享单车\t周一至周五\t微量降水\t\n2\t\n164,596\t\n0.924\n黄色出租车\t周一至周五\t微量降水\t\n2\t\n130,665\t\n0.883\n黄色出租车\t周末\t微量降水\t\n1\t\n137,728\t\n1.002\n共享单车\t周末\t微量降水\t\n1\t\n150,758\t\n0.968",
+      "passed": true
+    },
+    {
+      "slug": "city-mobility-quality",
+      "charts": 5,
+      "canvases": 1,
+      "alerts": [],
+      "errors": [],
+      "body": "Dashboards\nCharts\nDatasets\nSQL\nSettings\n城市出行 · 数据质量\nPublished\nProject Admin\n12 days ago\nEdit dashboard\n\n2025 年 6 月｜纽约当地时间 · 真实完整月度数据 · Yellow Taxi + Citi Bike。合计表示已接入两类记录，不能解释为全市总出行量。\n\n输入＝有效＋不同隔离原记录＋重复跳过＋范围外。字段警告可重叠，不能相加；规则失败记录量不等于最终隔离量。passed 表示满足该规则的门禁/处理策略，警告或已隔离异常可非零。\n\n原始行程输入\n9,082,305\n仅展示本次历史 DWD 的两个有效来源批次\n异常隔离记录\n68,604\n六月范围外记录\n906\n两类来源的记录去向\n清洗质量规则与警告\nSelect page size\nShow \n20\n entries per page\ntable_name\n\t\nrule_id\n\t\nseverity\n\t\npassed\n\t\n检查量\n\t\n规则失败记录量\ndwd.fact_bike_trip\tQ004\twarn\ttrue\t\n4.76M\t\n1\ndwd.fact_bike_trip\tQ014\tblock\ttrue\t\n4.76M\t\n1\ndwd.fact_bike_trip\tQ005\twarn\ttrue\t\n4.76M\t\n0\ndwd.fact_bike_trip\tQ003\twarn\ttrue\t\n4.76M\t\n0\ndwd.fact_bike_trip\tQ013\tblock\ttrue\t\n4.76M\t\n0\ndwd.fact_bike_trip\tQ006\tblock\ttrue\t\n4.76M\t\n0\ndwd.fact_bike_trip\tQ012\tblock\ttrue\t\n4.76M\t\n0\ndwd.fact_bike_trip\tQ008\twarn\ttrue\t\n4.76M\t\n18.8k\ndwd.fact_taxi_trip\tQ014\tblock\ttrue\t\n4.32M\t\n68.6k\ndwd.fact_taxi_trip\tQ004\twarn\ttrue\t\n4.32M\t\n68.6k\ndwd.fact_taxi_trip\tQ013\tblock\ttrue\t\n4.32M\t\n0\ndwd.fact_taxi_trip\tQ003\twarn\ttrue\t\n4.32M\t\n0\ndwd.fact_taxi_trip\tQ007\twarn\ttrue\t\n4.25M\t\n133k\ndwd.fact_taxi_trip\tQ008\twarn\ttrue\t\n4.25M\t\n39.5k\ndwd.fact_taxi_trip\tQ012\tblock\ttrue\t\n4.25M\t\n0\ndwd.dim_weather_daily\tQ009\tblock_weather_publication\ttrue\t\n30\t\n0",
+      "passed": true
+    }
+  ]
+}

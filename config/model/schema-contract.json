@@ -1,0 +1,3543 @@
+{
+  "version": "2.0-offline",
+  "scope": "NYC June 2025 offline warehouse",
+  "tables": [
+    {
+      "name": "ops.ingest_batch",
+      "title": "任务批次",
+      "grain": "一个来源期间的一次执行尝试",
+      "logical_key": [
+        "batch_id"
+      ],
+      "partition_by": [],
+      "upstream": [],
+      "columns": [
+        {
+          "name": "batch_id",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "执行尝试唯一ID",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "logical_batch_key",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "来源+期间+任务的幂等调度标识",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "source_id",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "数据源标识",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "source_period",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "请求月份/日期/实时轮次",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "attempt_number",
+          "type": "INT",
+          "nullable": false,
+          "meaning": "重试序号，从1开始",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "status",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "planned/running/validated/published/failed",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "started_at_utc",
+          "type": "TIMESTAMP",
+          "nullable": false,
+          "meaning": "开始时刻",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "finished_at_utc",
+          "type": "TIMESTAMP",
+          "nullable": true,
+          "meaning": "结束时刻",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "input_rows",
+          "type": "BIGINT",
+          "nullable": false,
+          "meaning": "解析成功输入量",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "accepted_rows",
+          "type": "BIGINT",
+          "nullable": false,
+          "meaning": "本批接收量",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "quarantined_rows",
+          "type": "BIGINT",
+          "nullable": false,
+          "meaning": "隔离的不同记录数",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "duplicate_skipped_rows",
+          "type": "BIGINT",
+          "nullable": false,
+          "meaning": "已接收重复副本跳过量",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "out_of_scope_rows",
+          "type": "BIGINT",
+          "nullable": false,
+          "meaning": "范围外量",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "parse_error_rows",
+          "type": "BIGINT",
+          "nullable": false,
+          "meaning": "可定位的解析失败记录量",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "rule_version",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "规则版本",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "error_summary",
+          "type": "STRING",
+          "nullable": true,
+          "meaning": "失败摘要，禁止写凭据",
+          "source": "derived",
+          "reference": null
+        }
+      ],
+      "serving": false,
+      "dataset_id": null,
+      "storage": "delta",
+      "location": "/workspace/data/ops/ingest_batch"
+    },
+    {
+      "name": "ops.source_object",
+      "title": "来源对象清单",
+      "grain": "一个具有明确业务采集身份的来源对象",
+      "logical_key": [
+        "object_id"
+      ],
+      "partition_by": [],
+      "upstream": [],
+      "columns": [
+        {
+          "name": "object_id",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "历史SHA来源身份或实时poll身份的稳定键",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "source_id",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "来源编码",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "source_period",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "请求期间",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "source_url",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "官方来源URL",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "relative_path",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "D盘原始文件相对路径",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "object_sha256",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "完整下载文件SHA256",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "object_bytes",
+          "type": "BIGINT",
+          "nullable": false,
+          "meaning": "完整文件字节数",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "poll_id",
+          "type": "STRING",
+          "nullable": true,
+          "meaning": "GBFS稳定采集轮次ID；历史为空",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "received_at_utc",
+          "type": "TIMESTAMP",
+          "nullable": false,
+          "meaning": "接收完成时刻",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "first_batch_id",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "最初接收批次",
+          "source": "derived",
+          "reference": "ops.ingest_batch.batch_id"
+        },
+        {
+          "name": "expected_members",
+          "type": "INT",
+          "nullable": false,
+          "meaning": "预期成员数量；普通文件为1",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "processed_members",
+          "type": "INT",
+          "nullable": false,
+          "meaning": "成功处理的成员数量",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "is_complete",
+          "type": "BOOLEAN",
+          "nullable": false,
+          "meaning": "完整下载与成员处理验证通过",
+          "source": "derived",
+          "reference": null
+        }
+      ],
+      "serving": false,
+      "dataset_id": null,
+      "storage": "delta",
+      "location": "/workspace/data/ops/source_object"
+    },
+    {
+      "name": "ops.quality_result",
+      "title": "规则执行结果",
+      "grain": "批次×表分区×规则",
+      "logical_key": [
+        "result_id"
+      ],
+      "partition_by": [],
+      "upstream": [],
+      "columns": [
+        {
+          "name": "result_id",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "规则执行唯一键",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "batch_id",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "执行批次",
+          "source": "derived",
+          "reference": "ops.ingest_batch.batch_id"
+        },
+        {
+          "name": "table_name",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "被检查表名",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "partition_spec",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "分区条件JSON",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "rule_id",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "规则代码",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "severity",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "block/warn",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "checked_rows",
+          "type": "BIGINT",
+          "nullable": false,
+          "meaning": "规则适用记录量",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "failed_rows",
+          "type": "BIGINT",
+          "nullable": false,
+          "meaning": "失败记录量",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "passed",
+          "type": "BOOLEAN",
+          "nullable": false,
+          "meaning": "是否满足该规则的发布阈值",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "details_json",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "错误范围与样例定位JSON",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "checked_at_utc",
+          "type": "TIMESTAMP",
+          "nullable": false,
+          "meaning": "检查时刻",
+          "source": "derived",
+          "reference": null
+        }
+      ],
+      "serving": false,
+      "dataset_id": null,
+      "storage": "delta",
+      "location": "/workspace/data/ops/quality_result"
+    },
+    {
+      "name": "ops.quarantine_record",
+      "title": "隔离明细",
+      "grain": "原始记录×失败规则×规则版本",
+      "logical_key": [
+        "source_record_key",
+        "rule_id",
+        "rule_version"
+      ],
+      "partition_by": [
+        "source_id",
+        "source_period"
+      ],
+      "upstream": [],
+      "columns": [
+        {
+          "name": "source_record_key",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "被隔离的ODS记录",
+          "source": "derived",
+          "reference": "ods.source_record.record_key"
+        },
+        {
+          "name": "batch_id",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "处理批次",
+          "source": "derived",
+          "reference": "ops.ingest_batch.batch_id"
+        },
+        {
+          "name": "rule_id",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "失败规则",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "rule_version",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "规则版本",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "source_id",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "数据源",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "source_period",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "源期间",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "field_name",
+          "type": "STRING",
+          "nullable": true,
+          "meaning": "异常字段，整体记录可为空",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "reason",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "可解释的错误原因",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "created_at_utc",
+          "type": "TIMESTAMP",
+          "nullable": false,
+          "meaning": "隔离时刻",
+          "source": "derived",
+          "reference": null
+        }
+      ],
+      "serving": false,
+      "dataset_id": null,
+      "storage": "delta",
+      "location": "/workspace/data/ops/quarantine_record"
+    },
+    {
+      "name": "ops.publication",
+      "title": "发布记录",
+      "grain": "数据集的一次不可变发布",
+      "logical_key": [
+        "release_id"
+      ],
+      "partition_by": [],
+      "upstream": [],
+      "columns": [
+        {
+          "name": "release_id",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "发布ID",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "dataset_id",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "historical/quality",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "scope_json",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "覆盖期间与完整性JSON",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "status",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "building/validated/active/retired/failed",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "input_versions_json",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "源批次与Delta版本快照",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "output_counts_json",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "各输出表记录数",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "rule_version",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "规则版本",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "published_at_utc",
+          "type": "TIMESTAMP",
+          "nullable": true,
+          "meaning": "实际启用时刻",
+          "source": "derived",
+          "reference": null
+        }
+      ],
+      "serving": false,
+      "dataset_id": null,
+      "storage": "delta",
+      "location": "/workspace/data/ops/publication"
+    },
+    {
+      "name": "ods.source_record",
+      "title": "原始记录封装",
+      "grain": "来源对象成员中的一个原始逻辑记录",
+      "logical_key": [
+        "record_key"
+      ],
+      "partition_by": [
+        "source_id",
+        "source_period"
+      ],
+      "upstream": [
+        "ops.source_object"
+      ],
+      "columns": [
+        {
+          "name": "record_key",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "SHA256(object_id|member_path|record_ordinal)",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "object_id",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "完整原始对象身份",
+          "source": "derived",
+          "reference": "ops.source_object.object_id"
+        },
+        {
+          "name": "member_path",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "ZIP成员名；普通文件用空字符串",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "record_ordinal",
+          "type": "BIGINT",
+          "nullable": false,
+          "meaning": "文件成员内从1开始的记录序号，CSV不含标题",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "source_id",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "tlc_yellow/citibike_trips/taxi_zones/noaa_daily",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "source_period",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "请求期间，不依赖事件时间可解析",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "payload_json",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "保留源字段、原精度、空值和文本的JSON；原文件另存",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "payload_sha256",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "规范化载荷摘要，仅用于内容比较",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "poll_id",
+          "type": "STRING",
+          "nullable": true,
+          "meaning": "GBFS轮次ID",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "received_at_utc",
+          "type": "TIMESTAMP",
+          "nullable": false,
+          "meaning": "接收时刻",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "batch_id",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "首次接收批次",
+          "source": "derived",
+          "reference": "ops.ingest_batch.batch_id"
+        }
+      ],
+      "serving": false,
+      "dataset_id": null,
+      "storage": "delta",
+      "location": "/workspace/data/ods/source_record"
+    },
+    {
+      "name": "dwd.dim_date",
+      "title": "日期维度",
+      "grain": "一个公历日期；0是未知占位",
+      "logical_key": [
+        "date_key"
+      ],
+      "partition_by": [],
+      "upstream": [
+        "calendar"
+      ],
+      "columns": [
+        {
+          "name": "date_key",
+          "type": "INT",
+          "nullable": false,
+          "meaning": "yyyyMMdd；未知为0",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "calendar_date",
+          "type": "DATE",
+          "nullable": true,
+          "meaning": "公历日期",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "year",
+          "type": "INT",
+          "nullable": true,
+          "meaning": "年份",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "quarter",
+          "type": "INT",
+          "nullable": true,
+          "meaning": "季度1至4",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "month",
+          "type": "INT",
+          "nullable": true,
+          "meaning": "月份1至12",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "day_of_month",
+          "type": "INT",
+          "nullable": true,
+          "meaning": "月内日",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "iso_week",
+          "type": "INT",
+          "nullable": true,
+          "meaning": "ISO周序号",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "iso_week_year",
+          "type": "INT",
+          "nullable": true,
+          "meaning": "ISO周年份",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "iso_day_of_week",
+          "type": "INT",
+          "nullable": true,
+          "meaning": "周一1至周日7",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "is_weekday",
+          "type": "BOOLEAN",
+          "nullable": true,
+          "meaning": "仅周一至周五",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "is_weekend",
+          "type": "BOOLEAN",
+          "nullable": true,
+          "meaning": "周六或周日",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "is_holiday",
+          "type": "BOOLEAN",
+          "nullable": true,
+          "meaning": "未接入可靠日历前为空",
+          "source": "derived",
+          "reference": null
+        }
+      ],
+      "serving": false,
+      "dataset_id": null,
+      "storage": "delta",
+      "location": "/workspace/data/dwd/dim_date"
+    },
+    {
+      "name": "dwd.dim_time",
+      "title": "日内分钟维度",
+      "grain": "一个当地分钟，共1440个；-1是未知",
+      "logical_key": [
+        "time_key"
+      ],
+      "partition_by": [],
+      "upstream": [
+        "configuration"
+      ],
+      "columns": [
+        {
+          "name": "time_key",
+          "type": "INT",
+          "nullable": false,
+          "meaning": "hour*60+minute；未知-1",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "hour",
+          "type": "INT",
+          "nullable": true,
+          "meaning": "小时0至23",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "minute",
+          "type": "INT",
+          "nullable": true,
+          "meaning": "分钟0至59",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "period_label",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "夜间/早高峰/日间/晚高峰/晚间",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "is_peak",
+          "type": "BOOLEAN",
+          "nullable": true,
+          "meaning": "配置时段的高峰标记；不代表统计结论",
+          "source": "derived",
+          "reference": null
+        }
+      ],
+      "serving": false,
+      "dataset_id": null,
+      "storage": "delta",
+      "location": "/workspace/data/dwd/dim_time"
+    },
+    {
+      "name": "dwd.dim_zone",
+      "title": "区域维度",
+      "grain": "一个官方区域编码或未知0",
+      "logical_key": [
+        "zone_key"
+      ],
+      "partition_by": [],
+      "upstream": [
+        "ods.source_record"
+      ],
+      "columns": [
+        {
+          "name": "zone_key",
+          "type": "INT",
+          "nullable": false,
+          "meaning": "官方LocationID；未知0",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "zone_name",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "区域名称",
+          "source": "taxi_zone_lookup.Zone",
+          "reference": null
+        },
+        {
+          "name": "borough",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "行政区/特殊范围",
+          "source": "taxi_zone_lookup.Borough",
+          "reference": null
+        },
+        {
+          "name": "service_zone",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "服务区",
+          "source": "taxi_zone_lookup.service_zone",
+          "reference": null
+        },
+        {
+          "name": "is_nyc",
+          "type": "BOOLEAN",
+          "nullable": false,
+          "meaning": "是否属于纽约五行政区",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "geometry_geojson",
+          "type": "STRING",
+          "nullable": true,
+          "meaning": "EPSG:4326区域几何JSON",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "source_crs",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "源EPSG:2263",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "geometry_source_sha256",
+          "type": "STRING",
+          "nullable": true,
+          "meaning": "完整官方边界文件摘要",
+          "source": "derived",
+          "reference": null
+        }
+      ],
+      "serving": false,
+      "dataset_id": null,
+      "storage": "delta",
+      "location": "/workspace/data/dwd/dim_zone"
+    },
+    {
+      "name": "dwd.dim_station",
+      "title": "站点期间快照维度",
+      "grain": "命名空间×期间×来源站点业务键",
+      "logical_key": [
+        "station_key"
+      ],
+      "partition_by": [
+        "namespace"
+      ],
+      "upstream": [
+        "ods.source_record",
+        "dwd.dim_zone"
+      ],
+      "columns": [
+        {
+          "name": "station_key",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "SHA256(namespace|reference_period|station_business_key)；UNKNOWN为未知",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "namespace",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "history_month/unknown",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "reference_period",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "历史来源月份yyyy-MM",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "station_business_key",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "历史站点编号字符串或当前GBFS UUID",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "station_name",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "该期间来源名称",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "latitude",
+          "type": "DOUBLE",
+          "nullable": true,
+          "meaning": "该期间代表坐标纬度",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "longitude",
+          "type": "DOUBLE",
+          "nullable": true,
+          "meaning": "该期间代表坐标经度",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "zone_key",
+          "type": "INT",
+          "nullable": false,
+          "meaning": "代表坐标匹配区域",
+          "source": "derived",
+          "reference": "dwd.dim_zone.zone_key"
+        },
+        {
+          "name": "short_name",
+          "type": "STRING",
+          "nullable": true,
+          "meaning": "GBFS短编号；历史可为空",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "capacity",
+          "type": "INT",
+          "nullable": true,
+          "meaning": "当前观察到的容量，不能反填历史",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "attribute_origin",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "historical_trip/unknown",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "first_observed_at_utc",
+          "type": "TIMESTAMP",
+          "nullable": true,
+          "meaning": "本项目首次观察时刻",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "last_observed_at_utc",
+          "type": "TIMESTAMP",
+          "nullable": true,
+          "meaning": "最近观察时刻",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "attributes_conflicted",
+          "type": "BOOLEAN",
+          "nullable": false,
+          "meaning": "期间名称或坐标存在多个候选",
+          "source": "derived",
+          "reference": null
+        }
+      ],
+      "serving": false,
+      "dataset_id": null,
+      "storage": "delta",
+      "location": "/workspace/data/dwd/dim_station"
+    },
+    {
+      "name": "dwd.dim_transport",
+      "title": "交通方式维度",
+      "grain": "一个受控交通方式",
+      "logical_key": [
+        "transport_code"
+      ],
+      "partition_by": [],
+      "upstream": [
+        "configuration"
+      ],
+      "columns": [
+        {
+          "name": "transport_code",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "taxi_yellow/citibike/UNKNOWN",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "transport_name",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "中文交通方式",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "source_id",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "源编码",
+          "source": "derived",
+          "reference": null
+        }
+      ],
+      "serving": false,
+      "dataset_id": null,
+      "storage": "delta",
+      "location": "/workspace/data/dwd/dim_transport"
+    },
+    {
+      "name": "dwd.dim_bike_type",
+      "title": "车型维度",
+      "grain": "一个来源车型代码",
+      "logical_key": [
+        "bike_type_code"
+      ],
+      "partition_by": [],
+      "upstream": [
+        "ods.source_record"
+      ],
+      "columns": [
+        {
+          "name": "bike_type_code",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "classic_bike/electric_bike/UNKNOWN等真实源代码",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "bike_type_name",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "展示名称",
+          "source": "derived",
+          "reference": null
+        }
+      ],
+      "serving": false,
+      "dataset_id": null,
+      "storage": "delta",
+      "location": "/workspace/data/dwd/dim_bike_type"
+    },
+    {
+      "name": "dwd.dim_weather_daily",
+      "title": "日天气观察维度",
+      "grain": "气象站×源观测日期",
+      "logical_key": [
+        "weather_key"
+      ],
+      "partition_by": [],
+      "upstream": [
+        "ods.source_record",
+        "dwd.dim_date"
+      ],
+      "columns": [
+        {
+          "name": "weather_key",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "SHA256(station_id|observation_date)；UNKNOWN为未知",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "weather_station_id",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "USW00094728或UNKNOWN",
+          "source": "NOAA.STATION",
+          "reference": null
+        },
+        {
+          "name": "observation_date",
+          "type": "DATE",
+          "nullable": true,
+          "meaning": "NOAA源观测日期",
+          "source": "NOAA.DATE",
+          "reference": null
+        },
+        {
+          "name": "date_key",
+          "type": "INT",
+          "nullable": false,
+          "meaning": "关联日期键",
+          "source": "derived",
+          "reference": "dwd.dim_date.date_key"
+        },
+        {
+          "name": "temperature_max_c",
+          "type": "DOUBLE",
+          "nullable": true,
+          "meaning": "最高温°C",
+          "source": "NOAA.TMAX",
+          "reference": null
+        },
+        {
+          "name": "temperature_min_c",
+          "type": "DOUBLE",
+          "nullable": true,
+          "meaning": "最低温°C",
+          "source": "NOAA.TMIN",
+          "reference": null
+        },
+        {
+          "name": "precipitation_mm",
+          "type": "DOUBLE",
+          "nullable": true,
+          "meaning": "降水mm，metric已转换",
+          "source": "NOAA.PRCP",
+          "reference": null
+        },
+        {
+          "name": "wind_speed_mps",
+          "type": "DOUBLE",
+          "nullable": true,
+          "meaning": "平均风速m/s",
+          "source": "NOAA.AWND",
+          "reference": null
+        },
+        {
+          "name": "precipitation_group",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "measurable/trace/no_measurable/unknown",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "attributes_json",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "所有源观测质量和测量标志JSON",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "weather_usable",
+          "type": "BOOLEAN",
+          "nullable": false,
+          "meaning": "核心字段有效且源质量检查通过",
+          "source": "derived",
+          "reference": null
+        }
+      ],
+      "serving": false,
+      "dataset_id": null,
+      "storage": "delta",
+      "location": "/workspace/data/dwd/dim_weather_daily"
+    },
+    {
+      "name": "dwd.fact_taxi_trip",
+      "title": "出租车行程事实",
+      "grain": "一个通过核心规则的原始出租车记录",
+      "logical_key": [
+        "trip_key"
+      ],
+      "partition_by": [
+        "service_date"
+      ],
+      "upstream": [
+        "ods.source_record",
+        "dwd.dim_date",
+        "dwd.dim_time",
+        "dwd.dim_zone",
+        "dwd.dim_transport",
+        "dwd.dim_weather_daily"
+      ],
+      "columns": [
+        {
+          "name": "trip_key",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "等于ODS记录键，保留同内容的不同源行",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "started_at_raw",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "源开始时间文本",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "ended_at_raw",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "源结束时间文本",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "started_at_local",
+          "type": "TIMESTAMP_NTZ",
+          "nullable": false,
+          "meaning": "纽约当地开始时间",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "ended_at_local",
+          "type": "TIMESTAMP_NTZ",
+          "nullable": false,
+          "meaning": "纽约当地结束时间",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "started_at_utc",
+          "type": "TIMESTAMP",
+          "nullable": false,
+          "meaning": "开始时间UTC瞬时值",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "ended_at_utc",
+          "type": "TIMESTAMP",
+          "nullable": false,
+          "meaning": "结束时间UTC瞬时值",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "service_date",
+          "type": "DATE",
+          "nullable": false,
+          "meaning": "按开始时间归属的纽约日期",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "start_date_key",
+          "type": "INT",
+          "nullable": false,
+          "meaning": "开始日期键",
+          "source": "derived",
+          "reference": "dwd.dim_date.date_key"
+        },
+        {
+          "name": "end_date_key",
+          "type": "INT",
+          "nullable": false,
+          "meaning": "结束日期键",
+          "source": "derived",
+          "reference": "dwd.dim_date.date_key"
+        },
+        {
+          "name": "start_time_key",
+          "type": "INT",
+          "nullable": false,
+          "meaning": "开始分钟键",
+          "source": "derived",
+          "reference": "dwd.dim_time.time_key"
+        },
+        {
+          "name": "end_time_key",
+          "type": "INT",
+          "nullable": false,
+          "meaning": "结束分钟键",
+          "source": "derived",
+          "reference": "dwd.dim_time.time_key"
+        },
+        {
+          "name": "start_hour_utc",
+          "type": "TIMESTAMP",
+          "nullable": false,
+          "meaning": "开始小时UTC，区分夏令时重复小时",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "end_hour_utc",
+          "type": "TIMESTAMP",
+          "nullable": false,
+          "meaning": "结束小时UTC",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "transport_code",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "交通方式",
+          "source": "derived",
+          "reference": "dwd.dim_transport.transport_code"
+        },
+        {
+          "name": "origin_zone_key",
+          "type": "INT",
+          "nullable": false,
+          "meaning": "起点区域键，0为无法映射",
+          "source": "derived",
+          "reference": "dwd.dim_zone.zone_key"
+        },
+        {
+          "name": "destination_zone_key",
+          "type": "INT",
+          "nullable": false,
+          "meaning": "终点区域键，0为无法映射",
+          "source": "derived",
+          "reference": "dwd.dim_zone.zone_key"
+        },
+        {
+          "name": "weather_key",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "开始日期对应中央公园天气键，缺失为UNKNOWN",
+          "source": "derived",
+          "reference": "dwd.dim_weather_daily.weather_key"
+        },
+        {
+          "name": "duration_seconds",
+          "type": "DOUBLE",
+          "nullable": false,
+          "meaning": "有效行程时长，秒",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "duration_metric_eligible",
+          "type": "BOOLEAN",
+          "nullable": false,
+          "meaning": "是否纳入时长指标",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "origin_in_nyc",
+          "type": "BOOLEAN",
+          "nullable": false,
+          "meaning": "起点是否可靠匹配纽约五行政区",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "destination_in_nyc",
+          "type": "BOOLEAN",
+          "nullable": false,
+          "meaning": "终点是否可靠匹配纽约五行政区",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "quality_flags_json",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "警告规则代码JSON数组",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "vendor_id",
+          "type": "INT",
+          "nullable": true,
+          "meaning": "源供应商ID",
+          "source": "TLC.VendorID",
+          "reference": null
+        },
+        {
+          "name": "passenger_count",
+          "type": "BIGINT",
+          "nullable": true,
+          "meaning": "源乘客数，不作为整行拒收条件",
+          "source": "TLC.passenger_count",
+          "reference": null
+        },
+        {
+          "name": "rate_code_id",
+          "type": "BIGINT",
+          "nullable": true,
+          "meaning": "计价代码",
+          "source": "TLC.RatecodeID",
+          "reference": null
+        },
+        {
+          "name": "store_and_forward_flag",
+          "type": "STRING",
+          "nullable": true,
+          "meaning": "源转存标志",
+          "source": "TLC.store_and_fwd_flag",
+          "reference": null
+        },
+        {
+          "name": "payment_type",
+          "type": "BIGINT",
+          "nullable": true,
+          "meaning": "支付类型代码",
+          "source": "TLC.payment_type",
+          "reference": null
+        },
+        {
+          "name": "origin_zone_id_raw",
+          "type": "INT",
+          "nullable": true,
+          "meaning": "原始起点区域编码",
+          "source": "TLC.PULocationID",
+          "reference": null
+        },
+        {
+          "name": "destination_zone_id_raw",
+          "type": "INT",
+          "nullable": true,
+          "meaning": "原始终点编码",
+          "source": "TLC.DOLocationID",
+          "reference": null
+        },
+        {
+          "name": "distance_miles",
+          "type": "DOUBLE",
+          "nullable": true,
+          "meaning": "源距离英里",
+          "source": "TLC.trip_distance",
+          "reference": null
+        },
+        {
+          "name": "distance_km",
+          "type": "DOUBLE",
+          "nullable": true,
+          "meaning": "distance_miles*1.609344",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "distance_metric_eligible",
+          "type": "BOOLEAN",
+          "nullable": false,
+          "meaning": "距离是否适用于均值指标",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "content_fingerprint",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "业务内容摘要，只识别候选重复，不作为自动删除键",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "fare_amount_usd",
+          "type": "DECIMAL(18,4)",
+          "nullable": true,
+          "meaning": "基本车费美元",
+          "source": "TLC.fare_amount",
+          "reference": null
+        },
+        {
+          "name": "extra_usd",
+          "type": "DECIMAL(18,4)",
+          "nullable": true,
+          "meaning": "附加费美元",
+          "source": "TLC.extra",
+          "reference": null
+        },
+        {
+          "name": "mta_tax_usd",
+          "type": "DECIMAL(18,4)",
+          "nullable": true,
+          "meaning": "MTA税美元",
+          "source": "TLC.mta_tax",
+          "reference": null
+        },
+        {
+          "name": "tip_amount_usd",
+          "type": "DECIMAL(18,4)",
+          "nullable": true,
+          "meaning": "小费美元",
+          "source": "TLC.tip_amount",
+          "reference": null
+        },
+        {
+          "name": "tolls_amount_usd",
+          "type": "DECIMAL(18,4)",
+          "nullable": true,
+          "meaning": "通行费美元",
+          "source": "TLC.tolls_amount",
+          "reference": null
+        },
+        {
+          "name": "improvement_surcharge_usd",
+          "type": "DECIMAL(18,4)",
+          "nullable": true,
+          "meaning": "改进附加费美元",
+          "source": "TLC.improvement_surcharge",
+          "reference": null
+        },
+        {
+          "name": "total_amount_usd",
+          "type": "DECIMAL(18,4)",
+          "nullable": true,
+          "meaning": "源总额美元",
+          "source": "TLC.total_amount",
+          "reference": null
+        },
+        {
+          "name": "congestion_surcharge_usd",
+          "type": "DECIMAL(18,4)",
+          "nullable": true,
+          "meaning": "拥堵附加费美元",
+          "source": "TLC.congestion_surcharge",
+          "reference": null
+        },
+        {
+          "name": "airport_fee_usd",
+          "type": "DECIMAL(18,4)",
+          "nullable": true,
+          "meaning": "机场费美元",
+          "source": "TLC.Airport_fee",
+          "reference": null
+        },
+        {
+          "name": "cbd_congestion_fee_usd",
+          "type": "DECIMAL(18,4)",
+          "nullable": true,
+          "meaning": "CBD拥堵费美元",
+          "source": "TLC.cbd_congestion_fee",
+          "reference": null
+        },
+        {
+          "name": "source_record_key",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "原始记录定位键",
+          "source": "ods.source_record.record_key",
+          "reference": "ods.source_record.record_key"
+        },
+        {
+          "name": "batch_id",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "加工批次",
+          "source": "ops.ingest_batch.batch_id",
+          "reference": "ops.ingest_batch.batch_id"
+        },
+        {
+          "name": "rule_version",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "转换与质量规则版本",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "processed_at_utc",
+          "type": "TIMESTAMP",
+          "nullable": false,
+          "meaning": "加工时刻，UTC瞬时值",
+          "source": "derived",
+          "reference": null
+        }
+      ],
+      "serving": false,
+      "dataset_id": null,
+      "storage": "delta",
+      "location": "/workspace/data/dwd/fact_taxi_trip"
+    },
+    {
+      "name": "dwd.fact_bike_trip",
+      "title": "共享单车骑行事实",
+      "grain": "一个规范化ride_id的一次有效骑行",
+      "logical_key": [
+        "ride_id"
+      ],
+      "partition_by": [
+        "service_date"
+      ],
+      "upstream": [
+        "ods.source_record",
+        "dwd.dim_station",
+        "dwd.dim_date",
+        "dwd.dim_time",
+        "dwd.dim_zone",
+        "dwd.dim_bike_type",
+        "dwd.dim_transport",
+        "dwd.dim_weather_daily"
+      ],
+      "columns": [
+        {
+          "name": "ride_id",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "保留原始ride_id作为业务键",
+          "source": "CitiBike.ride_id",
+          "reference": null
+        },
+        {
+          "name": "started_at_raw",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "源开始时间文本",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "ended_at_raw",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "源结束时间文本",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "started_at_local",
+          "type": "TIMESTAMP_NTZ",
+          "nullable": false,
+          "meaning": "纽约当地开始时间",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "ended_at_local",
+          "type": "TIMESTAMP_NTZ",
+          "nullable": false,
+          "meaning": "纽约当地结束时间",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "started_at_utc",
+          "type": "TIMESTAMP",
+          "nullable": false,
+          "meaning": "开始时间UTC瞬时值",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "ended_at_utc",
+          "type": "TIMESTAMP",
+          "nullable": false,
+          "meaning": "结束时间UTC瞬时值",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "service_date",
+          "type": "DATE",
+          "nullable": false,
+          "meaning": "按开始时间归属的纽约日期",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "start_date_key",
+          "type": "INT",
+          "nullable": false,
+          "meaning": "开始日期键",
+          "source": "derived",
+          "reference": "dwd.dim_date.date_key"
+        },
+        {
+          "name": "end_date_key",
+          "type": "INT",
+          "nullable": false,
+          "meaning": "结束日期键",
+          "source": "derived",
+          "reference": "dwd.dim_date.date_key"
+        },
+        {
+          "name": "start_time_key",
+          "type": "INT",
+          "nullable": false,
+          "meaning": "开始分钟键",
+          "source": "derived",
+          "reference": "dwd.dim_time.time_key"
+        },
+        {
+          "name": "end_time_key",
+          "type": "INT",
+          "nullable": false,
+          "meaning": "结束分钟键",
+          "source": "derived",
+          "reference": "dwd.dim_time.time_key"
+        },
+        {
+          "name": "start_hour_utc",
+          "type": "TIMESTAMP",
+          "nullable": false,
+          "meaning": "开始小时UTC，区分夏令时重复小时",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "end_hour_utc",
+          "type": "TIMESTAMP",
+          "nullable": false,
+          "meaning": "结束小时UTC",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "transport_code",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "交通方式",
+          "source": "derived",
+          "reference": "dwd.dim_transport.transport_code"
+        },
+        {
+          "name": "origin_zone_key",
+          "type": "INT",
+          "nullable": false,
+          "meaning": "起点区域键，0为无法映射",
+          "source": "derived",
+          "reference": "dwd.dim_zone.zone_key"
+        },
+        {
+          "name": "destination_zone_key",
+          "type": "INT",
+          "nullable": false,
+          "meaning": "终点区域键，0为无法映射",
+          "source": "derived",
+          "reference": "dwd.dim_zone.zone_key"
+        },
+        {
+          "name": "weather_key",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "开始日期对应中央公园天气键，缺失为UNKNOWN",
+          "source": "derived",
+          "reference": "dwd.dim_weather_daily.weather_key"
+        },
+        {
+          "name": "duration_seconds",
+          "type": "DOUBLE",
+          "nullable": false,
+          "meaning": "有效行程时长，秒",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "duration_metric_eligible",
+          "type": "BOOLEAN",
+          "nullable": false,
+          "meaning": "是否纳入时长指标",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "origin_in_nyc",
+          "type": "BOOLEAN",
+          "nullable": false,
+          "meaning": "起点是否可靠匹配纽约五行政区",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "destination_in_nyc",
+          "type": "BOOLEAN",
+          "nullable": false,
+          "meaning": "终点是否可靠匹配纽约五行政区",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "quality_flags_json",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "警告规则代码JSON数组",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "origin_station_id_raw",
+          "type": "STRING",
+          "nullable": true,
+          "meaning": "原始起站编号，保留小数点",
+          "source": "CitiBike.start_station_id",
+          "reference": null
+        },
+        {
+          "name": "destination_station_id_raw",
+          "type": "STRING",
+          "nullable": true,
+          "meaning": "原始终站编号",
+          "source": "CitiBike.end_station_id",
+          "reference": null
+        },
+        {
+          "name": "origin_station_key",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "开始月份历史站点键；未知UNKNOWN",
+          "source": "derived",
+          "reference": "dwd.dim_station.station_key"
+        },
+        {
+          "name": "destination_station_key",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "同一源开始月份历史终站键",
+          "source": "derived",
+          "reference": "dwd.dim_station.station_key"
+        },
+        {
+          "name": "origin_latitude",
+          "type": "DOUBLE",
+          "nullable": true,
+          "meaning": "原始起点纬度",
+          "source": "CitiBike.start_lat",
+          "reference": null
+        },
+        {
+          "name": "origin_longitude",
+          "type": "DOUBLE",
+          "nullable": true,
+          "meaning": "原始起点经度",
+          "source": "CitiBike.start_lng",
+          "reference": null
+        },
+        {
+          "name": "destination_latitude",
+          "type": "DOUBLE",
+          "nullable": true,
+          "meaning": "原始终点纬度",
+          "source": "CitiBike.end_lat",
+          "reference": null
+        },
+        {
+          "name": "destination_longitude",
+          "type": "DOUBLE",
+          "nullable": true,
+          "meaning": "原始终点经度",
+          "source": "CitiBike.end_lng",
+          "reference": null
+        },
+        {
+          "name": "bike_type_raw",
+          "type": "STRING",
+          "nullable": true,
+          "meaning": "源车型",
+          "source": "CitiBike.rideable_type",
+          "reference": null
+        },
+        {
+          "name": "bike_type_code",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "规范化车型",
+          "source": "derived",
+          "reference": "dwd.dim_bike_type.bike_type_code"
+        },
+        {
+          "name": "member_type",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "member/casual/unknown",
+          "source": "CitiBike.member_casual",
+          "reference": null
+        },
+        {
+          "name": "content_fingerprint",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "同ride_id比较内容是否冲突",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "source_record_key",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "原始记录定位键",
+          "source": "ods.source_record.record_key",
+          "reference": "ods.source_record.record_key"
+        },
+        {
+          "name": "batch_id",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "加工批次",
+          "source": "ops.ingest_batch.batch_id",
+          "reference": "ops.ingest_batch.batch_id"
+        },
+        {
+          "name": "rule_version",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "转换与质量规则版本",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "processed_at_utc",
+          "type": "TIMESTAMP",
+          "nullable": false,
+          "meaning": "加工时刻，UTC瞬时值",
+          "source": "derived",
+          "reference": null
+        }
+      ],
+      "serving": false,
+      "dataset_id": null,
+      "storage": "delta",
+      "location": "/workspace/data/dwd/fact_bike_trip"
+    },
+    {
+      "name": "dws.trip_day",
+      "title": "出发行程日汇总",
+      "grain": "开始日期×交通方式",
+      "logical_key": [
+        "service_date",
+        "transport_code"
+      ],
+      "partition_by": [
+        "service_date"
+      ],
+      "upstream": [
+        "dwd.fact_taxi_trip",
+        "dwd.fact_bike_trip"
+      ],
+      "columns": [
+        {
+          "name": "service_date",
+          "type": "DATE",
+          "nullable": false,
+          "meaning": "纽约开始日期",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "transport_code",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "交通方式",
+          "source": "derived",
+          "reference": "dwd.dim_transport.transport_code"
+        },
+        {
+          "name": "trip_count",
+          "type": "BIGINT",
+          "nullable": false,
+          "meaning": "核心有效出发行程数",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "duration_sum_seconds",
+          "type": "DOUBLE",
+          "nullable": false,
+          "meaning": "时长指标有效记录秒数总和",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "duration_count",
+          "type": "BIGINT",
+          "nullable": false,
+          "meaning": "时长指标分母",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "distance_sum_km",
+          "type": "DOUBLE",
+          "nullable": true,
+          "meaning": "出租车有效距离之和；骑行为NULL",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "distance_count",
+          "type": "BIGINT",
+          "nullable": true,
+          "meaning": "出租车距离分母；骑行为NULL",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "origin_mapped_count",
+          "type": "BIGINT",
+          "nullable": false,
+          "meaning": "起点匹配纽约区域的行程数",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "destination_mapped_count",
+          "type": "BIGINT",
+          "nullable": false,
+          "meaning": "终点匹配纽约区域的行程数",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "od_mapped_count",
+          "type": "BIGINT",
+          "nullable": false,
+          "meaning": "两端均匹配纽约区域的行程数",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "source_complete",
+          "type": "BOOLEAN",
+          "nullable": false,
+          "meaning": "该开始日期来源覆盖完整",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "build_id",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "本次汇总构建ID",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "input_versions_json",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "输入Delta表版本与批次JSON",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "rule_version",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "指标规则版本",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "built_at_utc",
+          "type": "TIMESTAMP",
+          "nullable": false,
+          "meaning": "汇总构建时刻",
+          "source": "derived",
+          "reference": null
+        }
+      ],
+      "serving": false,
+      "dataset_id": null,
+      "storage": "delta",
+      "location": "/workspace/data/dws/trip_day"
+    },
+    {
+      "name": "dws.zone_hour",
+      "title": "事件时间区域小时流量",
+      "grain": "UTC小时×区域×交通方式",
+      "logical_key": [
+        "hour_start_utc",
+        "zone_key",
+        "transport_code"
+      ],
+      "partition_by": [
+        "event_date"
+      ],
+      "upstream": [
+        "dwd.fact_taxi_trip",
+        "dwd.fact_bike_trip"
+      ],
+      "columns": [
+        {
+          "name": "event_date",
+          "type": "DATE",
+          "nullable": false,
+          "meaning": "纽约事件日期",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "hour_start_utc",
+          "type": "TIMESTAMP",
+          "nullable": false,
+          "meaning": "UTC小时唯一标识",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "zone_key",
+          "type": "INT",
+          "nullable": false,
+          "meaning": "纽约区域键",
+          "source": "derived",
+          "reference": "dwd.dim_zone.zone_key"
+        },
+        {
+          "name": "transport_code",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "交通方式",
+          "source": "derived",
+          "reference": "dwd.dim_transport.transport_code"
+        },
+        {
+          "name": "departure_count",
+          "type": "BIGINT",
+          "nullable": true,
+          "meaning": "按开始时刻统计；不完整时NULL",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "arrival_count",
+          "type": "BIGINT",
+          "nullable": true,
+          "meaning": "按结束时刻统计；不完整时NULL",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "departure_complete",
+          "type": "BOOLEAN",
+          "nullable": false,
+          "meaning": "出发输入覆盖完整",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "arrival_complete",
+          "type": "BOOLEAN",
+          "nullable": false,
+          "meaning": "到达所需相邻月份及有效时长范围覆盖完整",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "build_id",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "本次汇总构建ID",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "input_versions_json",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "输入Delta表版本与批次JSON",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "rule_version",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "指标规则版本",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "built_at_utc",
+          "type": "TIMESTAMP",
+          "nullable": false,
+          "meaning": "汇总构建时刻",
+          "source": "derived",
+          "reference": null
+        }
+      ],
+      "serving": false,
+      "dataset_id": null,
+      "storage": "delta",
+      "location": "/workspace/data/dws/zone_hour"
+    },
+    {
+      "name": "dws.od_day",
+      "title": "出发队列OD日汇总",
+      "grain": "开始日期×交通方式×起区×终区",
+      "logical_key": [
+        "service_date",
+        "transport_code",
+        "origin_zone_key",
+        "destination_zone_key"
+      ],
+      "partition_by": [
+        "service_date"
+      ],
+      "upstream": [
+        "dwd.fact_taxi_trip",
+        "dwd.fact_bike_trip"
+      ],
+      "columns": [
+        {
+          "name": "service_date",
+          "type": "DATE",
+          "nullable": false,
+          "meaning": "纽约开始日期",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "transport_code",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "交通方式",
+          "source": "derived",
+          "reference": "dwd.dim_transport.transport_code"
+        },
+        {
+          "name": "origin_zone_key",
+          "type": "INT",
+          "nullable": false,
+          "meaning": "起区",
+          "source": "derived",
+          "reference": "dwd.dim_zone.zone_key"
+        },
+        {
+          "name": "destination_zone_key",
+          "type": "INT",
+          "nullable": false,
+          "meaning": "终区",
+          "source": "derived",
+          "reference": "dwd.dim_zone.zone_key"
+        },
+        {
+          "name": "trip_count",
+          "type": "BIGINT",
+          "nullable": false,
+          "meaning": "两端均匹配纽约区域的行程数",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "build_id",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "本次汇总构建ID",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "input_versions_json",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "输入Delta表版本与批次JSON",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "rule_version",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "指标规则版本",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "built_at_utc",
+          "type": "TIMESTAMP",
+          "nullable": false,
+          "meaning": "汇总构建时刻",
+          "source": "derived",
+          "reference": null
+        }
+      ],
+      "serving": false,
+      "dataset_id": null,
+      "storage": "delta",
+      "location": "/workspace/data/dws/od_day"
+    },
+    {
+      "name": "dws.weather_group",
+      "title": "天气分组汇总",
+      "grain": "月份×交通方式×工作日标记×降水组",
+      "logical_key": [
+        "month_start",
+        "transport_code",
+        "is_weekday",
+        "precipitation_group"
+      ],
+      "partition_by": [
+        "month_start"
+      ],
+      "upstream": [
+        "dws.trip_day",
+        "dwd.dim_date",
+        "dwd.dim_weather_daily"
+      ],
+      "columns": [
+        {
+          "name": "month_start",
+          "type": "DATE",
+          "nullable": false,
+          "meaning": "月份首日",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "transport_code",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "交通方式",
+          "source": "derived",
+          "reference": "dwd.dim_transport.transport_code"
+        },
+        {
+          "name": "is_weekday",
+          "type": "BOOLEAN",
+          "nullable": false,
+          "meaning": "周一至周五",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "precipitation_group",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "降水组",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "complete_days",
+          "type": "BIGINT",
+          "nullable": false,
+          "meaning": "来源与天气均完整的日期数，包括真实零行程日",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "trip_count",
+          "type": "BIGINT",
+          "nullable": false,
+          "meaning": "对应完整日期行程量",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "build_id",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "本次汇总构建ID",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "input_versions_json",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "输入Delta表版本与批次JSON",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "rule_version",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "指标规则版本",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "built_at_utc",
+          "type": "TIMESTAMP",
+          "nullable": false,
+          "meaning": "汇总构建时刻",
+          "source": "derived",
+          "reference": null
+        }
+      ],
+      "serving": false,
+      "dataset_id": null,
+      "storage": "delta",
+      "location": "/workspace/data/dws/weather_group"
+    },
+    {
+      "name": "ads.trip_day",
+      "title": "出行总览数据",
+      "grain": "日期×交通方式×发布版本",
+      "logical_key": [
+        "release_id",
+        "service_date",
+        "transport_code"
+      ],
+      "partition_by": [
+        "service_date"
+      ],
+      "upstream": [
+        "dws.trip_day",
+        "dwd.dim_transport"
+      ],
+      "columns": [
+        {
+          "name": "release_id",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "不可变发布ID",
+          "source": "derived",
+          "reference": "ops.publication.release_id"
+        },
+        {
+          "name": "service_date",
+          "type": "DATE",
+          "nullable": false,
+          "meaning": "纽约开始日期",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "transport_code",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "交通方式",
+          "source": "derived",
+          "reference": "dwd.dim_transport.transport_code"
+        },
+        {
+          "name": "trip_count",
+          "type": "BIGINT",
+          "nullable": false,
+          "meaning": "核心有效出发行程数",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "duration_sum_seconds",
+          "type": "DOUBLE",
+          "nullable": false,
+          "meaning": "时长指标有效记录秒数总和",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "duration_count",
+          "type": "BIGINT",
+          "nullable": false,
+          "meaning": "时长指标分母",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "distance_sum_km",
+          "type": "DOUBLE",
+          "nullable": true,
+          "meaning": "出租车有效距离之和；骑行为NULL",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "distance_count",
+          "type": "BIGINT",
+          "nullable": true,
+          "meaning": "出租车距离分母；骑行为NULL",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "origin_mapped_count",
+          "type": "BIGINT",
+          "nullable": false,
+          "meaning": "起点匹配纽约区域的行程数",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "destination_mapped_count",
+          "type": "BIGINT",
+          "nullable": false,
+          "meaning": "终点匹配纽约区域的行程数",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "od_mapped_count",
+          "type": "BIGINT",
+          "nullable": false,
+          "meaning": "两端均匹配纽约区域的行程数",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "source_complete",
+          "type": "BOOLEAN",
+          "nullable": false,
+          "meaning": "该开始日期来源覆盖完整",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "transport_name",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "交通方式中文名",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "average_duration_minutes",
+          "type": "DOUBLE",
+          "nullable": true,
+          "meaning": "duration_sum_seconds/duration_count/60",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "average_taxi_distance_km",
+          "type": "DOUBLE",
+          "nullable": true,
+          "meaning": "distance_sum_km/distance_count；骑行为NULL",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "origin_mapping_rate",
+          "type": "DOUBLE",
+          "nullable": true,
+          "meaning": "origin_mapped_count/trip_count，0至1",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "published_at_utc",
+          "type": "TIMESTAMP",
+          "nullable": false,
+          "meaning": "结果构建完成时刻",
+          "source": "derived",
+          "reference": null
+        }
+      ],
+      "serving": true,
+      "dataset_id": "historical",
+      "storage": "delta",
+      "location": "/workspace/data/ads/trip_day"
+    },
+    {
+      "name": "ads.zone_hour",
+      "title": "区域时空与净流入数据",
+      "grain": "UTC小时×区域×交通方式×发布版本",
+      "logical_key": [
+        "release_id",
+        "hour_start_utc",
+        "zone_key",
+        "transport_code"
+      ],
+      "partition_by": [
+        "event_date"
+      ],
+      "upstream": [
+        "dws.zone_hour",
+        "dwd.dim_zone"
+      ],
+      "columns": [
+        {
+          "name": "release_id",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "不可变发布ID",
+          "source": "derived",
+          "reference": "ops.publication.release_id"
+        },
+        {
+          "name": "event_date",
+          "type": "DATE",
+          "nullable": false,
+          "meaning": "纽约事件日期",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "hour_start_utc",
+          "type": "TIMESTAMP",
+          "nullable": false,
+          "meaning": "UTC小时唯一标识",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "zone_key",
+          "type": "INT",
+          "nullable": false,
+          "meaning": "纽约区域键",
+          "source": "derived",
+          "reference": "dwd.dim_zone.zone_key"
+        },
+        {
+          "name": "transport_code",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "交通方式",
+          "source": "derived",
+          "reference": "dwd.dim_transport.transport_code"
+        },
+        {
+          "name": "departure_count",
+          "type": "BIGINT",
+          "nullable": true,
+          "meaning": "按开始时刻统计；不完整时NULL",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "arrival_count",
+          "type": "BIGINT",
+          "nullable": true,
+          "meaning": "按结束时刻统计；不完整时NULL",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "departure_complete",
+          "type": "BOOLEAN",
+          "nullable": false,
+          "meaning": "出发输入覆盖完整",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "arrival_complete",
+          "type": "BOOLEAN",
+          "nullable": false,
+          "meaning": "到达所需相邻月份及有效时长范围覆盖完整",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "zone_name",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "区域名称",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "borough",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "行政区",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "net_inflow",
+          "type": "BIGINT",
+          "nullable": true,
+          "meaning": "仅两端完整时arrival_count-departure_count",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "published_at_utc",
+          "type": "TIMESTAMP",
+          "nullable": false,
+          "meaning": "结果构建完成时刻",
+          "source": "derived",
+          "reference": null
+        }
+      ],
+      "serving": true,
+      "dataset_id": "historical",
+      "storage": "delta",
+      "location": "/workspace/data/ads/zone_hour"
+    },
+    {
+      "name": "ads.od_day",
+      "title": "OD排行数据",
+      "grain": "开始日期×交通方式×起终区×发布版本",
+      "logical_key": [
+        "release_id",
+        "service_date",
+        "transport_code",
+        "origin_zone_key",
+        "destination_zone_key"
+      ],
+      "partition_by": [
+        "service_date"
+      ],
+      "upstream": [
+        "dws.od_day",
+        "dwd.dim_zone"
+      ],
+      "columns": [
+        {
+          "name": "release_id",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "不可变发布ID",
+          "source": "derived",
+          "reference": "ops.publication.release_id"
+        },
+        {
+          "name": "service_date",
+          "type": "DATE",
+          "nullable": false,
+          "meaning": "纽约开始日期",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "transport_code",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "交通方式",
+          "source": "derived",
+          "reference": "dwd.dim_transport.transport_code"
+        },
+        {
+          "name": "origin_zone_key",
+          "type": "INT",
+          "nullable": false,
+          "meaning": "起区",
+          "source": "derived",
+          "reference": "dwd.dim_zone.zone_key"
+        },
+        {
+          "name": "destination_zone_key",
+          "type": "INT",
+          "nullable": false,
+          "meaning": "终区",
+          "source": "derived",
+          "reference": "dwd.dim_zone.zone_key"
+        },
+        {
+          "name": "trip_count",
+          "type": "BIGINT",
+          "nullable": false,
+          "meaning": "两端均匹配纽约区域的行程数",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "origin_zone_name",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "起区名称",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "destination_zone_name",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "终区名称",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "published_at_utc",
+          "type": "TIMESTAMP",
+          "nullable": false,
+          "meaning": "结果构建完成时刻",
+          "source": "derived",
+          "reference": null
+        }
+      ],
+      "serving": true,
+      "dataset_id": "historical",
+      "storage": "delta",
+      "location": "/workspace/data/ads/od_day"
+    },
+    {
+      "name": "ads.weather_group",
+      "title": "天气对比数据",
+      "grain": "月份×交通方式×工作日标记×降水组×发布版本",
+      "logical_key": [
+        "release_id",
+        "month_start",
+        "transport_code",
+        "is_weekday",
+        "precipitation_group"
+      ],
+      "partition_by": [
+        "month_start"
+      ],
+      "upstream": [
+        "dws.weather_group"
+      ],
+      "columns": [
+        {
+          "name": "release_id",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "不可变发布ID",
+          "source": "derived",
+          "reference": "ops.publication.release_id"
+        },
+        {
+          "name": "month_start",
+          "type": "DATE",
+          "nullable": false,
+          "meaning": "月份首日",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "transport_code",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "交通方式",
+          "source": "derived",
+          "reference": "dwd.dim_transport.transport_code"
+        },
+        {
+          "name": "is_weekday",
+          "type": "BOOLEAN",
+          "nullable": false,
+          "meaning": "周一至周五",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "precipitation_group",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "降水组",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "complete_days",
+          "type": "BIGINT",
+          "nullable": false,
+          "meaning": "来源与天气均完整的日期数，包括真实零行程日",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "trip_count",
+          "type": "BIGINT",
+          "nullable": false,
+          "meaning": "对应完整日期行程量",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "daily_average_trips",
+          "type": "DOUBLE",
+          "nullable": true,
+          "meaning": "trip_count/complete_days",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "baseline_daily_average",
+          "type": "DOUBLE",
+          "nullable": true,
+          "meaning": "同月同方式同周类型的no_measurable日均量",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "demand_ratio",
+          "type": "DOUBLE",
+          "nullable": true,
+          "meaning": "daily_average_trips/baseline_daily_average",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "published_at_utc",
+          "type": "TIMESTAMP",
+          "nullable": false,
+          "meaning": "结果构建完成时刻",
+          "source": "derived",
+          "reference": null
+        }
+      ],
+      "serving": true,
+      "dataset_id": "historical",
+      "storage": "delta",
+      "location": "/workspace/data/ads/weather_group"
+    },
+    {
+      "name": "ads.quality_batch",
+      "title": "质量批次总览",
+      "grain": "批次ID×发布版本",
+      "logical_key": [
+        "release_id",
+        "batch_id"
+      ],
+      "partition_by": [],
+      "upstream": [
+        "ops.ingest_batch"
+      ],
+      "columns": [
+        {
+          "name": "release_id",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "不可变发布ID",
+          "source": "derived",
+          "reference": "ops.publication.release_id"
+        },
+        {
+          "name": "batch_id",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "执行尝试ID",
+          "source": "derived",
+          "reference": "ops.ingest_batch.batch_id"
+        },
+        {
+          "name": "source_id",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "数据源",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "source_period",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "期间",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "status",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "运行状态",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "input_rows",
+          "type": "BIGINT",
+          "nullable": false,
+          "meaning": "解析成功输入",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "accepted_rows",
+          "type": "BIGINT",
+          "nullable": false,
+          "meaning": "接收",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "quarantined_rows",
+          "type": "BIGINT",
+          "nullable": false,
+          "meaning": "不同记录隔离",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "duplicate_skipped_rows",
+          "type": "BIGINT",
+          "nullable": false,
+          "meaning": "重复跳过",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "out_of_scope_rows",
+          "type": "BIGINT",
+          "nullable": false,
+          "meaning": "范围外",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "parse_error_rows",
+          "type": "BIGINT",
+          "nullable": false,
+          "meaning": "解析失败",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "acceptance_rate",
+          "type": "DOUBLE",
+          "nullable": true,
+          "meaning": "accepted_rows/input_rows",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "last_success_at_utc",
+          "type": "TIMESTAMP",
+          "nullable": true,
+          "meaning": "最近成功时刻",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "published_at_utc",
+          "type": "TIMESTAMP",
+          "nullable": false,
+          "meaning": "结果构建完成时刻",
+          "source": "derived",
+          "reference": null
+        }
+      ],
+      "serving": true,
+      "dataset_id": "quality",
+      "storage": "delta",
+      "location": "/workspace/data/ads/quality_batch"
+    },
+    {
+      "name": "ads.quality_rule",
+      "title": "质量规则明细",
+      "grain": "规则执行结果ID×发布版本",
+      "logical_key": [
+        "release_id",
+        "result_id"
+      ],
+      "partition_by": [],
+      "upstream": [
+        "ops.quality_result"
+      ],
+      "columns": [
+        {
+          "name": "release_id",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "不可变发布ID",
+          "source": "derived",
+          "reference": "ops.publication.release_id"
+        },
+        {
+          "name": "result_id",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "规则执行唯一键",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "batch_id",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "执行批次",
+          "source": "derived",
+          "reference": "ops.ingest_batch.batch_id"
+        },
+        {
+          "name": "table_name",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "被检查表名",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "partition_spec",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "分区条件JSON",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "rule_id",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "规则代码",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "severity",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "block/warn",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "checked_rows",
+          "type": "BIGINT",
+          "nullable": false,
+          "meaning": "规则适用记录量",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "failed_rows",
+          "type": "BIGINT",
+          "nullable": false,
+          "meaning": "失败记录量",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "passed",
+          "type": "BOOLEAN",
+          "nullable": false,
+          "meaning": "是否满足该规则的发布阈值",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "details_json",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "错误范围与样例定位JSON",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "checked_at_utc",
+          "type": "TIMESTAMP",
+          "nullable": false,
+          "meaning": "检查时刻",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "published_at_utc",
+          "type": "TIMESTAMP",
+          "nullable": false,
+          "meaning": "结果构建完成时刻",
+          "source": "derived",
+          "reference": null
+        }
+      ],
+      "serving": true,
+      "dataset_id": "quality",
+      "storage": "delta",
+      "location": "/workspace/data/ads/quality_rule"
+    },
+    {
+      "name": "dws.trip_hour",
+      "title": "出发行程小时汇总",
+      "grain": "开始UTC小时×交通方式",
+      "logical_key": [
+        "hour_start_utc",
+        "transport_code"
+      ],
+      "partition_by": [
+        "service_date"
+      ],
+      "upstream": [
+        "dwd.fact_taxi_trip",
+        "dwd.fact_bike_trip"
+      ],
+      "columns": [
+        {
+          "name": "hour_start_utc",
+          "type": "TIMESTAMP",
+          "nullable": false,
+          "meaning": "开始UTC小时，夏令时重复小时分开",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "service_date",
+          "type": "DATE",
+          "nullable": false,
+          "meaning": "纽约开始日期",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "transport_code",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "交通方式",
+          "source": "derived",
+          "reference": "dwd.dim_transport.transport_code"
+        },
+        {
+          "name": "trip_count",
+          "type": "BIGINT",
+          "nullable": false,
+          "meaning": "核心有效出发行程数",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "duration_sum_seconds",
+          "type": "DOUBLE",
+          "nullable": false,
+          "meaning": "时长指标有效记录秒数总和",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "duration_count",
+          "type": "BIGINT",
+          "nullable": false,
+          "meaning": "时长指标分母",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "distance_sum_km",
+          "type": "DOUBLE",
+          "nullable": true,
+          "meaning": "出租车有效距离之和；骑行为NULL",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "distance_count",
+          "type": "BIGINT",
+          "nullable": true,
+          "meaning": "出租车距离分母；骑行为NULL",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "origin_mapped_count",
+          "type": "BIGINT",
+          "nullable": false,
+          "meaning": "起点匹配纽约区域的行程数",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "destination_mapped_count",
+          "type": "BIGINT",
+          "nullable": false,
+          "meaning": "终点匹配纽约区域的行程数",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "od_mapped_count",
+          "type": "BIGINT",
+          "nullable": false,
+          "meaning": "两端均匹配纽约区域的行程数",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "source_complete",
+          "type": "BOOLEAN",
+          "nullable": false,
+          "meaning": "该开始日期来源覆盖完整",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "build_id",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "本次汇总构建ID",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "input_versions_json",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "输入Delta表版本与批次JSON",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "rule_version",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "指标规则版本",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "built_at_utc",
+          "type": "TIMESTAMP",
+          "nullable": false,
+          "meaning": "汇总构建时刻",
+          "source": "derived",
+          "reference": null
+        }
+      ],
+      "serving": false,
+      "dataset_id": null,
+      "storage": "delta",
+      "location": "/workspace/data/dws/trip_hour"
+    },
+    {
+      "name": "ads.trip_hour",
+      "title": "小时趋势数据",
+      "grain": "开始UTC小时×交通方式×发布版本",
+      "logical_key": [
+        "release_id",
+        "hour_start_utc",
+        "transport_code"
+      ],
+      "partition_by": [
+        "service_date"
+      ],
+      "upstream": [
+        "dws.trip_hour",
+        "dwd.dim_transport"
+      ],
+      "columns": [
+        {
+          "name": "release_id",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "不可变发布ID",
+          "source": "derived",
+          "reference": "ops.publication.release_id"
+        },
+        {
+          "name": "service_date",
+          "type": "DATE",
+          "nullable": false,
+          "meaning": "纽约开始日期",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "transport_code",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "交通方式",
+          "source": "derived",
+          "reference": "dwd.dim_transport.transport_code"
+        },
+        {
+          "name": "trip_count",
+          "type": "BIGINT",
+          "nullable": false,
+          "meaning": "核心有效出发行程数",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "duration_sum_seconds",
+          "type": "DOUBLE",
+          "nullable": false,
+          "meaning": "时长指标有效记录秒数总和",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "duration_count",
+          "type": "BIGINT",
+          "nullable": false,
+          "meaning": "时长指标分母",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "distance_sum_km",
+          "type": "DOUBLE",
+          "nullable": true,
+          "meaning": "出租车有效距离之和；骑行为NULL",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "distance_count",
+          "type": "BIGINT",
+          "nullable": true,
+          "meaning": "出租车距离分母；骑行为NULL",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "origin_mapped_count",
+          "type": "BIGINT",
+          "nullable": false,
+          "meaning": "起点匹配纽约区域的行程数",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "destination_mapped_count",
+          "type": "BIGINT",
+          "nullable": false,
+          "meaning": "终点匹配纽约区域的行程数",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "od_mapped_count",
+          "type": "BIGINT",
+          "nullable": false,
+          "meaning": "两端均匹配纽约区域的行程数",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "source_complete",
+          "type": "BOOLEAN",
+          "nullable": false,
+          "meaning": "该开始日期来源覆盖完整",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "transport_name",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "交通方式中文名",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "average_duration_minutes",
+          "type": "DOUBLE",
+          "nullable": true,
+          "meaning": "duration_sum_seconds/duration_count/60",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "average_taxi_distance_km",
+          "type": "DOUBLE",
+          "nullable": true,
+          "meaning": "distance_sum_km/distance_count；骑行为NULL",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "origin_mapping_rate",
+          "type": "DOUBLE",
+          "nullable": true,
+          "meaning": "origin_mapped_count/trip_count，0至1",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "hour_start_utc",
+          "type": "TIMESTAMP",
+          "nullable": false,
+          "meaning": "开始UTC小时，展示时转换纽约时区",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "published_at_utc",
+          "type": "TIMESTAMP",
+          "nullable": false,
+          "meaning": "结果构建完成时刻",
+          "source": "derived",
+          "reference": null
+        }
+      ],
+      "serving": true,
+      "dataset_id": "historical",
+      "storage": "delta",
+      "location": "/workspace/data/ads/trip_hour"
+    },
+    {
+      "name": "ads.release_pointer",
+      "title": "当前发布指针",
+      "grain": "一个数据集",
+      "logical_key": [
+        "dataset_id"
+      ],
+      "partition_by": [],
+      "upstream": [],
+      "columns": [
+        {
+          "name": "dataset_id",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "historical/quality",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "release_id",
+          "type": "STRING",
+          "nullable": false,
+          "meaning": "当前启用版本",
+          "source": "derived",
+          "reference": null
+        },
+        {
+          "name": "activated_at_utc",
+          "type": "TIMESTAMP",
+          "nullable": false,
+          "meaning": "指针启用时刻",
+          "source": "derived",
+          "reference": null
+        }
+      ],
+      "serving": false,
+      "dataset_id": null,
+      "storage": "clickhouse",
+      "location": null
+    }
+  ]
+}

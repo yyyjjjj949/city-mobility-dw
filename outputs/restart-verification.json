@@ -1,0 +1,121 @@
+{
+  "passed": true,
+  "checked_at_utc": "2026-11-14T10:00:41.270232+00:00",
+  "before_services": [
+    [
+      "airflow",
+      "running",
+      "healthy"
+    ],
+    [
+      "clickhouse",
+      "running",
+      "healthy"
+    ],
+    [
+      "postgres",
+      "running",
+      "healthy"
+    ],
+    [
+      "spark",
+      "running",
+      ""
+    ],
+    [
+      "superset",
+      "running",
+      "healthy"
+    ]
+  ],
+  "after_services": [
+    [
+      "airflow",
+      "running",
+      "healthy"
+    ],
+    [
+      "clickhouse",
+      "running",
+      "healthy"
+    ],
+    [
+      "postgres",
+      "running",
+      "healthy"
+    ],
+    [
+      "spark",
+      "running",
+      ""
+    ],
+    [
+      "superset",
+      "running",
+      "healthy"
+    ]
+  ],
+  "superset_admin_login": true,
+  "airflow_admin_login": true,
+  "before": {
+    "pointers": [
+      {
+        "dataset_id": "historical",
+        "release_id": "fa3ddf3a864140a7b6893836d3215a39"
+      },
+      {
+        "dataset_id": "quality",
+        "release_id": "fa3ddf3a864140a7b6893836d3215a39"
+      }
+    ],
+    "trip_count": 9012795,
+    "active_view_counts": {
+      "trip_day": 60,
+      "trip_hour": 1440,
+      "zone_hour": 377280,
+      "od_day": 637450,
+      "weather_group": 12,
+      "quality_batch": 2,
+      "quality_rule": 16
+    },
+    "fact_delta_versions": {
+      "fact_taxi_trip": 2,
+      "fact_bike_trip": 2
+    }
+  },
+  "after": {
+    "pointers": [
+      {
+        "dataset_id": "historical",
+        "release_id": "fa3ddf3a864140a7b6893836d3215a39"
+      },
+      {
+        "dataset_id": "quality",
+        "release_id": "fa3ddf3a864140a7b6893836d3215a39"
+      }
+    ],
+    "trip_count": 9012795,
+    "active_view_counts": {
+      "trip_day": 60,
+      "trip_hour": 1440,
+      "zone_hour": 377280,
+      "od_day": 637450,
+      "weather_group": 12,
+      "quality_batch": 2,
+      "quality_rule": 16
+    },
+    "fact_delta_versions": {
+      "fact_taxi_trip": 2,
+      "fact_bike_trip": 2
+    }
+  },
+  "map_route": true,
+  "airflow_scheduler_health": true,
+  "worker_state": {
+    "running": true,
+    "pid": 10108,
+    "checked_at_utc": "2026-11-14T10:00:40.824648+00:00",
+    "job_id": null,
+    "action": null
+  }
+}

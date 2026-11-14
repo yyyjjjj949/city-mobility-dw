@@ -1,0 +1,61 @@
+{
+  "passed": true,
+  "checked_at_utc": "2026-11-14T06:35:31.229033+00:00",
+  "dag_run_id": "reject_unavailable_month_42d9acdbfbfc4b75a6aecdc55fb6abac",
+  "unsupported_month": "2025-07",
+  "upstream_failed": true,
+  "downstream_not_executed": true,
+  "active_publication_unchanged": true,
+  "tasks": [
+    {
+      "task_id": "verify_ods",
+      "state": "upstream_failed",
+      "try_number": 0
+    },
+    {
+      "task_id": "build_dwd",
+      "state": "upstream_failed",
+      "try_number": 0
+    },
+    {
+      "task_id": "verify_dwd",
+      "state": "upstream_failed",
+      "try_number": 0
+    },
+    {
+      "task_id": "build_marts",
+      "state": "upstream_failed",
+      "try_number": 0
+    },
+    {
+      "task_id": "register_dashboards",
+      "state": "upstream_failed",
+      "try_number": 0
+    },
+    {
+      "task_id": "verify_charts",
+      "state": "upstream_failed",
+      "try_number": 0
+    },
+    {
+      "task_id": "export_map",
+      "state": "upstream_failed",
+      "try_number": 0
+    },
+    {
+      "task_id": "export_preview",
+      "state": "upstream_failed",
+      "try_number": 0
+    },
+    {
+      "task_id": "inspect_project",
+      "state": "upstream_failed",
+      "try_number": 0
+    },
+    {
+      "task_id": "ingest_ods",
+      "state": "failed",
+      "try_number": 2
+    }
+  ]
+}

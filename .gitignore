@@ -1,0 +1,31 @@
+# Local credentials and databases
+.env
+.env.*
+!.env.example
+config/airflow/passwords.json
+*credentials*
+*password-change*
+*.pem
+*.key
+*.dump
+*.sqlite*
+# Large data, Docker artifacts and machine runtime
+data/*
+!data/samples/
+work/
+backups/
+images/
+installers/
+runtime/
+*.zip
+*.tar
+*.gz
+*.exe
+*.part
+# Python and editor cache
+__pycache__/
+*.py[cod]
+.venv/
+.idea/
+.vscode/
+*.log

@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "checked_at_utc": "2026-11-03T10:13:12.209294+00:00",
+  "active_datasets": [
+    "historical",
+    "quality"
+  ],
+  "business_rows_deleted": false,
+  "retired_views": [
+    "bi_station_current",
+    "bi_station_latest",
+    "bi_station_hour"
+  ]
+}

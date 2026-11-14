@@ -1,0 +1,206 @@
+{
+  "datasets": [
+    {
+      "name": "bi_trip_day",
+      "id": 9,
+      "virtual": false
+    },
+    {
+      "name": "bi_trip_hour",
+      "id": 10,
+      "virtual": false
+    },
+    {
+      "name": "bi_zone_hour",
+      "id": 11,
+      "virtual": false
+    },
+    {
+      "name": "bi_od_day",
+      "id": 12,
+      "virtual": false
+    },
+    {
+      "name": "bi_weather_group",
+      "id": 13,
+      "virtual": false
+    },
+    {
+      "name": "bi_quality_batch",
+      "id": 14,
+      "virtual": false
+    },
+    {
+      "name": "bi_quality_rule",
+      "id": 15,
+      "virtual": false
+    },
+    {
+      "name": "city_hour_profile",
+      "id": 16,
+      "virtual": true
+    },
+    {
+      "name": "city_weather_compare",
+      "id": 17,
+      "virtual": true
+    },
+    {
+      "name": "city_quality_summary",
+      "id": 18,
+      "virtual": true
+    },
+    {
+      "name": "city_od_ranking",
+      "id": 19,
+      "virtual": true
+    },
+    {
+      "name": "city_mapping_coverage",
+      "id": 20,
+      "virtual": true
+    }
+  ],
+  "charts": [
+    {
+      "id": 1,
+      "name": "已接入两类有效行程",
+      "dataset": "bi_trip_day",
+      "url": "http://localhost:8088/explore/?slice_id=1"
+    },
+    {
+      "id": 2,
+      "name": "黄色出租车行程",
+      "dataset": "bi_trip_day",
+      "url": "http://localhost:8088/explore/?slice_id=2"
+    },
+    {
+      "id": 3,
+      "name": "共享单车骑行",
+      "dataset": "bi_trip_day",
+      "url": "http://localhost:8088/explore/?slice_id=3"
+    },
+    {
+      "id": 4,
+      "name": "每日出发行程趋势",
+      "dataset": "bi_trip_day",
+      "url": "http://localhost:8088/explore/?slice_id=4"
+    },
+    {
+      "id": 5,
+      "name": "纽约当地小时 · 日均出发量",
+      "dataset": "city_hour_profile",
+      "url": "http://localhost:8088/explore/?slice_id=5"
+    },
+    {
+      "id": 6,
+      "name": "每日平均行程时长",
+      "dataset": "bi_trip_day",
+      "url": "http://localhost:8088/explore/?slice_id=6"
+    },
+    {
+      "id": 7,
+      "name": "每日出租车平均距离（有效距离记录）",
+      "dataset": "bi_trip_day",
+      "url": "http://localhost:8088/explore/?slice_id=7"
+    },
+    {
+      "id": 8,
+      "name": "出发量最多的 15 个纽约区域",
+      "dataset": "bi_zone_hour",
+      "url": "http://localhost:8088/explore/?slice_id=8"
+    },
+    {
+      "id": 9,
+      "name": "各行政区出发量",
+      "dataset": "bi_zone_hour",
+      "url": "http://localhost:8088/explore/?slice_id=9"
+    },
+    {
+      "id": 10,
+      "name": "热门 OD · 前 20 条",
+      "dataset": "city_od_ranking",
+      "url": "http://localhost:8088/explore/?slice_id=10"
+    },
+    {
+      "id": 11,
+      "name": "区域匹配覆盖率",
+      "dataset": "city_mapping_coverage",
+      "url": "http://localhost:8088/explore/?slice_id=11"
+    },
+    {
+      "id": 12,
+      "name": "周一至周五 · 不同降水组的日均出行量",
+      "dataset": "city_weather_compare",
+      "url": "http://localhost:8088/explore/?slice_id=12"
+    },
+    {
+      "id": 13,
+      "name": "周末 · 不同降水组的日均出行量",
+      "dataset": "city_weather_compare",
+      "url": "http://localhost:8088/explore/?slice_id=13"
+    },
+    {
+      "id": 14,
+      "name": "天气对比样本与需求比率",
+      "dataset": "city_weather_compare",
+      "url": "http://localhost:8088/explore/?slice_id=14"
+    },
+    {
+      "id": 15,
+      "name": "原始行程输入",
+      "dataset": "bi_quality_batch",
+      "url": "http://localhost:8088/explore/?slice_id=15"
+    },
+    {
+      "id": 16,
+      "name": "异常隔离记录",
+      "dataset": "bi_quality_batch",
+      "url": "http://localhost:8088/explore/?slice_id=16"
+    },
+    {
+      "id": 17,
+      "name": "六月范围外记录",
+      "dataset": "bi_quality_batch",
+      "url": "http://localhost:8088/explore/?slice_id=17"
+    },
+    {
+      "id": 18,
+      "name": "两类来源的记录去向",
+      "dataset": "city_quality_summary",
+      "url": "http://localhost:8088/explore/?slice_id=18"
+    },
+    {
+      "id": 19,
+      "name": "清洗质量规则与警告",
+      "dataset": "bi_quality_rule",
+      "url": "http://localhost:8088/explore/?slice_id=19"
+    }
+  ],
+  "dashboards": [
+    {
+      "id": 1,
+      "title": "城市出行 · 历史总览",
+      "slug": "city-mobility-overview",
+      "url": "http://localhost:8088/superset/dashboard/city-mobility-overview/"
+    },
+    {
+      "id": 2,
+      "title": "城市出行 · 区域与 OD",
+      "slug": "city-mobility-spatial",
+      "url": "http://localhost:8088/superset/dashboard/city-mobility-spatial/"
+    },
+    {
+      "id": 3,
+      "title": "城市出行 · 天气对比",
+      "slug": "city-mobility-weather",
+      "url": "http://localhost:8088/superset/dashboard/city-mobility-weather/"
+    },
+    {
+      "id": 4,
+      "title": "城市出行 · 数据质量",
+      "slug": "city-mobility-quality",
+      "url": "http://localhost:8088/superset/dashboard/city-mobility-quality/"
+    }
+  ]
+}

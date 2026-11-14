@@ -1,0 +1,579 @@
+{
+  "run_id": "27cd1a6bc1ff46f9933aad9065f46797",
+  "month": "2025-06",
+  "input_fingerprint": "b9b5e9f3c9ee4c8cd6c746c53f6431b08273f574d869fb030d85cdd811f88099",
+  "ods_version": 4,
+  "rule_version": "2.0-offline",
+  "status": "validated",
+  "started_at_utc": "2026-11-14T06:24:50.649271+00:00",
+  "dimensions": {
+    "dwd.dim_zone": 266,
+    "dwd.dim_date": 366,
+    "dwd.dim_time": 1441,
+    "dwd.dim_transport": 3,
+    "dwd.dim_weather_daily": 31,
+    "dwd.dim_station": 4782,
+    "dwd.dim_bike_type": 3
+  },
+  "sources": {
+    "tlc_yellow": {
+      "input_rows": 4322960,
+      "accepted_rows": 4254337,
+      "quarantined_rows": 68603,
+      "duplicate_skipped_rows": 0,
+      "out_of_scope_rows": 20,
+      "parse_error_rows": 0,
+      "batch_id": "5fb6eff6693a9317f84f59dc87002d077cb1e2c09bbaa85b3a6e1868f3f21089",
+      "profile": {
+        "rows": 4254337,
+        "duration_sum_seconds": 4511159855.0,
+        "duration_min_seconds": 1.0,
+        "duration_max_seconds": 86399.0,
+        "origin_mapped_rows": 4245299,
+        "destination_mapped_rows": 4218510,
+        "both_mapped_rows": 4214840,
+        "quality_flag_counts": {
+          "NEGATIVE_AMOUNT": 276302,
+          "Q007": 133077,
+          "PASSENGER_MISSING_OR_ZERO": 1235142,
+          "Q008": 39497,
+          "EXTREME_TOTAL_AMOUNT": 4
+        },
+        "daily": [
+          {
+            "service_date": "2025-06-01",
+            "trips": 129633,
+            "average_duration_seconds": 1029.4244675352727
+          },
+          {
+            "service_date": "2025-06-02",
+            "trips": 112909,
+            "average_duration_seconds": 1024.0043574914312
+          },
+          {
+            "service_date": "2025-06-03",
+            "trips": 138458,
+            "average_duration_seconds": 1034.2997732164267
+          },
+          {
+            "service_date": "2025-06-04",
+            "trips": 156015,
+            "average_duration_seconds": 1121.7378136717623
+          },
+          {
+            "service_date": "2025-06-05",
+            "trips": 174449,
+            "average_duration_seconds": 1108.7583305149356
+          },
+          {
+            "service_date": "2025-06-06",
+            "trips": 161003,
+            "average_duration_seconds": 1084.7206760122483
+          },
+          {
+            "service_date": "2025-06-07",
+            "trips": 161309,
+            "average_duration_seconds": 1019.0550124295606
+          },
+          {
+            "service_date": "2025-06-08",
+            "trips": 137728,
+            "average_duration_seconds": 1066.7251684479554
+          },
+          {
+            "service_date": "2025-06-09",
+            "trips": 126592,
+            "average_duration_seconds": 1048.1611555232557
+          },
+          {
+            "service_date": "2025-06-10",
+            "trips": 138645,
+            "average_duration_seconds": 1089.1460564751703
+          },
+          {
+            "service_date": "2025-06-11",
+            "trips": 149320,
+            "average_duration_seconds": 1094.1691267077417
+          },
+          {
+            "service_date": "2025-06-12",
+            "trips": 164475,
+            "average_duration_seconds": 1132.2611643106854
+          },
+          {
+            "service_date": "2025-06-13",
+            "trips": 144480,
+            "average_duration_seconds": 1058.0266265227021
+          },
+          {
+            "service_date": "2025-06-14",
+            "trips": 144154,
+            "average_duration_seconds": 970.7951218835412
+          },
+          {
+            "service_date": "2025-06-15",
+            "trips": 123091,
+            "average_duration_seconds": 950.4567515090462
+          },
+          {
+            "service_date": "2025-06-16",
+            "trips": 118044,
+            "average_duration_seconds": 1033.878299617092
+          },
+          {
+            "service_date": "2025-06-17",
+            "trips": 134418,
+            "average_duration_seconds": 1070.8495662783257
+          },
+          {
+            "service_date": "2025-06-18",
+            "trips": 154966,
+            "average_duration_seconds": 1063.5527470541924
+          },
+          {
+            "service_date": "2025-06-19",
+            "trips": 141610,
+            "average_duration_seconds": 1009.0464232751924
+          },
+          {
+            "service_date": "2025-06-20",
+            "trips": 138206,
+            "average_duration_seconds": 1100.5271478806999
+          },
+          {
+            "service_date": "2025-06-21",
+            "trips": 154856,
+            "average_duration_seconds": 1029.5402696698868
+          },
+          {
+            "service_date": "2025-06-22",
+            "trips": 133659,
+            "average_duration_seconds": 1020.5420959306892
+          },
+          {
+            "service_date": "2025-06-23",
+            "trips": 139437,
+            "average_duration_seconds": 1102.7007465737215
+          },
+          {
+            "service_date": "2025-06-24",
+            "trips": 155185,
+            "average_duration_seconds": 1042.5613042497664
+          },
+          {
+            "service_date": "2025-06-25",
+            "trips": 155674,
+            "average_duration_seconds": 1094.0130207998766
+          },
+          {
+            "service_date": "2025-06-26",
+            "trips": 150469,
+            "average_duration_seconds": 1175.7959912008453
+          },
+          {
+            "service_date": "2025-06-27",
+            "trips": 136214,
+            "average_duration_seconds": 1090.9192226937025
+          },
+          {
+            "service_date": "2025-06-28",
+            "trips": 140620,
+            "average_duration_seconds": 1028.4830180628644
+          },
+          {
+            "service_date": "2025-06-29",
+            "trips": 127857,
+            "average_duration_seconds": 1035.9642647645417
+          },
+          {
+            "service_date": "2025-06-30",
+            "trips": 110861,
+            "average_duration_seconds": 1004.2074038661026
+          }
+        ]
+      }
+    },
+    "citibike_trips": {
+      "input_rows": 4759345,
+      "accepted_rows": 4758458,
+      "quarantined_rows": 1,
+      "duplicate_skipped_rows": 0,
+      "out_of_scope_rows": 886,
+      "parse_error_rows": 0,
+      "batch_id": "90c87874d2e5190c8325a947a7083935868b2714851deeefa19500156e551bb4",
+      "profile": {
+        "rows": 4758458,
+        "duration_sum_seconds": 3886402744.48401,
+        "duration_min_seconds": 16.661,
+        "duration_max_seconds": 90219.089,
+        "origin_mapped_rows": 4756466,
+        "destination_mapped_rows": 4741316,
+        "both_mapped_rows": 4739620,
+        "quality_flag_counts": {
+          "Q008": 18838,
+          "STATION_MISSING": 18566
+        },
+        "daily": [
+          {
+            "service_date": "2025-06-01",
+            "trips": 140189,
+            "average_duration_seconds": 865.7370377847033
+          },
+          {
+            "service_date": "2025-06-02",
+            "trips": 159422,
+            "average_duration_seconds": 774.3889186937713
+          },
+          {
+            "service_date": "2025-06-03",
+            "trips": 179950,
+            "average_duration_seconds": 793.723570402897
+          },
+          {
+            "service_date": "2025-06-04",
+            "trips": 192373,
+            "average_duration_seconds": 810.5784798802317
+          },
+          {
+            "service_date": "2025-06-05",
+            "trips": 187176,
+            "average_duration_seconds": 818.0336994432981
+          },
+          {
+            "service_date": "2025-06-06",
+            "trips": 184581,
+            "average_duration_seconds": 837.1273691604277
+          },
+          {
+            "service_date": "2025-06-07",
+            "trips": 128317,
+            "average_duration_seconds": 865.0635121223077
+          },
+          {
+            "service_date": "2025-06-08",
+            "trips": 150758,
+            "average_duration_seconds": 897.3043176746861
+          },
+          {
+            "service_date": "2025-06-09",
+            "trips": 134220,
+            "average_duration_seconds": 699.792778542686
+          },
+          {
+            "service_date": "2025-06-10",
+            "trips": 145163,
+            "average_duration_seconds": 750.0960899747205
+          },
+          {
+            "service_date": "2025-06-11",
+            "trips": 193279,
+            "average_duration_seconds": 804.2403554550667
+          },
+          {
+            "service_date": "2025-06-12",
+            "trips": 192259,
+            "average_duration_seconds": 802.9838886190021
+          },
+          {
+            "service_date": "2025-06-13",
+            "trips": 186499,
+            "average_duration_seconds": 825.6644784851316
+          },
+          {
+            "service_date": "2025-06-14",
+            "trips": 88458,
+            "average_duration_seconds": 756.6802715865167
+          },
+          {
+            "service_date": "2025-06-15",
+            "trips": 99551,
+            "average_duration_seconds": 790.0148535725348
+          },
+          {
+            "service_date": "2025-06-16",
+            "trips": 139944,
+            "average_duration_seconds": 728.1753205710904
+          },
+          {
+            "service_date": "2025-06-17",
+            "trips": 146565,
+            "average_duration_seconds": 733.9814846996147
+          },
+          {
+            "service_date": "2025-06-18",
+            "trips": 177879,
+            "average_duration_seconds": 797.8611777500442
+          },
+          {
+            "service_date": "2025-06-19",
+            "trips": 141546,
+            "average_duration_seconds": 820.4250940754181
+          },
+          {
+            "service_date": "2025-06-20",
+            "trips": 178081,
+            "average_duration_seconds": 872.2600859608873
+          },
+          {
+            "service_date": "2025-06-21",
+            "trips": 171861,
+            "average_duration_seconds": 984.2574189955981
+          },
+          {
+            "service_date": "2025-06-22",
+            "trips": 135401,
+            "average_duration_seconds": 921.0055067096864
+          },
+          {
+            "service_date": "2025-06-23",
+            "trips": 155671,
+            "average_duration_seconds": 771.6394166672059
+          },
+          {
+            "service_date": "2025-06-24",
+            "trips": 164465,
+            "average_duration_seconds": 745.6851420545332
+          },
+          {
+            "service_date": "2025-06-25",
+            "trips": 170682,
+            "average_duration_seconds": 770.6700311280774
+          },
+          {
+            "service_date": "2025-06-26",
+            "trips": 176229,
+            "average_duration_seconds": 783.5741888508728
+          },
+          {
+            "service_date": "2025-06-27",
+            "trips": 167190,
+            "average_duration_seconds": 793.5866482026462
+          },
+          {
+            "service_date": "2025-06-28",
+            "trips": 162702,
+            "average_duration_seconds": 941.335787783803
+          },
+          {
+            "service_date": "2025-06-29",
+            "trips": 155084,
+            "average_duration_seconds": 953.1303840628404
+          },
+          {
+            "service_date": "2025-06-30",
+            "trips": 152963,
+            "average_duration_seconds": 744.8674442839056
+          }
+        ]
+      }
+    }
+  },
+  "quality": [
+    {
+      "batch_id": "b39f5e4edb9735a6547c27329499abeed91cb4e2cbcfdb1a5d31fbcf5ecd6418",
+      "table_name": "dwd.dim_weather_daily",
+      "partition_spec": "{\"source_period\":\"2025-06\"}",
+      "rule_id": "Q009",
+      "severity": "block_weather_publication",
+      "checked_rows": 30,
+      "failed_rows": 0,
+      "passed": true,
+      "details_json": "{}"
+    },
+    {
+      "batch_id": "5fb6eff6693a9317f84f59dc87002d077cb1e2c09bbaa85b3a6e1868f3f21089",
+      "table_name": "dwd.fact_taxi_trip",
+      "partition_spec": "{\"source_period\":\"2025-06\"}",
+      "rule_id": "Q013",
+      "severity": "block",
+      "checked_rows": 4322960,
+      "failed_rows": 0,
+      "passed": true,
+      "details_json": "{\"categories\":{\"accepted\":4254337,\"out_of_scope\":20,\"quarantined\":68603}}"
+    },
+    {
+      "batch_id": "5fb6eff6693a9317f84f59dc87002d077cb1e2c09bbaa85b3a6e1868f3f21089",
+      "table_name": "dwd.fact_taxi_trip",
+      "partition_spec": "{\"source_period\":\"2025-06\"}",
+      "rule_id": "Q014",
+      "severity": "block",
+      "checked_rows": 4322960,
+      "failed_rows": 68603,
+      "passed": true,
+      "details_json": "{\"limit\":0.05,\"quarantine_fraction\":0.0158694505616522}"
+    },
+    {
+      "batch_id": "5fb6eff6693a9317f84f59dc87002d077cb1e2c09bbaa85b3a6e1868f3f21089",
+      "table_name": "dwd.fact_taxi_trip",
+      "partition_spec": "{\"source_period\":\"2025-06\"}",
+      "rule_id": "Q003",
+      "severity": "warn",
+      "checked_rows": 4322960,
+      "failed_rows": 0,
+      "passed": true,
+      "details_json": "{\"action\":\"quarantine_record\"}"
+    },
+    {
+      "batch_id": "5fb6eff6693a9317f84f59dc87002d077cb1e2c09bbaa85b3a6e1868f3f21089",
+      "table_name": "dwd.fact_taxi_trip",
+      "partition_spec": "{\"source_period\":\"2025-06\"}",
+      "rule_id": "Q004",
+      "severity": "warn",
+      "checked_rows": 4322960,
+      "failed_rows": 68603,
+      "passed": true,
+      "details_json": "{\"action\":\"quarantine_record\"}"
+    },
+    {
+      "batch_id": "5fb6eff6693a9317f84f59dc87002d077cb1e2c09bbaa85b3a6e1868f3f21089",
+      "table_name": "dwd.fact_taxi_trip",
+      "partition_spec": "{\"source_period\":\"2025-06\"}",
+      "rule_id": "Q008",
+      "severity": "warn",
+      "checked_rows": 4254337,
+      "failed_rows": 39497,
+      "passed": true,
+      "details_json": "{\"action\":\"retain_trip_exclude_unmapped_spatial_metrics\",\"multiple_polygon_rows\":0}"
+    },
+    {
+      "batch_id": "5fb6eff6693a9317f84f59dc87002d077cb1e2c09bbaa85b3a6e1868f3f21089",
+      "table_name": "dwd.fact_taxi_trip",
+      "partition_spec": "{\"source_period\":\"2025-06\"}",
+      "rule_id": "Q007",
+      "severity": "warn",
+      "checked_rows": 4254337,
+      "failed_rows": 133077,
+      "passed": true,
+      "details_json": "{\"action\":\"retain_trip_exclude_distance_metric\"}"
+    },
+    {
+      "batch_id": "90c87874d2e5190c8325a947a7083935868b2714851deeefa19500156e551bb4",
+      "table_name": "dwd.fact_bike_trip",
+      "partition_spec": "{\"source_period\":\"2025-06\"}",
+      "rule_id": "Q006",
+      "severity": "block",
+      "checked_rows": 4759345,
+      "failed_rows": 0,
+      "passed": true,
+      "details_json": "{\"conflict_ride_id_samples\":[]}"
+    },
+    {
+      "batch_id": "90c87874d2e5190c8325a947a7083935868b2714851deeefa19500156e551bb4",
+      "table_name": "dwd.fact_bike_trip",
+      "partition_spec": "{\"source_period\":\"2025-06\"}",
+      "rule_id": "Q013",
+      "severity": "block",
+      "checked_rows": 4759345,
+      "failed_rows": 0,
+      "passed": true,
+      "details_json": "{\"categories\":{\"accepted\":4758458,\"out_of_scope\":886,\"quarantined\":1}}"
+    },
+    {
+      "batch_id": "90c87874d2e5190c8325a947a7083935868b2714851deeefa19500156e551bb4",
+      "table_name": "dwd.fact_bike_trip",
+      "partition_spec": "{\"source_period\":\"2025-06\"}",
+      "rule_id": "Q014",
+      "severity": "block",
+      "checked_rows": 4759345,
+      "failed_rows": 1,
+      "passed": true,
+      "details_json": "{\"limit\":0.05,\"quarantine_fraction\":2.1011294621423746e-07}"
+    },
+    {
+      "batch_id": "90c87874d2e5190c8325a947a7083935868b2714851deeefa19500156e551bb4",
+      "table_name": "dwd.fact_bike_trip",
+      "partition_spec": "{\"source_period\":\"2025-06\"}",
+      "rule_id": "Q003",
+      "severity": "warn",
+      "checked_rows": 4759345,
+      "failed_rows": 0,
+      "passed": true,
+      "details_json": "{\"action\":\"quarantine_record\"}"
+    },
+    {
+      "batch_id": "90c87874d2e5190c8325a947a7083935868b2714851deeefa19500156e551bb4",
+      "table_name": "dwd.fact_bike_trip",
+      "partition_spec": "{\"source_period\":\"2025-06\"}",
+      "rule_id": "Q004",
+      "severity": "warn",
+      "checked_rows": 4759345,
+      "failed_rows": 1,
+      "passed": true,
+      "details_json": "{\"action\":\"quarantine_record\"}"
+    },
+    {
+      "batch_id": "90c87874d2e5190c8325a947a7083935868b2714851deeefa19500156e551bb4",
+      "table_name": "dwd.fact_bike_trip",
+      "partition_spec": "{\"source_period\":\"2025-06\"}",
+      "rule_id": "Q005",
+      "severity": "warn",
+      "checked_rows": 4759345,
+      "failed_rows": 0,
+      "passed": true,
+      "details_json": "{\"action\":\"quarantine_record\"}"
+    },
+    {
+      "batch_id": "90c87874d2e5190c8325a947a7083935868b2714851deeefa19500156e551bb4",
+      "table_name": "dwd.fact_bike_trip",
+      "partition_spec": "{\"source_period\":\"2025-06\"}",
+      "rule_id": "Q008",
+      "severity": "warn",
+      "checked_rows": 4758458,
+      "failed_rows": 18838,
+      "passed": true,
+      "details_json": "{\"action\":\"retain_trip_exclude_unmapped_spatial_metrics\",\"multiple_polygon_rows\":0}"
+    },
+    {
+      "batch_id": "5fb6eff6693a9317f84f59dc87002d077cb1e2c09bbaa85b3a6e1868f3f21089",
+      "table_name": "dwd.fact_taxi_trip",
+      "partition_spec": "{\"source_period\":\"2025-06\"}",
+      "rule_id": "Q012",
+      "severity": "block",
+      "checked_rows": 4254337,
+      "failed_rows": 0,
+      "passed": true,
+      "details_json": "{\"references_checked\":8}"
+    },
+    {
+      "batch_id": "90c87874d2e5190c8325a947a7083935868b2714851deeefa19500156e551bb4",
+      "table_name": "dwd.fact_bike_trip",
+      "partition_spec": "{\"source_period\":\"2025-06\"}",
+      "rule_id": "Q012",
+      "severity": "block",
+      "checked_rows": 4758458,
+      "failed_rows": 0,
+      "passed": true,
+      "details_json": "{\"references_checked\":11}"
+    }
+  ],
+  "output_versions": {
+    "dwd.dim_zone": 3,
+    "dwd.dim_date": 4,
+    "dwd.dim_time": 3,
+    "dwd.dim_transport": 3,
+    "dwd.dim_weather_daily": 3,
+    "ops.quarantine_record": 5,
+    "dwd.fact_taxi_trip": 2,
+    "dwd.fact_bike_trip": 2,
+    "dwd.dim_station": 29,
+    "dwd.dim_bike_type": 2
+  },
+  "timezone_regressions_passed": true,
+  "spatial_regressions_passed": true,
+  "geometry": {
+    "source_crs": "EPSG:2263",
+    "target_crs": "EPSG:4326",
+    "source_sha256": "f6d711917bb4340f8f644d5366c51665489eb2d426dd1a4a55677721ae5adf17",
+    "always_xy": true,
+    "shapely": "2.1.2",
+    "pyproj": "3.7.1",
+    "geometry_zones": 263
+  },
+  "weather_complete": true,
+  "passed": true,
+  "finished_at_utc": "2026-11-14T09:31:51.657798+00:00",
+  "total_valid_trips": 9012795,
+  "total_quarantined_rows": 68604,
+  "arrival_boundary_complete": false,
+  "downstream_note": "May boundary sources not collected; complete arrivals/net inflow must remain unpublished. DWS/ADS are built by the separate historical marts job."
+}

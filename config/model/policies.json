@@ -1,0 +1,171 @@
+{
+  "version": "2.0-offline",
+  "historical_period": {
+    "start_date": "2025-06-01",
+    "end_date_exclusive": "2025-07-01",
+    "timezone": "America/New_York"
+  },
+  "timestamp_storage": {
+    "instant_type": "TIMESTAMP",
+    "session_timezone": "UTC",
+    "local_wall_time_type": "TIMESTAMP_NTZ",
+    "ambiguous_local_time": "quarantine",
+    "nonexistent_local_time": "quarantine",
+    "retain_source_text": true
+  },
+  "duration_domain_seconds": {
+    "taxi_yellow": {
+      "minimum_exclusive": 0,
+      "maximum_inclusive": 86400
+    },
+    "citibike": {
+      "minimum_exclusive": 0,
+      "maximum_inclusive": 259200
+    }
+  },
+  "taxi_distance_metric_miles": {
+    "minimum_exclusive": 0,
+    "maximum_inclusive": 200,
+    "outside_range": "retain_trip_exclude_distance_metric"
+  },
+  "peak_hours_local": {
+    "morning": [
+      7,
+      8,
+      9
+    ],
+    "evening": [
+      16,
+      17,
+      18
+    ]
+  },
+  "spatial": {
+    "source_crs": "EPSG:2263",
+    "target_crs": "EPSG:4326",
+    "nyc_boroughs": [
+      "Bronx",
+      "Brooklyn",
+      "Manhattan",
+      "Queens",
+      "Staten Island"
+    ],
+    "unknown_zone_key": 0,
+    "multiple_polygon_matches": "lowest_location_id_with_warning",
+    "unmatched_endpoint": "retain_trip_use_unknown_zone",
+    "station_coordinate_rounding_decimals": 6
+  },
+  "station_dimension": {
+    "historical_period": "source_month",
+    "model": "period_snapshot_type1_with_delta_version_history",
+    "historical_representative": "most_frequent_name_coordinate_tuple_then_lexicographic",
+    "current_metadata_backfill_into_history": false
+  },
+  "publication": {
+    "datasets": [
+      "historical",
+      "quality"
+    ],
+    "strategy": "immutable_release_rows_then_atomic_release_pointer_exchange",
+    "pointer_table": "ads.release_pointer",
+    "superset_uses_views_only": true,
+    "retained_releases": 2,
+    "writer_concurrency": 1
+  },
+  "quality": {
+    "max_quarantine_fraction": 0.05,
+    "note": "Initial explicit thresholds, to be reviewed against full-month profiling. Never silently relax to make a run pass.",
+    "rules": [
+      {
+        "id": "Q001",
+        "scope": "object",
+        "severity": "block_batch",
+        "condition": "full_download_sha_present_and_all_zip_csv_members_processed"
+      },
+      {
+        "id": "Q002",
+        "scope": "schema",
+        "severity": "block_batch",
+        "condition": "required_source_fields_present_and_types_parseable"
+      },
+      {
+        "id": "Q003",
+        "scope": "trip",
+        "severity": "quarantine_record",
+        "condition": "start_end_parse_and_have_unique_valid_timezone_resolution"
+      },
+      {
+        "id": "Q004",
+        "scope": "trip",
+        "severity": "quarantine_record",
+        "condition": "duration_within_configured_core_domain"
+      },
+      {
+        "id": "Q005",
+        "scope": "bike",
+        "severity": "quarantine_record",
+        "condition": "ride_id_nonempty"
+      },
+      {
+        "id": "Q006",
+        "scope": "bike",
+        "severity": "block_batch",
+        "condition": "same_ride_id_has_no_conflicting_business_payload"
+      },
+      {
+        "id": "Q007",
+        "scope": "taxi",
+        "severity": "warn_metric",
+        "condition": "distance_within_metric_domain"
+      },
+      {
+        "id": "Q008",
+        "scope": "trip",
+        "severity": "warn_record",
+        "condition": "each_endpoint_matches_a_known_in_scope_zone"
+      },
+      {
+        "id": "Q009",
+        "scope": "weather",
+        "severity": "block_weather_publication",
+        "condition": "all_expected_dates_unique_and_core_fields_quality_usable"
+      },
+      {
+        "id": "Q012",
+        "scope": "dimensions",
+        "severity": "block_batch",
+        "condition": "logical_keys_unique_and_fact_references_resolved_including_unknown_sentinels"
+      },
+      {
+        "id": "Q013",
+        "scope": "batch",
+        "severity": "block_batch",
+        "condition": "input_equals_accepted_plus_distinct_quarantine_plus_duplicate_skipped_plus_out_of_scope"
+      },
+      {
+        "id": "Q014",
+        "scope": "batch",
+        "severity": "block_batch",
+        "condition": "quarantined_fraction_not_above_configured_limit_and_no_file_parse_failures"
+      },
+      {
+        "id": "Q015",
+        "scope": "aggregation",
+        "severity": "block_publication",
+        "condition": "trip_daily_totals_reconcile_to_dwd_and_od_totals_to_double_mapped_trip_counts"
+      },
+      {
+        "id": "Q016",
+        "scope": "flow",
+        "severity": "block_metric",
+        "condition": "arrival_and_departure_coverage_complete_before_net_inflow_nonnull"
+      },
+      {
+        "id": "Q017",
+        "scope": "serving",
+        "severity": "block_publication",
+        "condition": "release_keys_unique_and_counts_and_checksums_match_lake_ads"
+      }
+    ]
+  }
+}

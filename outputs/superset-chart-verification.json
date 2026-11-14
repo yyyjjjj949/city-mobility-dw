@@ -1,0 +1,465 @@
+{
+  "passed": true,
+  "checked_at_utc": "2026-11-14T10:02:26.618295+00:00",
+  "chart_count": 19,
+  "charts": [
+    {
+      "id": 1,
+      "name": "已接入两类有效行程",
+      "dataset": "bi_trip_day",
+      "url": "http://localhost:8088/explore/?slice_id=1",
+      "passed": true,
+      "http_status": 200,
+      "rows": 1,
+      "columns": [
+        "行程数"
+      ],
+      "sample": [
+        {
+          "行程数": 9012795
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "黄色出租车行程",
+      "dataset": "bi_trip_day",
+      "url": "http://localhost:8088/explore/?slice_id=2",
+      "passed": true,
+      "http_status": 200,
+      "rows": 1,
+      "columns": [
+        "行程数"
+      ],
+      "sample": [
+        {
+          "行程数": 4254337
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "共享单车骑行",
+      "dataset": "bi_trip_day",
+      "url": "http://localhost:8088/explore/?slice_id=3",
+      "passed": true,
+      "http_status": 200,
+      "rows": 1,
+      "columns": [
+        "行程数"
+      ],
+      "sample": [
+        {
+          "行程数": 4758458
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "每日出发行程趋势",
+      "dataset": "bi_trip_day",
+      "url": "http://localhost:8088/explore/?slice_id=4",
+      "passed": true,
+      "http_status": 200,
+      "rows": 30,
+      "columns": [
+        "service_date",
+        "行程数, 共享单车",
+        "行程数, 黄色出租车"
+      ],
+      "sample": [
+        {
+          "service_date": 1748736000000.0,
+          "行程数, 共享单车": 140189.0,
+          "行程数, 黄色出租车": 129633.0
+        },
+        {
+          "service_date": 1748822400000.0,
+          "行程数, 共享单车": 159422.0,
+          "行程数, 黄色出租车": 112909.0
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "纽约当地小时 · 日均出发量",
+      "dataset": "city_hour_profile",
+      "url": "http://localhost:8088/explore/?slice_id=5",
+      "passed": true,
+      "http_status": 200,
+      "rows": 24,
+      "columns": [
+        "local_hour",
+        "日均行程数, 共享单车",
+        "日均行程数, 黄色出租车"
+      ],
+      "sample": [
+        {
+          "local_hour": 0,
+          "日均行程数, 共享单车": 2711.8,
+          "日均行程数, 黄色出租车": 5020.0
+        },
+        {
+          "local_hour": 1,
+          "日均行程数, 共享单车": 1670.0333333333333,
+          "日均行程数, 黄色出租车": 3331.3333333333335
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "每日平均行程时长",
+      "dataset": "bi_trip_day",
+      "url": "http://localhost:8088/explore/?slice_id=6",
+      "passed": true,
+      "http_status": 200,
+      "rows": 30,
+      "columns": [
+        "service_date",
+        "平均时长（分钟）, 共享单车",
+        "平均时长（分钟）, 黄色出租车"
+      ],
+      "sample": [
+        {
+          "service_date": 1748736000000.0,
+          "平均时长（分钟）, 共享单车": 14.428950629745055,
+          "平均时长（分钟）, 黄色出租车": 17.15707445892121
+        },
+        {
+          "service_date": 1748822400000.0,
+          "平均时长（分钟）, 共享单车": 12.906481978229522,
+          "平均时长（分钟）, 黄色出租车": 17.066739291523852
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "每日出租车平均距离（有效距离记录）",
+      "dataset": "bi_trip_day",
+      "url": "http://localhost:8088/explore/?slice_id=7",
+      "passed": true,
+      "http_status": 200,
+      "rows": 30,
+      "columns": [
+        "service_date",
+        "平均距离（千米）"
+      ],
+      "sample": [
+        {
+          "service_date": 1748736000000.0,
+          "平均距离（千米）": 6.742214603733032
+        },
+        {
+          "service_date": 1748822400000.0,
+          "平均距离（千米）": 6.32033658790098
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "出发量最多的 15 个纽约区域",
+      "dataset": "bi_zone_hour",
+      "url": "http://localhost:8088/explore/?slice_id=8",
+      "passed": true,
+      "http_status": 200,
+      "rows": 15,
+      "columns": [
+        "zone_name",
+        "区域出发量"
+      ],
+      "sample": [
+        {
+          "zone_name": "Clinton East",
+          "区域出发量": 203427.0
+        },
+        {
+          "zone_name": "East Chelsea",
+          "区域出发量": 265820.0
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "各行政区出发量",
+      "dataset": "bi_zone_hour",
+      "url": "http://localhost:8088/explore/?slice_id=9",
+      "passed": true,
+      "http_status": 200,
+      "rows": 5,
+      "columns": [
+        "borough",
+        "区域出发量, citibike",
+        "区域出发量, taxi_yellow"
+      ],
+      "sample": [
+        {
+          "borough": "Bronx",
+          "区域出发量, citibike": 146185.0,
+          "区域出发量, taxi_yellow": 35754.0
+        },
+        {
+          "borough": "Brooklyn",
+          "区域出发量, citibike": 1326415.0,
+          "区域出发量, taxi_yellow": 188148.0
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "热门 OD · 前 20 条",
+      "dataset": "city_od_ranking",
+      "url": "http://localhost:8088/explore/?slice_id=10",
+      "passed": true,
+      "http_status": 200,
+      "rows": 20,
+      "columns": [
+        "route",
+        "transport_name",
+        "行程数"
+      ],
+      "sample": [
+        {
+          "route": "East Village → East Village",
+          "transport_name": "共享单车",
+          "行程数": 38956
+        },
+        {
+          "route": "East Chelsea → East Chelsea",
+          "transport_name": "共享单车",
+          "行程数": 26584
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "区域匹配覆盖率",
+      "dataset": "city_mapping_coverage",
+      "url": "http://localhost:8088/explore/?slice_id=11",
+      "passed": true,
+      "http_status": 200,
+      "rows": 2,
+      "columns": [
+        "transport_name",
+        "起点覆盖率",
+        "终点覆盖率",
+        "双端覆盖率"
+      ],
+      "sample": [
+        {
+          "transport_name": "共享单车",
+          "起点覆盖率": 0.9995813769922945,
+          "终点覆盖率": 0.9963975724909204,
+          "双端覆盖率": 0.9960411545084563
+        },
+        {
+          "transport_name": "黄色出租车",
+          "起点覆盖率": 0.9978755796731664,
+          "终点覆盖率": 0.9915787113244673,
+          "双端覆盖率": 0.9907160622207408
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "周一至周五 · 不同降水组的日均出行量",
+      "dataset": "city_weather_compare",
+      "url": "http://localhost:8088/explore/?slice_id=12",
+      "passed": true,
+      "http_status": 200,
+      "rows": 3,
+      "columns": [
+        "weather_label",
+        "日均行程数, 共享单车",
+        "日均行程数, 黄色出租车"
+      ],
+      "sample": [
+        {
+          "weather_label": "可测降水",
+          "日均行程数, 共享单车": 154636.0,
+          "日均行程数, 黄色出租车": 138936.5
+        },
+        {
+          "weather_label": "微量降水",
+          "日均行程数, 共享单车": 164596.0,
+          "日均行程数, 黄色出租车": 130665.0
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "周末 · 不同降水组的日均出行量",
+      "dataset": "city_weather_compare",
+      "url": "http://localhost:8088/explore/?slice_id=13",
+      "passed": true,
+      "http_status": 200,
+      "rows": 3,
+      "columns": [
+        "weather_label",
+        "日均行程数, 共享单车",
+        "日均行程数, 黄色出租车"
+      ],
+      "sample": [
+        {
+          "weather_label": "可测降水",
+          "日均行程数, 共享单车": 122885.8,
+          "日均行程数, 黄色出租车": 140566.6
+        },
+        {
+          "weather_label": "微量降水",
+          "日均行程数, 共享单车": 150758.0,
+          "日均行程数, 黄色出租车": 137728.0
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "天气对比样本与需求比率",
+      "dataset": "city_weather_compare",
+      "url": "http://localhost:8088/explore/?slice_id=14",
+      "passed": true,
+      "http_status": 200,
+      "rows": 12,
+      "columns": [
+        "transport_name",
+        "week_type",
+        "weather_label",
+        "完整样本天数",
+        "日均行程数",
+        "相对无可测降水日比率"
+      ],
+      "sample": [
+        {
+          "transport_name": "黄色出租车",
+          "week_type": "周一至周五",
+          "weather_label": "未记录可测降水",
+          "完整样本天数": 11,
+          "日均行程数": 148055.27272727274,
+          "相对无可测降水日比率": 1.0
+        },
+        {
+          "transport_name": "共享单车",
+          "week_type": "周一至周五",
+          "weather_label": "未记录可测降水",
+          "完整样本天数": 11,
+          "日均行程数": 178168.81818181818,
+          "相对无可测降水日比率": 1.0
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "原始行程输入",
+      "dataset": "bi_quality_batch",
+      "url": "http://localhost:8088/explore/?slice_id=15",
+      "passed": true,
+      "http_status": 200,
+      "rows": 1,
+      "columns": [
+        "原始行程数"
+      ],
+      "sample": [
+        {
+          "原始行程数": 9082305
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "异常隔离记录",
+      "dataset": "bi_quality_batch",
+      "url": "http://localhost:8088/explore/?slice_id=16",
+      "passed": true,
+      "http_status": 200,
+      "rows": 1,
+      "columns": [
+        "隔离量"
+      ],
+      "sample": [
+        {
+          "隔离量": 68604
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "六月范围外记录",
+      "dataset": "bi_quality_batch",
+      "url": "http://localhost:8088/explore/?slice_id=17",
+      "passed": true,
+      "http_status": 200,
+      "rows": 1,
+      "columns": [
+        "范围外量"
+      ],
+      "sample": [
+        {
+          "范围外量": 906
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "两类来源的记录去向",
+      "dataset": "city_quality_summary",
+      "url": "http://localhost:8088/explore/?slice_id=18",
+      "passed": true,
+      "http_status": 200,
+      "rows": 2,
+      "columns": [
+        "transport_name",
+        "异常隔离",
+        "有效行程",
+        "范围外"
+      ],
+      "sample": [
+        {
+          "transport_name": "共享单车",
+          "异常隔离": 1.0,
+          "有效行程": 4758458.0,
+          "范围外": 886.0
+        },
+        {
+          "transport_name": "黄色出租车",
+          "异常隔离": 68603.0,
+          "有效行程": 4254337.0,
+          "范围外": 20.0
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "name": "清洗质量规则与警告",
+      "dataset": "bi_quality_rule",
+      "url": "http://localhost:8088/explore/?slice_id=19",
+      "passed": true,
+      "http_status": 200,
+      "rows": 16,
+      "columns": [
+        "table_name",
+        "rule_id",
+        "severity",
+        "passed",
+        "检查量",
+        "规则失败记录量"
+      ],
+      "sample": [
+        {
+          "table_name": "dwd.fact_bike_trip",
+          "rule_id": "Q004",
+          "severity": "warn",
+          "passed": true,
+          "检查量": 4759345,
+          "规则失败记录量": 1
+        },
+        {
+          "table_name": "dwd.fact_bike_trip",
+          "rule_id": "Q014",
+          "severity": "block",
+          "passed": true,
+          "检查量": 4759345,
+          "规则失败记录量": 1
+        }
+      ]
+    }
+  ]
+}

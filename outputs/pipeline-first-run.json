@@ -1,0 +1,161 @@
+{
+  "passed": true,
+  "checked_at_utc": "2026-11-14T09:55:23.903151+00:00",
+  "import_errors": 0,
+  "scheduler_runs": [
+    {
+      "dag_id": "city_mobility_historical_daily",
+      "dag_run_id": "acceptance_5e475e64498943a99507f8fb243a3c6e",
+      "schedule": "At 02:00",
+      "state": "success",
+      "start_date": "2026-11-14T09:54:09.828126Z",
+      "end_date": "2026-11-14T09:55:21.410563Z",
+      "tasks": [
+        {
+          "task_id": "ingest_ods",
+          "state": "success",
+          "try_number": 1
+        },
+        {
+          "task_id": "verify_ods",
+          "state": "success",
+          "try_number": 1
+        },
+        {
+          "task_id": "build_dwd",
+          "state": "success",
+          "try_number": 1
+        },
+        {
+          "task_id": "verify_dwd",
+          "state": "success",
+          "try_number": 1
+        },
+        {
+          "task_id": "build_marts",
+          "state": "success",
+          "try_number": 1
+        },
+        {
+          "task_id": "register_dashboards",
+          "state": "success",
+          "try_number": 1
+        },
+        {
+          "task_id": "verify_charts",
+          "state": "success",
+          "try_number": 1
+        },
+        {
+          "task_id": "export_map",
+          "state": "success",
+          "try_number": 1
+        },
+        {
+          "task_id": "export_preview",
+          "state": "success",
+          "try_number": 1
+        },
+        {
+          "task_id": "inspect_project",
+          "state": "success",
+          "try_number": 1
+        }
+      ]
+    },
+    {
+      "dag_id": "city_mobility_health_monitor",
+      "dag_run_id": "acceptance_c561cafda0854380837467b7548607a9",
+      "schedule": "Every 5 minutes",
+      "state": "success",
+      "start_date": "2026-11-14T09:54:09.830465Z",
+      "end_date": "2026-11-14T09:54:13.346657Z",
+      "tasks": [
+        {
+          "task_id": "inspect_project",
+          "state": "success",
+          "try_number": 1
+        }
+      ]
+    }
+  ],
+  "scheduled_monitor_runs": [
+    {
+      "dag_run_id": "scheduled__2026-11-14T09:55:00+00:00",
+      "state": "success",
+      "tasks": [
+        {
+          "task_id": "inspect_project",
+          "state": "success",
+          "try_number": 1
+        }
+      ]
+    },
+    {
+      "dag_run_id": "scheduled__2026-11-14T09:50:00+00:00",
+      "state": "failed",
+      "tasks": [
+        {
+          "task_id": "inspect_project",
+          "state": "failed",
+          "try_number": 2
+        }
+      ]
+    },
+    {
+      "dag_run_id": "scheduled__2026-11-14T09:40:00+00:00",
+      "state": "failed",
+      "tasks": [
+        {
+          "task_id": "inspect_project",
+          "state": "failed",
+          "try_number": 2
+        }
+      ]
+    },
+    {
+      "dag_run_id": "scheduled__2026-11-14T09:30:00+00:00",
+      "state": "failed",
+      "tasks": [
+        {
+          "task_id": "inspect_project",
+          "state": "failed",
+          "try_number": 2
+        }
+      ]
+    },
+    {
+      "dag_run_id": "scheduled__2026-11-14T09:25:00+00:00",
+      "state": "failed",
+      "tasks": [
+        {
+          "task_id": "inspect_project",
+          "state": "failed",
+          "try_number": 2
+        }
+      ]
+    },
+    {
+      "dag_run_id": "scheduled__2026-11-14T06:45:00+00:00",
+      "state": "failed",
+      "tasks": [
+        {
+          "task_id": "inspect_project",
+          "state": "failed",
+          "try_number": 2
+        }
+      ]
+    },
+    {
+      "dag_run_id": "scheduled__2026-11-14T06:40:00+00:00",
+      "state": "success",
+      "tasks": [
+        {
+          "task_id": "inspect_project",
+          "state": "success",
+          "try_number": 1
+        }
+      ]
+    }
+  ]
+}

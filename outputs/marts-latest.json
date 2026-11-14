@@ -1,0 +1,146 @@
+{
+  "release_id": "fa3ddf3a864140a7b6893836d3215a39",
+  "input_fingerprint": "f591952348e1f0036ac47c584bd2715a02be60d1d7956bc9e55fac87e5b72325",
+  "dwd_run_id": "27cd1a6bc1ff46f9933aad9065f46797",
+  "input_versions": {
+    "dwd.dim_zone": 3,
+    "dwd.dim_date": 4,
+    "dwd.dim_time": 3,
+    "dwd.dim_transport": 3,
+    "dwd.dim_weather_daily": 3,
+    "dwd.fact_taxi_trip": 2,
+    "dwd.fact_bike_trip": 2,
+    "dwd.dim_station": 29,
+    "dwd.dim_bike_type": 2,
+    "ops.ingest_batch": 54,
+    "ops.quality_result": 71
+  },
+  "status": "validated",
+  "counts": {
+    "dws.trip_day": 60,
+    "dws.trip_hour": 1440,
+    "dws.zone_hour": 377280,
+    "dws.od_day": 637450,
+    "dws.weather_group": 12,
+    "ads.trip_day": 60,
+    "ads.trip_hour": 1440,
+    "ads.zone_hour": 377280,
+    "ads.od_day": 637450,
+    "ads.weather_group": 12,
+    "ads.quality_batch": 2,
+    "ads.quality_rule": 16
+  },
+  "output_versions": {
+    "dws.trip_day": 4,
+    "dws.trip_hour": 4,
+    "dws.zone_hour": 4,
+    "dws.od_day": 4,
+    "dws.weather_group": 4,
+    "ads.trip_day": 4,
+    "ads.trip_hour": 4,
+    "ads.zone_hour": 4,
+    "ads.od_day": 4,
+    "ads.weather_group": 4,
+    "ads.quality_batch": 4,
+    "ads.quality_rule": 4
+  },
+  "checks": {
+    "Q015": true,
+    "Q016_arrival_blocked": true,
+    "no_incomplete_arrivals_published": true
+  },
+  "month": "2025-06",
+  "started_at_utc": "2026-11-14T09:43:20.567755+00:00",
+  "passed": true,
+  "arrival_complete": false,
+  "net_inflow_available": false,
+  "finished_at_utc": "2026-11-14T09:50:40.025582+00:00",
+  "publication": {
+    "release_id": "fa3ddf3a864140a7b6893836d3215a39",
+    "previous_pointers": [
+      {
+        "dataset_id": "historical",
+        "release_id": "6908a95aa70945f0bd384651498d28f6",
+        "activated_at_utc": "2026-11-03 10:12:48.700092"
+      },
+      {
+        "dataset_id": "quality",
+        "release_id": "6908a95aa70945f0bd384651498d28f6",
+        "activated_at_utc": "2026-11-03 10:12:48.700092"
+      }
+    ],
+    "status": "active",
+    "tables": {
+      "trip_day": {
+        "passed": true,
+        "logical_keys_unique": true,
+        "full_content_checksum": {
+          "rows": 60,
+          "sha256_sum": "14b58d9a8dc4da33a6cdc30ff1beab875e333f0ccf9ac7cf906c7fafc2d04927",
+          "sha256_xor": "9f5af85915647083ff9f275e519ca6a1deda95d3260d2ee9a7671d4168a57e0d"
+        }
+      },
+      "trip_hour": {
+        "passed": true,
+        "logical_keys_unique": true,
+        "full_content_checksum": {
+          "rows": 1440,
+          "sha256_sum": "5e4167d78a569b62452489386f7d4f94380d7803bb666a21f25b59b3a7efe073",
+          "sha256_xor": "b2363c5cdad52361ad48cba402b09f27d2099d408294d7cc0dbbced7235908b5"
+        }
+      },
+      "zone_hour": {
+        "passed": true,
+        "logical_keys_unique": true,
+        "full_content_checksum": {
+          "rows": 377280,
+          "sha256_sum": "4e8ffe768ecabd995dbad887ca9fda107bfb697d589da078c03c32c711d4cb47",
+          "sha256_xor": "655b41c5e6fe12e168f348110f30beb7b5f6ce7dc09e963e53abf16788d5a43d"
+        }
+      },
+      "od_day": {
+        "passed": true,
+        "logical_keys_unique": true,
+        "full_content_checksum": {
+          "rows": 637450,
+          "sha256_sum": "93880d193b21b8b9a7e59c3091fd0a7b98db762137d6651342e2d440873948ad",
+          "sha256_xor": "90954bcf7dad50bbdcd188c937479f10d9f977d588ff7abb21a67321a12c6bfd"
+        }
+      },
+      "weather_group": {
+        "passed": true,
+        "logical_keys_unique": true,
+        "full_content_checksum": {
+          "rows": 12,
+          "sha256_sum": "168dc5d155199a5030e3a5ebdf755d44715eadff140c9ddd50c232dc6bc7034d",
+          "sha256_xor": "fbdf72de4503ad36a2dad4dd0227f8dc1d4ae4d4ce6b2129ea2f143b6f13d82b"
+        }
+      },
+      "quality_batch": {
+        "passed": true,
+        "logical_keys_unique": true,
+        "full_content_checksum": {
+          "rows": 2,
+          "sha256_sum": "fce75e6d3e1b68533bbdc5355e59ab0e1ca620ebbce4c5838ce5881ae77e3942",
+          "sha256_xor": "f8d491883d9b472cbb3d3aa09e0654e990561cd342da827c6ae177e2c07e063a"
+        }
+      },
+      "quality_rule": {
+        "passed": true,
+        "logical_keys_unique": true,
+        "full_content_checksum": {
+          "rows": 16,
+          "sha256_sum": "ce97d39ea153bb060b6ebe433c438e50e452851be4c3a7a38301d86b5e61d7b6",
+          "sha256_xor": "a37d99c41fa64a269732c1b6f9106fe34a011165e2c903afc64308595cb02f08"
+        }
+      }
+    },
+    "candidate_validated_at_utc": "2026-11-14T09:51:36.843224+00:00",
+    "passed": true,
+    "activated_at_utc": "2026-11-14 09:51:36.816577",
+    "Q017": true,
+    "atomic_pointer_exchange": true,
+    "all_candidate_rows_hashed": true
+  },
+  "serving_active": true
+}

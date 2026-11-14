@@ -1,0 +1,152 @@
+name: city-mobility-dw
+
+x-logging: &logging
+  driver: json-file
+  options:
+    max-size: "10m"
+    max-file: "3"
+
+services:
+  postgres:
+    image: postgres:17-alpine
+    pull_policy: never
+    environment:
+      POSTGRES_USER: platform
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in .env}
+      POSTGRES_DB: platform
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+      - ./config/postgres/init.sql:/docker-entrypoint-initdb.d/01-platform.sql:ro
+    healthcheck:
+      test: [CMD-SHELL, "pg_isready -U platform -d platform"]
+      interval: 10s
+      timeout: 5s
+      retries: 20
+    mem_limit: 384m
+    restart: unless-stopped
+    logging: *logging
+
+  clickhouse:
+    image: clickhouse/clickhouse-server:25.8
+    pull_policy: never
+    environment:
+      CLICKHOUSE_DB: ads
+      CLICKHOUSE_USER: dw_admin
+      CLICKHOUSE_PASSWORD: ${CLICKHOUSE_PASSWORD:?Set CLICKHOUSE_PASSWORD in .env}
+      CLICKHOUSE_DEFAULT_ACCESS_MANAGEMENT: "1"
+    ports:
+      - "127.0.0.1:18123:8123"
+      - "127.0.0.1:9000:9000"
+    volumes:
+      - clickhouse-data:/var/lib/clickhouse
+      - clickhouse-logs:/var/log/clickhouse-server
+      - ./config/clickhouse/resources.xml:/etc/clickhouse-server/config.d/resources.xml:ro
+    healthcheck:
+      test: [CMD-SHELL, 'clickhouse-client --user "$$CLICKHOUSE_USER" --password "$$CLICKHOUSE_PASSWORD" --query "SELECT 1" >/dev/null']
+      interval: 10s
+      timeout: 5s
+      retries: 30
+    mem_limit: 1536m
+    ulimits:
+      nofile:
+        soft: 65536
+        hard: 65536
+    restart: unless-stopped
+    logging: *logging
+
+  spark:
+    image: city-mobility/spark:4.0.5-delta4.0.1
+    pull_policy: never
+    build: ./build/spark
+    command: [/bin/bash, -lc, "sleep infinity"]
+    working_dir: /workspace
+    environment:
+      SPARK_LOCAL_IP: spark
+      SPARK_LOCAL_DIRS: /tmp/spark-local
+    ports:
+      - "127.0.0.1:4040:4040"
+    volumes:
+      - ./data:/workspace/data
+      - ./work:/workspace/work
+      - ./jobs:/workspace/jobs:ro
+      - ./config/spark/spark-defaults.conf:/opt/spark/conf/spark-defaults.conf:ro
+    mem_limit: 2560m
+    cpus: 2
+    restart: unless-stopped
+    logging: *logging
+
+  airflow:
+    image: apache/airflow:3.3.2-python3.11
+    pull_policy: never
+    command: standalone
+    environment:
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://platform:${POSTGRES_PASSWORD}@postgres:5432/airflow
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__CORE__LOAD_EXAMPLES: "false"
+      AIRFLOW__CORE__PARALLELISM: "2"
+      AIRFLOW__CORE__MAX_ACTIVE_TASKS_PER_DAG: "2"
+      AIRFLOW__CORE__FERNET_KEY: ${AIRFLOW_FERNET_KEY}
+      AIRFLOW__CORE__SIMPLE_AUTH_MANAGER_USERS: admin:admin
+      AIRFLOW__CORE__SIMPLE_AUTH_MANAGER_PASSWORDS_FILE: /opt/airflow/config/passwords.json
+      AIRFLOW__API_AUTH__JWT_SECRET: ${AIRFLOW_JWT_SECRET}
+      AIRFLOW__CORE__DEFAULT_TIMEZONE: Asia/Shanghai
+      AIRFLOW__CORE__EXECUTION_API_SERVER_URL: http://localhost:8080/execution/
+      AIRFLOW__SCHEDULER__ENABLE_HEALTH_CHECK: "true"
+    ports:
+      - "127.0.0.1:18080:8080"
+    volumes:
+      - airflow-data:/opt/airflow
+      - ./dags:/opt/airflow/dags:ro
+      - ./config/airflow:/opt/airflow/config
+      - ./work/orchestration:/opt/airflow/project-queue
+    depends_on:
+      postgres:
+        condition: service_healthy
+    healthcheck:
+      test: [CMD, python, -c, "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8080/api/v2/monitor/health', timeout=5)"]
+      interval: 20s
+      timeout: 10s
+      retries: 30
+      start_period: 90s
+    mem_limit: 2048m
+    restart: unless-stopped
+    logging: *logging
+
+  superset:
+    image: city-mobility/superset:6.1.0-clickhouse
+    pull_policy: never
+    build: ./build/superset
+    command: [/bin/bash, /app/project/start-superset.sh]
+    environment:
+      SUPERSET_CONFIG_PATH: /app/project/superset_config.py
+      SUPERSET_SECRET_KEY: ${SUPERSET_SECRET_KEY}
+      META_DATABASE_PASSWORD: ${POSTGRES_PASSWORD}
+      SUPERSET_ADMIN_PASSWORD: ${SUPERSET_ADMIN_PASSWORD}
+      CLICKHOUSE_PASSWORD: ${CLICKHOUSE_PASSWORD}
+    ports:
+      - "127.0.0.1:8088:8088"
+    volumes:
+      - superset-data:/app/superset_home
+      - ./config/superset:/app/project:ro
+      - ./outputs/map:/app/superset/static/assets/city-mobility-map:ro
+    depends_on:
+      postgres:
+        condition: service_healthy
+      clickhouse:
+        condition: service_healthy
+    healthcheck:
+      test: [CMD, python, -c, "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8088/health', timeout=5)"]
+      interval: 20s
+      timeout: 10s
+      retries: 30
+      start_period: 90s
+    mem_limit: 1024m
+    restart: unless-stopped
+    logging: *logging
+
+volumes:
+  postgres-data:
+  clickhouse-data:
+  clickhouse-logs:
+  airflow-data:
+  superset-data:

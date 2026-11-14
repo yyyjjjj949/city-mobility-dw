@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "run_id": "27cd1a6bc1ff46f9933aad9065f46797",
+  "verified_at_utc": "2026-11-14T10:01:59.388613+00:00",
+  "committed_parquet_files_checked": 78,
+  "table_rows": {
+    "dwd.dim_zone": 266,
+    "dwd.dim_date": 366,
+    "dwd.dim_time": 1441,
+    "dwd.dim_transport": 3,
+    "dwd.dim_weather_daily": 31,
+    "ops.quarantine_record": 68604,
+    "dwd.fact_taxi_trip": 4254337,
+    "dwd.fact_bike_trip": 4758458,
+    "dwd.dim_station": 4782,
+    "dwd.dim_bike_type": 3
+  },
+  "all_fact_duration_bounds_and_utc_differences_checked": true,
+  "traced_ods_sample_rows": 120,
+  "all_sample_raw_times_coordinates_and_fingerprints_match": true,
+  "scope": "All committed file counts and durations, sampled source traceability; full key/FK checks performed by Spark build."
+}

@@ -1,0 +1,46 @@
+{
+  "passed": true,
+  "checked_at_utc": "2026-11-14T10:05:16.517904+00:00",
+  "mode": "offline",
+  "services": [
+    "postgres",
+    "clickhouse",
+    "superset",
+    "airflow",
+    "spark"
+  ],
+  "kafka_stopped": true,
+  "kafka_autorestart_disabled": true,
+  "logical_tables": 28,
+  "dimensions": 7,
+  "historical_facts": 2,
+  "historical_dashboards": 4,
+  "historical_charts": 19,
+  "valid_historical_trips": 9012795,
+  "release_id": "fa3ddf3a864140a7b6893836d3215a39",
+  "active_datasets": [
+    "historical",
+    "quality"
+  ],
+  "historical_ods_snapshot_version": 28,
+  "model_engine_validation": true,
+  "browser_validation": true,
+  "map_validation": true,
+  "native_filter_validation": true,
+  "airflow_scheduler_validation": true,
+  "full_pipeline_tasks": 10,
+  "replay_validation": true,
+  "restart_validation": true,
+  "soak_measured_seconds": 900.07,
+  "soak_samples": 46,
+  "retired_code_archive": "work/archive/realtime-retired-2026-11-03",
+  "business_rows_deleted": false,
+  "remaining_work": [
+    "Report, slides and demonstration video"
+  ],
+  "scope_limits": [
+    "Only verified month 2025-06 is supported",
+    "Complete arrivals/net inflow require May boundary sources",
+    "Short measured soak and planned restart do not establish multi-day or power-loss stability"
+  ]
+}

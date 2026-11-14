@@ -1,0 +1,19 @@
+{
+  "verified_at_utc": "2026-11-14T10:01:36.063791+00:00",
+  "passed": true,
+  "month": "2025-06",
+  "full_raw_files_sha256_verified": 5,
+  "ods_rows_by_source": {
+    "tlc_yellow": 4322960,
+    "citibike_trips": 4759345,
+    "taxi_zones": 265,
+    "noaa_daily": 30
+  },
+  "total_ods_rows": 9082600,
+  "committed_ods_version": 28,
+  "active_parquet_footers_checked": 16,
+  "committed_file_sample_hashes_checked": 80,
+  "repeat_run_inserted_zero": true,
+  "latest_run_id": "5442a761bb054513aa6b84e6d87373a4",
+  "scope": "Raw source integrity, ODS counts and sampled content identities; not DWD business quality or full payload equality audit"
+}

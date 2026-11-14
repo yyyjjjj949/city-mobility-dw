@@ -1,0 +1,215 @@
+{
+  "passed": true,
+  "status": "healthy",
+  "checked_at_utc": "2026-11-14T12:45:03.191302+00:00",
+  "checked_at_beijing": "2026-11-14T20:45:03.191302+08:00",
+  "checks": [
+    {
+      "name": "容器服务",
+      "passed": true,
+      "detail": {
+        "airflow": {
+          "state": "running",
+          "health": "healthy"
+        },
+        "clickhouse": {
+          "state": "running",
+          "health": "healthy"
+        },
+        "postgres": {
+          "state": "running",
+          "health": "healthy"
+        },
+        "spark": {
+          "state": "running",
+          "health": ""
+        },
+        "superset": {
+          "state": "running",
+          "health": "healthy"
+        }
+      }
+    },
+    {
+      "name": "Superset",
+      "passed": true,
+      "detail": {
+        "http_status": 200
+      }
+    },
+    {
+      "name": "Airflow调度器",
+      "passed": true,
+      "detail": {
+        "metadatabase": {
+          "status": "healthy"
+        },
+        "scheduler": {
+          "status": "healthy",
+          "latest_scheduler_heartbeat": "2026-11-14T12:44:54.651570+00:00"
+        },
+        "triggerer": {
+          "status": "healthy",
+          "latest_triggerer_heartbeat": "2026-11-14T12:44:59.127966+00:00"
+        },
+        "dag_processor": {
+          "status": "healthy",
+          "latest_dag_processor_heartbeat": "2026-11-14T12:44:56.009539+00:00"
+        }
+      }
+    },
+    {
+      "name": "ClickHouse发布与口径",
+      "passed": true,
+      "detail": {
+        "pointers": [
+          {
+            "dataset_id": "historical",
+            "release_id": "fa3ddf3a864140a7b6893836d3215a39",
+            "activated_at_utc": "2026-11-14 09:51:36.816577"
+          },
+          {
+            "dataset_id": "quality",
+            "release_id": "fa3ddf3a864140a7b6893836d3215a39",
+            "activated_at_utc": "2026-11-14 09:51:36.816577"
+          }
+        ],
+        "historical_trips": 9012795
+      }
+    },
+    {
+      "name": "本机任务执行器",
+      "passed": true,
+      "detail": {
+        "running": true,
+        "pid": 11508,
+        "checked_at_utc": "2026-11-14T12:45:03.742694+00:00",
+        "job_id": "527f79ebfd6cca83e13a2ba8b6513a12bb8526b92558b710f043e221119d8a4e",
+        "action": "monitor_project"
+      }
+    }
+  ],
+  "issues": [],
+  "mode": "offline",
+  "latest_actions": {
+    "monitor_project": {
+      "job_id": "c5c86f2e9b251575395c210c0712b0d57ca396ba2c8914f56212526be8eac860",
+      "action": "monitor_project",
+      "started_at_utc": "2026-11-14T12:40:00.751390+00:00",
+      "passed": true,
+      "parameters": {
+        "month": "2025-06"
+      },
+      "exit_code": 0,
+      "finished_at_utc": "2026-11-14T12:40:02.769007+00:00"
+    },
+    "ingest_historical": {
+      "job_id": "00a46d44f421f7239c0ead9b491a6ea7b56ce628257e9ee7ace91ae321cfe787",
+      "action": "ingest_historical",
+      "started_at_utc": "2026-11-14T10:01:22.682527+00:00",
+      "passed": true,
+      "parameters": {
+        "month": "2025-06"
+      },
+      "exit_code": 0,
+      "finished_at_utc": "2026-11-14T10:01:30.729331+00:00"
+    },
+    "verify_historical_charts": {
+      "job_id": "92ad348d261acce1a177f66d30f672dfb874d6f055e0f4751f27b04f4c823423",
+      "action": "verify_historical_charts",
+      "started_at_utc": "2026-11-14T10:02:19.843235+00:00",
+      "passed": true,
+      "parameters": {
+        "month": "2025-06"
+      },
+      "exit_code": 0,
+      "finished_at_utc": "2026-11-14T10:02:26.867551+00:00"
+    },
+    "build_historical_marts": {
+      "job_id": "f2d9b16e9ac208de0a86456c6923ce2c577d14f8d2b015150dc9e6270fd1a029",
+      "action": "build_historical_marts",
+      "started_at_utc": "2026-11-14T10:02:02.085541+00:00",
+      "passed": true,
+      "parameters": {
+        "month": "2025-06"
+      },
+      "exit_code": 0,
+      "finished_at_utc": "2026-11-14T10:02:03.103228+00:00"
+    },
+    "build_historical_dashboards": {
+      "job_id": "d4a7d36474a0385fdb3e3adb072a780b719b4ab6d02ca039211b315b7dcdd8fe",
+      "action": "build_historical_dashboards",
+      "started_at_utc": "2026-11-14T10:02:05.707798+00:00",
+      "passed": true,
+      "parameters": {
+        "month": "2025-06"
+      },
+      "exit_code": 0,
+      "finished_at_utc": "2026-11-14T10:02:18.244962+00:00"
+    },
+    "export_historical_preview": {
+      "job_id": "be8584bb117185a8d224533230a0fd20c05fd759cbf7ccec436f468442957943",
+      "action": "export_historical_preview",
+      "started_at_utc": "2026-11-14T10:02:31.535254+00:00",
+      "passed": true,
+      "parameters": {
+        "month": "2025-06"
+      },
+      "exit_code": 0,
+      "finished_at_utc": "2026-11-14T10:02:32.570644+00:00"
+    },
+    "build_historical_map": {
+      "job_id": "bdf579d623bd16e89475b6e0eaa798d269acaf4530aa00c517fd37551f0f9b68",
+      "action": "build_historical_map",
+      "started_at_utc": "2026-11-14T10:02:28.436917+00:00",
+      "passed": true,
+      "parameters": {
+        "month": "2025-06"
+      },
+      "exit_code": 0,
+      "finished_at_utc": "2026-11-14T10:02:29.455619+00:00"
+    },
+    "verify_historical_dwd": {
+      "job_id": "5d2dabd1262b19d855eab68f217a32a132c5dc7d8c890c96ed090e0514d107b2",
+      "action": "verify_historical_dwd",
+      "started_at_utc": "2026-11-14T10:01:39.958019+00:00",
+      "passed": true,
+      "parameters": {
+        "month": "2025-06"
+      },
+      "exit_code": 0,
+      "finished_at_utc": "2026-11-14T10:01:59.999212+00:00"
+    },
+    "historical_preflight": {
+      "job_id": "d93ec4b9167ee33a8f6104fcbed69c879bc0179a22b60e8efb0cc907e4908abe",
+      "action": "historical_preflight",
+      "started_at_utc": "2026-11-14T06:23:45.855357+00:00",
+      "passed": true,
+      "exit_code": 0,
+      "finished_at_utc": "2026-11-14T06:23:47.387171+00:00"
+    },
+    "verify_historical_ods": {
+      "job_id": "8458236f0613f1690b18141d7f7def2d8c91895f04833d498e8c31470a3f4992",
+      "action": "verify_historical_ods",
+      "started_at_utc": "2026-11-14T10:01:33.291188+00:00",
+      "passed": true,
+      "parameters": {
+        "month": "2025-06"
+      },
+      "exit_code": 0,
+      "finished_at_utc": "2026-11-14T10:01:36.309370+00:00"
+    },
+    "build_historical_dwd": {
+      "job_id": "a5f7c0fa7c5343dc29a423d404ccf63c12d47dbebf383fa8116a501d92c4d686",
+      "action": "build_historical_dwd",
+      "started_at_utc": "2026-11-14T10:01:37.870379+00:00",
+      "passed": true,
+      "parameters": {
+        "month": "2025-06"
+      },
+      "exit_code": 0,
+      "finished_at_utc": "2026-11-14T10:01:38.388199+00:00"
+    }
+  },
+  "unresolved_failures": []
+}

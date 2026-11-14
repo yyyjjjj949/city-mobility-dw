@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "release_id": "fa3ddf3a864140a7b6893836d3215a39",
+  "checked_at_utc": "2026-11-14T10:02:29.040546+00:00",
+  "zones": 262,
+  "daily_zone_rows": 15720,
+  "valid_trips": 9012795,
+  "mapped_departures": 9001765,
+  "file_sha256": "baed7bf2336440e150bfaa81a1efdf3b352eed5c30bf01ab7eb8cc64ef7abc80",
+  "local_dependencies_only": true
+}

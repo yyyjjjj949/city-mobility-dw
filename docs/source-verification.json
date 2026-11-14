@@ -1,0 +1,93 @@
+{
+  "checked_at_utc": "2026-11-01T08:32:33.090582+00:00",
+  "checks": [
+    {
+      "check": "taxi_months_and_schema",
+      "passed": true,
+      "detail": "All three monthly Parquet footers parsed; June schema 20 columns"
+    },
+    {
+      "check": "taxi_sample",
+      "passed": true,
+      "detail": "25 actual records, schema sample only"
+    },
+    {
+      "check": "bike_sample",
+      "passed": true,
+      "detail": "25 actual records, from archive member 202506-citibike-tripdata_2.csv"
+    },
+    {
+      "check": "bike_all_members_identified",
+      "passed": true,
+      "detail": "June archive has five CSVs; all must be ingested in step 3"
+    },
+    {
+      "check": "zone_lookup_unique",
+      "passed": true,
+      "detail": "Includes special codes 264 and 265; no polygon assumed for special codes"
+    },
+    {
+      "check": "zone_zip_crc",
+      "passed": true,
+      "detail": "Complete small archive CRC verified"
+    },
+    {
+      "check": "zone_geometry_present",
+      "passed": true,
+      "detail": "Original geometry and projection files present"
+    },
+    {
+      "check": "weather_coverage_2025-06",
+      "passed": true,
+      "detail": "Complete source daily dates"
+    },
+    {
+      "check": "weather_coverage_2025-07",
+      "passed": true,
+      "detail": "Complete source daily dates"
+    },
+    {
+      "check": "weather_coverage_2025-08",
+      "passed": true,
+      "detail": "Complete source daily dates"
+    },
+    {
+      "check": "weather_core_fields",
+      "passed": true,
+      "detail": "92 days; empty quality flags for core fields; trace precipitation attributes retained"
+    },
+    {
+      "check": "gbfs_station_ids_unique",
+      "passed": true,
+      "detail": "2518 IDs in each snapshot"
+    },
+    {
+      "check": "gbfs_station_join",
+      "passed": true,
+      "detail": "Information/status snapshot station sets match"
+    },
+    {
+      "check": "gbfs_protocol",
+      "passed": true,
+      "detail": "Keep protocol version and respect source TTL"
+    }
+  ],
+  "findings": {
+    "historical_bike_sample_station_keys": 32,
+    "matched_current_short_name": 31,
+    "unmatched_sample_keys": [
+      "6644.08"
+    ],
+    "gbfs_installed_renting_returning": 2365,
+    "gbfs_very_old_last_reported": 50,
+    "weather_trace_precipitation_days": 13,
+    "limits": [
+      "Not a full-month quality audit of trip records",
+      "No full taxi or bike source file checksum verified; ETags are object identifiers, not SHA-256",
+      "GBFS snapshot contains inactive and stale stations; filter operational/fresh states before shortage metrics",
+      "Historical station IDs can match current short_name, not station_id; one of 32 sample station keys unmatched",
+      "Weather is one station and daily; cannot infer region-specific or hourly weather effects"
+    ]
+  },
+  "all_passed": true
+}

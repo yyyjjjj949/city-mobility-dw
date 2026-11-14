@@ -1,0 +1,3 @@
+release_id,batch_id,source_id,source_period,status,input_rows,accepted_rows,quarantined_rows,duplicate_skipped_rows,out_of_scope_rows,parse_error_rows,acceptance_rate,last_success_at_utc,published_at_utc
+fa3ddf3a864140a7b6893836d3215a39,90c87874d2e5190c8325a947a7083935868b2714851deeefa19500156e551bb4,citibike_trips,2025-06,validated,4759345,4758458,1,0,886,0,0.999813629816708,2026-11-14 09:29:15.424081,2026-11-14 09:43:20.567755
+fa3ddf3a864140a7b6893836d3215a39,5fb6eff6693a9317f84f59dc87002d077cb1e2c09bbaa85b3a6e1868f3f21089,tlc_yellow,2025-06,validated,4322960,4254337,68603,0,20,0,0.9841259229786998,2026-11-14 06:38:22.589002,2026-11-14 09:43:20.567755

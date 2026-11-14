@@ -1,0 +1,549 @@
+{
+  "run_id": "5442a761bb054513aa6b84e6d87373a4",
+  "month": "2025-06",
+  "started_at_utc": "2026-11-01T09:19:46.137367+00:00",
+  "status": "succeeded",
+  "objects": [
+    {
+      "source_id": "tlc_yellow",
+      "source_period": "2025-06",
+      "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-06.parquet",
+      "relative_path": "data/ods/files/tlc_yellow/2025-06/yellow_tripdata_2025-06.parquet",
+      "kind": "parquet",
+      "expected_bytes": 73542954,
+      "poll_id": null,
+      "source_url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-06.parquet",
+      "received_at_utc": "2026-11-01T08:59:47.177428+00:00",
+      "sha256": "1bea7f5b09c744414451fa7fef09fbc5a393ffb1621c859be6ba0df23a14e1b6",
+      "bytes": 73542954,
+      "etag_or_last_modified": "\"fc94b9119612348a42e0887bb449b155-15\"",
+      "download_reused": true,
+      "object_id": "e990e4c9ff9fe79f504aea07bd0092bf6c57a8e6d41ecca27c4d0bc5b6cb089b",
+      "expected_members": 1,
+      "members": [],
+      "expected_rows": 4322960,
+      "prepared": {
+        "object_sha256": "1bea7f5b09c744414451fa7fef09fbc5a393ffb1621c859be6ba0df23a14e1b6",
+        "rows": 4322960,
+        "member_counts": {
+          "": 4322960
+        },
+        "shards": [
+          {
+            "name": "part-00000.parquet",
+            "rows": 262144,
+            "bytes": 8643573,
+            "sha256": "fd419fc283f614de3803030fd2a7cdb44cfece963bae312f63aaee7161b2cc0d"
+          },
+          {
+            "name": "part-00001.parquet",
+            "rows": 262144,
+            "bytes": 8554344,
+            "sha256": "8d63a7fcc891e46db9c3ccfbfe746bf535dd89ad74f9267c471c0cd8dd91716a"
+          },
+          {
+            "name": "part-00002.parquet",
+            "rows": 262144,
+            "bytes": 8622033,
+            "sha256": "e5f10b6b193ab868a45420e3fa005c6582a8d57c9deb343a4be2b6c2e5c91349"
+          },
+          {
+            "name": "part-00003.parquet",
+            "rows": 262144,
+            "bytes": 8640537,
+            "sha256": "a5af0b5a05360b38a6058b9289c03179a54efc4bf70f6fc0f166a1202c9674ab"
+          },
+          {
+            "name": "part-00004.parquet",
+            "rows": 262144,
+            "bytes": 8562940,
+            "sha256": "71637ef86e3e52e6e72b8e5757dde61bad88cfc761036fc62548c568409b4428"
+          },
+          {
+            "name": "part-00005.parquet",
+            "rows": 262144,
+            "bytes": 8580032,
+            "sha256": "a7e26b6d87450a3eaa2e9ba51f52cd3791a263f6e73829fe2b41b3bc62c1aa2f"
+          },
+          {
+            "name": "part-00006.parquet",
+            "rows": 262144,
+            "bytes": 8579325,
+            "sha256": "e14ab45e508729b3f0c9010b263e28968e15218d0df7874af9bdec3b97ad1c95"
+          },
+          {
+            "name": "part-00007.parquet",
+            "rows": 262144,
+            "bytes": 8600722,
+            "sha256": "7499a1e94166995b0fba924fbb13be642fa1b9282297d5e5f29b23ec3b59a90d"
+          },
+          {
+            "name": "part-00008.parquet",
+            "rows": 262144,
+            "bytes": 8639227,
+            "sha256": "de1f72ea3b9d3fd7e683f7cf3c321c0bd10d3e1729c17fd1a8c14e665f95f811"
+          },
+          {
+            "name": "part-00009.parquet",
+            "rows": 262144,
+            "bytes": 8520988,
+            "sha256": "ed75e9f892398ff8c1112f725c42933ef0fda6c9cc386553e5b5acfc1375c685"
+          },
+          {
+            "name": "part-00010.parquet",
+            "rows": 262144,
+            "bytes": 8594371,
+            "sha256": "f166b4a66698e70207527e17693f175593d1afecf70ab915c3e918236d7fe817"
+          },
+          {
+            "name": "part-00011.parquet",
+            "rows": 262144,
+            "bytes": 8522377,
+            "sha256": "2ed99ca861286deea20ab698c59bc675c0792c7509b53eb26a4e5f80853a85de"
+          },
+          {
+            "name": "part-00012.parquet",
+            "rows": 262144,
+            "bytes": 7868975,
+            "sha256": "ac51c88525ec6e94a91496569e10abdcb74b60bb62627c03ccf46d40d281c46c"
+          },
+          {
+            "name": "part-00013.parquet",
+            "rows": 262144,
+            "bytes": 7847685,
+            "sha256": "f0251167fad568644b871be608772f9dc775fd87bfbc95d0a5409ad4b6f65fa2"
+          },
+          {
+            "name": "part-00014.parquet",
+            "rows": 262144,
+            "bytes": 7852463,
+            "sha256": "2390c193b6d1a51d8fcc0dc1f8ff72218949c437bf54960ac06999b7902507f0"
+          },
+          {
+            "name": "part-00015.parquet",
+            "rows": 262144,
+            "bytes": 7878516,
+            "sha256": "51fa18249a2f25368ac6b30cdbd596c67600918245c0fab04c1fbebff1750cf9"
+          },
+          {
+            "name": "part-00016.parquet",
+            "rows": 128656,
+            "bytes": 3876946,
+            "sha256": "3e1c94ec4d4c7c232130b9f508b9bc57be48a3e663b3d3e33e901f001647a944"
+          }
+        ],
+        "crc_verified": false,
+        "batch_id": "92e1684a68a04308812ce256441c9212"
+      },
+      "staging_path": "work/ingestion/staging/e990e4c9ff9fe79f504aea07bd0092bf6c57a8e6d41ecca27c4d0bc5b6cb089b"
+    },
+    {
+      "source_id": "citibike_trips",
+      "source_period": "2025-06",
+      "url": "https://s3.amazonaws.com/tripdata/202506-citibike-tripdata.zip",
+      "relative_path": "data/ods/files/citibike_trips/2025-06/202506-citibike-tripdata.zip",
+      "kind": "csv_zip",
+      "expected_bytes": 929043436,
+      "poll_id": null,
+      "source_url": "https://s3.amazonaws.com/tripdata/202506-citibike-tripdata.zip",
+      "received_at_utc": "2026-11-01T09:05:37.161570+00:00",
+      "sha256": "fdc15ebc98ddef6ffa6825a71616e2f704def8376590881f91b0109cd2d81f9b",
+      "bytes": 929043436,
+      "etag_or_last_modified": "\"3890935c79ccfe5f8cca115725031182-55\"",
+      "download_reused": true,
+      "object_id": "f0e908b44b611edf5c481474c22ee10eb254579a45d9a1cfdf707160ba0918a0",
+      "expected_members": 5,
+      "members": [
+        {
+          "name": "202506-citibike-tripdata_2.csv",
+          "bytes": 195582904,
+          "crc32": "02ebe37e"
+        },
+        {
+          "name": "202506-citibike-tripdata_3.csv",
+          "bytes": 195525210,
+          "crc32": "2058962d"
+        },
+        {
+          "name": "202506-citibike-tripdata_1.csv",
+          "bytes": 194684816,
+          "crc32": "0ed33dd7"
+        },
+        {
+          "name": "202506-citibike-tripdata_4.csv",
+          "bytes": 195677574,
+          "crc32": "2cf16141"
+        },
+        {
+          "name": "202506-citibike-tripdata_5.csv",
+          "bytes": 147572230,
+          "crc32": "f9ee558a"
+        }
+      ],
+      "expected_rows": null,
+      "prepared": {
+        "object_sha256": "fdc15ebc98ddef6ffa6825a71616e2f704def8376590881f91b0109cd2d81f9b",
+        "rows": 4759345,
+        "member_counts": {
+          "202506-citibike-tripdata_2.csv": 1000000,
+          "202506-citibike-tripdata_3.csv": 1000000,
+          "202506-citibike-tripdata_1.csv": 1000000,
+          "202506-citibike-tripdata_4.csv": 1000000,
+          "202506-citibike-tripdata_5.csv": 759345
+        },
+        "shards": [
+          {
+            "name": "part-00000.parquet",
+            "rows": 262144,
+            "bytes": 14179279,
+            "sha256": "fd7aff8ecbf26c3497c77c13a02d9542b5e347990d078686f3c7947f6353086c"
+          },
+          {
+            "name": "part-00001.parquet",
+            "rows": 262144,
+            "bytes": 14204183,
+            "sha256": "c7fd36126dc071a0b590074ee539382d8715da36b34321a1e3659d311bd0bc5f"
+          },
+          {
+            "name": "part-00002.parquet",
+            "rows": 262144,
+            "bytes": 14352761,
+            "sha256": "36e10dba0ae73e5a81b504b84459ea559ac48c146f477be817ee954711359b61"
+          },
+          {
+            "name": "part-00003.parquet",
+            "rows": 279104,
+            "bytes": 14991016,
+            "sha256": "c87e1633f1055e4fe1c25d402957dc77963b1eb252fd5dd08d587c9928362d4d"
+          },
+          {
+            "name": "part-00004.parquet",
+            "rows": 262144,
+            "bytes": 14267887,
+            "sha256": "9fdce6ee93f47b1ac776d41507f3c55d830766faad14aeb9aa6d4e7d1d11e485"
+          },
+          {
+            "name": "part-00005.parquet",
+            "rows": 262144,
+            "bytes": 14108002,
+            "sha256": "78c725e7403e59934e3a0fe06ae43d49cbd8d889d7ecba10c6b3c4f9a774d392"
+          },
+          {
+            "name": "part-00006.parquet",
+            "rows": 262144,
+            "bytes": 14077130,
+            "sha256": "4b1568f0d4719522898739ebbe3564a3928808cea6ab58ba849f0aa04efa8a54"
+          },
+          {
+            "name": "part-00007.parquet",
+            "rows": 279104,
+            "bytes": 15335077,
+            "sha256": "dffdb7413f9ec4f97c6bbc513784cbea5eaba1786cec83272e5b97988aed0c21"
+          },
+          {
+            "name": "part-00008.parquet",
+            "rows": 262144,
+            "bytes": 14317295,
+            "sha256": "e394887e821d79989fc93f71c4c3c9760432668886f0a2e80f9433ddc57e2039"
+          },
+          {
+            "name": "part-00009.parquet",
+            "rows": 262144,
+            "bytes": 14483424,
+            "sha256": "bf8e8c8500efa112115a8bc3c4299832a667b7421abdfdc6674881941a4b7e18"
+          },
+          {
+            "name": "part-00010.parquet",
+            "rows": 262144,
+            "bytes": 14388441,
+            "sha256": "904ead85696b46b4e9ee9d6229a10e5e7fd3e8ea07ce67cf82f678804a09b5d5"
+          },
+          {
+            "name": "part-00011.parquet",
+            "rows": 279104,
+            "bytes": 15033570,
+            "sha256": "7ecd5ba441e5f4970297176859938d803f8fdc060bc6f3f67616ac66651b0e59"
+          },
+          {
+            "name": "part-00012.parquet",
+            "rows": 262144,
+            "bytes": 14008957,
+            "sha256": "5f8e9bbbebdd5c5b00b49063ab84f27379dec0b044fad81e306630984cf8523f"
+          },
+          {
+            "name": "part-00013.parquet",
+            "rows": 262144,
+            "bytes": 14131632,
+            "sha256": "2abdab0ef5033f39581e3da1a15869424f71a75fe8c90681a3cb370d5f1d6c3c"
+          },
+          {
+            "name": "part-00014.parquet",
+            "rows": 262144,
+            "bytes": 14002080,
+            "sha256": "652bfbdf73f105b3a2e8e578c63018b6b7021d024fd1a41ef06bdc24da7f1006"
+          },
+          {
+            "name": "part-00015.parquet",
+            "rows": 279104,
+            "bytes": 14763060,
+            "sha256": "b11bd8bae8fc3ec2a2beb7c96efd031ab58ae1b18052f3b69440bc3ddcc947b3"
+          },
+          {
+            "name": "part-00016.parquet",
+            "rows": 262144,
+            "bytes": 13934935,
+            "sha256": "784ede386c8d35d9ded000d5f3bea4acd85a2b24d41efe89125bf13022fdbf53"
+          },
+          {
+            "name": "part-00017.parquet",
+            "rows": 235057,
+            "bytes": 12334887,
+            "sha256": "93799e590af29a17b93f02127207bc4736837437c6d278ba6703795e33b760ee"
+          }
+        ],
+        "crc_verified": true,
+        "batch_id": "92e1684a68a04308812ce256441c9212"
+      },
+      "staging_path": "work/ingestion/staging/f0e908b44b611edf5c481474c22ee10eb254579a45d9a1cfdf707160ba0918a0"
+    },
+    {
+      "source_id": "taxi_zones",
+      "source_period": "2025-06",
+      "url": "https://d37ci6vzurychx.cloudfront.net/misc/taxi_zone_lookup.csv",
+      "relative_path": "data/ods/files/taxi_zones/2025-06/taxi_zone_lookup.csv",
+      "kind": "csv",
+      "expected_bytes": null,
+      "poll_id": null,
+      "source_url": "https://d37ci6vzurychx.cloudfront.net/misc/taxi_zone_lookup.csv",
+      "received_at_utc": "2026-11-01T08:59:42.094594+00:00",
+      "sha256": "1a99e105092230f8620f301edcca7f80d3080642ff404d28ed957d3fa222c8ed",
+      "bytes": 12331,
+      "etag_or_last_modified": "\"c6064b7c144c716450641f769659d178\"",
+      "download_reused": true,
+      "object_id": "f14e4648d97aea23680f12d38e21c3411c709b4ddf9f76592367f79b6b668887",
+      "expected_members": 1,
+      "members": [
+        {
+          "name": "",
+          "bytes": 12331
+        }
+      ],
+      "expected_rows": null,
+      "prepared": {
+        "object_sha256": "1a99e105092230f8620f301edcca7f80d3080642ff404d28ed957d3fa222c8ed",
+        "rows": 265,
+        "member_counts": {
+          "": 265
+        },
+        "shards": [
+          {
+            "name": "part-00000.parquet",
+            "rows": 265,
+            "bytes": 7023,
+            "sha256": "9899427d3a86f3bfb3f55d45be8ca179a9d4735cc4ef1804437d2dde1a581ac8"
+          }
+        ],
+        "crc_verified": false,
+        "batch_id": "92e1684a68a04308812ce256441c9212"
+      },
+      "staging_path": "work/ingestion/staging/f14e4648d97aea23680f12d38e21c3411c709b4ddf9f76592367f79b6b668887"
+    },
+    {
+      "source_id": "taxi_zone_geometry",
+      "source_period": "2025-06",
+      "url": "https://d37ci6vzurychx.cloudfront.net/misc/taxi_zones.zip",
+      "relative_path": "data/ods/files/taxi_zone_geometry/2025-06/taxi_zones.zip",
+      "kind": "geometry_zip",
+      "expected_bytes": null,
+      "poll_id": null,
+      "source_url": "https://d37ci6vzurychx.cloudfront.net/misc/taxi_zones.zip",
+      "received_at_utc": "2026-11-01T08:59:43.881952+00:00",
+      "sha256": "f6d711917bb4340f8f644d5366c51665489eb2d426dd1a4a55677721ae5adf17",
+      "bytes": 1022574,
+      "etag_or_last_modified": "\"06c63faa34f0bf832c86e37fcde13594\"",
+      "download_reused": true,
+      "object_id": "69d0c90a7c4fe2ac298290d4782532077d84969606dfa58cc9bb99d073c37d0b",
+      "expected_members": 5,
+      "members": [
+        {
+          "name": "taxi_zones/taxi_zones.cpg",
+          "bytes": 5,
+          "crc32": "0e813c50"
+        },
+        {
+          "name": "taxi_zones/taxi_zones.dbf",
+          "bytes": 59927,
+          "crc32": "00e55d27"
+        },
+        {
+          "name": "taxi_zones/taxi_zones.prj",
+          "bytes": 565,
+          "crc32": "41cd8b3a"
+        },
+        {
+          "name": "taxi_zones/taxi_zones.shp",
+          "bytes": 1586264,
+          "crc32": "ce46b5a8"
+        },
+        {
+          "name": "taxi_zones/taxi_zones.shx",
+          "bytes": 2204,
+          "crc32": "3648ed25"
+        }
+      ],
+      "expected_rows": 0,
+      "prepared": {
+        "object_sha256": "f6d711917bb4340f8f644d5366c51665489eb2d426dd1a4a55677721ae5adf17",
+        "rows": 0,
+        "member_counts": {},
+        "shards": [],
+        "crc_verified": true,
+        "batch_id": "92e1684a68a04308812ce256441c9212"
+      },
+      "staging_path": "work/ingestion/staging/69d0c90a7c4fe2ac298290d4782532077d84969606dfa58cc9bb99d073c37d0b"
+    },
+    {
+      "source_id": "noaa_daily",
+      "source_period": "2025-06",
+      "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=daily-summaries&stations=USW00094728&startDate=2025-06-01&endDate=2025-06-30&format=json&units=metric&includeAttributes=true",
+      "relative_path": "data/ods/files/noaa_daily/2025-06/USW00094728_2025-06.json",
+      "kind": "json_array",
+      "expected_bytes": null,
+      "poll_id": null,
+      "source_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=daily-summaries&stations=USW00094728&startDate=2025-06-01&endDate=2025-06-30&format=json&units=metric&includeAttributes=true",
+      "received_at_utc": "2026-11-01T08:59:46.887721+00:00",
+      "sha256": "328897069e1c19b92b8181226baf48bd182837f701442ea6964e7c183a884f7d",
+      "bytes": 14364,
+      "etag_or_last_modified": null,
+      "download_reused": true,
+      "object_id": "b289261174124e7a71eecadc126e458dcdb34505ebef7f9ceedd7b6727ce8370",
+      "expected_members": 1,
+      "members": [
+        {
+          "name": "",
+          "bytes": 14364
+        }
+      ],
+      "expected_rows": null,
+      "prepared": {
+        "object_sha256": "328897069e1c19b92b8181226baf48bd182837f701442ea6964e7c183a884f7d",
+        "rows": 30,
+        "member_counts": {
+          "": 30
+        },
+        "shards": [
+          {
+            "name": "part-00000.parquet",
+            "rows": 30,
+            "bytes": 4685,
+            "sha256": "253f4bf8335fdb58c95c420f14d59a16b7959b4c7a77865c588256602ccb062d"
+          }
+        ],
+        "crc_verified": false,
+        "batch_id": "92e1684a68a04308812ce256441c9212"
+      },
+      "staging_path": "work/ingestion/staging/b289261174124e7a71eecadc126e458dcdb34505ebef7f9ceedd7b6727ce8370"
+    }
+  ],
+  "finished_at_utc": "2026-11-01T09:24:05.370327+00:00",
+  "ods_result": {
+    "run_id": "5442a761bb054513aa6b84e6d87373a4",
+    "month": "2025-06",
+    "sources": [
+      {
+        "source_id": "tlc_yellow",
+        "source_period": "2025-06",
+        "object_id": "e990e4c9ff9fe79f504aea07bd0092bf6c57a8e6d41ecca27c4d0bc5b6cb089b",
+        "raw_sha256": "1bea7f5b09c744414451fa7fef09fbc5a393ffb1621c859be6ba0df23a14e1b6",
+        "raw_bytes": 73542954,
+        "rows": 4322960,
+        "expected_members": 1,
+        "processed_members": 1,
+        "member_counts": {
+          "": 4322960
+        },
+        "action": "reused",
+        "ods_version_before": 4,
+        "ods_version_after": 4,
+        "batch_id": "a8a7fa1868d22a0d3862e2a0d246c9f98646a27fd369e18924abbbd8a06cf783"
+      },
+      {
+        "source_id": "citibike_trips",
+        "source_period": "2025-06",
+        "object_id": "f0e908b44b611edf5c481474c22ee10eb254579a45d9a1cfdf707160ba0918a0",
+        "raw_sha256": "fdc15ebc98ddef6ffa6825a71616e2f704def8376590881f91b0109cd2d81f9b",
+        "raw_bytes": 929043436,
+        "rows": 4759345,
+        "expected_members": 5,
+        "processed_members": 5,
+        "member_counts": {
+          "202506-citibike-tripdata_2.csv": 1000000,
+          "202506-citibike-tripdata_3.csv": 1000000,
+          "202506-citibike-tripdata_1.csv": 1000000,
+          "202506-citibike-tripdata_4.csv": 1000000,
+          "202506-citibike-tripdata_5.csv": 759345
+        },
+        "action": "reused",
+        "ods_version_before": 4,
+        "ods_version_after": 4,
+        "batch_id": "753eb506aaa661952d80a75ef93c07a024c7f94036a78c797593b2d4d58e2915"
+      },
+      {
+        "source_id": "taxi_zones",
+        "source_period": "2025-06",
+        "object_id": "f14e4648d97aea23680f12d38e21c3411c709b4ddf9f76592367f79b6b668887",
+        "raw_sha256": "1a99e105092230f8620f301edcca7f80d3080642ff404d28ed957d3fa222c8ed",
+        "raw_bytes": 12331,
+        "rows": 265,
+        "expected_members": 1,
+        "processed_members": 1,
+        "member_counts": {
+          "": 265
+        },
+        "action": "reused",
+        "ods_version_before": 4,
+        "ods_version_after": 4,
+        "batch_id": "7c239fbf219d86007e400d82c3d322c07cbe0cc84bd6a2942646ce46616e537c"
+      },
+      {
+        "source_id": "taxi_zone_geometry",
+        "source_period": "2025-06",
+        "object_id": "69d0c90a7c4fe2ac298290d4782532077d84969606dfa58cc9bb99d073c37d0b",
+        "raw_sha256": "f6d711917bb4340f8f644d5366c51665489eb2d426dd1a4a55677721ae5adf17",
+        "raw_bytes": 1022574,
+        "rows": 0,
+        "expected_members": 5,
+        "processed_members": 5,
+        "member_counts": {},
+        "action": "reused",
+        "ods_version_before": 4,
+        "ods_version_after": 4,
+        "batch_id": "44cf5bea1113ffc05d7087015fba1958c186e2c271af077011859b0c2f2883ab"
+      },
+      {
+        "source_id": "noaa_daily",
+        "source_period": "2025-06",
+        "object_id": "b289261174124e7a71eecadc126e458dcdb34505ebef7f9ceedd7b6727ce8370",
+        "raw_sha256": "328897069e1c19b92b8181226baf48bd182837f701442ea6964e7c183a884f7d",
+        "raw_bytes": 14364,
+        "rows": 30,
+        "expected_members": 1,
+        "processed_members": 1,
+        "member_counts": {
+          "": 30
+        },
+        "action": "reused",
+        "ods_version_before": 4,
+        "ods_version_after": 4,
+        "batch_id": "fb3591f09775c344e55279652da03d7fa54283baff40b1fcafc37ff3f18daecc"
+      }
+    ],
+    "inserted_rows": 0,
+    "duplicate_skipped_rows": 9082600,
+    "total_ods_rows_for_scope": 9082600,
+    "started_at_utc": "2026-11-01T09:20:04.377261+00:00",
+    "passed": true,
+    "finished_at_utc": "2026-11-01T09:24:03.415029+00:00",
+    "ods_version": 4
+  }
+}

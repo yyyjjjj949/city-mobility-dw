@@ -1,0 +1,8 @@
+source_id,rule,description,rows
+tlc_yellow,EXTREME_TOTAL_AMOUNT,总费用绝对值超过1000美元,4
+tlc_yellow,NEGATIVE_AMOUNT,存在负费用，保留原值,276302
+tlc_yellow,PASSENGER_MISSING_OR_ZERO,乘客数缺失或非正,1235142
+tlc_yellow,Q007,距离不适用于均值,133077
+tlc_yellow,Q008,至少一端未匹配纽约五行政区,39497
+citibike_trips,Q008,至少一端未匹配纽约五行政区,18838
+citibike_trips,STATION_MISSING,至少一端未提供站点编号,18566
