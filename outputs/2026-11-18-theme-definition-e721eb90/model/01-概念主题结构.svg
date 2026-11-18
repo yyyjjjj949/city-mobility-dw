@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="980" viewBox="0 0 1500 980" role="img" aria-label="城市历史出行：概念主题结构"><rect width="100%" height="100%" fill="#f5f8fa"/>
+<text x="45" y="69" font-family="Microsoft YaHei,Arial,sans-serif" font-size="34" fill="#17384c" font-weight="700">城市历史出行：概念主题结构</text>
+<text x="45" y="108" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" fill="#546d7d" font-weight="400">表达业务对象与分析视角；不在概念层混入表字段、主外键或数据库实体关系</text>
+<rect x="470" y="150" width="560" height="105" rx="13" fill="#e0efec" stroke="#9cb3c2" stroke-width="2"/>
+<text x="490" y="190" font-family="Microsoft YaHei,Arial,sans-serif" font-size="25" fill="#17384c" font-weight="700">总主题：城市历史出行</text>
+<text x="490" y="226" font-family="Microsoft YaHei,Arial,sans-serif" font-size="25" fill="#17384c" font-weight="400">范围：2025年6月 · Yellow Taxi / Citi Bike</text>
+<line x1="650" y1="255" x2="350" y2="330" stroke="#7892a3" stroke-width="2"/>
+<line x1="850" y1="255" x2="1150" y2="330" stroke="#7892a3" stroke-width="2"/>
+<rect x="100" y="330" width="520" height="100" rx="13" fill="#e8f0fa" stroke="#9cb3c2" stroke-width="2"/>
+<text x="120" y="369" font-family="Microsoft YaHei,Arial,sans-serif" font-size="24" fill="#17384c" font-weight="700">业务过程：出租车行程</text>
+<text x="120" y="404" font-family="Microsoft YaHei,Arial,sans-serif" font-size="24" fill="#17384c" font-weight="400">一次历史行程的完成记录</text>
+<rect x="880" y="330" width="520" height="100" rx="13" fill="#e8f0fa" stroke="#9cb3c2" stroke-width="2"/>
+<text x="900" y="369" font-family="Microsoft YaHei,Arial,sans-serif" font-size="24" fill="#17384c" font-weight="700">业务过程：共享单车骑行</text>
+<text x="900" y="404" font-family="Microsoft YaHei,Arial,sans-serif" font-size="24" fill="#17384c" font-weight="400">一次历史骑行的完成记录</text>
+<line x1="350" y1="430" x2="270" y2="530" stroke="#7892a3" stroke-width="2"/>
+<line x1="1150" y1="430" x2="270" y2="530" stroke="#7892a3" stroke-width="2"/>
+<line x1="350" y1="430" x2="750" y2="530" stroke="#7892a3" stroke-width="2"/>
+<line x1="1150" y1="430" x2="750" y2="530" stroke="#7892a3" stroke-width="2"/>
+<line x1="350" y1="430" x2="1230" y2="530" stroke="#7892a3" stroke-width="2"/>
+<line x1="1150" y1="430" x2="1230" y2="530" stroke="#7892a3" stroke-width="2"/>
+<rect x="50" y="530" width="430" height="145" rx="13" fill="#ffffff" stroke="#9cb3c2" stroke-width="2"/>
+<text x="70" y="568" font-family="Microsoft YaHei,Arial,sans-serif" font-size="23" fill="#17384c" font-weight="700">T01 出行需求与时间规律</text>
+<text x="70" y="602" font-family="Microsoft YaHei,Arial,sans-serif" font-size="23" fill="#17384c" font-weight="400">日期、小时、周类型、交通方式</text>
+<text x="70" y="636" font-family="Microsoft YaHei,Arial,sans-serif" font-size="23" fill="#17384c" font-weight="400">关注活动强度与日内差异</text>
+<rect x="535" y="530" width="430" height="145" rx="13" fill="#ffffff" stroke="#9cb3c2" stroke-width="2"/>
+<text x="555" y="568" font-family="Microsoft YaHei,Arial,sans-serif" font-size="23" fill="#17384c" font-weight="700">T02 区域出发与OD联系</text>
+<text x="555" y="602" font-family="Microsoft YaHei,Arial,sans-serif" font-size="23" fill="#17384c" font-weight="400">起点/终点区域、行政区、时段</text>
+<text x="555" y="636" font-family="Microsoft YaHei,Arial,sans-serif" font-size="23" fill="#17384c" font-weight="400">关注热点、联系与匹配覆盖</text>
+<rect x="1020" y="530" width="430" height="145" rx="13" fill="#ffffff" stroke="#9cb3c2" stroke-width="2"/>
+<text x="1040" y="568" font-family="Microsoft YaHei,Arial,sans-serif" font-size="23" fill="#17384c" font-weight="700">T03 天气与出行量对比</text>
+<text x="1040" y="602" font-family="Microsoft YaHei,Arial,sans-serif" font-size="23" fill="#17384c" font-weight="400">周类型、降水组、方式、样本日</text>
+<text x="1040" y="636" font-family="Microsoft YaHei,Arial,sans-serif" font-size="23" fill="#17384c" font-weight="400">关注关联及证据适用范围</text>
+<rect x="70" y="745" width="1360" height="110" rx="13" fill="#eaf0f3" stroke="#9cb3c2" stroke-width="2"/>
+<text x="90" y="785" font-family="Microsoft YaHei,Arial,sans-serif" font-size="25" fill="#17384c" font-weight="700">共同分析保障：一致时间与空间定义 · 来源与质量追溯 · 样本和分母可核查</text>
+<text x="90" y="821" font-family="Microsoft YaHei,Arial,sans-serif" font-size="25" fill="#17384c" font-weight="400">输出：业务问题 → 指标与分析维度 → 图表与数值证据 → 结论与边界</text>
+<text x="70" y="922" font-family="Microsoft YaHei,Arial,sans-serif" font-size="22" fill="#6d5a38" font-weight="400">边界：接入行程≠全市总出行；观察关联≠因果；无边界来源不发布完整到达/净流入</text>
+</svg>

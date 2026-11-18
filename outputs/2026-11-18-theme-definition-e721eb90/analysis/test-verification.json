@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "tests": 8,
+  "command": "python -m unittest discover -s tests -p test_theme_analysis.py -v",
+  "versions": {
+    "pandas": "3.0.3",
+    "pyarrow": "23.0.1",
+    "matplotlib": "3.11.0"
+  },
+  "source": "historical pinned Delta snapshots; offline no service dependencies"
+}

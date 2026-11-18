@@ -1,0 +1,525 @@
+﻿transport_code,zone_key,zone_name,borough,departure_count,rank
+citibike,79,East Village,Manhattan,183181,1
+citibike,68,East Chelsea,Manhattan,157173,2
+citibike,255,Williamsburg (North Side),Brooklyn,126986,3
+citibike,246,West Chelsea/Hudson Yards,Manhattan,100640,4
+citibike,48,Clinton East,Manhattan,100034,5
+citibike,234,Union Sq,Manhattan,99826,6
+citibike,112,Greenpoint,Brooklyn,98023,7
+citibike,148,Lower East Side,Manhattan,93893,8
+citibike,181,Park Slope,Brooklyn,92709,9
+citibike,231,TriBeCa/Civic Center,Manhattan,87779,10
+citibike,170,Murray Hill,Manhattan,84453,11
+citibike,249,West Village,Manhattan,83654,12
+citibike,113,Greenwich Village North,Manhattan,80585,13
+citibike,43,Central Park,Manhattan,77548,14
+citibike,61,Crown Heights North,Brooklyn,74508,15
+citibike,97,Fort Greene,Brooklyn,71520,16
+citibike,256,Williamsburg (South Side),Brooklyn,69848,17
+citibike,232,Two Bridges/Seward Park,Manhattan,67072,18
+citibike,37,Bushwick South,Brooklyn,66658,19
+citibike,80,East Williamsburg,Brooklyn,64279,20
+citibike,158,Meatpacking/West Village West,Manhattan,63213,21
+citibike,7,Astoria,Queens,61202,22
+citibike,17,Bedford,Brooklyn,58976,23
+citibike,90,Flatiron,Manhattan,57037,24
+citibike,144,Little Italy/NoLiTa,Manhattan,56700,25
+citibike,13,Battery Park City,Manhattan,56156,26
+citibike,137,Kips Bay,Manhattan,55714,27
+citibike,163,Midtown North,Manhattan,55383,28
+citibike,143,Lincoln Square West,Manhattan,54459,29
+citibike,239,Upper West Side South,Manhattan,54267,30
+citibike,107,Gramercy,Manhattan,53268,31
+citibike,141,Lenox Hill West,Manhattan,52883,32
+citibike,161,Midtown Center,Manhattan,51626,33
+citibike,145,Long Island City/Hunters Point,Queens,50667,34
+citibike,25,Boerum Hill,Brooklyn,50030,35
+citibike,186,Penn Station/Madison Sq West,Manhattan,47597,36
+citibike,114,Greenwich Village South,Manhattan,47419,37
+citibike,100,Garment District,Manhattan,47322,38
+citibike,33,Brooklyn Heights,Brooklyn,45045,39
+citibike,36,Bushwick North,Brooklyn,44603,40
+citibike,142,Lincoln Square East,Manhattan,44274,41
+citibike,49,Clinton Hill,Brooklyn,44216,42
+citibike,189,Prospect Heights,Brooklyn,44044,43
+citibike,125,Hudson Sq,Manhattan,43857,44
+citibike,87,Financial District North,Manhattan,43057,45
+citibike,225,Stuyvesant Heights,Brooklyn,42436,46
+citibike,41,Central Harlem,Manhattan,42346,47
+citibike,66,DUMBO/Vinegar Hill,Brooklyn,41174,48
+citibike,263,Yorkville West,Manhattan,39250,49
+citibike,229,Sutton Place/Turtle Bay North,Manhattan,38652,50
+citibike,238,Upper West Side North,Manhattan,37393,51
+citibike,4,Alphabet City,Manhattan,37086,52
+citibike,74,East Harlem North,Manhattan,36464,53
+citibike,230,Times Sq/Theatre District,Manhattan,36397,54
+citibike,224,Stuy Town/Peter Cooper Village,Manhattan,36192,55
+citibike,190,Prospect Park,Brooklyn,35174,56
+citibike,233,UN/Turtle Bay South,Manhattan,34735,57
+citibike,42,Central Harlem North,Manhattan,34639,58
+citibike,236,Upper East Side North,Manhattan,34369,59
+citibike,50,Clinton West,Manhattan,33836,60
+citibike,162,Midtown East,Manhattan,33515,61
+citibike,75,East Harlem South,Manhattan,33358,62
+citibike,223,Steinway,Queens,30844,63
+citibike,151,Manhattan Valley,Manhattan,30773,64
+citibike,198,Ridgewood,Queens,30590,65
+citibike,226,Sunnyside,Queens,30372,66
+citibike,261,World Trade Center,Manhattan,30067,67
+citibike,45,Chinatown,Manhattan,29440,68
+citibike,211,SoHo,Manhattan,29434,69
+citibike,188,Prospect-Lefferts Gardens,Brooklyn,29000,70
+citibike,164,Midtown South,Manhattan,27454,71
+citibike,237,Upper East Side South,Manhattan,27208,72
+citibike,40,Carroll Gardens,Brooklyn,26934,73
+citibike,65,Downtown Brooklyn/MetroTech,Brooklyn,25136,74
+citibike,129,Jackson Heights,Queens,23815,75
+citibike,140,Lenox Hill East,Manhattan,23593,76
+citibike,166,Morningside Heights,Manhattan,22919,77
+citibike,179,Old Astoria,Queens,18646,78
+citibike,228,Sunset Park West,Brooklyn,18320,79
+citibike,106,Gowanus,Brooklyn,18264,80
+citibike,168,Mott Haven/Port Morris,Bronx,18068,81
+citibike,244,Washington Heights South,Manhattan,17906,82
+citibike,34,Brooklyn Navy Yard,Brooklyn,17515,83
+citibike,62,Crown Heights South,Brooklyn,17039,84
+citibike,260,Woodside,Queens,16885,85
+citibike,116,Hamilton Heights,Manhattan,16871,86
+citibike,262,Yorkville East,Manhattan,16755,87
+citibike,146,Long Island City/Queens Plaza,Queens,16332,88
+citibike,247,West Concourse,Bronx,16298,89
+citibike,195,Red Hook,Brooklyn,15057,90
+citibike,69,East Concourse/Concourse Village,Bronx,14950,91
+citibike,257,Windsor Terrace,Brooklyn,14185,92
+citibike,24,Bloomingdale,Manhattan,13922,93
+citibike,159,Melrose South,Bronx,13655,94
+citibike,54,Columbia Street,Brooklyn,13281,95
+citibike,152,Manhattanville,Manhattan,12483,96
+citibike,82,Elmhurst,Queens,12420,97
+citibike,89,Flatbush/Ditmas Park,Brooklyn,12008,98
+citibike,52,Cobble Hill,Brooklyn,10353,99
+citibike,177,Ocean Hill,Brooklyn,9759,100
+citibike,243,Washington Heights North,Manhattan,9643,101
+citibike,209,Seaport,Manhattan,9293,102
+citibike,47,Claremont/Bathgate,Bronx,8473,103
+citibike,88,Financial District South,Manhattan,7989,104
+citibike,167,Morrisania/Melrose,Bronx,7925,105
+citibike,193,Queensbridge/Ravenswood,Queens,7923,106
+citibike,119,Highbridge,Bronx,7580,107
+citibike,235,University Heights/Morris Heights,Bronx,6840,108
+citibike,169,Mount Hope,Bronx,6778,109
+citibike,227,Sunset Park East,Brooklyn,6678,110
+citibike,217,South Williamsburg,Brooklyn,6400,111
+citibike,78,East Tremont,Bronx,5891,112
+citibike,18,Bedford Park,Bronx,5696,113
+citibike,241,Van Cortlandt Village,Bronx,5606,114
+citibike,202,Roosevelt Island,Manhattan,5406,115
+citibike,83,Elmhurst/Maspeth,Queens,4739,116
+citibike,157,Maspeth,Queens,4399,117
+citibike,194,Randalls Island,Manhattan,4262,118
+citibike,133,Kensington,Brooklyn,4231,119
+citibike,20,Belmont,Bronx,4181,120
+citibike,147,Longwood,Bronx,4128,121
+citibike,85,Erasmus,Brooklyn,4106,122
+citibike,126,Hunts Point,Bronx,4069,123
+citibike,60,Crotona Park East,Bronx,3929,124
+citibike,136,Kingsbridge Heights,Bronx,3836,125
+citibike,70,East Elmhurst,Queens,3784,126
+citibike,8,Astoria Park,Queens,3562,127
+citibike,173,North Corona,Queens,3487,128
+citibike,127,Inwood,Manhattan,3417,129
+citibike,105,Governor's Island/Ellis Island/Liberty Island,Manhattan,3319,130
+citibike,111,Green-Wood Cemetery,Brooklyn,3101,131
+citibike,71,East Flatbush/Farragut,Brooklyn,2865,132
+citibike,56,Corona,Queens,2798,133
+citibike,120,Highbridge Park,Manhattan,2529,134
+citibike,12,Battery Park,Manhattan,2514,135
+citibike,220,Spuyten Duyvil/Kingsbridge,Bronx,2441,136
+citibike,94,Fordham South,Bronx,2343,137
+citibike,93,Flushing Meadows-Corona Park,Queens,1941,138
+citibike,174,Norwood,Bronx,1880,139
+citibike,102,Glendale,Queens,1375,140
+citibike,59,Crotona Park,Bronx,1084,141
+citibike,128,Inwood Hill Park,Manhattan,913,142
+citibike,14,Bay Ridge,Brooklyn,894,143
+citibike,57,Corona,Queens,806,144
+citibike,26,Borough Park,Brooklyn,485,145
+citibike,160,Middle Village,Queens,443,146
+citibike,153,Marble Hill,Manhattan,424,147
+citibike,240,Van Cortlandt Park,Bronx,391,148
+citibike,72,East Flatbush/Remsen Village,Brooklyn,312,149
+citibike,35,Brownsville,Brooklyn,263,150
+citibike,31,Bronx Park,Bronx,143,151
+citibike,2,Jamaica Bay,Queens,0,152
+citibike,3,Allerton/Pelham Gardens,Bronx,0,153
+citibike,5,Arden Heights,Staten Island,0,154
+citibike,6,Arrochar/Fort Wadsworth,Staten Island,0,155
+citibike,9,Auburndale,Queens,0,156
+citibike,10,Baisley Park,Queens,0,157
+citibike,11,Bath Beach,Brooklyn,0,158
+citibike,15,Bay Terrace/Fort Totten,Queens,0,159
+citibike,16,Bayside,Queens,0,160
+citibike,19,Bellerose,Queens,0,161
+citibike,21,Bensonhurst East,Brooklyn,0,162
+citibike,22,Bensonhurst West,Brooklyn,0,163
+citibike,23,Bloomfield/Emerson Hill,Staten Island,0,164
+citibike,27,Breezy Point/Fort Tilden/Riis Beach,Queens,0,165
+citibike,28,Briarwood/Jamaica Hills,Queens,0,166
+citibike,29,Brighton Beach,Brooklyn,0,167
+citibike,30,Broad Channel,Queens,0,168
+citibike,32,Bronxdale,Bronx,0,169
+citibike,38,Cambria Heights,Queens,0,170
+citibike,39,Canarsie,Brooklyn,0,171
+citibike,44,Charleston/Tottenville,Staten Island,0,172
+citibike,46,City Island,Bronx,0,173
+citibike,51,Co-Op City,Bronx,0,174
+citibike,53,College Point,Queens,0,175
+citibike,55,Coney Island,Brooklyn,0,176
+citibike,58,Country Club,Bronx,0,177
+citibike,63,Cypress Hills,Brooklyn,0,178
+citibike,64,Douglaston,Queens,0,179
+citibike,67,Dyker Heights,Brooklyn,0,180
+citibike,73,East Flushing,Queens,0,181
+citibike,76,East New York,Brooklyn,0,182
+citibike,77,East New York/Pennsylvania Avenue,Brooklyn,0,183
+citibike,81,Eastchester,Bronx,0,184
+citibike,84,Eltingville/Annadale/Prince's Bay,Staten Island,0,185
+citibike,86,Far Rockaway,Queens,0,186
+citibike,91,Flatlands,Brooklyn,0,187
+citibike,92,Flushing,Queens,0,188
+citibike,95,Forest Hills,Queens,0,189
+citibike,96,Forest Park/Highland Park,Queens,0,190
+citibike,98,Fresh Meadows,Queens,0,191
+citibike,99,Freshkills Park,Staten Island,0,192
+citibike,101,Glen Oaks,Queens,0,193
+citibike,103,Governor's Island/Ellis Island/Liberty Island,Manhattan,0,194
+citibike,104,Governor's Island/Ellis Island/Liberty Island,Manhattan,0,195
+citibike,108,Gravesend,Brooklyn,0,196
+citibike,109,Great Kills,Staten Island,0,197
+citibike,110,Great Kills Park,Staten Island,0,198
+citibike,115,Grymes Hill/Clifton,Staten Island,0,199
+citibike,117,Hammels/Arverne,Queens,0,200
+citibike,118,Heartland Village/Todt Hill,Staten Island,0,201
+citibike,121,Hillcrest/Pomonok,Queens,0,202
+citibike,122,Hollis,Queens,0,203
+citibike,123,Homecrest,Brooklyn,0,204
+citibike,124,Howard Beach,Queens,0,205
+citibike,130,Jamaica,Queens,0,206
+citibike,131,Jamaica Estates,Queens,0,207
+citibike,132,JFK Airport,Queens,0,208
+citibike,134,Kew Gardens,Queens,0,209
+citibike,135,Kew Gardens Hills,Queens,0,210
+citibike,138,LaGuardia Airport,Queens,0,211
+citibike,139,Laurelton,Queens,0,212
+citibike,149,Madison,Brooklyn,0,213
+citibike,150,Manhattan Beach,Brooklyn,0,214
+citibike,154,Marine Park/Floyd Bennett Field,Brooklyn,0,215
+citibike,155,Marine Park/Mill Basin,Brooklyn,0,216
+citibike,156,Mariners Harbor,Staten Island,0,217
+citibike,165,Midwood,Brooklyn,0,218
+citibike,171,Murray Hill-Queens,Queens,0,219
+citibike,172,New Dorp/Midland Beach,Staten Island,0,220
+citibike,175,Oakland Gardens,Queens,0,221
+citibike,176,Oakwood,Staten Island,0,222
+citibike,178,Ocean Parkway South,Brooklyn,0,223
+citibike,180,Ozone Park,Queens,0,224
+citibike,182,Parkchester,Bronx,0,225
+citibike,183,Pelham Bay,Bronx,0,226
+citibike,184,Pelham Bay Park,Bronx,0,227
+citibike,185,Pelham Parkway,Bronx,0,228
+citibike,187,Port Richmond,Staten Island,0,229
+citibike,191,Queens Village,Queens,0,230
+citibike,192,Queensboro Hill,Queens,0,231
+citibike,196,Rego Park,Queens,0,232
+citibike,197,Richmond Hill,Queens,0,233
+citibike,199,Rikers Island,Bronx,0,234
+citibike,200,Riverdale/North Riverdale/Fieldston,Bronx,0,235
+citibike,201,Rockaway Park,Queens,0,236
+citibike,203,Rosedale,Queens,0,237
+citibike,204,Rossville/Woodrow,Staten Island,0,238
+citibike,205,Saint Albans,Queens,0,239
+citibike,206,Saint George/New Brighton,Staten Island,0,240
+citibike,207,Saint Michaels Cemetery/Woodside,Queens,0,241
+citibike,208,Schuylerville/Edgewater Park,Bronx,0,242
+citibike,210,Sheepshead Bay,Brooklyn,0,243
+citibike,212,Soundview/Bruckner,Bronx,0,244
+citibike,213,Soundview/Castle Hill,Bronx,0,245
+citibike,214,South Beach/Dongan Hills,Staten Island,0,246
+citibike,215,South Jamaica,Queens,0,247
+citibike,216,South Ozone Park,Queens,0,248
+citibike,218,Springfield Gardens North,Queens,0,249
+citibike,219,Springfield Gardens South,Queens,0,250
+citibike,221,Stapleton,Staten Island,0,251
+citibike,222,Starrett City,Brooklyn,0,252
+citibike,242,Van Nest/Morris Park,Bronx,0,253
+citibike,245,West Brighton,Staten Island,0,254
+citibike,248,West Farms/Bronx River,Bronx,0,255
+citibike,250,Westchester Village/Unionport,Bronx,0,256
+citibike,251,Westerleigh,Staten Island,0,257
+citibike,252,Whitestone,Queens,0,258
+citibike,253,Willets Point,Queens,0,259
+citibike,254,Williamsbridge/Olinville,Bronx,0,260
+citibike,258,Woodhaven,Queens,0,261
+citibike,259,Woodlawn/Wakefield,Bronx,0,262
+taxi_yellow,132,JFK Airport,Queens,185935,1
+taxi_yellow,237,Upper East Side South,Manhattan,175387,2
+taxi_yellow,161,Midtown Center,Manhattan,175097,3
+taxi_yellow,236,Upper East Side North,Manhattan,152247,4
+taxi_yellow,230,Times Sq/Theatre District,Manhattan,127723,5
+taxi_yellow,162,Midtown East,Manhattan,127105,6
+taxi_yellow,186,Penn Station/Madison Sq West,Manhattan,126989,7
+taxi_yellow,138,LaGuardia Airport,Queens,113814,8
+taxi_yellow,170,Murray Hill,Manhattan,113517,9
+taxi_yellow,142,Lincoln Square East,Manhattan,112949,10
+taxi_yellow,234,Union Sq,Manhattan,110724,11
+taxi_yellow,79,East Village,Manhattan,110079,12
+taxi_yellow,68,East Chelsea,Manhattan,108647,13
+taxi_yellow,163,Midtown North,Manhattan,103739,14
+taxi_yellow,48,Clinton East,Manhattan,103393,15
+taxi_yellow,239,Upper West Side South,Manhattan,101363,16
+taxi_yellow,249,West Village,Manhattan,91208,17
+taxi_yellow,164,Midtown South,Manhattan,89294,18
+taxi_yellow,141,Lenox Hill West,Manhattan,85897,19
+taxi_yellow,107,Gramercy,Manhattan,78921,20
+taxi_yellow,246,West Chelsea/Hudson Yards,Manhattan,77545,21
+taxi_yellow,140,Lenox Hill East,Manhattan,75562,22
+taxi_yellow,263,Yorkville West,Manhattan,71906,23
+taxi_yellow,238,Upper West Side North,Manhattan,70684,24
+taxi_yellow,229,Sutton Place/Turtle Bay North,Manhattan,64849,25
+taxi_yellow,90,Flatiron,Manhattan,64264,26
+taxi_yellow,231,TriBeCa/Civic Center,Manhattan,61163,27
+taxi_yellow,114,Greenwich Village South,Manhattan,58999,28
+taxi_yellow,100,Garment District,Manhattan,58826,29
+taxi_yellow,113,Greenwich Village North,Manhattan,57188,30
+taxi_yellow,148,Lower East Side,Manhattan,55026,31
+taxi_yellow,43,Central Park,Manhattan,54475,32
+taxi_yellow,262,Yorkville East,Manhattan,52839,33
+taxi_yellow,144,Little Italy/NoLiTa,Manhattan,47801,34
+taxi_yellow,233,UN/Turtle Bay South,Manhattan,47344,35
+taxi_yellow,143,Lincoln Square West,Manhattan,46540,36
+taxi_yellow,137,Kips Bay,Manhattan,45732,37
+taxi_yellow,158,Meatpacking/West Village West,Manhattan,45558,38
+taxi_yellow,211,SoHo,Manhattan,35770,39
+taxi_yellow,87,Financial District North,Manhattan,33352,40
+taxi_yellow,50,Clinton West,Manhattan,32652,41
+taxi_yellow,151,Manhattan Valley,Manhattan,32532,42
+taxi_yellow,75,East Harlem South,Manhattan,31651,43
+taxi_yellow,13,Battery Park City,Manhattan,28892,44
+taxi_yellow,261,World Trade Center,Manhattan,22933,45
+taxi_yellow,125,Hudson Sq,Manhattan,21708,46
+taxi_yellow,166,Morningside Heights,Manhattan,21470,47
+taxi_yellow,41,Central Harlem,Manhattan,20662,48
+taxi_yellow,74,East Harlem North,Manhattan,18396,49
+taxi_yellow,88,Financial District South,Manhattan,15711,50
+taxi_yellow,4,Alphabet City,Manhattan,14461,51
+taxi_yellow,42,Central Harlem North,Manhattan,14082,52
+taxi_yellow,232,Two Bridges/Seward Park,Manhattan,13142,53
+taxi_yellow,70,East Elmhurst,Queens,12869,54
+taxi_yellow,24,Bloomingdale,Manhattan,11566,55
+taxi_yellow,145,Long Island City/Hunters Point,Queens,11420,56
+taxi_yellow,7,Astoria,Queens,10964,57
+taxi_yellow,209,Seaport,Manhattan,10880,58
+taxi_yellow,255,Williamsburg (North Side),Brooklyn,10631,59
+taxi_yellow,244,Washington Heights South,Manhattan,10623,60
+taxi_yellow,224,Stuy Town/Peter Cooper Village,Manhattan,9830,61
+taxi_yellow,226,Sunnyside,Queens,9744,62
+taxi_yellow,45,Chinatown,Manhattan,9711,63
+taxi_yellow,116,Hamilton Heights,Manhattan,9277,64
+taxi_yellow,256,Williamsburg (South Side),Brooklyn,8944,65
+taxi_yellow,61,Crown Heights North,Brooklyn,8931,66
+taxi_yellow,37,Bushwick South,Brooklyn,8032,67
+taxi_yellow,112,Greenpoint,Brooklyn,7855,68
+taxi_yellow,80,East Williamsburg,Brooklyn,7292,69
+taxi_yellow,65,Downtown Brooklyn/MetroTech,Brooklyn,6856,70
+taxi_yellow,66,DUMBO/Vinegar Hill,Brooklyn,6586,71
+taxi_yellow,33,Brooklyn Heights,Brooklyn,6547,72
+taxi_yellow,181,Park Slope,Brooklyn,6475,73
+taxi_yellow,97,Fort Greene,Brooklyn,6362,74
+taxi_yellow,25,Boerum Hill,Brooklyn,6091,75
+taxi_yellow,129,Jackson Heights,Queens,5982,76
+taxi_yellow,130,Jamaica,Queens,5740,77
+taxi_yellow,152,Manhattanville,Manhattan,5682,78
+taxi_yellow,76,East New York,Brooklyn,5633,79
+taxi_yellow,225,Stuyvesant Heights,Brooklyn,5551,80
+taxi_yellow,17,Bedford,Brooklyn,5515,81
+taxi_yellow,36,Bushwick North,Brooklyn,5368,82
+taxi_yellow,188,Prospect-Lefferts Gardens,Brooklyn,5218,83
+taxi_yellow,89,Flatbush/Ditmas Park,Brooklyn,5005,84
+taxi_yellow,243,Washington Heights North,Manhattan,4957,85
+taxi_yellow,146,Long Island City/Queens Plaza,Queens,4858,86
+taxi_yellow,49,Clinton Hill,Brooklyn,4566,87
+taxi_yellow,260,Woodside,Queens,4245,88
+taxi_yellow,216,South Ozone Park,Queens,4187,89
+taxi_yellow,179,Old Astoria,Queens,3953,90
+taxi_yellow,82,Elmhurst,Queens,3860,91
+taxi_yellow,197,Richmond Hill,Queens,3814,92
+taxi_yellow,193,Queensbridge/Ravenswood,Queens,3779,93
+taxi_yellow,39,Canarsie,Brooklyn,3644,94
+taxi_yellow,168,Mott Haven/Port Morris,Bronx,3554,95
+taxi_yellow,223,Steinway,Queens,3520,96
+taxi_yellow,95,Forest Hills,Queens,3277,97
+taxi_yellow,177,Ocean Hill,Brooklyn,3056,98
+taxi_yellow,228,Sunset Park West,Brooklyn,3052,99
+taxi_yellow,198,Ridgewood,Queens,2986,100
+taxi_yellow,35,Brownsville,Brooklyn,2906,101
+taxi_yellow,72,East Flatbush/Remsen Village,Brooklyn,2863,102
+taxi_yellow,91,Flatlands,Brooklyn,2718,103
+taxi_yellow,71,East Flatbush/Farragut,Brooklyn,2630,104
+taxi_yellow,157,Maspeth,Queens,2535,105
+taxi_yellow,189,Prospect Heights,Brooklyn,2515,106
+taxi_yellow,62,Crown Heights South,Brooklyn,2491,107
+taxi_yellow,10,Baisley Park,Queens,2386,108
+taxi_yellow,247,West Concourse,Bronx,2257,109
+taxi_yellow,14,Bay Ridge,Brooklyn,2240,110
+taxi_yellow,127,Inwood,Manhattan,2199,111
+taxi_yellow,85,Erasmus,Brooklyn,2157,112
+taxi_yellow,195,Red Hook,Brooklyn,2039,113
+taxi_yellow,40,Carroll Gardens,Brooklyn,1998,114
+taxi_yellow,52,Cobble Hill,Brooklyn,1903,115
+taxi_yellow,12,Battery Park,Manhattan,1900,116
+taxi_yellow,215,South Jamaica,Queens,1860,117
+taxi_yellow,63,Cypress Hills,Brooklyn,1771,118
+taxi_yellow,258,Woodhaven,Queens,1731,119
+taxi_yellow,93,Flushing Meadows-Corona Park,Queens,1729,120
+taxi_yellow,106,Gowanus,Brooklyn,1722,121
+taxi_yellow,83,Elmhurst/Maspeth,Queens,1679,122
+taxi_yellow,92,Flushing,Queens,1615,123
+taxi_yellow,159,Melrose South,Bronx,1606,124
+taxi_yellow,69,East Concourse/Concourse Village,Bronx,1575,125
+taxi_yellow,56,Corona,Queens,1557,126
+taxi_yellow,196,Rego Park,Queens,1532,127
+taxi_yellow,28,Briarwood/Jamaica Hills,Queens,1530,128
+taxi_yellow,77,East New York/Pennsylvania Avenue,Brooklyn,1520,129
+taxi_yellow,134,Kew Gardens,Queens,1477,130
+taxi_yellow,205,Saint Albans,Queens,1462,131
+taxi_yellow,26,Borough Park,Brooklyn,1427,132
+taxi_yellow,55,Coney Island,Brooklyn,1416,133
+taxi_yellow,133,Kensington,Brooklyn,1355,134
+taxi_yellow,213,Soundview/Castle Hill,Bronx,1338,135
+taxi_yellow,254,Williamsbridge/Olinville,Bronx,1317,136
+taxi_yellow,51,Co-Op City,Bronx,1249,137
+taxi_yellow,165,Midwood,Brooklyn,1223,138
+taxi_yellow,191,Queens Village,Queens,1189,139
+taxi_yellow,219,Springfield Gardens South,Queens,1137,140
+taxi_yellow,155,Marine Park/Mill Basin,Brooklyn,1131,141
+taxi_yellow,169,Mount Hope,Bronx,1130,142
+taxi_yellow,167,Morrisania/Melrose,Bronx,1100,143
+taxi_yellow,182,Parkchester,Bronx,1093,144
+taxi_yellow,160,Middle Village,Queens,1075,145
+taxi_yellow,22,Bensonhurst West,Brooklyn,1071,146
+taxi_yellow,235,University Heights/Morris Heights,Bronx,1031,147
+taxi_yellow,210,Sheepshead Bay,Brooklyn,1028,148
+taxi_yellow,218,Springfield Gardens North,Queens,1020,149
+taxi_yellow,78,East Tremont,Bronx,1015,150
+taxi_yellow,119,Highbridge,Bronx,989,151
+taxi_yellow,217,South Williamsburg,Brooklyn,989,152
+taxi_yellow,102,Glendale,Queens,964,153
+taxi_yellow,18,Bedford Park,Bronx,963,154
+taxi_yellow,173,North Corona,Queens,927,155
+taxi_yellow,227,Sunset Park East,Brooklyn,927,156
+taxi_yellow,123,Homecrest,Brooklyn,893,157
+taxi_yellow,212,Soundview/Bruckner,Bronx,867,158
+taxi_yellow,257,Windsor Terrace,Brooklyn,864,159
+taxi_yellow,121,Hillcrest/Pomonok,Queens,860,160
+taxi_yellow,222,Starrett City,Brooklyn,851,161
+taxi_yellow,126,Hunts Point,Bronx,848,162
+taxi_yellow,250,Westchester Village/Unionport,Bronx,842,163
+taxi_yellow,220,Spuyten Duyvil/Kingsbridge,Bronx,837,164
+taxi_yellow,34,Brooklyn Navy Yard,Brooklyn,827,165
+taxi_yellow,248,West Farms/Bronx River,Bronx,815,166
+taxi_yellow,208,Schuylerville/Edgewater Park,Bronx,812,167
+taxi_yellow,180,Ozone Park,Queens,808,168
+taxi_yellow,242,Van Nest/Morris Park,Bronx,808,169
+taxi_yellow,241,Van Cortlandt Village,Bronx,795,170
+taxi_yellow,174,Norwood,Bronx,779,171
+taxi_yellow,131,Jamaica Estates,Queens,772,172
+taxi_yellow,47,Claremont/Bathgate,Bronx,755,173
+taxi_yellow,81,Eastchester,Bronx,716,174
+taxi_yellow,21,Bensonhurst East,Brooklyn,701,175
+taxi_yellow,149,Madison,Brooklyn,692,176
+taxi_yellow,136,Kingsbridge Heights,Bronx,686,177
+taxi_yellow,135,Kew Gardens Hills,Queens,678,178
+taxi_yellow,29,Brighton Beach,Brooklyn,674,179
+taxi_yellow,86,Far Rockaway,Queens,672,180
+taxi_yellow,117,Hammels/Arverne,Queens,669,181
+taxi_yellow,259,Woodlawn/Wakefield,Bronx,666,182
+taxi_yellow,124,Howard Beach,Queens,662,183
+taxi_yellow,60,Crotona Park East,Bronx,624,184
+taxi_yellow,147,Longwood,Bronx,615,185
+taxi_yellow,67,Dyker Heights,Brooklyn,605,186
+taxi_yellow,139,Laurelton,Queens,605,187
+taxi_yellow,32,Bronxdale,Bronx,599,188
+taxi_yellow,202,Roosevelt Island,Manhattan,585,189
+taxi_yellow,54,Columbia Street,Brooklyn,584,190
+taxi_yellow,20,Belmont,Bronx,566,191
+taxi_yellow,185,Pelham Parkway,Bronx,557,192
+taxi_yellow,122,Hollis,Queens,555,193
+taxi_yellow,19,Bellerose,Queens,541,194
+taxi_yellow,108,Gravesend,Brooklyn,525,195
+taxi_yellow,3,Allerton/Pelham Gardens,Bronx,502,196
+taxi_yellow,94,Fordham South,Bronx,495,197
+taxi_yellow,200,Riverdale/North Riverdale/Fieldston,Bronx,492,198
+taxi_yellow,190,Prospect Park,Brooklyn,488,199
+taxi_yellow,38,Cambria Heights,Queens,467,200
+taxi_yellow,53,College Point,Queens,444,201
+taxi_yellow,203,Rosedale,Queens,441,202
+taxi_yellow,171,Murray Hill-Queens,Queens,433,203
+taxi_yellow,192,Queensboro Hill,Queens,400,204
+taxi_yellow,16,Bayside,Queens,396,205
+taxi_yellow,252,Whitestone,Queens,396,206
+taxi_yellow,207,Saint Michaels Cemetery/Woodside,Queens,395,207
+taxi_yellow,150,Manhattan Beach,Brooklyn,377,208
+taxi_yellow,11,Bath Beach,Brooklyn,369,209
+taxi_yellow,178,Ocean Parkway South,Brooklyn,318,210
+taxi_yellow,201,Rockaway Park,Queens,302,211
+taxi_yellow,101,Glen Oaks,Queens,296,212
+taxi_yellow,175,Oakland Gardens,Queens,276,213
+taxi_yellow,98,Fresh Meadows,Queens,274,214
+taxi_yellow,183,Pelham Bay,Bronx,267,215
+taxi_yellow,194,Randalls Island,Manhattan,252,216
+taxi_yellow,9,Auburndale,Queens,222,217
+taxi_yellow,153,Marble Hill,Manhattan,220,218
+taxi_yellow,73,East Flushing,Queens,199,219
+taxi_yellow,15,Bay Terrace/Fort Totten,Queens,186,220
+taxi_yellow,64,Douglaston,Queens,185,221
+taxi_yellow,31,Bronx Park,Bronx,181,222
+taxi_yellow,128,Inwood Hill Park,Manhattan,167,223
+taxi_yellow,240,Van Cortlandt Park,Bronx,141,224
+taxi_yellow,6,Arrochar/Fort Wadsworth,Staten Island,120,225
+taxi_yellow,96,Forest Park/Highland Park,Queens,120,226
+taxi_yellow,8,Astoria Park,Queens,107,227
+taxi_yellow,154,Marine Park/Floyd Bennett Field,Brooklyn,106,228
+taxi_yellow,57,Corona,Queens,103,229
+taxi_yellow,184,Pelham Bay Park,Bronx,100,230
+taxi_yellow,120,Highbridge Park,Manhattan,99,231
+taxi_yellow,46,City Island,Bronx,84,232
+taxi_yellow,27,Breezy Point/Fort Tilden/Riis Beach,Queens,76,233
+taxi_yellow,221,Stapleton,Staten Island,66,234
+taxi_yellow,58,Country Club,Bronx,59,235
+taxi_yellow,253,Willets Point,Queens,54,236
+taxi_yellow,214,South Beach/Dongan Hills,Staten Island,48,237
+taxi_yellow,115,Grymes Hill/Clifton,Staten Island,46,238
+taxi_yellow,23,Bloomfield/Emerson Hill,Staten Island,34,239
+taxi_yellow,118,Heartland Village/Todt Hill,Staten Island,29,240
+taxi_yellow,59,Crotona Park,Bronx,28,241
+taxi_yellow,30,Broad Channel,Queens,25,242
+taxi_yellow,111,Green-Wood Cemetery,Brooklyn,24,243
+taxi_yellow,172,New Dorp/Midland Beach,Staten Island,24,244
+taxi_yellow,251,Westerleigh,Staten Island,22,245
+taxi_yellow,156,Mariners Harbor,Staten Island,21,246
+taxi_yellow,245,West Brighton,Staten Island,15,247
+taxi_yellow,206,Saint George/New Brighton,Staten Island,14,248
+taxi_yellow,109,Great Kills,Staten Island,10,249
+taxi_yellow,176,Oakwood,Staten Island,10,250
+taxi_yellow,44,Charleston/Tottenville,Staten Island,8,251
+taxi_yellow,2,Jamaica Bay,Queens,5,252
+taxi_yellow,187,Port Richmond,Staten Island,5,253
+taxi_yellow,204,Rossville/Woodrow,Staten Island,4,254
+taxi_yellow,84,Eltingville/Annadale/Prince's Bay,Staten Island,3,255
+taxi_yellow,199,Rikers Island,Bronx,1,256
+taxi_yellow,5,Arden Heights,Staten Island,0,257
+taxi_yellow,99,Freshkills Park,Staten Island,0,258
+taxi_yellow,103,Governor's Island/Ellis Island/Liberty Island,Manhattan,0,259
+taxi_yellow,104,Governor's Island/Ellis Island/Liberty Island,Manhattan,0,260
+taxi_yellow,105,Governor's Island/Ellis Island/Liberty Island,Manhattan,0,261
+taxi_yellow,110,Great Kills Park,Staten Island,0,262

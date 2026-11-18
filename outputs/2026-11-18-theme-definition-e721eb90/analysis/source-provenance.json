@@ -1,0 +1,1661 @@
+{
+  "manifest_sha256": "13e919e4d47a58f363993b27960597b1cb9c2487b451bb0f1717306f0b5df446",
+  "release_id": "fa3ddf3a864140a7b6893836d3215a39",
+  "sources": [
+    {
+      "table": "dws.trip_day",
+      "delta_version": 4,
+      "rows": 60,
+      "files": [
+        {
+          "path": "data/dws/trip_day/service_date=2025-06-01/part-00000-60efb38a-8871-4d74-8501-7c6e821178f4.c000.snappy.parquet",
+          "bytes": 6064,
+          "sha256": "f79d32b79b0186491bc0b3b15a822867f305b9f5d6212d70453a267acaca197f"
+        },
+        {
+          "path": "data/dws/trip_day/service_date=2025-06-02/part-00000-27482b62-2110-4f64-82f4-1b58334f67c4.c000.snappy.parquet",
+          "bytes": 6065,
+          "sha256": "aea1a0c3047e84885bb8364dc1d846a22308598533652b14fcf02b64f02fc942"
+        },
+        {
+          "path": "data/dws/trip_day/service_date=2025-06-03/part-00000-0e55b7fc-b562-4a68-b7f0-94fde807d8df.c000.snappy.parquet",
+          "bytes": 6065,
+          "sha256": "73745ef7ab8e27753c8ab7e5dba05d85fcc489bc0be8bdd936a70d26ff5141db"
+        },
+        {
+          "path": "data/dws/trip_day/service_date=2025-06-04/part-00000-03807280-f208-474a-8bab-d51e98d5287d.c000.snappy.parquet",
+          "bytes": 6065,
+          "sha256": "c46042a893abbdc1a2e4dc4926fe76573e5c33ccd159a6b0ec1afac0b66dd38b"
+        },
+        {
+          "path": "data/dws/trip_day/service_date=2025-06-05/part-00000-8ccf3d50-82ed-4d67-a469-6c131fc96c2e.c000.snappy.parquet",
+          "bytes": 6065,
+          "sha256": "352bc0999ae473076e89c1dde363ed54aaaf4b2a878fcc2f7c0b0fb20cda3068"
+        },
+        {
+          "path": "data/dws/trip_day/service_date=2025-06-06/part-00000-49c264fc-a069-48ed-affe-6bb221c3b4cc.c000.snappy.parquet",
+          "bytes": 6065,
+          "sha256": "a33d685fb3e40b7bce335a14be668804b8b221e72158188a4d73ae10ca794202"
+        },
+        {
+          "path": "data/dws/trip_day/service_date=2025-06-07/part-00000-fc224c6b-45d7-4ba2-8270-1c109e6e6dd0.c000.snappy.parquet",
+          "bytes": 6065,
+          "sha256": "6a21ee9abf9229dd13f5e9aef7394a9be8c528ab938933d5622ca06041dafc57"
+        },
+        {
+          "path": "data/dws/trip_day/service_date=2025-06-08/part-00000-1c3ab8e4-3454-45fa-877f-422eefb759b1.c000.snappy.parquet",
+          "bytes": 6065,
+          "sha256": "36cd5d45823599c492ba5d43ae4e44f1750d970b1e1d0948cd8de8e931c945a3"
+        },
+        {
+          "path": "data/dws/trip_day/service_date=2025-06-09/part-00000-0999735f-b67c-4049-9674-396a968d5b73.c000.snappy.parquet",
+          "bytes": 6065,
+          "sha256": "f0bfbe81e53868cca368a74aae9a395a13bd2badc1804ab75ba18c151b5a2f9b"
+        },
+        {
+          "path": "data/dws/trip_day/service_date=2025-06-10/part-00000-1dcdf94a-79b3-44a9-816c-97377182d9be.c000.snappy.parquet",
+          "bytes": 6065,
+          "sha256": "42c0bee350cd081bf245081336a8418aaf584735edb12b5c6216b93d972675ae"
+        },
+        {
+          "path": "data/dws/trip_day/service_date=2025-06-11/part-00000-417a2264-9e1b-4cb6-b5bf-c429144d8286.c000.snappy.parquet",
+          "bytes": 6065,
+          "sha256": "8c4af5720641eeca09d17a03e763fafa7339b2bce5a66238a8346890a6d737a3"
+        },
+        {
+          "path": "data/dws/trip_day/service_date=2025-06-12/part-00000-9daa5874-5137-47e4-b944-91fa6348766a.c000.snappy.parquet",
+          "bytes": 6065,
+          "sha256": "7b24831462670b5588484e06f40e4f9c95917de06b77083a65ce45fe880f250b"
+        },
+        {
+          "path": "data/dws/trip_day/service_date=2025-06-13/part-00000-088957fa-84c8-4ff4-84ca-189a5d34d35b.c000.snappy.parquet",
+          "bytes": 6063,
+          "sha256": "17b1b0c970f3053f0298b5cbd2f22225d492c6fab2d9a0a71dbd2cac0fff6a9b"
+        },
+        {
+          "path": "data/dws/trip_day/service_date=2025-06-14/part-00000-82f0468e-33fa-42aa-b2ae-dbd6304178e7.c000.snappy.parquet",
+          "bytes": 6064,
+          "sha256": "987bcfd6cf93f94322876b136b8a00121115c3291e3306397ea1e19926225fa2"
+        },
+        {
+          "path": "data/dws/trip_day/service_date=2025-06-15/part-00000-33b6d424-2c99-45df-93e8-248c57946b94.c000.snappy.parquet",
+          "bytes": 6065,
+          "sha256": "f67a8f9fddfe6f3781e3107fd2f44008ecf26206188c251d53a69b8f4da80d3b"
+        },
+        {
+          "path": "data/dws/trip_day/service_date=2025-06-16/part-00000-5e0d3c4a-7e0e-48ac-b433-4cf1539928fa.c000.snappy.parquet",
+          "bytes": 6064,
+          "sha256": "988477cfbe0ad0b3691e55802421f01673c0119516a1f2b0e3c633db8040bf7a"
+        },
+        {
+          "path": "data/dws/trip_day/service_date=2025-06-17/part-00000-691453b1-8e41-4055-b3a4-59684a9116b7.c000.snappy.parquet",
+          "bytes": 6063,
+          "sha256": "27a04b4ccb5290e4f7fb073fa46b9ccbf666ab173f01aa43ef1ed12f98157509"
+        },
+        {
+          "path": "data/dws/trip_day/service_date=2025-06-18/part-00000-95f61a5e-c287-47ec-b7bd-c5e90935f5ef.c000.snappy.parquet",
+          "bytes": 6065,
+          "sha256": "030b457f6d9a018ba37e41a594c42331aad207b14a11639f75966afe9e19efd5"
+        },
+        {
+          "path": "data/dws/trip_day/service_date=2025-06-19/part-00000-a495ce32-3d07-4a0d-aec9-87ff7355e413.c000.snappy.parquet",
+          "bytes": 6065,
+          "sha256": "115b4d6cd6a73e3754aba7682ca4b1fc2df173c87079c0f046b0456e6b086828"
+        },
+        {
+          "path": "data/dws/trip_day/service_date=2025-06-20/part-00000-9d78493f-c0de-44bd-8eb9-8983b103c840.c000.snappy.parquet",
+          "bytes": 6063,
+          "sha256": "df6b12fcb0a064fc67be01833fd0f6b08d16ce08dab858c4bb478191a9196f7b"
+        },
+        {
+          "path": "data/dws/trip_day/service_date=2025-06-21/part-00000-7964627f-246c-47bf-9a3c-eb8c77faca51.c000.snappy.parquet",
+          "bytes": 6065,
+          "sha256": "ad30474507ce2c03411a31a2f39931689e96347343e68de03d7e2aa4499d822c"
+        },
+        {
+          "path": "data/dws/trip_day/service_date=2025-06-22/part-00000-c779bc4a-7f59-4cb0-9bf6-18eda114263b.c000.snappy.parquet",
+          "bytes": 6065,
+          "sha256": "640b77fab765ae9947f5bf3602be47a111b7ced3f129dc7a1ba3e3a3548a5023"
+        },
+        {
+          "path": "data/dws/trip_day/service_date=2025-06-23/part-00000-e8930552-3f97-4c0f-bafc-72f7d11abd7c.c000.snappy.parquet",
+          "bytes": 6065,
+          "sha256": "feda1c5909d4d6ca4df2f131b9c22dab4af3675ff5392933a29ff9b107d9713e"
+        },
+        {
+          "path": "data/dws/trip_day/service_date=2025-06-24/part-00000-ed2bcb07-68ed-4e14-b9ef-846bb29259b9.c000.snappy.parquet",
+          "bytes": 6064,
+          "sha256": "af50afe457732ab9640c2517fb96c1eb855dcea9e7ae1a73fe1ae64c79615c28"
+        },
+        {
+          "path": "data/dws/trip_day/service_date=2025-06-25/part-00000-da43501a-5f26-4599-94eb-0e1584e0e283.c000.snappy.parquet",
+          "bytes": 6065,
+          "sha256": "06dcc19faa580ea245a079e447966f3284fff1d7d2b34826ecfb7930ec1ed371"
+        },
+        {
+          "path": "data/dws/trip_day/service_date=2025-06-26/part-00000-6232b64c-95bf-45e2-9ae7-c8fd7bfa56f1.c000.snappy.parquet",
+          "bytes": 6064,
+          "sha256": "b71c557397abceb1332f1dff571f45f6813315a9aaaa6053d49560921b9ecfcb"
+        },
+        {
+          "path": "data/dws/trip_day/service_date=2025-06-27/part-00000-b5a282ea-5569-43c6-9b4b-487eea9270bb.c000.snappy.parquet",
+          "bytes": 6064,
+          "sha256": "03c6697cd3d9dc6f43b1c2129df5120b52e1ba4ffbbf90fd17bb4d80d5f3e335"
+        },
+        {
+          "path": "data/dws/trip_day/service_date=2025-06-28/part-00000-efe75ab7-7567-44bc-96f0-3959da791365.c000.snappy.parquet",
+          "bytes": 6065,
+          "sha256": "080cc279f82ed994014bfe7ad399f48eacd30e97d27835f07294216c2d84d93f"
+        },
+        {
+          "path": "data/dws/trip_day/service_date=2025-06-29/part-00000-d2e6bb41-8a6f-42cc-aa74-b44e7be23e84.c000.snappy.parquet",
+          "bytes": 6065,
+          "sha256": "2f7a5bdae62eb8e994248a66b472e41ec0871ff7b97bcb0b85200161f77d1df4"
+        },
+        {
+          "path": "data/dws/trip_day/service_date=2025-06-30/part-00000-8464f768-85de-4c12-b2d0-b0b00ad0260f.c000.snappy.parquet",
+          "bytes": 6065,
+          "sha256": "442647be58aed5176c2f5e63645de767e607ff88d1d9b42c8194e725d0a71d52"
+        }
+      ]
+    },
+    {
+      "table": "dws.trip_hour",
+      "delta_version": 4,
+      "rows": 1440,
+      "files": [
+        {
+          "path": "data/dws/trip_hour/service_date=2025-06-01/part-00000-9fdf5320-e86e-4212-8368-c13e6eba751a.c000.snappy.parquet",
+          "bytes": 8398,
+          "sha256": "5cff96a6f1336fb49e3aa2424e0cc0fc7d9c1c0c6ed1a8c1d13621d8730d42f9"
+        },
+        {
+          "path": "data/dws/trip_hour/service_date=2025-06-02/part-00000-f5bc3ec0-f6d7-4e76-a071-7a3e2e0a77cd.c000.snappy.parquet",
+          "bytes": 8377,
+          "sha256": "ad7a927a9c31cc77d5fb2830742e610c11814c4407ef9b0892c51272172cf294"
+        },
+        {
+          "path": "data/dws/trip_hour/service_date=2025-06-03/part-00000-1c5f2947-6b28-4e92-8013-2603145fd896.c000.snappy.parquet",
+          "bytes": 8382,
+          "sha256": "3a4e42710a4d223604b6b74751167deb1ad198fd3f6d0b5de9a1a3200653b2cd"
+        },
+        {
+          "path": "data/dws/trip_hour/service_date=2025-06-04/part-00000-49c305cc-0f08-444e-aaca-73cd2a2168e5.c000.snappy.parquet",
+          "bytes": 8388,
+          "sha256": "4ec578fb5e850b81b34708aa47aad3c861fb34f0b52e64e264c6c2bed279ff43"
+        },
+        {
+          "path": "data/dws/trip_hour/service_date=2025-06-05/part-00000-b2e409e2-bc9e-4938-b007-2f7224a061a5.c000.snappy.parquet",
+          "bytes": 8400,
+          "sha256": "296506f0f0878c378b771c135903541e488b41d72a75281a2abe53cc339535ba"
+        },
+        {
+          "path": "data/dws/trip_hour/service_date=2025-06-06/part-00000-81a9dca5-27fe-4256-a599-c3948fe366de.c000.snappy.parquet",
+          "bytes": 8410,
+          "sha256": "08a2524134df52563610ad82d5b5dbe446b3cb850485891c14a1312d34cbdbbf"
+        },
+        {
+          "path": "data/dws/trip_hour/service_date=2025-06-07/part-00000-77896c98-46ae-446c-b671-8e6e0e6eb30b.c000.snappy.parquet",
+          "bytes": 8397,
+          "sha256": "eae3e05c448c5ca450bda583b22e49fdd30013ae470455a5c94bfcdfbb83daa6"
+        },
+        {
+          "path": "data/dws/trip_hour/service_date=2025-06-08/part-00000-950b48c0-f182-4d0f-a98f-40553891f463.c000.snappy.parquet",
+          "bytes": 8403,
+          "sha256": "ebf44bd2c87547ec32b72c63dd8b531514825dc72e06708766c922c1f99a28ba"
+        },
+        {
+          "path": "data/dws/trip_hour/service_date=2025-06-09/part-00000-19fba5b6-e025-4950-828b-78d19636a32f.c000.snappy.parquet",
+          "bytes": 8340,
+          "sha256": "a06d8e407b79edd1cd8b8e81b3642811be388b0930519e14c899189a4b1a5c82"
+        },
+        {
+          "path": "data/dws/trip_hour/service_date=2025-06-10/part-00000-fc5d7aef-3f42-4f26-a170-695071eb1d71.c000.snappy.parquet",
+          "bytes": 8390,
+          "sha256": "3ec4c052d76ca69ee5072e542172b5325b5e91ab532d3028a5195a7da0941535"
+        },
+        {
+          "path": "data/dws/trip_hour/service_date=2025-06-11/part-00000-c7d0def9-6d56-4656-a8fc-ba93be7d2b0f.c000.snappy.parquet",
+          "bytes": 8399,
+          "sha256": "d33a4df11cc85fa5ea76b52cb5ad2eacc3dbfdc0b572533cffdf5d13008d72cd"
+        },
+        {
+          "path": "data/dws/trip_hour/service_date=2025-06-12/part-00000-a98743d2-4dcf-48d6-8c1c-33b4ade89327.c000.snappy.parquet",
+          "bytes": 8413,
+          "sha256": "39ea503b266f769ffb5038d759e7364a693af1eb0e5e2b2ceb0c65b232ac1670"
+        },
+        {
+          "path": "data/dws/trip_hour/service_date=2025-06-13/part-00000-92c33cc9-576e-4fbb-8614-435d723b909b.c000.snappy.parquet",
+          "bytes": 8373,
+          "sha256": "5fdfbdacbfb48818d3580020db3859e31c09756c1aae9ff8664b2d3cfc5ff676"
+        },
+        {
+          "path": "data/dws/trip_hour/service_date=2025-06-14/part-00000-f9ecdcea-b9dd-4952-ab49-5ea59982c042.c000.snappy.parquet",
+          "bytes": 8362,
+          "sha256": "22dd9f4ce587f6bb119b65439a8186a771450f9284292c7c35d2e8a64df928cf"
+        },
+        {
+          "path": "data/dws/trip_hour/service_date=2025-06-15/part-00000-29550bdf-3a9c-47d7-86f3-4be232f60f5b.c000.snappy.parquet",
+          "bytes": 8375,
+          "sha256": "60bb58d43a365931ffe011ab744a1c23c0ab109eabc56286b158b363734a8555"
+        },
+        {
+          "path": "data/dws/trip_hour/service_date=2025-06-16/part-00000-a6778685-4b5d-48b6-ad8e-550e22f1f19a.c000.snappy.parquet",
+          "bytes": 8363,
+          "sha256": "93f44564b37b34b768b125ffbfc2ec736407a73363a8828c4dbaede75156a36e"
+        },
+        {
+          "path": "data/dws/trip_hour/service_date=2025-06-17/part-00000-96e502bf-47a3-4215-82aa-d3706d31901a.c000.snappy.parquet",
+          "bytes": 8375,
+          "sha256": "6239f96c5061281c14c2c84f4d08771027d59929c7c05899f877d6d7afa302d1"
+        },
+        {
+          "path": "data/dws/trip_hour/service_date=2025-06-18/part-00000-1e300e42-955b-4894-a4c2-260edd516df1.c000.snappy.parquet",
+          "bytes": 8381,
+          "sha256": "8821853fa75d99d579bb6ad53905c1b8fc81f7a5e1433043a6f2572c4181eb66"
+        },
+        {
+          "path": "data/dws/trip_hour/service_date=2025-06-19/part-00000-60a191cf-6fae-45f5-a029-b7d19e68decf.c000.snappy.parquet",
+          "bytes": 8367,
+          "sha256": "b77ae99f7ee902ab11d12cd1e29ddac4d1ab5817d33bcaf04cc1a9d3dbc96ae1"
+        },
+        {
+          "path": "data/dws/trip_hour/service_date=2025-06-20/part-00000-a9d8551d-8e5d-47bb-85c2-f9cf00270881.c000.snappy.parquet",
+          "bytes": 8396,
+          "sha256": "68843c223e811ec928ef7ab49cd5eda13b6e990a44852ef9f014a34ac10f5bc7"
+        },
+        {
+          "path": "data/dws/trip_hour/service_date=2025-06-21/part-00000-d970845d-abb3-4c6c-be63-e66ae27becad.c000.snappy.parquet",
+          "bytes": 8369,
+          "sha256": "fe729d73cef3244173137ec68bd2a5db684382e863fcbc1227c52af6ba23b862"
+        },
+        {
+          "path": "data/dws/trip_hour/service_date=2025-06-22/part-00000-894c7e7c-b733-48f7-b3b6-f919aebc9ad3.c000.snappy.parquet",
+          "bytes": 8376,
+          "sha256": "5fb91ee69cb81e00fb07029adc67b971166d584463715270697edd82ad10471e"
+        },
+        {
+          "path": "data/dws/trip_hour/service_date=2025-06-23/part-00000-9c9b0acb-fc12-40af-a411-aa0ac93c4868.c000.snappy.parquet",
+          "bytes": 8406,
+          "sha256": "46906c581f17a6c3b1df78f1dd19f26cc402a8d31f3108613e6e8cd261c7d775"
+        },
+        {
+          "path": "data/dws/trip_hour/service_date=2025-06-24/part-00000-a55b4ef0-f5e1-49c0-b027-e62c066f5066.c000.snappy.parquet",
+          "bytes": 8391,
+          "sha256": "af51882ea02bd613b85d1e2d85e9325136508994bb03b53f400d365b48043348"
+        },
+        {
+          "path": "data/dws/trip_hour/service_date=2025-06-25/part-00000-1e1ed631-d446-4b13-9e89-1ec697da0d0f.c000.snappy.parquet",
+          "bytes": 8382,
+          "sha256": "2c762d5d70ef5706b0d02b48b837a68544d15aeaa535b91a6820715ea461eef8"
+        },
+        {
+          "path": "data/dws/trip_hour/service_date=2025-06-26/part-00000-e294f3bd-6595-494f-9573-c03538c3ed43.c000.snappy.parquet",
+          "bytes": 8374,
+          "sha256": "e5c68dc4caff7565e0085681cbfacac8303522ea87098c155a2dfc31b27767a7"
+        },
+        {
+          "path": "data/dws/trip_hour/service_date=2025-06-27/part-00000-b1115a0d-bb97-40b6-91e4-a1b64b5f1a45.c000.snappy.parquet",
+          "bytes": 8381,
+          "sha256": "336a09d5edc7ed41bba774bb07da5f2ebaadabf943e870deaa8fa3d46095a1d2"
+        },
+        {
+          "path": "data/dws/trip_hour/service_date=2025-06-28/part-00000-745b93ba-f44a-42fa-8b58-2e56b0b87cd4.c000.snappy.parquet",
+          "bytes": 8400,
+          "sha256": "d16968cf20878f7276f4fa952fdcbdd80047389c48c0dac172dbd6bce0695f40"
+        },
+        {
+          "path": "data/dws/trip_hour/service_date=2025-06-29/part-00000-93dd61a2-3180-48ff-b684-3be9a8c80b5e.c000.snappy.parquet",
+          "bytes": 8336,
+          "sha256": "ecffad5a2283dd51b6d68a3476bdc4a11913d95de5d124c4a5063e278849ea78"
+        },
+        {
+          "path": "data/dws/trip_hour/service_date=2025-06-30/part-00000-3d9ecc9e-fe2e-4e20-a4c1-9f093745c690.c000.snappy.parquet",
+          "bytes": 8374,
+          "sha256": "d4434541af6d97ed616509a2dc7bd1fc01c4ef3ba2a7871d945af42f1a6e944a"
+        }
+      ]
+    },
+    {
+      "table": "ads.zone_hour",
+      "delta_version": 4,
+      "rows": 377280,
+      "files": [
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-01/part-00000-6b912148-2ad2-4573-907f-6913bc475d88.c000.snappy.parquet",
+          "bytes": 32208,
+          "sha256": "67a87c533bfa328e141c700244da824b78bf6ffc77afeb66621c93e02c464c1d"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-01/part-00000-74ad8ce0-1cc8-4522-a9c6-77f536434119.c000.snappy.parquet",
+          "bytes": 32207,
+          "sha256": "81766aa730c9cfd2703f35ba98140cffdd819ff2d61ea36bfe4f283646d9f7ae"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-01/part-00000-c95ff010-6e4b-4755-a19c-ba8c5bd8c577.c000.snappy.parquet",
+          "bytes": 32208,
+          "sha256": "68546bc8f6ebb0b36ddfc0cc486b71777758b083546da58dca7c53fb510dc434"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-01/part-00000-ca0ded81-123c-48bd-a757-807e8e69a181.c000.snappy.parquet",
+          "bytes": 32208,
+          "sha256": "64be0d89bf51b64abe529fa66255058f59b4d1ae084a6b1746919eb0c7081e2a"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-02/part-00000-140c0710-142d-4297-8869-dd6bbbeb56b6.c000.snappy.parquet",
+          "bytes": 31957,
+          "sha256": "801420d9f58cb26d0b36e1cbc32a75b8b259d00a4fcffe6d81826ba2b54ccd33"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-02/part-00000-30bc95ad-97e6-492a-8ef8-cf76f308d93e.c000.snappy.parquet",
+          "bytes": 31956,
+          "sha256": "65b1bf7d5b2be19ec43be38a8955231370683af9c970943b22bbcd4d14b80d13"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-02/part-00000-8a0e0424-bda7-448d-9b5d-ba61af66573c.c000.snappy.parquet",
+          "bytes": 31957,
+          "sha256": "1dd0379f827a62cdf92786252a131c6c914a1749be95c7dd8efe806a72eb9f74"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-02/part-00000-8e628bdb-208d-4fa4-a85c-13b715806e45.c000.snappy.parquet",
+          "bytes": 31957,
+          "sha256": "1b03217a403d391679b048043b3e03e0289984fb313adbaee474fed361347605"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-03/part-00000-9c341a74-f19c-4000-b618-9c0c67802de5.c000.snappy.parquet",
+          "bytes": 32112,
+          "sha256": "f1ea71686d1d70d96649b92cb0e2259678d508b21dc59379270156337963cebb"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-03/part-00000-a8e75640-5767-40d6-b701-7fc6c4876153.c000.snappy.parquet",
+          "bytes": 32112,
+          "sha256": "86ca450d91cd89fb72a1d45e4dea6990436dc0077b8c6cfce4db0e42429fad9d"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-03/part-00000-c1851824-70b4-4446-aab5-94a2b5a6fe58.c000.snappy.parquet",
+          "bytes": 32111,
+          "sha256": "72ae446a642ff94169ad520a51eb6d3e0eabe781ffe9f8bd41d6f9187cc7d6ec"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-03/part-00000-e779af60-780c-47c5-8543-6ab1eaf8dff7.c000.snappy.parquet",
+          "bytes": 32112,
+          "sha256": "8ae86c4881011e2ee8da329926c007e52af45ca2d6db7715c3b17f59968531e6"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-04/part-00000-150e0643-fffa-4630-8bed-7b64a566f918.c000.snappy.parquet",
+          "bytes": 32639,
+          "sha256": "84ba34ddc0841bc7d1f46c2b3b54dd96cf11c055464e9d16b9e1b26b35c6576f"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-04/part-00000-19e0798d-fb38-482b-8d5d-3f9187ad2203.c000.snappy.parquet",
+          "bytes": 32639,
+          "sha256": "99a2565f9b91ef278039a4d05d8559938dc1c3bc3c5083de70bc3bf1ee0b73d1"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-04/part-00000-1f499c43-b2ed-4be1-8329-d97e1dc66347.c000.snappy.parquet",
+          "bytes": 32639,
+          "sha256": "043c467ae65d6e3f89c8262b2517c2b935fa372347de51f4ec17ad81102c1f8c"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-04/part-00000-cd3ad505-b375-49e4-825d-637de8a4f12d.c000.snappy.parquet",
+          "bytes": 32638,
+          "sha256": "e47151fa7588ff93dc463d356d13e2f0a37d621136141651203deb2a89dcf04a"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-05/part-00000-16465e80-aa08-47eb-b1ee-fe71446510e1.c000.snappy.parquet",
+          "bytes": 33015,
+          "sha256": "6568262edaf4e7070fbaf1fcb872ab0d8c937766e185a3da54bd39b0ac6b154e"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-05/part-00000-8ddd095c-e4ae-45a3-9a62-3b7fc59b706a.c000.snappy.parquet",
+          "bytes": 33016,
+          "sha256": "8b47e93f45d5c460df27649cf918aa429319b1ed7ed9656de824a07f974ea5b7"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-05/part-00000-a7de286f-7194-4e7f-a545-bbcd49691376.c000.snappy.parquet",
+          "bytes": 33016,
+          "sha256": "8b40474578d34ed316e443e0637802867e4f1b17e42f52483ff5d4b02b7dda54"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-05/part-00000-db37751b-990d-4d15-8281-06edb456dd83.c000.snappy.parquet",
+          "bytes": 33016,
+          "sha256": "d3b156e3f83fc000a14cf07da7584cf6f0228b9245194a21be2814c7d96890be"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-06/part-00000-27b873ad-fcac-4378-b2ae-c1742eddae7d.c000.snappy.parquet",
+          "bytes": 32903,
+          "sha256": "255300de41953516f63fbd40a54d5e55443b69e0002a5939aa6f84043c5eb496"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-06/part-00000-4f70c7fe-810e-4355-b093-d0ebbd96ac9e.c000.snappy.parquet",
+          "bytes": 32903,
+          "sha256": "9bfcba56e6baedcd8e19a6a16356d0c110847ce9c5b92e0cef92c2b2a59a1b02"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-06/part-00000-71365a45-1150-4657-9470-7c838b35b12b.c000.snappy.parquet",
+          "bytes": 32902,
+          "sha256": "581ba62cd99b6b730b763ffeb9f50b39736591a657acb9eba44edb15fda763fb"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-06/part-00000-d9747164-6ffd-410c-8009-39cb60cb12b2.c000.snappy.parquet",
+          "bytes": 32903,
+          "sha256": "734e5976da2c03f7233fc5fe4388b3524d08af9793ee2e75dec69fe4ffaf6671"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-07/part-00000-0cde2256-4633-4850-908c-54830367f820.c000.snappy.parquet",
+          "bytes": 32552,
+          "sha256": "2417de74ac307b96a24d089cd6b7a531096851f73f649cd1a44dd22d41f3c339"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-07/part-00000-0da22dfe-8e7b-4c4f-8db8-a01c3c159da6.c000.snappy.parquet",
+          "bytes": 32552,
+          "sha256": "4f73345d019a7c35bfe0bf3d12504eb555fe99bc145f523fef5bae41f2eeaeb0"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-07/part-00000-43febb14-41b6-497b-af38-e6ad41ee5617.c000.snappy.parquet",
+          "bytes": 32551,
+          "sha256": "c10e6a1cb5faccdcd5eb398dfb218cdb00826b1e45dad4f627d280d1865a30cd"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-07/part-00000-835bc6bd-aa90-459b-8d8a-c7045572aaa0.c000.snappy.parquet",
+          "bytes": 32552,
+          "sha256": "39f13d9d391fff446a3409c846c97fca70b49d2e18d4b8d318531896edef1913"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-08/part-00000-2d79d7e9-2b93-4c7e-98f3-5c1dd335d467.c000.snappy.parquet",
+          "bytes": 31755,
+          "sha256": "5b27bc71576023a3ebcdd133e07b8453c6224c7aefeb07690afa4f0d29b7613b"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-08/part-00000-7230d122-3db0-4c84-86e5-01ddc71e9c6b.c000.snappy.parquet",
+          "bytes": 31754,
+          "sha256": "d0ae97dadfeaffed216434ea34327d42ea30069ee26022f7b6191d6914a72cf2"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-08/part-00000-a295daa2-4cce-4d18-89a8-74123f168910.c000.snappy.parquet",
+          "bytes": 31755,
+          "sha256": "06dab4912d315c9458ba8bb8dfd37b4b16b71aea84c4091daac4434025e0b0be"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-08/part-00000-a612aea9-194e-4549-bb17-f5fd09e0f64e.c000.snappy.parquet",
+          "bytes": 31755,
+          "sha256": "c2ae8c14a51e1ce72b36ead0d39e31e60e6a69b92c913d72d9525e7a4170baa8"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-09/part-00000-1873fb9c-a0cc-4b5d-a0b3-61ff14fd82c9.c000.snappy.parquet",
+          "bytes": 31520,
+          "sha256": "f4751b5b8a0fe1a944a57100b33e912c95a67d1ca203602d4090e57bd7cf4366"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-09/part-00000-4e087a87-30c5-4562-9a40-79d4af72f551.c000.snappy.parquet",
+          "bytes": 31520,
+          "sha256": "b2dc60e8b9c4bc665639d51a9c3ad94b398c4f414017d9d0d6ae4ab0acf6f285"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-09/part-00000-59969b31-7ed4-412c-a5d6-52987811fbc7.c000.snappy.parquet",
+          "bytes": 31520,
+          "sha256": "e33c4f725897fd6447980de9f2bf88d5a0d88765665347f47e94ae48d44dc4c0"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-09/part-00000-78fbb7a4-05bf-46e8-aaf3-fd9863f4ca2b.c000.snappy.parquet",
+          "bytes": 31519,
+          "sha256": "4b7c84114a73c1d62c74561616ca4c074bf07035356356aaa60034cadcca8d67"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-10/part-00000-6c53377a-f565-4904-b1b8-32d84c0b81af.c000.snappy.parquet",
+          "bytes": 31331,
+          "sha256": "2b971476c709dd11c918f17d66feef3ad6ff669b36743d0c3621e4bc791de89c"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-10/part-00000-a4e92141-55ae-4bd8-9956-353d8f60b329.c000.snappy.parquet",
+          "bytes": 31331,
+          "sha256": "5611eadb0bb1bd7bef4619096208f49a9dbc2f973e8d3920cb66defc36cb4095"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-10/part-00000-ca3cbd6a-6c7e-4190-bdf4-44a43923b193.c000.snappy.parquet",
+          "bytes": 31331,
+          "sha256": "1fb3991e28eaaf19df4e62e9a0bf7dfbd82c7986497aeff2808de16f029068b5"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-10/part-00000-da4c2cd6-e717-42f2-a4c9-423efe84889c.c000.snappy.parquet",
+          "bytes": 31330,
+          "sha256": "70ced2f6e714724a55e31b8d2d88f477e1427633b96fa9b31714691859d56ac2"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-11/part-00000-1a821e67-1b67-494f-9743-309325737f20.c000.snappy.parquet",
+          "bytes": 32321,
+          "sha256": "ee79f55f0e2c5dcd8c8d3e6d98ebe59bd54e5c4eab68af096acf9537cec8bc59"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-11/part-00000-5a772179-d5f2-472f-aa1b-37734d8a60d7.c000.snappy.parquet",
+          "bytes": 32320,
+          "sha256": "4c54a3241c8e9dcab4204fe12653f33c7189c0857aa9df0981cb245ca8b7cc48"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-11/part-00000-5aad04e0-b745-4e4e-aa2d-a8989a30795b.c000.snappy.parquet",
+          "bytes": 32321,
+          "sha256": "5fe8973ca979ae6464339eff076c87009a82df9042862a7add108f97297cbd24"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-11/part-00000-e6a1f1ed-c1f6-4622-b1a0-7a1f2898a968.c000.snappy.parquet",
+          "bytes": 32321,
+          "sha256": "9f5366ba8d133fdb22ce19c43c4369997879363742165be6325cbf686129a3ef"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-12/part-00000-0650ecd6-e1d5-449c-bf7d-53f7ddef530e.c000.snappy.parquet",
+          "bytes": 32014,
+          "sha256": "1cb0a4e7d040bc374285998b63496a70f757da8998276b8ad3a58cb6d24234be"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-12/part-00000-13ae2e5a-49f1-49ae-a9e7-f08667df557d.c000.snappy.parquet",
+          "bytes": 32014,
+          "sha256": "8b8cf7089f10a07da66837f330c718e3add63a088be04d8697c62d3722a1747b"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-12/part-00000-2c72c205-30c7-4491-95c6-9f170778e222.c000.snappy.parquet",
+          "bytes": 32014,
+          "sha256": "10a4242f7ecc891df50b5d03bf0b0191bf9ac45a9050a9a3163fb29751dbf068"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-12/part-00000-2d4a3b94-7ba3-4d7c-88c5-e760047c4856.c000.snappy.parquet",
+          "bytes": 32013,
+          "sha256": "ab9de5fd8d1a93d96405c9298885cb15a76527a9fe50ceb243d69aa2f391a940"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-13/part-00000-0eac293c-e9b5-4edf-9191-6a9b2c997bf1.c000.snappy.parquet",
+          "bytes": 32278,
+          "sha256": "eaeb5ad8f75bf2c329a604ff994031183d39ad897d6ce691926dc1262efb553d"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-13/part-00000-6119ace3-fcfd-48ab-b935-8516466af1d1.c000.snappy.parquet",
+          "bytes": 32278,
+          "sha256": "e19d84459af673a492cedabbf5a17ec1668f760f2360e4eb8705bd8595ac7cc2"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-13/part-00000-85d4d29e-731d-40d8-9ea6-228b1d1d3367.c000.snappy.parquet",
+          "bytes": 32277,
+          "sha256": "6c67cb36b135bcbb65195c836b3ac7d39f4909013d6bd4e0dd49da80028db635"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-13/part-00000-e05ad719-2efe-426e-bd02-3a8a5999688d.c000.snappy.parquet",
+          "bytes": 32278,
+          "sha256": "547cd58fe07a3aeab780125e1babca5ba2812ddbb866a22ffe95a22ce7acba24"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-14/part-00000-57065ffa-17b6-49ec-affa-9ec6ac304bfc.c000.snappy.parquet",
+          "bytes": 31882,
+          "sha256": "f07a66ac4c26739be438392b80369f9c3ac5c5f3fd4fc5c688e8776a71fb001c"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-14/part-00000-611c2039-7301-49b7-a720-15c31e4e3632.c000.snappy.parquet",
+          "bytes": 31881,
+          "sha256": "2a7e03cb582e2c98dc330e215f2d8531e3cb5031ddcf142e53dc38b3c43eb681"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-14/part-00000-9a3d680a-b824-4bf2-88a1-7716624c43a9.c000.snappy.parquet",
+          "bytes": 31882,
+          "sha256": "3e6e9ea929735e2a2f8244a47c4b0d5602376eb64e6e4aa7a94400971cca2ac8"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-14/part-00000-f067cafe-b650-4a81-8b6f-cc2cbad8d9ad.c000.snappy.parquet",
+          "bytes": 31882,
+          "sha256": "8a48db7255c13abf5fceabad0763a88a12feab5970fa6583644246a8459c933e"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-15/part-00000-0451ebe4-5c82-4bd6-9120-5a8e20c22371.c000.snappy.parquet",
+          "bytes": 31605,
+          "sha256": "15afeb3a3a30dcae25554b52c29d62bce27ed29be29e4253c181fdcffca88408"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-15/part-00000-36da15a4-4186-4f2e-9b51-a54ca55c02b7.c000.snappy.parquet",
+          "bytes": 31606,
+          "sha256": "47e3d1f14ef7a8e7c38c6c52e38556d45d6dfbbaf95d7497a628ac5a6c5dcef8"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-15/part-00000-9e317807-b036-42c6-9832-ce7ae0e6c798.c000.snappy.parquet",
+          "bytes": 31606,
+          "sha256": "62f92599f0313755b82127b2cf78f1c3bcf745b4d698768371dbee4bbd597350"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-15/part-00000-cbef978b-f93c-488b-8463-f422ccff7ac0.c000.snappy.parquet",
+          "bytes": 31606,
+          "sha256": "f386d645599d402f28f6024a7b735786c66ec3f14f26869d4400fcd83b41fc05"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-16/part-00000-2309119d-70ce-4a37-aca7-8cc03b2898a0.c000.snappy.parquet",
+          "bytes": 31701,
+          "sha256": "5ab75e8b5a882cbc9426dc5026ce222996e43668642adb051645f976ac5371eb"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-16/part-00000-38cfb420-b502-4d54-974d-e2121c3af195.c000.snappy.parquet",
+          "bytes": 31701,
+          "sha256": "33a86363bd38f37af8dd5b27c56f5d8f8dd9ab7dda603c97982f66aae26e52e9"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-16/part-00000-eac34495-344a-4d4c-8fd9-a223aa6eb101.c000.snappy.parquet",
+          "bytes": 31701,
+          "sha256": "11e4e787487429a659c6beb724a21afab3b0478de15f23e673b501a5bb63c5d9"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-16/part-00000-fdf19b93-ad79-41b7-9587-a128a2cb472f.c000.snappy.parquet",
+          "bytes": 31700,
+          "sha256": "1d7c90ac0afc85cf98066768e4c768655ff81a891931ca1ee6d1c38999c6db93"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-17/part-00000-8c8e7450-254c-496a-b5d0-ab4c2b89bade.c000.snappy.parquet",
+          "bytes": 31405,
+          "sha256": "1f664b76613ed936857dc74ff806066bd684e9396f3f37b303f3a796afefeaf8"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-17/part-00000-e742cdeb-7413-4f9a-9389-7ee3994bd165.c000.snappy.parquet",
+          "bytes": 31404,
+          "sha256": "29a9dad724b0fb8c1e2d2d2bc7404ff972382385ff07131d792cf01c97ea1faa"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-17/part-00000-eecaf121-0461-4188-ba76-2c4402a7bfc4.c000.snappy.parquet",
+          "bytes": 31405,
+          "sha256": "4edbe5b4c8940eae64a797651ba634a811bb0426f7ddfd62f0a5dd9b014e1f18"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-17/part-00000-f6ef1515-4d73-43c2-8ca8-ddda1b721486.c000.snappy.parquet",
+          "bytes": 31405,
+          "sha256": "5814546015476bd008161ecccc8b318f3275407d3a83230b56aa032eafafbd4e"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-18/part-00000-071618ad-5756-4abb-8c04-ac0a5d7763ea.c000.snappy.parquet",
+          "bytes": 32240,
+          "sha256": "b09065fe8cada23d9faecf4ddd1def171df28842db8632f093c0b84eb84af6f6"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-18/part-00000-9ff7fcb0-460e-41bd-918a-57a197df2dfa.c000.snappy.parquet",
+          "bytes": 32240,
+          "sha256": "9addb752605a86acb8542405412d5926f99717d49a23a4ff03f76ecafc63fab7"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-18/part-00000-ceaed887-6eb3-45ac-aa82-8477fee3bbd0.c000.snappy.parquet",
+          "bytes": 32239,
+          "sha256": "54fe4c7947079dedbbbe2a955f05a2f893e0700d0612377025232663309e737a"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-18/part-00000-db8dbaf8-0077-4af3-9ad8-084efd30ce71.c000.snappy.parquet",
+          "bytes": 32240,
+          "sha256": "4d6dc72e110ef33dbdeee835e397373921c51d299feac09bd75b79218fe93c33"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-19/part-00000-1d650719-af3d-401d-807a-413ef87d5872.c000.snappy.parquet",
+          "bytes": 31674,
+          "sha256": "e094bc3a1187b9a50d7740d1e9f46e1838acb13279e328c0084c9b00f9ee8685"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-19/part-00000-a48dd102-45e6-4e2b-a9c6-e97c4eb286e1.c000.snappy.parquet",
+          "bytes": 31673,
+          "sha256": "b381ddfb7d066f8701457d59bf7f5198152c5d2d649104c0ab9721311e99c1e6"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-19/part-00000-e230b103-aba2-4d33-b2cb-8d5adec886c7.c000.snappy.parquet",
+          "bytes": 31674,
+          "sha256": "28028575d3fa34dbff78879b0a1c0cb4ca5b8354a26cd189d61f11754a439837"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-19/part-00000-fbd5e232-80ef-40c5-b2f9-5a2a05f29df0.c000.snappy.parquet",
+          "bytes": 31674,
+          "sha256": "ec123cce2a8f1ecfb13c906d412328288fc6e7f01e534d79c841257ccbc2c974"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-20/part-00000-294c9564-1d4d-4608-972b-379c6e82cb7b.c000.snappy.parquet",
+          "bytes": 31722,
+          "sha256": "59c3578c8d28a3bd3d4ba26b4b31e19dafb1497bd2decc6ae95c3c163d271592"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-20/part-00000-8fd3b54b-677e-472c-a03b-b914a81b2d84.c000.snappy.parquet",
+          "bytes": 31722,
+          "sha256": "1a970ded0691e34352358f0f426077f4c3e627d68a272d64d7de7030064f215d"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-20/part-00000-b21a14ad-57c7-4855-9656-7652c2ec0397.c000.snappy.parquet",
+          "bytes": 31721,
+          "sha256": "d02ac1a80adeab2b346e6c8e3fa2b33c840c0bc631dea27394b7505ac9b90a7c"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-20/part-00000-ddc36273-86dd-4492-bec8-ae4b7c76e9fe.c000.snappy.parquet",
+          "bytes": 31722,
+          "sha256": "950582e66780eff3e8d4635ed98fac9c802eb36b5bb83e08ec0db9f833103fcd"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-21/part-00000-83d91e9b-1522-49eb-a41d-719b7f702b0f.c000.snappy.parquet",
+          "bytes": 32202,
+          "sha256": "070c7d03bae95433965d47d46c2a4aee4b5ab7e1b8264fb35660cbf2e7ff5e4d"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-21/part-00000-978c13e5-052c-4e08-9d10-dfe3e6c23a7c.c000.snappy.parquet",
+          "bytes": 32203,
+          "sha256": "8464abdb30560e0dda57799e8ef466b4da3ce65e5f927af0e3b82e49161776a3"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-21/part-00000-a5894967-4ee3-45bd-a0a3-7b05c601ef33.c000.snappy.parquet",
+          "bytes": 32203,
+          "sha256": "979e272cb508d83ec35f040143c13dc767425a8415361a92dbe7c3cfd0d7379d"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-21/part-00000-cf309364-c8bf-457d-be44-a53aeb83a780.c000.snappy.parquet",
+          "bytes": 32203,
+          "sha256": "43ac94531c6bb9c047bd44dc90fcf35fe37286e9d4794586999aeaf908c71d35"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-22/part-00000-0b423dae-c7a9-46fe-a7d3-e8cc26daf51f.c000.snappy.parquet",
+          "bytes": 32378,
+          "sha256": "fa2e3ffe213d9d5d307263c1967755b4e939262b5c7dd66b63071161a798fe53"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-22/part-00000-29903f7e-f2ab-4c0b-bc04-74f24cbb82b8.c000.snappy.parquet",
+          "bytes": 32378,
+          "sha256": "cc5a4b048f5a608f5d0957374eecf3a7244dd25054b23c2c532eb70baf4ab2d6"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-22/part-00000-45b75a6a-e782-4c23-9924-2d8cafebcc85.c000.snappy.parquet",
+          "bytes": 32377,
+          "sha256": "8cb084498c5ab16ae8cc91586a3365b6960a9d7fb57b7000bbdd74283e60675f"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-22/part-00000-de6170ea-865e-49ce-ba95-0c8e9026307a.c000.snappy.parquet",
+          "bytes": 32378,
+          "sha256": "ca04fff6d0fa6d8b996214f46cc85d810c1d7e28d85d55deffd71cf3d4f28dbe"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-23/part-00000-79835bb3-0ce6-487c-ba78-84509902cd56.c000.snappy.parquet",
+          "bytes": 32602,
+          "sha256": "184010dd92ab2711c3ebc6987230ba15fe8a62fbb88e444dc00a3735668ea802"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-23/part-00000-9f7bb7e0-0ecd-43a7-9be3-76bf509fb9b1.c000.snappy.parquet",
+          "bytes": 32602,
+          "sha256": "b10d138475287f30c65114ec4980a88f76311f756db07c1c2826584beceabbbe"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-23/part-00000-be3bff74-8d82-4c24-9eac-5ada2f8fd3f1.c000.snappy.parquet",
+          "bytes": 32602,
+          "sha256": "5e7c1b5712bb63d3ff53024a620b19e5d840a5a617c0b4d6712136d79e896680"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-23/part-00000-e3d1bf9a-2c74-4538-b0e7-8022c4b3f83d.c000.snappy.parquet",
+          "bytes": 32601,
+          "sha256": "47906e65ebb71ad7da40a6eb3e7c9a6e26cf3bf3dd0eeeb153dc4a38db36a316"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-24/part-00000-49c91918-0b04-45b3-927e-d0ec1767204a.c000.snappy.parquet",
+          "bytes": 32499,
+          "sha256": "34581b36dfd267fdaf788bc71506fdcce9d8c62ec7eec980710c2a75aef7aa06"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-24/part-00000-76346f50-30a1-47c7-97de-aa6e932c4ccd.c000.snappy.parquet",
+          "bytes": 32499,
+          "sha256": "8c895d0c0eafea24e04caa27cb79a5ce4076f8ce4789e413515956d1d1c032e4"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-24/part-00000-cf009906-c8ec-476c-9a7d-d6c1a297c26a.c000.snappy.parquet",
+          "bytes": 32498,
+          "sha256": "5b62df684d82dee174c303043aa931c81ce8c8a5e5dbe639ff7936e2e7f52aa4"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-24/part-00000-cf5f8029-dd8f-400d-a2ff-a678db938fc5.c000.snappy.parquet",
+          "bytes": 32499,
+          "sha256": "697f19dcfa750df17e80929d3264ae5bbc31595c97d302d1c4ecbe015e2c18fe"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-25/part-00000-447023ad-88fa-4d8a-8d8d-2f2ae51fdde1.c000.snappy.parquet",
+          "bytes": 31997,
+          "sha256": "2b525bf87b12002b4fd15bc5d64ab4d00e9f105bb4456daf4be486f25642069e"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-25/part-00000-8d688361-4234-4978-8d6c-90ef74472ac1.c000.snappy.parquet",
+          "bytes": 31997,
+          "sha256": "11904eb7f62959ce423e453850eb4e7a3f3027f57fba4a63d9fdd902fce5b88b"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-25/part-00000-a959f546-c479-4c8d-b0e1-fe1c6841aec4.c000.snappy.parquet",
+          "bytes": 31997,
+          "sha256": "a5b635526d0dcfcf1989f8ed7f9d8b644b92a2b45186bd325f656d09bbe3ca0e"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-25/part-00000-d29e5f2b-63b0-4aaf-aff3-b7ddd6f81cec.c000.snappy.parquet",
+          "bytes": 31996,
+          "sha256": "18163ff86c1ccfc8f8cbb90df2e81a495de0cf7aa5617e9188d10fc122dae5d8"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-26/part-00000-192ee8f7-e01d-4670-a610-221f6a1ed95f.c000.snappy.parquet",
+          "bytes": 31766,
+          "sha256": "abfe0fadfeea88b8d1b72c3bd2d6e888f5d243fd684430b35efc1217debebdca"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-26/part-00000-5814c08f-39eb-449c-8953-cfc99a73bc30.c000.snappy.parquet",
+          "bytes": 31766,
+          "sha256": "7fdd54403270e37d6d4da71ad12d28f4d228f9b7903f45339b43a23f771d59ff"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-26/part-00000-89a68427-4299-4646-bddd-385a6de0fb16.c000.snappy.parquet",
+          "bytes": 31766,
+          "sha256": "1d2be9ddcf785cb61739e2011f9eebbf7a054f9538c79b7d109c8468fec15b67"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-26/part-00000-f059727f-8a6d-4887-80b3-5ed60c3acdeb.c000.snappy.parquet",
+          "bytes": 31765,
+          "sha256": "4463e5491c1286de97ab697b70356c2a8997f852961aa247351975e24e6a89a9"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-27/part-00000-18fc090e-1e0e-47b3-a836-9426901b64e3.c000.snappy.parquet",
+          "bytes": 32092,
+          "sha256": "2ee16bea6e9271729a3262f5cf77269fdf17af9199f1b8df171c4f17152c826b"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-27/part-00000-560e704e-e913-465e-a5a5-edfc21eff690.c000.snappy.parquet",
+          "bytes": 32093,
+          "sha256": "ce9d0d790e36f848a0a4a5d833f57fdd1dd43095df1e069235f9c66d4217d8c8"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-27/part-00000-a0ee4469-cc20-45bf-8f03-6873b3d7c237.c000.snappy.parquet",
+          "bytes": 32093,
+          "sha256": "49737198a7d0b1a29f024bc221dd1083003ccca0020ba02ade95affbb2a1dcf5"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-27/part-00000-e17830a9-3d06-45af-9ba4-0639cb7d9b92.c000.snappy.parquet",
+          "bytes": 32093,
+          "sha256": "ef94c70428430c9f5829bfdffee904bf004bb3cb08724fcc93c8300074bdf98b"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-28/part-00000-49a4dad8-dfde-46ea-8f69-14041fd4ecb9.c000.snappy.parquet",
+          "bytes": 32201,
+          "sha256": "aedf0eeadad298dde29ef11d423f34143996e707748cfc7b2edc34891c9493c7"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-28/part-00000-7498bbc7-df50-4481-8599-657724526b81.c000.snappy.parquet",
+          "bytes": 32201,
+          "sha256": "fe18d0598d340dff4388420831a23c2b076c2855d519c11c691ca75c51a631a5"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-28/part-00000-b6df8258-6525-475f-ab71-73cbc5085ff6.c000.snappy.parquet",
+          "bytes": 32200,
+          "sha256": "4d88fa9b5dbcd21d739c9e18d06068920e5fdd57b7d520aa5a7c1d391fdbd9b4"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-28/part-00000-d883b899-d871-4fb1-82c8-18a4b0c554a3.c000.snappy.parquet",
+          "bytes": 32201,
+          "sha256": "189c2b478ec7725da2aae723b0c1e6f981ff8ee6ff212cba59f85baa8ebae8d0"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-29/part-00000-27a998e9-5e7a-4cf1-9c00-613a1986b228.c000.snappy.parquet",
+          "bytes": 32473,
+          "sha256": "6162cd4b6d5509c12cdf46ba799459e6401bd478e0225c409dd72e2c6e18190e"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-29/part-00000-4c92c406-dd40-46aa-844e-d92d8795ea6f.c000.snappy.parquet",
+          "bytes": 32474,
+          "sha256": "04e2cf7f34e294e8d1dc713ae98f0183b62dc31ec1f1ce7d8ee3b3adaf7cbdc2"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-29/part-00000-9286a1bd-cd70-4863-9723-5777d90140c6.c000.snappy.parquet",
+          "bytes": 32474,
+          "sha256": "c087a971c7ccc0a9f65a4b1b5be9ac07c3ad117fbd39ce31f6cd7771903c82a0"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-29/part-00000-a869933a-df28-47d5-a9a5-45229158c7ac.c000.snappy.parquet",
+          "bytes": 32474,
+          "sha256": "8689b057c1d9621bf6641d5d257ec656f836edfd3118ef9ed5de4c253faf8449"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-30/part-00000-16c0a72e-c53a-4bac-af06-e52fb0367b4d.c000.snappy.parquet",
+          "bytes": 32053,
+          "sha256": "c2ebafa1e3d0016e0d8ee2462d98c20ee4be78fda7b5f3c3741abc122677a3f3"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-30/part-00000-253ff827-3c09-404b-940f-6294587b9cec.c000.snappy.parquet",
+          "bytes": 32053,
+          "sha256": "a914b6e1113c6c2475d99b38e1665a87e7ac11f76f344a74ad239f1401b325fe"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-30/part-00000-9182cdee-d2be-46fc-af53-2d6182493d14.c000.snappy.parquet",
+          "bytes": 32053,
+          "sha256": "1f12970ed43b04828081daf523cc3697383d92fff624c8a8f53f3bd1c20b6bb5"
+        },
+        {
+          "path": "data/ads/zone_hour/event_date=2025-06-30/part-00000-c7a80f03-ad97-4e77-ac15-41e15b2f94f2.c000.snappy.parquet",
+          "bytes": 32052,
+          "sha256": "86fb23abaf7939e4de23a3211d9c0b861ecd7241c61826dfac553f2c806c5d45"
+        }
+      ]
+    },
+    {
+      "table": "ads.od_day",
+      "delta_version": 4,
+      "rows": 637450,
+      "files": [
+        {
+          "path": "data/ads/od_day/service_date=2025-06-01/part-00001-5b1bb8bb-69bd-43b4-b885-b3439a2db099.c000.snappy.parquet",
+          "bytes": 117572,
+          "sha256": "54bbaa0239a6a0f4c8bfcde62e4820d5a2ff3dc812b046978058321f57a86ee1"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-01/part-00001-68ba89e4-0717-4e8c-86ee-a6b30813e426.c000.snappy.parquet",
+          "bytes": 117572,
+          "sha256": "bc98f25091308daee04ef56cbb30d2c688585d727bc1492cd932081233036242"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-01/part-00001-70b04991-e29c-4c35-859e-dbd0fac4521b.c000.snappy.parquet",
+          "bytes": 117685,
+          "sha256": "f565f29d280144339a24a18c055cff9b906e7842d3332bd7ce9bfccec48b0b84"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-01/part-00001-9785f87d-9f14-45ee-92b3-5f7d191bb49d.c000.snappy.parquet",
+          "bytes": 117684,
+          "sha256": "9d6471602e723cc565e4eaaf417a8c84781b205050e9b5b963de60dc3e3427aa"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-02/part-00001-46cec451-48c6-49a4-8edd-b8b00873f868.c000.snappy.parquet",
+          "bytes": 110054,
+          "sha256": "f1d2c9c201eeaaf61b033a0afc88d39d4d4dea4228a0afaaaefa57c14ae1bf49"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-02/part-00001-4dbf7230-c189-48c2-a745-7b03617ad5f0.c000.snappy.parquet",
+          "bytes": 110055,
+          "sha256": "e75ac17c9bae1d381f7cc4b2ec49c655cd199622eafa7d4246457ddf5468f8c3"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-02/part-00001-b13345f9-1b3f-45a0-a561-b8b7e28576ad.c000.snappy.parquet",
+          "bytes": 109936,
+          "sha256": "432f729b421d425d3016bfd3dcd628b2eb28a2387e0a635951a47ec86afe98d7"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-02/part-00001-e2758377-0ad8-4f32-8d7f-799121be775a.c000.snappy.parquet",
+          "bytes": 109936,
+          "sha256": "049045b7ec006ac20a1b49ac24dfb970eff54dc4eece4b1ac499bdf6d24a648b"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-03/part-00000-27060c24-f51a-4b2e-ac23-0fba01096d87.c000.snappy.parquet",
+          "bytes": 63758,
+          "sha256": "de13c25b651071d5c37290af3215bfb0a7e006fa14a56498219e1720f969f42b"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-03/part-00000-81f4fcf4-afa5-4b22-abcd-53463978152b.c000.snappy.parquet",
+          "bytes": 63729,
+          "sha256": "381d22287ccfcf091c2b87a8cf2ec938f9abb530f42403033a870157e88feb1c"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-03/part-00000-b7129c73-fbf0-47fc-a2dc-708e390a817a.c000.snappy.parquet",
+          "bytes": 63759,
+          "sha256": "dc7762a7c5a988e994f2c990438423aaa55f18b86b08ade86ebda58f86af363b"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-03/part-00000-f6e8518c-afde-4ae1-a88d-bd0453dc0e8a.c000.snappy.parquet",
+          "bytes": 63729,
+          "sha256": "14e2328d715c3504858ee1e1d07f622d29848c1e0d19e730c5ab1d0c04d5b6da"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-03/part-00001-65363f43-f068-494e-b17e-f5c5cb6b4efa.c000.snappy.parquet",
+          "bytes": 63110,
+          "sha256": "075440c3ad4967dc4d5ad27e21422fdd148a432c087839e08a732dd36e10c00b"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-03/part-00001-7351f6b2-c57f-42d2-a3ee-bf9908b6503b.c000.snappy.parquet",
+          "bytes": 62766,
+          "sha256": "46988e97f4af6163bf030256b4821116a8f34d874fbb16d4f62a888944225f23"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-03/part-00001-af1e797e-2bc3-4cf4-9d4b-75568b35736c.c000.snappy.parquet",
+          "bytes": 63111,
+          "sha256": "f3849b687f574652b29dd3b2bf03c8efe6616de1bb250eb7305bcde2de3b5984"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-03/part-00001-ce2d28d9-7159-4e5f-be90-408277ec2154.c000.snappy.parquet",
+          "bytes": 62766,
+          "sha256": "d75855507cf41e5c27fc022a911cc20bd03c16aaf32b3b85fd04c4ed31ffa8b1"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-04/part-00000-166b7ea6-e620-4746-8065-b7d756421a28.c000.snappy.parquet",
+          "bytes": 122198,
+          "sha256": "f0f7c8536d8ea55ce3541019268d9506f7548344c19cc71ce9b5a35269366506"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-04/part-00000-6a43fc8b-e25a-43c9-9e98-a52d66ab7f51.c000.snappy.parquet",
+          "bytes": 122448,
+          "sha256": "d4c39a079d9d1abf6d85d2d57c68187199548b755baa09ccc2b7c689a0028053"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-04/part-00000-6c4d0474-5232-4f28-952a-1d1b3ac38b9d.c000.snappy.parquet",
+          "bytes": 122197,
+          "sha256": "6df3f5192daddf42135143eb9f2d5193a98651dea1dd956efe3dc31eb8329071"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-04/part-00000-8e27caae-668c-4513-ac16-8294edd8d76d.c000.snappy.parquet",
+          "bytes": 122448,
+          "sha256": "329d73c8d97f458baeec644bd797eb342a4fd6ef37f6b90d32ca4bc56436daea"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-05/part-00000-095d095c-6bd2-403c-9d63-2342f4c12812.c000.snappy.parquet",
+          "bytes": 127806,
+          "sha256": "977a2b185d90c6981c202b01ab5c5fdad2191c961893bce5b79df079e73b2d89"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-05/part-00000-3c22bc06-ebc4-4a1c-865a-87093febb2d5.c000.snappy.parquet",
+          "bytes": 127918,
+          "sha256": "4681817829e53fdd3e4bf207a6154157daa7243bf56795ae767191100a4fad2d"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-05/part-00000-6f422ba6-9e76-42db-b539-efa4fbd43ae8.c000.snappy.parquet",
+          "bytes": 127807,
+          "sha256": "940dbc0ba143c95929a3a1d3ff8b2bdeb657439bfce5d78906e1eba502cfe87d"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-05/part-00000-faac9177-1d48-4990-8280-41e6886c04e7.c000.snappy.parquet",
+          "bytes": 127918,
+          "sha256": "e4670a0483884eba3ef8f15e15a07cccaa219091f615da42925a15695e62451c"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-06/part-00000-2497fca5-0823-440c-9250-70528994b853.c000.snappy.parquet",
+          "bytes": 128627,
+          "sha256": "6dd3e19fb7a25a182e1bc0693ef1d03c03e9c463201b01118ffd9b4c1b2aa776"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-06/part-00000-984eacc6-673f-4096-9c30-c7660c44e95a.c000.snappy.parquet",
+          "bytes": 128606,
+          "sha256": "9d238576817ecdb8fd5ec6dc5d00e404ea41c55109f4e6f93110e5ad5e1a2299"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-06/part-00000-9ebd4310-4bcd-4278-bd52-74fb669842ff.c000.snappy.parquet",
+          "bytes": 128626,
+          "sha256": "108ec1b9dd920cd3a622e379dd33bd3548e8e20d6f225afe67bb26fe564d8cf2"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-06/part-00000-d145b71a-c7fd-4f28-9220-e46e7d2b9f96.c000.snappy.parquet",
+          "bytes": 128606,
+          "sha256": "a8aea6e1c7ed9df563ace9796e821cb14d929c06796fca77690425275e8943ee"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-07/part-00000-6e8b549a-1179-4e3e-98da-3a8a51aecc10.c000.snappy.parquet",
+          "bytes": 124368,
+          "sha256": "368a22e79cb0258806aa8725ac0e6e974796ce2ecabdb7c8f5761b1a7d636470"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-07/part-00000-85dbb3f8-3865-47d3-9eee-e8fe3eda87a7.c000.snappy.parquet",
+          "bytes": 124369,
+          "sha256": "a7c26e45398b6d8a6bbf5df9df73e864322a091a7fd430a0ec008b9291dd6442"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-07/part-00000-bb6d9567-9f0b-4af0-a56e-84634a0caf50.c000.snappy.parquet",
+          "bytes": 123070,
+          "sha256": "135678eb6a8ff86e6bb431df6d24f3e04f8a743bc44194d18f1ccdbc011d3ce6"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-07/part-00000-cfc27194-1cd5-4988-8f1d-c1be2c5e9332.c000.snappy.parquet",
+          "bytes": 123070,
+          "sha256": "f7db40204c838e5a29323b31558f8c6fbb14b6958e776f529b3c5c7e9d74348f"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-08/part-00000-426f279f-3f0e-4605-aaf7-0b6ab589a12b.c000.snappy.parquet",
+          "bytes": 128376,
+          "sha256": "b1dc9378c898dc3433eb287c6fd209bcbbb515b609ed31679e46b51d732fd5ff"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-08/part-00000-6f4b2f8b-ba8c-48b9-8d1a-4ed4ada56261.c000.snappy.parquet",
+          "bytes": 124774,
+          "sha256": "900f43b7f66b1506e05cbc488d8bddf553fe412e4b27fc92e5c6e2a5acb4777a"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-08/part-00000-cc66e678-c3a4-41bf-a157-36f354fe6647.c000.snappy.parquet",
+          "bytes": 124774,
+          "sha256": "6c9294fbdcb6714f0937ca42cf7fd2a6dbf2c09f20c07a946faae481e97783d5"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-08/part-00000-f06816d7-5631-47ba-a5b6-ef414d7eab15.c000.snappy.parquet",
+          "bytes": 128375,
+          "sha256": "884a351179fa98dc6fc6671bb2b2486b58a3bf7b4fe841e9e3f4654631257b2f"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-09/part-00001-0889cceb-b137-4277-bbd7-46f4e356ca23.c000.snappy.parquet",
+          "bytes": 106670,
+          "sha256": "197f46258d1a487831017df9d8590e13dd4788a853000a3865f772bc1ec30db1"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-09/part-00001-6306f16d-4807-4e4f-ace6-f0e45f578607.c000.snappy.parquet",
+          "bytes": 106670,
+          "sha256": "e4f313d63cdb4b6ad86470ac329564b0c7c584d50997b2fc8057ba1ccbb29de8"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-09/part-00001-ca7c10f9-40e0-41f0-a403-50a6b1298dde.c000.snappy.parquet",
+          "bytes": 106585,
+          "sha256": "e57051713d11c1d482e2502853cfdc00c9c94daf3e255dc2f64d1cc2a5a5b515"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-09/part-00001-ef383209-85d5-4725-98d0-349364f6c540.c000.snappy.parquet",
+          "bytes": 106584,
+          "sha256": "6a5961559c58569662fa5abdb6c99060f5b006d472da3a11e924bbbbcd0bca2f"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-10/part-00001-3fe0c6c3-b9d6-4f5b-87e7-c2f5786c3328.c000.snappy.parquet",
+          "bytes": 108533,
+          "sha256": "ea0eb4d2a489db36f40392a11427319162cbe342ebd66efb4feb6bdeeb631107"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-10/part-00001-60ab0901-d571-4cb5-900e-7121b958b022.c000.snappy.parquet",
+          "bytes": 109328,
+          "sha256": "64731f05d4a1dadc04c837cfa5f25026fae2e17dff9c3dd8dd8677ffd8f7f32c"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-10/part-00001-862f3eb7-76f5-4be9-929b-29dea1ff8640.c000.snappy.parquet",
+          "bytes": 109327,
+          "sha256": "c3f762bb3c52eabcc5b08ab5b6f04fc344b575bf125bec5ce43022fd8791d78d"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-10/part-00001-9d7c4251-6a38-415e-a7fb-c2554b8a69d8.c000.snappy.parquet",
+          "bytes": 108533,
+          "sha256": "50ccc5fb62bebf2a5984e2550d9cf4b4d786a193e6186173d9fa0c7d34baf68a"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-11/part-00000-362d9eea-f9bd-40ab-87a3-cde4f416b7e7.c000.snappy.parquet",
+          "bytes": 65009,
+          "sha256": "2b86336cc5ecea1ed7a94365d908a2524f8891c098c2d49517d46d393bd34cea"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-11/part-00000-863b5c15-6055-4349-9b91-b89f94bb4e8c.c000.snappy.parquet",
+          "bytes": 115864,
+          "sha256": "244235dd20be3bb25ce0f7cb1239d7f039a485472af6dce3827e2c20816a57d1"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-11/part-00000-c5040bc5-a882-45f2-8231-81194d8be702.c000.snappy.parquet",
+          "bytes": 115864,
+          "sha256": "d55a9e044aa319671f05fcb65e31b5f71ce184de6ad136ebe70b214d6b2da98a"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-11/part-00000-c6eb155f-9b69-4f2c-bc98-d0b4b81b1d62.c000.snappy.parquet",
+          "bytes": 65008,
+          "sha256": "4fa0ae5440d944a27fbabccb6121c402468f542135c2ff68d6b5a4e5e8e15ba5"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-11/part-00001-647a62f5-8709-420e-9354-dcfc7582eb0f.c000.snappy.parquet",
+          "bytes": 63249,
+          "sha256": "d47e8364793ae2aa31cb2c57884372a5e23eae1f2d839421522f36c1cec35ab8"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-11/part-00001-f0b4a05c-fc9a-4d69-9833-c3cb7e19517f.c000.snappy.parquet",
+          "bytes": 63248,
+          "sha256": "68060552ab85aa3d25db74d276d2854ee3b5aa0c488cc243dd5c6e3500529fa9"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-12/part-00000-1a1cdf21-394b-438c-8a3c-7d16a9b14545.c000.snappy.parquet",
+          "bytes": 118751,
+          "sha256": "39d6abc979e7bbf96916684945a49418ab33dc734409f4b4c2f69b5a2869457d"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-12/part-00000-27fab4fa-df5f-4da9-9cdb-f9d6ad290346.c000.snappy.parquet",
+          "bytes": 118796,
+          "sha256": "6067e04bebb34d1bc8435fe90c518445bbc17727b65b6f32a3f693cf3c1305f7"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-12/part-00000-ed5c77c4-747d-414c-bd4b-84509fe78560.c000.snappy.parquet",
+          "bytes": 118751,
+          "sha256": "488dd2bcbdc467c3ecfc990dd7b7d1b75ea5b6fff12eb8180fb59baa546e6d4b"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-12/part-00000-faecb639-052f-437a-9b96-7ea985114a43.c000.snappy.parquet",
+          "bytes": 118795,
+          "sha256": "c0010146c27654e702fe0a49c70f98146b7873f9c98205a4eb158099ad73b89c"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-13/part-00000-3e978b89-a9b1-454a-808a-805f04f5fd9f.c000.snappy.parquet",
+          "bytes": 118888,
+          "sha256": "5cbb3a6b954d43d4eaa1b3d4d088e3b6141146cd8aea59be2b8c62c63c8e1d06"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-13/part-00000-66a93a77-37b1-4cbf-9fc6-aa539f642893.c000.snappy.parquet",
+          "bytes": 118999,
+          "sha256": "b7518fa50a006086d845893a696f1d93b0533bad5c8201a1b37d36af4ca2736e"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-13/part-00000-7bd28c4e-5eed-4cb6-9f72-2144b61a2694.c000.snappy.parquet",
+          "bytes": 118888,
+          "sha256": "59935f54cf680bc7e8472f5928c1b3c5d658483653240f3139f62b28dcd31718"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-13/part-00000-7e53cb2a-c632-4c7e-bd19-2ed983dbbcc2.c000.snappy.parquet",
+          "bytes": 119000,
+          "sha256": "9fce5d8c6c7edc555705fa8699101e91b1e7ec902a5714e8799dbe6337530874"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-14/part-00001-00ca026c-6863-473b-bce1-b7c55761a004.c000.snappy.parquet",
+          "bytes": 108681,
+          "sha256": "ec27676cd24136bc9c10288ae02244bd4d5343995ca40034f0ab2c77e862e7d0"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-14/part-00001-22bda048-1ccc-4d26-b8d9-8dc65cab6129.c000.snappy.parquet",
+          "bytes": 108743,
+          "sha256": "3574a2b8d4e3500646ece2874dd3cda8d0b46e5acd7c4eaba04e8e13ead19857"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-14/part-00001-7a2d4eee-97d0-437a-994d-fbcf189c24ac.c000.snappy.parquet",
+          "bytes": 108743,
+          "sha256": "61e76a829e8c6f0f5b8483f8a2e57cecd66355f6419196d203cbd31d355ef223"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-14/part-00001-dd4549d9-f523-4223-aa6b-009b46c6c4bd.c000.snappy.parquet",
+          "bytes": 108680,
+          "sha256": "affd61fde8c52afbc20b12031b825d1d12df7bda1939ff321043cbf37e85236e"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-15/part-00001-6bbcf44d-f605-4027-a44d-5d4a493e8927.c000.snappy.parquet",
+          "bytes": 110063,
+          "sha256": "33e3b497e63905e258523f6dfad8b58a067ce9d28d9f36e6c7b794fa39a4776b"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-15/part-00001-acf98afe-1118-4871-b1ac-7c62055768b8.c000.snappy.parquet",
+          "bytes": 110063,
+          "sha256": "7d58a7269320cb04f221a9b4b2624c0d4064856fe5b321d4514ee49bb85f0b7f"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-15/part-00001-c91de717-df20-4916-a9a3-e62ca4719312.c000.snappy.parquet",
+          "bytes": 110188,
+          "sha256": "d84f0891a7261a5d740a8d3da2bc0a058538ee7625c90f9302a5b45b1a4aac8b"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-15/part-00001-ee950c85-875a-4eda-a721-1606bf24cd13.c000.snappy.parquet",
+          "bytes": 110187,
+          "sha256": "e48a8f02e590cf275bbe73ec88d703002d08e213e7697febf6bcec5f9d5a71a1"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-16/part-00001-5c72b970-754f-4e2d-b911-a69bc91273ec.c000.snappy.parquet",
+          "bytes": 107933,
+          "sha256": "51493a1c8151d11c885f1ddeb2b83e701f58b6128e48d02cf952d758e4e6ba28"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-16/part-00001-8892d1b9-0033-4003-aadf-c623e5956bfd.c000.snappy.parquet",
+          "bytes": 108100,
+          "sha256": "c0a6a6f80e927f442a8b7d8a7c612801f7574cf73400118be0ebbdc2b48707ba"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-16/part-00001-b87253eb-4045-4579-94a0-d53185e38b47.c000.snappy.parquet",
+          "bytes": 107932,
+          "sha256": "b38ed2dff465bc9af6df2be3adfe986045534ad442cac230872c25a7390dbaa2"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-16/part-00001-badb6ee6-330f-4d62-b063-38201ab8120c.c000.snappy.parquet",
+          "bytes": 108100,
+          "sha256": "5e08c8009be416c5a9cd9192059224142ca0210821151ad3f1fc781760ca2ea3"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-17/part-00001-05c151bf-fb67-4c31-8ccf-22117dd86980.c000.snappy.parquet",
+          "bytes": 108688,
+          "sha256": "5a29e184c0dced3730f031f8e8582134a7ebce9616460fdde696da67048d3d4c"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-17/part-00001-3d6d49de-b972-4677-b812-f792021742b7.c000.snappy.parquet",
+          "bytes": 108823,
+          "sha256": "40933f971a67f28d205c61bead826c27fb78cc6b7db60faab33cd02f649aa60b"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-17/part-00001-42147857-37f5-4a7d-968a-2505409115cc.c000.snappy.parquet",
+          "bytes": 108824,
+          "sha256": "c627b38ac7783d319da79116da61b3880df97716513c953cee80edb7db842417"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-17/part-00001-b0af5ee6-ef7d-46ba-89fe-6978e0a40676.c000.snappy.parquet",
+          "bytes": 108688,
+          "sha256": "b4aedce142b01e20393bc8d5248e126ab5ff2ec99423ba1170d924ef388c813e"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-18/part-00000-548887c8-9177-4744-b486-7220c48dde12.c000.snappy.parquet",
+          "bytes": 64798,
+          "sha256": "e2c0e6409dcc71824ce92c121eea56d11df8bf3305ff25a6bd70d7cc625e7f73"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-18/part-00000-5b7c3be4-6e92-44e6-bae4-c31d2f4dfcde.c000.snappy.parquet",
+          "bytes": 64798,
+          "sha256": "50077dcf3f14ccb5bcdafa293083f1034b24cddbd8ba190062449552b7b7aeb9"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-18/part-00000-a60db2b3-5bc8-4266-a6ef-6165c8dce867.c000.snappy.parquet",
+          "bytes": 117213,
+          "sha256": "e057750e9a0e19f76411d346bbff1df941c6f4269e2821dee16e306e2c106129"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-18/part-00000-dae3108b-fbcc-4b10-a9fc-b039e6671f6a.c000.snappy.parquet",
+          "bytes": 117214,
+          "sha256": "68b0032456265deff129c1d3c23697097426af653d160541b4e3881e099ac15e"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-18/part-00001-2664a1fe-090a-4089-bb00-6bb836173855.c000.snappy.parquet",
+          "bytes": 63524,
+          "sha256": "8912df170518289341f9e555055d9ad710d4a850066b0982ae1bb3aa184a60a2"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-18/part-00001-6b09a893-0c6c-4628-b0bb-637a2260ff8a.c000.snappy.parquet",
+          "bytes": 63524,
+          "sha256": "5e774ee64a0a666187e9f8ce47c9020119f377b1b37b77adb378ca5c1c4e547e"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-19/part-00001-0b0c504a-b91a-4dfd-b5bf-503fd19369b8.c000.snappy.parquet",
+          "bytes": 110567,
+          "sha256": "28072b3d90b62998c1e18b39275ce330358582b91bdbef996f1d801be6a23305"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-19/part-00001-1f9425bd-a3e3-4ce6-ad95-b3052bf8faeb.c000.snappy.parquet",
+          "bytes": 110707,
+          "sha256": "da976dbd28fe82bc3bf1a410cfc4dec45290d0f06b450fb2647cf53135c5cbde"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-19/part-00001-599707aa-3230-4f81-b94f-5b61f4837e8c.c000.snappy.parquet",
+          "bytes": 110566,
+          "sha256": "52102085fe6259240d0435ad2908554840bbf69ddce11a164eb8e2bf2f0e3682"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-19/part-00001-b2670110-363f-4b5d-a7a5-1611617c3f21.c000.snappy.parquet",
+          "bytes": 110707,
+          "sha256": "7bd4933e6f5bdc3504aa69153f599fb0e2b22375afe37464908ef8a5fdca7c96"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-20/part-00000-12c833cf-5d02-4bcb-bd85-7c8d5f64f058.c000.snappy.parquet",
+          "bytes": 64882,
+          "sha256": "85e5225f27adfb3add2b3635a44ef5dd0c05b2edd13f489955c80574df448ebe"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-20/part-00000-7d817d28-0a93-4800-881d-92eba0d68dcd.c000.snappy.parquet",
+          "bytes": 64784,
+          "sha256": "3a07fb309fda8480f2e0810bacd4e3b0758505fccb715098899e7b1e19d19a44"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-20/part-00000-891b2c2c-8f92-4e42-a1f5-600893288599.c000.snappy.parquet",
+          "bytes": 64784,
+          "sha256": "9b59bb804da021307dec3b9a84cfaebce3b90a088bd2ee683ca0d5b786b741dc"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-20/part-00000-972a0d7a-7e66-4ee3-8c55-ad49d031a722.c000.snappy.parquet",
+          "bytes": 64883,
+          "sha256": "507dfae5c406b3b38f49893a866f12e55de8e83a241a51792f4f7c32dbb776bd"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-20/part-00001-2dce51d3-e73e-42c2-96d6-54a525d5eba1.c000.snappy.parquet",
+          "bytes": 64810,
+          "sha256": "61079799c62b8e7d257a763d2a72396976d8fdb08cb0ffe41efe809ff5662e49"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-20/part-00001-3445584a-e86b-4e6c-9b29-5167db1bd8ce.c000.snappy.parquet",
+          "bytes": 64811,
+          "sha256": "fc6587ce8aa15449609fa5baffa56299978685c7fba8109a31c961da32d0643a"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-20/part-00001-3740ebe1-d086-42fe-8aee-cd7f0da8cdaf.c000.snappy.parquet",
+          "bytes": 64810,
+          "sha256": "7c64cae811b6c779d9aa90751f40696828a7ce887bde2fcff834824ba5e86410"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-20/part-00001-d05157d9-c2a1-4f7a-9fbf-2080ba39d9e9.c000.snappy.parquet",
+          "bytes": 64810,
+          "sha256": "558855ce3554a4cab2d176c42cc5aab29f314da35585ac29c035946ef10e5ae0"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-21/part-00000-4cf9bcdd-a365-4df4-9af8-880c7e34cf56.c000.snappy.parquet",
+          "bytes": 133888,
+          "sha256": "1d1ba2764da53c40fe3a86b2dd1f5117f620a2b92bf1507ddf037539ff75fbf1"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-21/part-00000-51ba2531-4bcf-497c-aa95-6962385e6aeb.c000.snappy.parquet",
+          "bytes": 132739,
+          "sha256": "55db03ed2604b2b1029c63461d94e1e0751e3a27be4cd5652e453dfd6a9707d0"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-21/part-00000-cf0c3c4f-72b8-444f-bda0-d1ae448fc4c4.c000.snappy.parquet",
+          "bytes": 133887,
+          "sha256": "060d7b7e98720fd766f00fecde5d6486198732282d46330996023ea88edf681f"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-21/part-00000-e18d4bd4-9b3b-4e56-9389-8669dbf66cb7.c000.snappy.parquet",
+          "bytes": 132739,
+          "sha256": "d4d19daf7bde810e62ac65c8ff277737f3d61e2989758fd437b07bebd81540b5"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-22/part-00000-1cd3f2de-c352-4453-b6d0-4ee056795c2b.c000.snappy.parquet",
+          "bytes": 123581,
+          "sha256": "2f41ca40af9cdcd6f16818246ccb4cb80879c2ea5a5a14086d9d1fe57f3f6af0"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-22/part-00000-97f2c446-c733-492e-9c98-de117434d875.c000.snappy.parquet",
+          "bytes": 123582,
+          "sha256": "e4c4838a14c1d8e4b74b6a7569032632b5480a94218393bb0a923ff006316e1f"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-22/part-00000-cfe4b713-0a2d-41a3-8fbd-6ec5474f44a6.c000.snappy.parquet",
+          "bytes": 123377,
+          "sha256": "85fadbd45dff8aef736e386347b5637638a6ba7abe3715d2a3f2bd406e362b23"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-22/part-00000-d0248ff1-9e35-4031-965a-6280c4408970.c000.snappy.parquet",
+          "bytes": 123377,
+          "sha256": "d6b6c07abcfabd5f8f168f3fd388f097435285ba0996dc5abd47d6fa2a9ba7ce"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-23/part-00001-0e665505-7df1-4b69-89c0-6f91479c91a3.c000.snappy.parquet",
+          "bytes": 120217,
+          "sha256": "627c7c8b985ec6a75b4fb579024d68cfb5227e8639ed4fd91932b3f4e2b5618f"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-23/part-00001-5adcbf4c-c372-488e-a846-4d1d6a4e7056.c000.snappy.parquet",
+          "bytes": 120217,
+          "sha256": "738df1b25b79b0ee385a9d00e4942f1f9f5dee133d2c0bc6e7ebe841f6370c96"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-23/part-00001-decd82b9-daa4-4983-98f3-ff84b3df2799.c000.snappy.parquet",
+          "bytes": 120310,
+          "sha256": "ddf0127182a48c95f99dbfd88e9e391d8dc5603f8e13b5eb781aac02b422b2c2"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-23/part-00001-fe7c4b12-c203-457c-a3dd-2866e85db014.c000.snappy.parquet",
+          "bytes": 120309,
+          "sha256": "beefb9b5c4f77c32e907d9e0fcd6894795207bcb31b339272c27feb47a42fa17"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-24/part-00000-91e861c2-6029-4b8e-a607-4febb0239387.c000.snappy.parquet",
+          "bytes": 118938,
+          "sha256": "b40947ef432ca05acf677884db4f2657dda231f92b28ebf4dfd739e92da4cbd9"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-24/part-00000-c8d17d35-43ae-4635-849e-8014ba295914.c000.snappy.parquet",
+          "bytes": 118202,
+          "sha256": "555e90b1546b85f6623352acdf04a97c7857394243fbc786b88f8d249302239c"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-24/part-00000-ea9f4f19-593d-43a8-92d1-ebe16ec0acaf.c000.snappy.parquet",
+          "bytes": 118939,
+          "sha256": "a799adf01a3a9dce0e6e44f6371fd3c6bf5d8435280260c74a3ac10c1279244c"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-24/part-00000-f058afde-aa07-429a-9e00-d93e028984c3.c000.snappy.parquet",
+          "bytes": 118202,
+          "sha256": "c3113437d24c14f0598ffe2a360afa954fd3f35609f0dac12370c003deb2dd90"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-25/part-00000-2529f833-152e-4b1f-ad42-6ace9b95f931.c000.snappy.parquet",
+          "bytes": 117289,
+          "sha256": "1fef4f215aca3f134069bc2df75930217cb81560da5e9d24c52ee9f599e73fcb"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-25/part-00000-8e210856-5a87-4f39-8f4b-efddc1163530.c000.snappy.parquet",
+          "bytes": 117289,
+          "sha256": "6af4637c2040843476d75c3851d6651f52a90daf8e1f44e8b4f7470aa23915ea"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-25/part-00000-c4558932-8f45-4982-be36-30bcb19c061a.c000.snappy.parquet",
+          "bytes": 118419,
+          "sha256": "e3febb4b3ece4767f015048f82e13dd12f2b88cc78567404fc9024dd3777343c"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-25/part-00000-c78c06d0-6764-475e-89f5-2289785ba89c.c000.snappy.parquet",
+          "bytes": 118418,
+          "sha256": "fa81f1cbbef1c4f723f3c52668edfe950103432dd32fcb808e1468044a275000"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-26/part-00000-02526f8e-fd9b-4509-9546-8abffe080893.c000.snappy.parquet",
+          "bytes": 64715,
+          "sha256": "162793df208f90fb5b644ebfd61f5a8e27a3f1c1c129792eab9999b6a75527ef"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-26/part-00000-459655f8-86bc-49f6-b1f8-a172cced2641.c000.snappy.parquet",
+          "bytes": 64831,
+          "sha256": "591a564c6236f1ec79d6af358b38066b03c9f93cc08b90f31833995efe6a60e6"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-26/part-00000-47cd3a30-2c5b-46ef-8a64-8b69147642df.c000.snappy.parquet",
+          "bytes": 64832,
+          "sha256": "c313e1153d102fb959c6e74f8ccbe28fa5a5a85bb6d300c87c92eaab06946ea9"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-26/part-00000-7b2b97e4-d1ca-4f44-930c-1fab5598c095.c000.snappy.parquet",
+          "bytes": 64715,
+          "sha256": "43f0768fe8060c4272fb2379baf57753ce7c737c3f7405fca603c34437f6c41c"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-26/part-00001-72068154-c65d-47df-a70d-77129d28b17f.c000.snappy.parquet",
+          "bytes": 64042,
+          "sha256": "063a6e0c20c5a31c93b898808aa8e5f8674eb45880fe60014c63d322a8dce4f8"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-26/part-00001-ce822a15-f4db-438f-86d4-920c6c837d67.c000.snappy.parquet",
+          "bytes": 64041,
+          "sha256": "67d4303cc766ad9493197fcb046bb6f0b00c04c00ed1c637723f1dfb235d8434"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-26/part-00001-fc27deed-7d8c-454a-aaba-689236bb8ba6.c000.snappy.parquet",
+          "bytes": 64015,
+          "sha256": "10335c33a98905d045d4c56fc467ee7184e343270dfdc591a5f2f9ebc1dbdfa8"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-26/part-00001-fca4aff0-8ebb-4387-9ecf-0c0eb08d0cbc.c000.snappy.parquet",
+          "bytes": 64015,
+          "sha256": "4875f91d8ed8ac3e0f2b6dc35d7df63e6d621bec8f2c63ff8d4a4bf3fb3fc99c"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-27/part-00001-13901604-a6b3-49f6-8f5c-aea83d576dfa.c000.snappy.parquet",
+          "bytes": 117286,
+          "sha256": "14d852661db7e99e23feb4520f88eed41966ec87f2ffdacd3ff916728fc78e9e"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-27/part-00001-18e76282-7526-4f51-936c-4de26eb3ddb6.c000.snappy.parquet",
+          "bytes": 117287,
+          "sha256": "bb08dd4e54b7711894f207a820b66fa07e569aa3eb7d4573e1e78ff148a70443"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-27/part-00001-b9841ec8-dfcd-4cf4-a54e-07982f72b7f3.c000.snappy.parquet",
+          "bytes": 115699,
+          "sha256": "6a3b535fec9566c020f221be17021c3583c35d4e3f57d2865f373ec9a9539af5"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-27/part-00001-f8005485-808d-4f8a-97e7-24ab85d1f2e1.c000.snappy.parquet",
+          "bytes": 115699,
+          "sha256": "e57ca83fc96d4288fcac22499193b64d31dc4719bc2150b6acf4b126f0d6833e"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-28/part-00000-0d22e1e3-cd59-405a-b432-d2c7c38c2ddd.c000.snappy.parquet",
+          "bytes": 65049,
+          "sha256": "a6c3cb5fc56cc73a21f78c2a8e832f94f06cd708d732bf0ff06883db2d4c9b6d"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-28/part-00000-1e706439-6cd5-4151-9b28-bdd3699185e0.c000.snappy.parquet",
+          "bytes": 65050,
+          "sha256": "9035aa6fdcdb8bb6eb246cf69c7fd0096488e7fd19185eeb22fce82ff51ba4db"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-28/part-00001-222e7d6a-5f9b-4afb-b448-0d928ae5fc06.c000.snappy.parquet",
+          "bytes": 64228,
+          "sha256": "7dfd4012194f7b77aa68df0f07eda8e39b8072a74a40136f7e15008adce1899a"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-28/part-00001-472223a6-df26-42c2-b812-4cb66b87cde3.c000.snappy.parquet",
+          "bytes": 120440,
+          "sha256": "85a6830074956c623420a039734f20c616db6521126afb7eb9c1b2cd7ee68d31"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-28/part-00001-eb61a4c0-3086-4d7a-bab4-a251676b99fb.c000.snappy.parquet",
+          "bytes": 120440,
+          "sha256": "b5589ef8155f5f4f1a60237565f2d2a6ff300e9524795f2cd20c1ead3cb1df82"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-28/part-00001-fba1dae5-23ff-4a21-a93b-92e30f027d64.c000.snappy.parquet",
+          "bytes": 64229,
+          "sha256": "9f17742eebfa9be8c9b224a056cfa53302835c89615ac3d688d728c4f10e2010"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-29/part-00000-2eaff67c-2bcc-48c0-814a-9adeb3d88ede.c000.snappy.parquet",
+          "bytes": 122702,
+          "sha256": "2322be612ef6c55e2850785130c1eb6a524574768a105d5709cfe600f44ce13c"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-29/part-00000-328e4dee-8fd0-4055-9732-ac3c1ea9b704.c000.snappy.parquet",
+          "bytes": 65639,
+          "sha256": "15c7c9bd2333e8444fa2558d2f144c5dbeaf27ba2d0c5fc592d03d9b02e5c2c7"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-29/part-00000-781d1765-97d1-44f6-b51f-e32a833aa1c1.c000.snappy.parquet",
+          "bytes": 122702,
+          "sha256": "7cf315642e10d754f542e350e4d77d652d38dac44e1f34b488cd2ec69247f6b0"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-29/part-00000-9d69e5d8-f8f2-494e-99a8-bb572371fb56.c000.snappy.parquet",
+          "bytes": 65638,
+          "sha256": "1cf32696683ff66c92885ca29051e8a4adc199215a5f28552b531ae62010ac18"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-29/part-00001-b2f9c311-57f4-47ad-b723-00fed9e6ac85.c000.snappy.parquet",
+          "bytes": 64884,
+          "sha256": "8b6f3b22bf13270fb221705012c22285f88da4268ebf64123678a1766f13bcf3"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-29/part-00001-be135411-9b09-4510-a55e-c3bb5608c652.c000.snappy.parquet",
+          "bytes": 64885,
+          "sha256": "33400da8b2f98949277a648a30065ca03d29f8e66848e5e90f0669f3fa6ffbef"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-30/part-00001-34ec22f7-4321-4264-8c67-53a36e601643.c000.snappy.parquet",
+          "bytes": 108971,
+          "sha256": "abc44058673c4a3758109ffcd931873c8f27dcb5a8e02537e7c0c63fce2f7284"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-30/part-00001-3b70a329-8be5-436c-8921-27114d73183d.c000.snappy.parquet",
+          "bytes": 108942,
+          "sha256": "f85b87e28c0f73f8d3eee0af1a08fc31157de2e1ef377ae193fbd67c24af3983"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-30/part-00001-4eedeca6-498f-4fbc-a76f-c95a1b31270b.c000.snappy.parquet",
+          "bytes": 108942,
+          "sha256": "178afe017ec3c805aeb28e32192300afc96ed9e5d0bb9dce6e6a9a183fe4b744"
+        },
+        {
+          "path": "data/ads/od_day/service_date=2025-06-30/part-00001-9501c117-a1c9-4880-b0e7-51bcfa867aa6.c000.snappy.parquet",
+          "bytes": 108970,
+          "sha256": "4fe1dda65fc04669003e1da875d2a7df53a732e353a46f2a9e6f498c81f718b3"
+        }
+      ]
+    },
+    {
+      "table": "ads.weather_group",
+      "delta_version": 4,
+      "rows": 12,
+      "files": [
+        {
+          "path": "data/ads/weather_group/month_start=2025-06-01/part-00000-18ee00a8-f288-4898-8f1c-15a6c71967d3.c000.snappy.parquet",
+          "bytes": 3909,
+          "sha256": "a99f8ee9e93808a7966381cfab4daff03a68b538ac2666764302f0609fa3933b"
+        },
+        {
+          "path": "data/ads/weather_group/month_start=2025-06-01/part-00000-3a55980c-9b94-417d-9612-ba0dfc230a97.c000.snappy.parquet",
+          "bytes": 3909,
+          "sha256": "96f7c3b22a75bf1ef6d83877b915a76bfff126b6e4b7ce3a3f0826ffdbc9f2ea"
+        },
+        {
+          "path": "data/ads/weather_group/month_start=2025-06-01/part-00000-f3d48910-e0f8-438b-9195-1a88e6720c01.c000.snappy.parquet",
+          "bytes": 3908,
+          "sha256": "040478543feabf3f6cefeb6ee441db1dd1929ce84d8152bd23ecf2bfc68f0dc7"
+        },
+        {
+          "path": "data/ads/weather_group/month_start=2025-06-01/part-00000-ffb68494-745e-4fa8-8945-e5fc14563aeb.c000.snappy.parquet",
+          "bytes": 3909,
+          "sha256": "40b80a67c8c3e3c010724dcaa2cb0d4f01b26b2d8246e5e82671e0607a5088a7"
+        }
+      ]
+    }
+  ]
+}

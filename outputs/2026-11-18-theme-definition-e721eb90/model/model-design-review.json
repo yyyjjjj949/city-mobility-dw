@@ -1,0 +1,324 @@
+{
+  "passed": true,
+  "checked_at_utc": "2026-11-18T10:11:29.855441+00:00",
+  "scope": "model contract, job AST, role keys, types and document artifact consistency; not live-data validation",
+  "logical_layer_decision": "DIM responsibilities separated; physical dwd.dim_* retained by ADR-001",
+  "checks": [
+    {
+      "check": "seven_public_or_specialized_dimensions",
+      "passed": true,
+      "evidence": [
+        "dwd.dim_bike_type",
+        "dwd.dim_date",
+        "dwd.dim_station",
+        "dwd.dim_time",
+        "dwd.dim_transport",
+        "dwd.dim_weather_daily",
+        "dwd.dim_zone"
+      ]
+    },
+    {
+      "check": "dwd.fact_taxi_trip_key_and_partition",
+      "passed": true,
+      "evidence": {
+        "logical_key": [
+          "trip_key"
+        ],
+        "partition": [
+          "service_date"
+        ],
+        "columns": 48,
+        "grain": "一个通过核心规则的原始出租车记录"
+      }
+    },
+    {
+      "check": "dwd.fact_bike_trip_key_and_partition",
+      "passed": true,
+      "evidence": {
+        "logical_key": [
+          "ride_id"
+        ],
+        "partition": [
+          "service_date"
+        ],
+        "columns": 39,
+        "grain": "一个规范化ride_id的一次有效骑行"
+      }
+    },
+    {
+      "check": "dwd_references_resolve_with_matching_types",
+      "passed": true,
+      "evidence": {
+        "references": 25
+      }
+    },
+    {
+      "check": "dwd.fact_taxi_trip_role_playing",
+      "passed": true,
+      "evidence": [
+        [
+          "start_date_key",
+          "end_date_key"
+        ],
+        [
+          "start_time_key",
+          "end_time_key"
+        ],
+        [
+          "origin_zone_key",
+          "destination_zone_key"
+        ]
+      ]
+    },
+    {
+      "check": "dwd.fact_bike_trip_role_playing",
+      "passed": true,
+      "evidence": [
+        [
+          "start_date_key",
+          "end_date_key"
+        ],
+        [
+          "start_time_key",
+          "end_time_key"
+        ],
+        [
+          "origin_zone_key",
+          "destination_zone_key"
+        ]
+      ]
+    },
+    {
+      "check": "bike_station_role_playing",
+      "passed": true,
+      "evidence": "origin_station_key / destination_station_key -> dim_station.station_key"
+    },
+    {
+      "check": "five_public_aggregates",
+      "passed": true,
+      "evidence": [
+        "dws.od_day",
+        "dws.trip_day",
+        "dws.trip_hour",
+        "dws.weather_group",
+        "dws.zone_hour"
+      ]
+    },
+    {
+      "check": "day_and_hour_retain_weighted_mean_parts",
+      "passed": true,
+      "evidence": [
+        "distance_count",
+        "distance_sum_km",
+        "duration_count",
+        "duration_sum_seconds"
+      ]
+    },
+    {
+      "check": "weather_has_unique_context_key_and_group",
+      "passed": true,
+      "evidence": "气象站×源观测日期"
+    },
+    {
+      "check": "shared_aggregation_uses_union",
+      "passed": true,
+      "evidence": "AST of jobs/build_marts.py: unionByName"
+    },
+    {
+      "check": "incomplete_arrivals_remain_unavailable",
+      "passed": true,
+      "evidence": "AST of jobs/build_marts.py: unavailable arrivals/net inflow and false completeness"
+    },
+    {
+      "check": "dwd_logical_key_validation_exists",
+      "passed": true,
+      "evidence": "AST of jobs/build_dwd.py: check_unique contains distinct check"
+    },
+    {
+      "check": "design_documents_and_local_links_exist",
+      "passed": true,
+      "evidence": []
+    },
+    {
+      "check": "model_diagrams_present",
+      "passed": true,
+      "evidence": []
+    },
+    {
+      "check": "primary_method_reference_receipts",
+      "passed": true,
+      "evidence": "reference-manifest.json: six successful source receipts, not a new network validation"
+    }
+  ],
+  "references_checked": [
+    {
+      "table": "dwd.dim_station",
+      "column": "zone_key",
+      "target": "dwd.dim_zone.zone_key",
+      "matching_type": true
+    },
+    {
+      "table": "dwd.dim_weather_daily",
+      "column": "date_key",
+      "target": "dwd.dim_date.date_key",
+      "matching_type": true
+    },
+    {
+      "table": "dwd.fact_taxi_trip",
+      "column": "start_date_key",
+      "target": "dwd.dim_date.date_key",
+      "matching_type": true
+    },
+    {
+      "table": "dwd.fact_taxi_trip",
+      "column": "end_date_key",
+      "target": "dwd.dim_date.date_key",
+      "matching_type": true
+    },
+    {
+      "table": "dwd.fact_taxi_trip",
+      "column": "start_time_key",
+      "target": "dwd.dim_time.time_key",
+      "matching_type": true
+    },
+    {
+      "table": "dwd.fact_taxi_trip",
+      "column": "end_time_key",
+      "target": "dwd.dim_time.time_key",
+      "matching_type": true
+    },
+    {
+      "table": "dwd.fact_taxi_trip",
+      "column": "transport_code",
+      "target": "dwd.dim_transport.transport_code",
+      "matching_type": true
+    },
+    {
+      "table": "dwd.fact_taxi_trip",
+      "column": "origin_zone_key",
+      "target": "dwd.dim_zone.zone_key",
+      "matching_type": true
+    },
+    {
+      "table": "dwd.fact_taxi_trip",
+      "column": "destination_zone_key",
+      "target": "dwd.dim_zone.zone_key",
+      "matching_type": true
+    },
+    {
+      "table": "dwd.fact_taxi_trip",
+      "column": "weather_key",
+      "target": "dwd.dim_weather_daily.weather_key",
+      "matching_type": true
+    },
+    {
+      "table": "dwd.fact_taxi_trip",
+      "column": "source_record_key",
+      "target": "ods.source_record.record_key",
+      "matching_type": true
+    },
+    {
+      "table": "dwd.fact_taxi_trip",
+      "column": "batch_id",
+      "target": "ops.ingest_batch.batch_id",
+      "matching_type": true
+    },
+    {
+      "table": "dwd.fact_bike_trip",
+      "column": "start_date_key",
+      "target": "dwd.dim_date.date_key",
+      "matching_type": true
+    },
+    {
+      "table": "dwd.fact_bike_trip",
+      "column": "end_date_key",
+      "target": "dwd.dim_date.date_key",
+      "matching_type": true
+    },
+    {
+      "table": "dwd.fact_bike_trip",
+      "column": "start_time_key",
+      "target": "dwd.dim_time.time_key",
+      "matching_type": true
+    },
+    {
+      "table": "dwd.fact_bike_trip",
+      "column": "end_time_key",
+      "target": "dwd.dim_time.time_key",
+      "matching_type": true
+    },
+    {
+      "table": "dwd.fact_bike_trip",
+      "column": "transport_code",
+      "target": "dwd.dim_transport.transport_code",
+      "matching_type": true
+    },
+    {
+      "table": "dwd.fact_bike_trip",
+      "column": "origin_zone_key",
+      "target": "dwd.dim_zone.zone_key",
+      "matching_type": true
+    },
+    {
+      "table": "dwd.fact_bike_trip",
+      "column": "destination_zone_key",
+      "target": "dwd.dim_zone.zone_key",
+      "matching_type": true
+    },
+    {
+      "table": "dwd.fact_bike_trip",
+      "column": "weather_key",
+      "target": "dwd.dim_weather_daily.weather_key",
+      "matching_type": true
+    },
+    {
+      "table": "dwd.fact_bike_trip",
+      "column": "origin_station_key",
+      "target": "dwd.dim_station.station_key",
+      "matching_type": true
+    },
+    {
+      "table": "dwd.fact_bike_trip",
+      "column": "destination_station_key",
+      "target": "dwd.dim_station.station_key",
+      "matching_type": true
+    },
+    {
+      "table": "dwd.fact_bike_trip",
+      "column": "bike_type_code",
+      "target": "dwd.dim_bike_type.bike_type_code",
+      "matching_type": true
+    },
+    {
+      "table": "dwd.fact_bike_trip",
+      "column": "source_record_key",
+      "target": "ods.source_record.record_key",
+      "matching_type": true
+    },
+    {
+      "table": "dwd.fact_bike_trip",
+      "column": "batch_id",
+      "target": "ops.ingest_batch.batch_id",
+      "matching_type": true
+    }
+  ],
+  "fact_columns": {
+    "dwd.fact_taxi_trip": 48,
+    "dwd.fact_bike_trip": 39
+  },
+  "fingerprints": {
+    "config/model/schema-contract.json": "b3a60f67820e6db9184fb5896b7379eedb060fa1e8e968da5fa0870bd4c43296",
+    "config/model/policies.json": "bd90b8c2a602a275ad78665c1823e173f7f4e93560c520fcd92890332cdd7680",
+    "jobs/build_dwd.py": "819b0a4ce379616b872a4c861557cd713502eed04a752fcfb92c116fe179d98b",
+    "jobs/build_marts.py": "c816e6d0039da7c372cc7993ce83659eb6465ac969dc60f730c62455cbdd479d"
+  },
+  "source_evidence": "reference-manifest.json",
+  "reproduce_command": "python tools/verify_model_design.py --output-dir outputs/2026-11-18-theme-definition-e721eb90/model",
+  "known_limits": [
+    "only verified month 2025-06",
+    "no complete arrivals/net inflow without May boundary",
+    "no legal holiday calendar",
+    "single-station daily weather context only",
+    "full textbook and course slides were not supplied"
+  ]
+}

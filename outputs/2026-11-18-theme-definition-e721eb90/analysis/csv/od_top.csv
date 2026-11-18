@@ -1,0 +1,41 @@
+﻿origin_zone_key,destination_zone_key,origin_zone_name,destination_zone_name,trip_count,transport_code,rank
+237,236,Upper East Side South,Upper East Side North,23947,taxi_yellow,1
+236,237,Upper East Side North,Upper East Side South,20363,taxi_yellow,2
+237,237,Upper East Side South,Upper East Side South,17459,taxi_yellow,3
+236,236,Upper East Side North,Upper East Side North,15208,taxi_yellow,4
+161,237,Midtown Center,Upper East Side South,11983,taxi_yellow,5
+237,161,Upper East Side South,Midtown Center,11408,taxi_yellow,6
+132,132,JFK Airport,JFK Airport,10251,taxi_yellow,7
+161,236,Midtown Center,Upper East Side North,9814,taxi_yellow,8
+237,162,Upper East Side South,Midtown East,8993,taxi_yellow,9
+236,161,Upper East Side North,Midtown Center,8628,taxi_yellow,10
+142,239,Lincoln Square East,Upper West Side South,8303,taxi_yellow,11
+239,142,Upper West Side South,Lincoln Square East,8012,taxi_yellow,12
+239,238,Upper West Side South,Upper West Side North,7822,taxi_yellow,13
+132,230,JFK Airport,Times Sq/Theatre District,7798,taxi_yellow,14
+161,161,Midtown Center,Midtown Center,7796,taxi_yellow,15
+186,230,Penn Station/Madison Sq West,Times Sq/Theatre District,7666,taxi_yellow,16
+141,236,Lenox Hill West,Upper East Side North,7551,taxi_yellow,17
+162,237,Midtown East,Upper East Side South,7435,taxi_yellow,18
+237,141,Upper East Side South,Lenox Hill West,7287,taxi_yellow,19
+138,230,LaGuardia Airport,Times Sq/Theatre District,7266,taxi_yellow,20
+79,79,East Village,East Village,38956,citibike,1
+68,68,East Chelsea,East Chelsea,26584,citibike,2
+255,255,Williamsburg (North Side),Williamsburg (North Side),26331,citibike,3
+112,112,Greenpoint,Greenpoint,25713,citibike,4
+112,255,Greenpoint,Williamsburg (North Side),25166,citibike,5
+7,7,Astoria,Astoria,25067,citibike,6
+255,112,Williamsburg (North Side),Greenpoint,24729,citibike,7
+181,181,Park Slope,Park Slope,24587,citibike,8
+43,43,Central Park,Central Park,20464,citibike,9
+145,145,Long Island City/Hunters Point,Long Island City/Hunters Point,20082,citibike,10
+61,61,Crown Heights North,Crown Heights North,19052,citibike,11
+255,256,Williamsburg (North Side),Williamsburg (South Side),15870,citibike,12
+256,255,Williamsburg (South Side),Williamsburg (North Side),15244,citibike,13
+97,97,Fort Greene,Fort Greene,14996,citibike,14
+223,223,Steinway,Steinway,14890,citibike,15
+37,37,Bushwick South,Bushwick South,14673,citibike,16
+48,48,Clinton East,Clinton East,14501,citibike,17
+231,231,TriBeCa/Civic Center,TriBeCa/Civic Center,13172,citibike,18
+80,80,East Williamsburg,East Williamsburg,12674,citibike,19
+232,232,Two Bridges/Seward Park,Two Bridges/Seward Park,12495,citibike,20

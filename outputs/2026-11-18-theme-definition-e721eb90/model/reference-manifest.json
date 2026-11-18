@@ -1,0 +1,54 @@
+{
+  "accessed": "2026-11-18",
+  "note": "Primary-source method verification; full book and course slides were not supplied. Archived HTML kept only in local work folder.",
+  "sources": [
+    {
+      "name": "four-step",
+      "url": "https://www.kimballgroup.com/data-warehouse-business-intelligence-resources/kimball-techniques/dimensional-modeling-techniques/four-4-step-design-process/",
+      "status": 200,
+      "bytes": 103045,
+      "sha256": "66f058b1235f49ca68d4bc8cb7e355537bdbac5d92b8b11dbccae2126b61f9bb",
+      "accessed": "2026-11-18"
+    },
+    {
+      "name": "grain",
+      "url": "https://www.kimballgroup.com/data-warehouse-business-intelligence-resources/kimball-techniques/dimensional-modeling-techniques/grain/",
+      "status": 200,
+      "bytes": 103003,
+      "sha256": "971905587eb29bfbdc02a51c62c9663c462cbb99daacfd38694c2dbcd18878f1",
+      "accessed": "2026-11-18"
+    },
+    {
+      "name": "bus-matrix",
+      "url": "https://www.kimballgroup.com/data-warehouse-business-intelligence-resources/kimball-techniques/enterprise-data-warehouse-bus-matrix/",
+      "status": 200,
+      "bytes": 103435,
+      "sha256": "459c05d134a1b562b767851c9bee001eb928fabf6fbf62fe95594a9750728a6e",
+      "accessed": "2026-11-18"
+    },
+    {
+      "name": "additivity",
+      "url": "https://www.kimballgroup.com/data-warehouse-business-intelligence-resources/kimball-techniques/dimensional-modeling-techniques/additive-semi-additive-non-additive-fact/",
+      "status": 200,
+      "bytes": 103065,
+      "sha256": "94036bc31bde8911b4e468f78f2fa3f9f426e31feda3edde15bac2adf3e2435d",
+      "accessed": "2026-11-18"
+    },
+    {
+      "name": "ali-layer",
+      "url": "https://help.aliyun.com/zh/dataworks/user-guide/data-warehouse-layering",
+      "status": 200,
+      "bytes": 121516,
+      "sha256": "977dc5b8d447243599575f6c300119c85736a1631f19ed3b06e0c7d081ca1044",
+      "accessed": "2026-11-18"
+    },
+    {
+      "name": "ali-model",
+      "url": "https://help.aliyun.com/zh/dataworks/user-guide/perform-dimensional-modeling",
+      "status": 200,
+      "bytes": 765013,
+      "sha256": "85c39b72a21290650a4e2acbcf3b02ebe36a049fbc346e333a0620417831681d",
+      "accessed": "2026-11-18"
+    }
+  ]
+}

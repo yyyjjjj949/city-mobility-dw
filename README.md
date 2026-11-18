@@ -4,6 +4,32 @@
 
 > 本仓库保存源码、设计文档、展示数据与历史验收记录。组员需要直接运行完整项目时，请使用另行分发的 Windows 64 位完整运行包；仅克隆本仓库不会得到完整数据、Docker 镜像或数据库备份。
 
+## 2026-11-18 主题分析与建模整改
+
+本轮完成三个分析主题下的12个业务问题、Kimball四步事实设计、业务总线矩阵、概念/逻辑/物理表达、分层职责与指标复核，以及开发生命周期追溯。保留两个事务事实和7个维度的既有粒度与物理命名，明确逻辑DIM与事实星座。
+
+- [本轮交付入口](outputs/2026-11-18-theme-definition-e721eb90/交付入口.html)
+- [正式项目报告](docs/20-城市出行离线数仓项目报告.md) · [14页PDF](outputs/2026-11-18-theme-definition-e721eb90/report/城市出行离线数仓项目报告.pdf) · [报告HTML](outputs/2026-11-18-theme-definition-e721eb90/report/城市出行离线数仓项目报告.html)
+- [三大主题、12问与12组图表](outputs/2026-11-18-theme-definition-e721eb90/analysis/index.html) · [分析文字稿](docs/18-三个主题的数据分析结论.md) · [11项整改清单](outputs/2026-11-18-theme-definition-e721eb90/整改完成清单.md)
+- [模型与总线矩阵](docs/15-业务总线矩阵与概念逻辑物理模型.md) · [分层/指标复核](docs/16-分层职责与指标口径复核.md)
+- [官方HTML/XML目录爬取实现与实际发现回执](docs/19-官方数据爬取与采集说明.md)
+- [综合验证：35项回归、16项模型核对、25个引用检查、12项分析对账及离线数据/页面核查](outputs/2026-11-18-theme-definition-e721eb90/verification/整改验证.json)
+
+HTML须下载/克隆后用浏览器打开。分析页包含9份结果CSV和12组SVG/PNG；固定输入版本及文件SHA见同目录 `source-provenance.json`。主题定义页保留前期需求基线，实施结果以新报告和分析为准。
+
+当前原机Docker因Windows安装注册信息缺失未能启动；本轮没有新的服务全链路验收。2026-11-14验收记录只说明当时情况。本轮按最新范围交付报告、必要验证及GitHub同步，不制作PPT、录屏或新的运行包；下文运行包说明描述此前交付。
+
+复核工具依赖见 `requirements-review.txt`：
+
+```powershell
+python -m pip install -r requirements-review.txt
+python -m unittest discover -s tests -v
+python tools/verify_model_design.py
+python tools/build_project_report.py
+```
+
+以上测试、模型检查、报告HTML生成无需启动Docker。导出PDF可加 `--pdf`，需要已安装Microsoft Edge；页面回归可运行 `python tools/verify_review_pages.py`。重建数据分析需要原项目完整的已固定Delta数据；仓库只有样例及公开结果。只发现官方目标链接可运行 `python tools/ingest_sources.py --month 2025-06 --discover-only`，不会下载大型行程文件或改写ODS。
+
 ## 项目效果
 
 ![历史出行总览](outputs/city-mobility-overview.png)
@@ -75,7 +101,7 @@ flowchart LR
 
 完整数据、数据库、镜像、运行环境、临时目录和真实凭据均不进入 Git。
 
-`data/samples/` 仅保留少量官方数据样例，供字段检查和回归测试。安装 `requests`、`pyarrow` 后，可以在 Windows 上执行 `python -m unittest discover -s tests -v`；这组测试不需要启动 Docker。
+`data/samples/` 仅保留少量官方数据样例，供字段检查和回归测试。安装 `requirements-review.txt` 中的复核依赖后，可以在 Windows 上执行 `python -m unittest discover -s tests -v`；这组测试不需要启动 Docker。
 
 ## 文档与验证范围
 

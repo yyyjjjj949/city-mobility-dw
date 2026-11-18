@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "checked_at_utc": "2026-11-18T10:07:18.812893+00:00",
+  "scope": "Offline HTML rendering, interactions and existing map regression",
+  "pages": [
+    {
+      "file": "outputs/2026-11-18-theme-definition-e721eb90/03-分析主题说明.html",
+      "local_links": 9,
+      "images": 0,
+      "mobile_no_overflow": true
+    },
+    {
+      "file": "outputs/2026-11-18-theme-definition-e721eb90/analysis/index.html",
+      "local_links": 46,
+      "images": 12,
+      "mobile_no_overflow": true
+    },
+    {
+      "file": "outputs/2026-11-18-theme-definition-e721eb90/report/城市出行离线数仓项目报告.html",
+      "local_links": 15,
+      "images": 9,
+      "mobile_no_overflow": true
+    },
+    {
+      "file": "outputs/2026-11-18-theme-definition-e721eb90/交付入口.html",
+      "local_links": 19,
+      "images": 0,
+      "mobile_no_overflow": true
+    }
+  ],
+  "errors": [],
+  "map_regression": {
+    "regions": 262,
+    "all_trips": 9012795,
+    "bike_filter": 4758458,
+    "passed": true
+  }
+}

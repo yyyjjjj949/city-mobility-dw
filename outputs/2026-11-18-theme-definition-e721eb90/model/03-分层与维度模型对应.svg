@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1580" height="1110" viewBox="0 0 1580 1110" role="img" aria-label="分层职责与维度模型：两种设计视角的对应"><rect width="100%" height="100%" fill="#f5f8fa"/>
+<text x="45" y="69" font-family="Microsoft YaHei,Arial,sans-serif" font-size="34" fill="#17384c" font-weight="700">分层职责与维度模型：两种设计视角的对应</text>
+<text x="45" y="108" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" fill="#546d7d" font-weight="400">逻辑DIM与DWD共同组成明细维度模型；ODS/DWS/ADS描述加工与服务职责</text>
+<rect x="50" y="175" width="310" height="150" rx="13" fill="#f0ece3" stroke="#9cb3c2" stroke-width="2"/>
+<text x="70" y="214" font-family="Microsoft YaHei,Arial,sans-serif" font-size="24" fill="#17384c" font-weight="700">ODS 原始引入</text>
+<text x="70" y="249" font-family="Microsoft YaHei,Arial,sans-serif" font-size="24" fill="#17384c" font-weight="400">源文件 / 原始payload</text>
+<text x="70" y="284" font-family="Microsoft YaHei,Arial,sans-serif" font-size="24" fill="#17384c" font-weight="400">对象、成员、记录定位</text>
+<rect x="440" y="175" width="1090" height="150" rx="13" fill="#e2efec" stroke="#9cb3c2" stroke-width="2"/>
+<text x="460" y="214" font-family="Microsoft YaHei,Arial,sans-serif" font-size="24" fill="#17384c" font-weight="700">公共模型层 CDM（逻辑组织）</text>
+<text x="460" y="249" font-family="Microsoft YaHei,Arial,sans-serif" font-size="24" fill="#17384c" font-weight="400">DIM：公共描述、角色复用和版本 · DWD：业务过程最细粒度事实</text>
+<text x="460" y="284" font-family="Microsoft YaHei,Arial,sans-serif" font-size="24" fill="#17384c" font-weight="400">DWS：跨主题复用的公共汇总与可重算组成项</text>
+<line x1="360" y1="250" x2="440" y2="250" stroke="#7892a3" stroke-width="2"/>
+<rect x="470" y="390" width="440" height="160" rx="13" fill="#e4eef8" stroke="#9cb3c2" stroke-width="2"/>
+<text x="490" y="428" font-family="Microsoft YaHei,Arial,sans-serif" font-size="23" fill="#17384c" font-weight="700">逻辑 DIM（实际 dwd.dim_*）</text>
+<text x="490" y="462" font-family="Microsoft YaHei,Arial,sans-serif" font-size="23" fill="#17384c" font-weight="400">日期 / 分钟 / 区域 / 方式 / 天气</text>
+<text x="490" y="496" font-family="Microsoft YaHei,Arial,sans-serif" font-size="23" fill="#17384c" font-weight="400">站点 / 车型；角色键与未知成员</text>
+<rect x="1000" y="390" width="500" height="160" rx="13" fill="#dceee3" stroke="#9cb3c2" stroke-width="2"/>
+<text x="1020" y="428" font-family="Microsoft YaHei,Arial,sans-serif" font-size="23" fill="#17384c" font-weight="700">DWD 两张事务事实</text>
+<text x="1020" y="462" font-family="Microsoft YaHei,Arial,sans-serif" font-size="23" fill="#17384c" font-weight="400">一有效出租车源行 / 一有效ride_id</text>
+<text x="1020" y="496" font-family="Microsoft YaHei,Arial,sans-serif" font-size="23" fill="#17384c" font-weight="400">事实 + 维度形成星型 / 共享星座</text>
+<line x1="910" y1="465" x2="1000" y2="465" stroke="#7892a3" stroke-width="2"/>
+<line x1="1250" y1="550" x2="1250" y2="620" stroke="#7892a3" stroke-width="2"/>
+<rect x="470" y="620" width="1030" height="140" rx="13" fill="#e2efec" stroke="#9cb3c2" stroke-width="2"/>
+<text x="490" y="659" font-family="Microsoft YaHei,Arial,sans-serif" font-size="24" fill="#17384c" font-weight="700">DWS 公共汇总</text>
+<text x="490" y="694" font-family="Microsoft YaHei,Arial,sans-serif" font-size="24" fill="#17384c" font-weight="400">日 / 小时 / 区域小时 / OD日 / 天气组</text>
+<text x="490" y="729" font-family="Microsoft YaHei,Arial,sans-serif" font-size="24" fill="#17384c" font-weight="400">保留次数、时长/距离分子分母、完整性与版本</text>
+<line x1="990" y1="760" x2="990" y2="825" stroke="#7892a3" stroke-width="2"/>
+<rect x="470" y="825" width="1030" height="145" rx="13" fill="#f7edda" stroke="#9cb3c2" stroke-width="2"/>
+<text x="490" y="864" font-family="Microsoft YaHei,Arial,sans-serif" font-size="24" fill="#17384c" font-weight="700">ADS 应用与发布服务</text>
+<text x="490" y="899" font-family="Microsoft YaHei,Arial,sans-serif" font-size="24" fill="#17384c" font-weight="400">派生均值/比率、补名称与行政区、候选校验、发布版本隔离</text>
+<text x="490" y="934" font-family="Microsoft YaHei,Arial,sans-serif" font-size="24" fill="#17384c" font-weight="400">ClickHouse ads.bi_* → Superset / 地图 / 主题分析</text>
+<rect x="50" y="390" width="310" height="580" rx="13" fill="#eaf0f3" stroke="#9cb3c2" stroke-width="2"/>
+<text x="70" y="429" font-family="Microsoft YaHei,Arial,sans-serif" font-size="24" fill="#17384c" font-weight="700">OPS 管理旁路</text>
+<text x="70" y="464" font-family="Microsoft YaHei,Arial,sans-serif" font-size="24" fill="#17384c" font-weight="400">来源对象</text>
+<text x="70" y="499" font-family="Microsoft YaHei,Arial,sans-serif" font-size="24" fill="#17384c" font-weight="400">任务批次</text>
+<text x="70" y="534" font-family="Microsoft YaHei,Arial,sans-serif" font-size="24" fill="#17384c" font-weight="400">质量结果 / 隔离</text>
+<text x="70" y="569" font-family="Microsoft YaHei,Arial,sans-serif" font-size="24" fill="#17384c" font-weight="400">构建与发布审计</text>
+<text x="70" y="604" font-family="Microsoft YaHei,Arial,sans-serif" font-size="24" fill="#17384c" font-weight="400"></text>
+<text x="70" y="639" font-family="Microsoft YaHei,Arial,sans-serif" font-size="24" fill="#17384c" font-weight="400">Airflow编排</text>
+<text x="70" y="674" font-family="Microsoft YaHei,Arial,sans-serif" font-size="24" fill="#17384c" font-weight="400">跨各加工步骤</text>
+<text x="55" y="1043" font-family="Microsoft YaHei,Arial,sans-serif" font-size="23" fill="#17384c" font-weight="400">同粒度ADS允许存在：公共汇总可复用 + 面向应用的语义补全和发布隔离；不强制每层降粒度。</text>
+</svg>

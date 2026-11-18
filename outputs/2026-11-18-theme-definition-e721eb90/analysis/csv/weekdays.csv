@@ -1,0 +1,5 @@
+﻿transport_code,week_type,trip_count,complete_days,daily_average_trips
+citibike,周一至周五,3526137,21,167911.2857142857
+citibike,周末,1232321,9,136924.55555555556
+taxi_yellow,周一至周五,3001430,21,142925.2380952381
+taxi_yellow,周末,1252907,9,139211.88888888888

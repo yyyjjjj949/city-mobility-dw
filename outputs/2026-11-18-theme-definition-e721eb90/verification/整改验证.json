@@ -1,0 +1,131 @@
+{
+  "passed": true,
+  "verified_at_utc": "2026-11-18T10:12:44.781Z",
+  "scope": "Report and implementation remediation; offline model/data/code/page verification; no new live service acceptance",
+  "month": "2025-06",
+  "release_id": "fa3ddf3a864140a7b6893836d3215a39",
+  "regression_tests": {
+    "passed": true,
+    "total": 35,
+    "existing": 7,
+    "crawl": 15,
+    "model": 5,
+    "analysis": 8,
+    "command": "python -m unittest discover -s tests -v"
+  },
+  "model": {
+    "passed": true,
+    "checks": 16,
+    "references": 25,
+    "receipt": "../model/model-design-review.json"
+  },
+  "analysis": {
+    "passed": true,
+    "questions": 12,
+    "reconciliations": 12,
+    "charts_svg": 12,
+    "charts_png": 12,
+    "csv_files": 9,
+    "receipt": "../analysis/analysis-results.json"
+  },
+  "live_source_discovery": {
+    "passed": true,
+    "sources": [
+      "tlc_yellow",
+      "citibike_trips"
+    ],
+    "verified_responses": 6,
+    "receipt": "../crawl/verification.json"
+  },
+  "dwd_offline_audit": {
+    "passed": true,
+    "valid_trips": 9012795,
+    "committed_files": 78,
+    "traced_ods_samples": 120,
+    "all_fact_duration_bounds_and_utc_differences_checked": true,
+    "receipt": "../../dwd-verification.json",
+    "full_key_fk_scope": "Full key/FK checks belong to historical Spark build, not this audit"
+  },
+  "business_source_fingerprint": {
+    "unchanged": true,
+    "files": {
+      "jobs/build_dwd.py": "08094a49d8ad18e45eed5b0f0c2d986208ecb3a372277e1b163f7d91aaa04f3a",
+      "jobs/build_marts.py": "0dd7287b0e1bd75bfd8d842b81517f153f4ca835b25ca6fcb84c60c489654ea3",
+      "jobs/check_model_schema.py": "cd4aa3d49a62e1c8f3fb5a0b3a230ae11f2eae90d287c5de7df0885589c7e454",
+      "jobs/dwd_spatial.py": "cc14f7e4bd19f71c8172ab8008350ce8a70b3dd97bde30cb796e66b48646a2fc",
+      "jobs/ingest_ods.py": "9f9ad0f5fb5258bf678711485688c33ab2a920f9364367138bbe3a3afecc2d77",
+      "jobs/record_marts_publication.py": "17ab50a81963a40ed378787257afd24c2729d02b2b74254f5f1b1ac152f3efed",
+      "jobs/recover_interrupted_dwd_batch.py": "e4d4f26fffe02c58be6c1994373bac7ca9be082b6be4c2505cb97bf358aa336a",
+      "config/model/policies.json": "bd90b8c2a602a275ad78665c1823e173f7f4e93560c520fcd92890332cdd7680",
+      "config/model/schema-contract.json": "b3a60f67820e6db9184fb5896b7379eedb060fa1e8e968da5fa0870bd4c43296",
+      "config/model/source-field-mapping.json": "43ca042386c8a58295998200e754d0ff71fd75e988a61597cab2282524d32c28",
+      "sql/clickhouse/001_create_serving.sql": "eef4ad4512bb8bb2d0ac3bfd6dc3c4e10c8bb380dfd076299e31cd5f92d54a17",
+      "sql/spark/001_create_lakehouse.sql": "d6aa74d2addcd700bda73be0cfd9c22a3d48d154fd82031c92641c57feb3ab12"
+    },
+    "note": "No fact grain, physical model contract or Spark job changes; original fixed release retained"
+  },
+  "browser": {
+    "passed": true,
+    "pages": 4,
+    "mobile_width": 390,
+    "map_regression": {
+      "regions": 262,
+      "all_trips": 9012795,
+      "bike_filter": 4758458,
+      "passed": true
+    },
+    "receipt": "page-verification.json"
+  },
+  "report": {
+    "passed": true,
+    "pdf_pages": 14,
+    "images": 9,
+    "formats": [
+      "Markdown",
+      "HTML",
+      "PDF"
+    ],
+    "receipt": "pdf-verification.json"
+  },
+  "runtime_environment": {
+    "ready": false,
+    "issue": "Docker Windows machine installation registration missing; startup blocked",
+    "new_live_dag_run": false,
+    "historical_service_acceptance_date": "2026-11-14",
+    "reset_or_uninstall_performed": false
+  },
+  "delivery_scope": {
+    "report": true,
+    "github_sync": true,
+    "ppt": false,
+    "screen_recording": false,
+    "new_runtime_package": false
+  },
+  "limitations": [
+    "Only 2025-06 accepted",
+    "May boundary source absent; full arrivals and net inflow not published",
+    "Monday-Friday does not exclude public holidays",
+    "Daily single-station weather association is not causality",
+    "No actual bicycle route distance",
+    "Two sources are not all city travel",
+    "Historical short soak does not prove multi-day or power-loss stability"
+  ],
+  "public_checkout": {
+    "passed": true,
+    "tests": 35,
+    "model_checks": 16,
+    "references": 25,
+    "pages": 4,
+    "markdown_links": 128,
+    "receipt": "public-checkout-verification.json"
+  },
+  "publication_review": {
+    "passed": true,
+    "staged_files": 89,
+    "credential_or_database_files": 0,
+    "actual_secret_matches": 0,
+    "large_files_above_20MiB": 0,
+    "reviewed_fake_credential_test_fixtures": 1,
+    "git_diff_check_passed": true
+  }
+}

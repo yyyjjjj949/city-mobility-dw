@@ -207,6 +207,24 @@ def prepare_object(obj,batch_id):
     print(f"PREPARE_OK {obj['source_id']} rows={summary['rows']} members={obj['expected_members']}",flush=True)
     return {**obj,'prepared':summary,'staging_path':str(stage.relative_to(ROOT)).replace('\\','/')}
 
+def ensure_source_discovery(source_specs, proxy=None, force=False):
+    """Discover new main-source links before acquisition; cached files stay offline."""
+    requested = [spec['source_id'] for spec in source_specs
+                 if spec['source_id'] in ('tlc_yellow', 'citibike_trips')
+                 and (force or not (ROOT / spec['relative_path']).exists())]
+    if not requested:
+        return {'mode': 'existing-files-reuse-check', 'requested_sources': [],
+                'note': 'Existing files still require the download sidecar SHA/size/URL checks.'}
+    from discover_sources import discover
+    months = {spec['source_period'] for spec in source_specs}
+    if len(months) != 1:
+        raise ValueError('A discovery run requires exactly one source month')
+    result = discover(months.pop(), requested, proxy=proxy)
+    if not result['passed']:
+        raise RuntimeError('Official source discovery failed; no silent catalog fallback. Inspect ' + result['receipt_file'])
+    return {'mode': 'live-official-discovery', 'requested_sources': requested,
+            'receipt_file': result['receipt_file'], 'passed': True}
+
 def execute(args):
     from compute_lock import exclusive_compute
     WORK.mkdir(parents=True,exist_ok=True)
@@ -214,8 +232,11 @@ def execute(args):
     status={'run_id':batch_id,'month':args.month,'started_at_utc':start,'status':'downloading','objects':[]}
     status_path=run_dir/'run.json';write_json(status_path,status)
     try:
+        source_specs = specs(args.month)
+        status['source_discovery'] = ensure_source_discovery(source_specs, args.proxy, getattr(args, 'crawl_first', False))
+        write_json(status_path, status)
         with concurrent.futures.ThreadPoolExecutor(max_workers=3) as pool:
-            objects=list(pool.map(lambda spec:download(spec,args.proxy),specs(args.month)))
+            objects=list(pool.map(lambda spec:download(spec,args.proxy),source_specs))
         objects=[inspect_object(x) for x in objects]
         previous = ROOT/'outputs/ods-ingestion-latest.json'
         verification = ROOT/'outputs/ods-verification.json'
@@ -257,8 +278,17 @@ def main():
     parser.add_argument('--month',default='2025-06',choices=['2025-06','2025-07','2025-08'])
     parser.add_argument('--proxy',default=os.environ.get('CITY_MOBILITY_DOWNLOAD_PROXY'))
     parser.add_argument('--prepare-only',action='store_true')
+    parser.add_argument('--crawl-first',action='store_true',help='Force live official link discovery even when complete local source files exist')
+    parser.add_argument('--discover-only',action='store_true',help='Only crawl/parse official links; do not download business files or write ODS')
     parser.add_argument('--reuse-verified',action='store_true',help='Reuse only after source SHA and the verified monthly Delta files match')
     args=parser.parse_args()
+    if args.discover_only:
+        from discover_sources import discover
+        report = discover(args.month, ('tlc_yellow', 'citibike_trips'), proxy=args.proxy)
+        print(json.dumps({'passed': report['passed'], 'receipt_file': report['receipt_file'], 'results': report['results']}, ensure_ascii=False, indent=2))
+        if not report['passed']:
+            raise SystemExit(1)
+        return
     WORK.mkdir(parents=True,exist_ok=True)
     lock=WORK/'ingestion.lock'
     try:fd=os.open(lock,os.O_CREAT|os.O_EXCL|os.O_WRONLY)

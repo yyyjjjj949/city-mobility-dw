@@ -1,0 +1,11 @@
+﻿transport_code,borough,departure_count
+citibike,Manhattan,2956836
+citibike,Brooklyn,1326415
+citibike,Queens,327030
+citibike,Bronx,146185
+citibike,Staten Island,0
+taxi_yellow,Manhattan,3585942
+taxi_yellow,Queens,434976
+taxi_yellow,Brooklyn,188148
+taxi_yellow,Bronx,35754
+taxi_yellow,Staten Island,479

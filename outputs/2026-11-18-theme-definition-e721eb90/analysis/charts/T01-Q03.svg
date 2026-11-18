@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="800.35375pt" height="350.9833pt" viewBox="0 0 800.35375 350.9833" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-18T17:58:16.870928</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M -0 350.9833
+L 800.35375 350.9833
+L 800.35375 0
+L -0 0
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 58.42793 285.499406
+L 394.90375 285.499406
+L 394.90375 84.859852
+L 58.42793 84.859852
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <defs>
+       <path id="m21ca7ac0d7" d="M 0 0
+L 0 3.5
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m21ca7ac0d7" x="73.722285" y="285.499406" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="font-size: 10px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="73.722285" y="300.619523" transform="rotate(-0 73.722285 300.619523)">0</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2">
+      <g>
+       <use xlink:href="#m21ca7ac0d7" x="126.920043" y="285.499406" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="font-size: 10px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="126.920043" y="300.619523" transform="rotate(-0 126.920043 300.619523)">4</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3">
+      <g>
+       <use xlink:href="#m21ca7ac0d7" x="180.117801" y="285.499406" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="font-size: 10px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="180.117801" y="300.619523" transform="rotate(-0 180.117801 300.619523)">8</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#m21ca7ac0d7" x="233.31556" y="285.499406" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <text style="font-size: 10px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="233.31556" y="300.619523" transform="rotate(-0 233.31556 300.619523)">12</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_5">
+      <g>
+       <use xlink:href="#m21ca7ac0d7" x="286.513318" y="285.499406" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <text style="font-size: 10px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="286.513318" y="300.619523" transform="rotate(-0 286.513318 300.619523)">16</text>
+     </g>
+    </g>
+    <g id="xtick_6">
+     <g id="line2d_6">
+      <g>
+       <use xlink:href="#m21ca7ac0d7" x="339.711076" y="285.499406" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_6">
+      <text style="font-size: 10px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="339.711076" y="300.619523" transform="rotate(-0 339.711076 300.619523)">20</text>
+     </g>
+    </g>
+    <g id="text_7">
+     <text style="font-size: 10px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="226.66584" y="315.508391" transform="rotate(-0 226.66584 315.508391)">纽约当地小时</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_7">
+      <path d="M 58.42793 251.378986
+L 394.90375 251.378986
+" clip-path="url(#pf9ef1e7aca)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_8">
+      <defs>
+       <path id="mca6ca58620" d="M 0 0
+L -3.5 0
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#mca6ca58620" x="58.42793" y="251.378986" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_8">
+      <text style="font-size: 10px; font-family: 'Microsoft YaHei'; text-anchor: end" x="51.42793" y="255.439045" transform="rotate(-0 51.42793 255.439045)">2000</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_9">
+      <path d="M 58.42793 214.497409
+L 394.90375 214.497409
+" clip-path="url(#pf9ef1e7aca)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_10">
+      <g>
+       <use xlink:href="#mca6ca58620" x="58.42793" y="214.497409" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_9">
+      <text style="font-size: 10px; font-family: 'Microsoft YaHei'; text-anchor: end" x="51.42793" y="218.557468" transform="rotate(-0 51.42793 218.557468)">4000</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_11">
+      <path d="M 58.42793 177.615832
+L 394.90375 177.615832
+" clip-path="url(#pf9ef1e7aca)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_12">
+      <g>
+       <use xlink:href="#mca6ca58620" x="58.42793" y="177.615832" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_10">
+      <text style="font-size: 10px; font-family: 'Microsoft YaHei'; text-anchor: end" x="51.42793" y="181.675891" transform="rotate(-0 51.42793 181.675891)">6000</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_13">
+      <path d="M 58.42793 140.734255
+L 394.90375 140.734255
+" clip-path="url(#pf9ef1e7aca)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_14">
+      <g>
+       <use xlink:href="#mca6ca58620" x="58.42793" y="140.734255" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_11">
+      <text style="font-size: 10px; font-family: 'Microsoft YaHei'; text-anchor: end" x="51.42793" y="144.794314" transform="rotate(-0 51.42793 144.794314)">8000</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_15">
+      <path d="M 58.42793 103.852678
+L 394.90375 103.852678
+" clip-path="url(#pf9ef1e7aca)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_16">
+      <g>
+       <use xlink:href="#mca6ca58620" x="58.42793" y="103.852678" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_12">
+      <text style="font-size: 10px; font-family: 'Microsoft YaHei'; text-anchor: end" x="51.42793" y="107.912737" transform="rotate(-0 51.42793 107.912737)">10000</text>
+     </g>
+    </g>
+    <g id="text_13">
+     <text style="font-size: 10px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="15.573438" y="185.179629" transform="rotate(-90 15.573438 185.179629)">该小时日均出发量</text>
+    </g>
+   </g>
+   <g id="line2d_17">
+    <path d="M 73.722285 223.651065
+L 87.021725 254.160033
+L 100.321164 270.163125
+L 113.620604 276.379426
+L 126.920043 275.365183
+L 140.219483 267.121273
+L 153.518922 242.423788
+L 166.818362 204.903808
+L 180.117801 174.274537
+L 193.417241 173.175115
+L 206.716681 173.842496
+L 220.01612 168.310259
+L 233.31556 158.273201
+L 246.614999 150.874054
+L 259.914439 138.23948
+L 273.213878 130.665585
+L 286.513318 124.753995
+L 299.812757 104.281207
+L 313.112197 93.979831
+L 326.411636 122.821225
+L 339.711076 136.806367
+L 353.010515 121.585692
+L 366.309955 129.559137
+L 379.609395 166.989547
+" clip-path="url(#pf9ef1e7aca)" style="fill: none; stroke: #1f77b4; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_18">
+    <path d="M 73.722285 130.440197
+L 87.021725 163.053756
+L 100.321164 192.686054
+L 113.620604 222.556034
+L 126.920043 245.92666
+L 140.219483 266.615175
+L 153.518922 261.96195
+L 166.818362 251.487582
+L 180.117801 235.995271
+L 193.417241 211.260026
+L 206.716681 186.444872
+L 220.01612 173.190043
+L 233.31556 156.488835
+L 246.614999 148.419966
+L 259.914439 146.827911
+L 273.213878 148.321615
+L 286.513318 140.80392
+L 299.812757 133.265736
+L 313.112197 129.540697
+L 326.411636 150.180037
+L 339.711076 166.323923
+L 353.010515 162.168598
+L 366.309955 159.273395
+L 379.609395 167.844263
+" clip-path="url(#pf9ef1e7aca)" style="fill: none; stroke-dasharray: 7.4,3.2; stroke-dashoffset: 0; stroke: #ff7f0e; stroke-width: 2"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 58.42793 285.499406
+L 58.42793 84.859852
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 58.42793 285.499406
+L 394.90375 285.499406
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="226.66584" y="78.859852" transform="rotate(-0 226.66584 78.859852)">黄色出租车</text>
+   </g>
+   <g id="legend_1">
+    <g id="patch_5">
+     <path d="M 64.02793 116.486883
+L 163.01043 116.486883
+Q 164.61043 116.486883 164.61043 114.886883
+L 164.61043 90.459852
+Q 164.61043 88.859852 163.01043 88.859852
+L 64.02793 88.859852
+Q 62.42793 88.859852 62.42793 90.459852
+L 62.42793 114.886883
+Q 62.42793 116.486883 64.02793 116.486883
+z
+" style="fill: #ffffff; opacity: 0.8; stroke: #cccccc; stroke-linejoin: miter"/>
+    </g>
+    <g id="line2d_19">
+     <path d="M 65.62793 95.755945
+L 73.62793 95.755945
+L 81.62793 95.755945
+" style="fill: none; stroke: #1f77b4; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="text_15">
+     <text style="font-size: 8px; font-family: 'Microsoft YaHei'; text-anchor: start" x="88.02793" y="98.555945" transform="rotate(-0 88.02793 98.555945)">周一至周五（21天）</text>
+    </g>
+    <g id="line2d_20">
+     <path d="M 65.62793 108.459539
+L 73.62793 108.459539
+L 81.62793 108.459539
+" style="fill: none; stroke-dasharray: 7.4,3.2; stroke-dashoffset: 0; stroke: #ff7f0e; stroke-width: 2"/>
+    </g>
+    <g id="text_16">
+     <text style="font-size: 8px; font-family: 'Microsoft YaHei'; text-anchor: start" x="88.02793" y="111.259539" transform="rotate(-0 88.02793 111.259539)">周末（9天）</text>
+    </g>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="patch_6">
+    <path d="M 456.67793 285.499406
+L 793.15375 285.499406
+L 793.15375 84.859852
+L 456.67793 84.859852
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="matplotlib.axis_3">
+    <g id="xtick_7">
+     <g id="line2d_21">
+      <g>
+       <use xlink:href="#m21ca7ac0d7" x="471.972285" y="285.499406" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_17">
+      <text style="font-size: 10px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="471.972285" y="300.619523" transform="rotate(-0 471.972285 300.619523)">0</text>
+     </g>
+    </g>
+    <g id="xtick_8">
+     <g id="line2d_22">
+      <g>
+       <use xlink:href="#m21ca7ac0d7" x="525.170043" y="285.499406" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_18">
+      <text style="font-size: 10px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="525.170043" y="300.619523" transform="rotate(-0 525.170043 300.619523)">4</text>
+     </g>
+    </g>
+    <g id="xtick_9">
+     <g id="line2d_23">
+      <g>
+       <use xlink:href="#m21ca7ac0d7" x="578.367801" y="285.499406" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_19">
+      <text style="font-size: 10px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="578.367801" y="300.619523" transform="rotate(-0 578.367801 300.619523)">8</text>
+     </g>
+    </g>
+    <g id="xtick_10">
+     <g id="line2d_24">
+      <g>
+       <use xlink:href="#m21ca7ac0d7" x="631.56556" y="285.499406" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_20">
+      <text style="font-size: 10px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="631.56556" y="300.619523" transform="rotate(-0 631.56556 300.619523)">12</text>
+     </g>
+    </g>
+    <g id="xtick_11">
+     <g id="line2d_25">
+      <g>
+       <use xlink:href="#m21ca7ac0d7" x="684.763318" y="285.499406" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_21">
+      <text style="font-size: 10px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="684.763318" y="300.619523" transform="rotate(-0 684.763318 300.619523)">16</text>
+     </g>
+    </g>
+    <g id="xtick_12">
+     <g id="line2d_26">
+      <g>
+       <use xlink:href="#m21ca7ac0d7" x="737.961076" y="285.499406" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_22">
+      <text style="font-size: 10px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="737.961076" y="300.619523" transform="rotate(-0 737.961076 300.619523)">20</text>
+     </g>
+    </g>
+    <g id="text_23">
+     <text style="font-size: 10px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="624.91584" y="315.508391" transform="rotate(-0 624.91584 315.508391)">纽约当地小时</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_4">
+    <g id="ytick_6">
+     <g id="line2d_27">
+      <path d="M 456.67793 280.851788
+L 793.15375 280.851788
+" clip-path="url(#p4efae1c8a3)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_28">
+      <g>
+       <use xlink:href="#mca6ca58620" x="456.67793" y="280.851788" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_24">
+      <text style="font-size: 10px; font-family: 'Microsoft YaHei'; text-anchor: end" x="449.67793" y="284.911846" transform="rotate(-0 449.67793 284.911846)">0</text>
+     </g>
+    </g>
+    <g id="ytick_7">
+     <g id="line2d_29">
+      <path d="M 456.67793 258.519227
+L 793.15375 258.519227
+" clip-path="url(#p4efae1c8a3)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_30">
+      <g>
+       <use xlink:href="#mca6ca58620" x="456.67793" y="258.519227" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_25">
+      <text style="font-size: 10px; font-family: 'Microsoft YaHei'; text-anchor: end" x="449.67793" y="262.579285" transform="rotate(-0 449.67793 262.579285)">2000</text>
+     </g>
+    </g>
+    <g id="ytick_8">
+     <g id="line2d_31">
+      <path d="M 456.67793 236.186666
+L 793.15375 236.186666
+" clip-path="url(#p4efae1c8a3)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_32">
+      <g>
+       <use xlink:href="#mca6ca58620" x="456.67793" y="236.186666" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_26">
+      <text style="font-size: 10px; font-family: 'Microsoft YaHei'; text-anchor: end" x="449.67793" y="240.246725" transform="rotate(-0 449.67793 240.246725)">4000</text>
+     </g>
+    </g>
+    <g id="ytick_9">
+     <g id="line2d_33">
+      <path d="M 456.67793 213.854105
+L 793.15375 213.854105
+" clip-path="url(#p4efae1c8a3)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_34">
+      <g>
+       <use xlink:href="#mca6ca58620" x="456.67793" y="213.854105" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_27">
+      <text style="font-size: 10px; font-family: 'Microsoft YaHei'; text-anchor: end" x="449.67793" y="217.914164" transform="rotate(-0 449.67793 217.914164)">6000</text>
+     </g>
+    </g>
+    <g id="ytick_10">
+     <g id="line2d_35">
+      <path d="M 456.67793 191.521544
+L 793.15375 191.521544
+" clip-path="url(#p4efae1c8a3)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_36">
+      <g>
+       <use xlink:href="#mca6ca58620" x="456.67793" y="191.521544" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_28">
+      <text style="font-size: 10px; font-family: 'Microsoft YaHei'; text-anchor: end" x="449.67793" y="195.581603" transform="rotate(-0 449.67793 195.581603)">8000</text>
+     </g>
+    </g>
+    <g id="ytick_11">
+     <g id="line2d_37">
+      <path d="M 456.67793 169.188984
+L 793.15375 169.188984
+" clip-path="url(#p4efae1c8a3)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_38">
+      <g>
+       <use xlink:href="#mca6ca58620" x="456.67793" y="169.188984" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_29">
+      <text style="font-size: 10px; font-family: 'Microsoft YaHei'; text-anchor: end" x="449.67793" y="173.249042" transform="rotate(-0 449.67793 173.249042)">10000</text>
+     </g>
+    </g>
+    <g id="ytick_12">
+     <g id="line2d_39">
+      <path d="M 456.67793 146.856423
+L 793.15375 146.856423
+" clip-path="url(#p4efae1c8a3)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_40">
+      <g>
+       <use xlink:href="#mca6ca58620" x="456.67793" y="146.856423" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_30">
+      <text style="font-size: 10px; font-family: 'Microsoft YaHei'; text-anchor: end" x="449.67793" y="150.916481" transform="rotate(-0 449.67793 150.916481)">12000</text>
+     </g>
+    </g>
+    <g id="ytick_13">
+     <g id="line2d_41">
+      <path d="M 456.67793 124.523862
+L 793.15375 124.523862
+" clip-path="url(#p4efae1c8a3)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_42">
+      <g>
+       <use xlink:href="#mca6ca58620" x="456.67793" y="124.523862" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_31">
+      <text style="font-size: 10px; font-family: 'Microsoft YaHei'; text-anchor: end" x="449.67793" y="128.583921" transform="rotate(-0 449.67793 128.583921)">14000</text>
+     </g>
+    </g>
+    <g id="ytick_14">
+     <g id="line2d_43">
+      <path d="M 456.67793 102.191301
+L 793.15375 102.191301
+" clip-path="url(#p4efae1c8a3)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_44">
+      <g>
+       <use xlink:href="#mca6ca58620" x="456.67793" y="102.191301" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_32">
+      <text style="font-size: 10px; font-family: 'Microsoft YaHei'; text-anchor: end" x="449.67793" y="106.25136" transform="rotate(-0 449.67793 106.25136)">16000</text>
+     </g>
+    </g>
+    <g id="text_33">
+     <text style="font-size: 10px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="413.823437" y="185.179629" transform="rotate(-90 413.823437 185.179629)">该小时日均出发量</text>
+    </g>
+   </g>
+   <g id="line2d_45">
+    <path d="M 471.972285 257.952937
+L 485.271725 268.599719
+L 498.571164 273.716003
+L 511.870604 276.379426
+L 525.170043 275.53717
+L 538.469483 265.652353
+L 551.768922 238.802766
+L 565.068362 197.159984
+L 578.367801 150.944345
+L 591.667241 182.709222
+L 604.966681 209.171712
+L 618.26612 205.635191
+L 631.56556 196.510745
+L 644.864999 191.587479
+L 658.164439 181.212941
+L 671.463878 169.329891
+L 684.763318 150.746542
+L 698.062757 93.979831
+L 711.362197 103.299953
+L 724.661636 144.229157
+L 737.961076 178.112969
+L 751.260515 202.40016
+L 764.559955 216.848795
+L 777.859395 234.979113
+" clip-path="url(#p4efae1c8a3)" style="fill: none; stroke: #1f77b4; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_46">
+    <path d="M 471.972285 233.346709
+L 485.271725 247.279745
+L 498.571164 256.934856
+L 511.870604 265.575075
+L 525.170043 270.977074
+L 538.469483 273.648296
+L 551.768922 267.566395
+L 565.068362 256.952226
+L 578.367801 242.613481
+L 591.667241 221.979435
+L 604.966681 206.029024
+L 618.26612 188.963226
+L 631.56556 179.958241
+L 644.864999 178.378832
+L 658.164439 176.81059
+L 671.463878 168.536377
+L 684.763318 167.620742
+L 698.062757 167.592206
+L 711.362197 172.950779
+L 724.661636 185.084804
+L 737.961076 201.261022
+L 751.260515 218.189103
+L 764.559955 226.706494
+L 777.859395 236.550191
+" clip-path="url(#p4efae1c8a3)" style="fill: none; stroke-dasharray: 7.4,3.2; stroke-dashoffset: 0; stroke: #ff7f0e; stroke-width: 2"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 456.67793 285.499406
+L 456.67793 84.859852
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 456.67793 285.499406
+L 793.15375 285.499406
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_34">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="624.91584" y="78.859852" transform="rotate(-0 624.91584 78.859852)">共享单车</text>
+   </g>
+   <g id="legend_2">
+    <g id="patch_9">
+     <path d="M 462.27793 116.486883
+L 561.26043 116.486883
+Q 562.86043 116.486883 562.86043 114.886883
+L 562.86043 90.459852
+Q 562.86043 88.859852 561.26043 88.859852
+L 462.27793 88.859852
+Q 460.67793 88.859852 460.67793 90.459852
+L 460.67793 114.886883
+Q 460.67793 116.486883 462.27793 116.486883
+z
+" style="fill: #ffffff; opacity: 0.8; stroke: #cccccc; stroke-linejoin: miter"/>
+    </g>
+    <g id="line2d_47">
+     <path d="M 463.87793 95.755945
+L 471.87793 95.755945
+L 479.87793 95.755945
+" style="fill: none; stroke: #1f77b4; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="text_35">
+     <text style="font-size: 8px; font-family: 'Microsoft YaHei'; text-anchor: start" x="486.27793" y="98.555945" transform="rotate(-0 486.27793 98.555945)">周一至周五（21天）</text>
+    </g>
+    <g id="line2d_48">
+     <path d="M 463.87793 108.459539
+L 471.87793 108.459539
+L 479.87793 108.459539
+" style="fill: none; stroke-dasharray: 7.4,3.2; stroke-dashoffset: 0; stroke: #ff7f0e; stroke-width: 2"/>
+    </g>
+    <g id="text_36">
+     <text style="font-size: 8px; font-family: 'Microsoft YaHei'; text-anchor: start" x="486.27793" y="111.259539" transform="rotate(-0 486.27793 111.259539)">周末（9天）</text>
+    </g>
+   </g>
+  </g>
+  <g id="text_37">
+   <text style="font-weight: 700; font-size: 14px; font-family: 'Microsoft YaHei'; text-anchor: start" x="25.63375" y="18.938125" transform="rotate(-0 25.63375 18.938125)">周类型小时规律：分别按完整日期数计算日均量</text>
+  </g>
+  <g id="text_38">
+   <text style="font-size: 8px; font-family: 'Microsoft YaHei'; text-anchor: start; fill: #536773" x="25.63375" y="341.7408" transform="rotate(-0 25.63375 341.7408)">纽约 · 2025年6月 · 仅接入Yellow Taxi / Citi Bike记录 · America/New_York</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pf9ef1e7aca">
+   <rect x="58.42793" y="84.859852" width="336.47582" height="200.639555"/>
+  </clipPath>
+  <clipPath id="p4efae1c8a3">
+   <rect x="456.67793" y="84.859852" width="336.47582" height="200.639555"/>
+  </clipPath>
+ </defs>
+</svg>

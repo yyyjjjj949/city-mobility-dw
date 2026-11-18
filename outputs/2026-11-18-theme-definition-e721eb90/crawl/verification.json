@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "checked_at_utc": "2026-11-18T09:52:56.704711+00:00",
+  "live_sources": [
+    "tlc_yellow",
+    "citibike_trips"
+  ],
+  "live_run_id": "20261118T095241-c763fb89",
+  "request_evidence_sha_verified": 6,
+  "unit_tests_passed": 15,
+  "ingest_discover_only_cli_passed": true,
+  "business_data_redownloaded": false,
+  "ods_rewritten": false,
+  "receipt": "latest.json",
+  "review_fixes": [
+    "Robots redirect context preserved across redirect chains",
+    "Malformed unrelated anchors safely skipped; exact TLC target path required"
+  ]
+}

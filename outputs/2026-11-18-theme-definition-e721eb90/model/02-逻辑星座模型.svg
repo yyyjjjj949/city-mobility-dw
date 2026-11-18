@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1700" height="1270" viewBox="0 0 1700 1270" role="img" aria-label="逻辑模型：两个行程星型与共享维度星座"><rect width="100%" height="100%" fill="#f5f8fa"/>
+<text x="45" y="69" font-family="Microsoft YaHei,Arial,sans-serif" font-size="34" fill="#17384c" font-weight="700">逻辑模型：两个行程星型与共享维度星座</text>
+<text x="45" y="108" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" fill="#546d7d" font-weight="400">事实角色键直接引用维度唯一键；一维度成员可关联多事实行（1:N），未知成员也必须可解析</text>
+<line x1="180" y1="310" x2="180" y2="355" stroke="#7892a3" stroke-width="2"/>
+<line x1="180" y1="355" x2="420" y2="490" stroke="#7892a3" stroke-width="2"/>
+<line x1="180" y1="310" x2="180" y2="355" stroke="#7892a3" stroke-width="2"/>
+<line x1="180" y1="355" x2="1260" y2="490" stroke="#7892a3" stroke-width="2"/>
+<line x1="515" y1="310" x2="515" y2="355" stroke="#7892a3" stroke-width="2"/>
+<line x1="515" y1="355" x2="420" y2="490" stroke="#7892a3" stroke-width="2"/>
+<line x1="515" y1="310" x2="515" y2="355" stroke="#7892a3" stroke-width="2"/>
+<line x1="515" y1="355" x2="1260" y2="490" stroke="#7892a3" stroke-width="2"/>
+<line x1="850" y1="310" x2="850" y2="355" stroke="#7892a3" stroke-width="2"/>
+<line x1="850" y1="355" x2="420" y2="490" stroke="#7892a3" stroke-width="2"/>
+<line x1="850" y1="310" x2="850" y2="355" stroke="#7892a3" stroke-width="2"/>
+<line x1="850" y1="355" x2="1260" y2="490" stroke="#7892a3" stroke-width="2"/>
+<line x1="1185" y1="310" x2="1185" y2="355" stroke="#7892a3" stroke-width="2"/>
+<line x1="1185" y1="355" x2="420" y2="490" stroke="#7892a3" stroke-width="2"/>
+<line x1="1185" y1="310" x2="1185" y2="355" stroke="#7892a3" stroke-width="2"/>
+<line x1="1185" y1="355" x2="1260" y2="490" stroke="#7892a3" stroke-width="2"/>
+<line x1="1520" y1="310" x2="1520" y2="355" stroke="#7892a3" stroke-width="2"/>
+<line x1="1520" y1="355" x2="420" y2="490" stroke="#7892a3" stroke-width="2"/>
+<line x1="1520" y1="310" x2="1520" y2="355" stroke="#7892a3" stroke-width="2"/>
+<line x1="1520" y1="355" x2="1260" y2="490" stroke="#7892a3" stroke-width="2"/>
+<rect x="40" y="165" width="280" height="145" rx="13" fill="#e4eef8" stroke="#9cb3c2" stroke-width="2"/>
+<text x="60" y="200" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" fill="#17384c" font-weight="700">日期 dim_date</text>
+<text x="60" y="231" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" fill="#17384c" font-weight="400">键: date_key</text>
+<text x="60" y="262" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" fill="#17384c" font-weight="400">开始 / 结束</text>
+<rect x="375" y="165" width="280" height="145" rx="13" fill="#e4eef8" stroke="#9cb3c2" stroke-width="2"/>
+<text x="395" y="200" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" fill="#17384c" font-weight="700">分钟 dim_time</text>
+<text x="395" y="231" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" fill="#17384c" font-weight="400">键: time_key</text>
+<text x="395" y="262" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" fill="#17384c" font-weight="400">开始 / 结束</text>
+<rect x="710" y="165" width="280" height="145" rx="13" fill="#e4eef8" stroke="#9cb3c2" stroke-width="2"/>
+<text x="730" y="200" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" fill="#17384c" font-weight="700">区域 dim_zone</text>
+<text x="730" y="231" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" fill="#17384c" font-weight="400">键: zone_key</text>
+<text x="730" y="262" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" fill="#17384c" font-weight="400">起点 / 终点</text>
+<rect x="1045" y="165" width="280" height="145" rx="13" fill="#e4eef8" stroke="#9cb3c2" stroke-width="2"/>
+<text x="1065" y="200" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" fill="#17384c" font-weight="700">方式 dim_transport</text>
+<text x="1065" y="231" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" fill="#17384c" font-weight="400">键: transport_code</text>
+<text x="1065" y="262" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" fill="#17384c" font-weight="400">受控方式</text>
+<rect x="1380" y="165" width="280" height="145" rx="13" fill="#e4eef8" stroke="#9cb3c2" stroke-width="2"/>
+<text x="1400" y="200" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" fill="#17384c" font-weight="700">日天气观察上下文</text>
+<text x="1400" y="231" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" fill="#17384c" font-weight="400">dim_weather_daily</text>
+<text x="1400" y="262" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" fill="#17384c" font-weight="400">键: weather_key</text>
+<text x="1400" y="293" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" fill="#17384c" font-weight="400">开始日期上下文</text>
+<rect x="70" y="490" width="710" height="245" rx="13" fill="#dceee3" stroke="#9cb3c2" stroke-width="2"/>
+<text x="90" y="526" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" fill="#17384c" font-weight="700">出租车事实 dwd.fact_taxi_trip</text>
+<text x="90" y="558" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" fill="#17384c" font-weight="400">粒度：一条通过核心规则的源行程记录</text>
+<text x="90" y="590" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" fill="#17384c" font-weight="400">逻辑键：trip_key = source_record_key</text>
+<text x="90" y="622" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" fill="#17384c" font-weight="400">角色键：start/end_date_key、start/end_time_key</text>
+<text x="90" y="654" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" fill="#17384c" font-weight="400">origin/destination_zone_key、transport_code、weather_key</text>
+<text x="90" y="686" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" fill="#17384c" font-weight="400">度量：时长秒数；距离公里（资格规则单独控制）</text>
+<rect x="920" y="490" width="710" height="245" rx="13" fill="#dceee3" stroke="#9cb3c2" stroke-width="2"/>
+<text x="940" y="526" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" fill="#17384c" font-weight="700">骑行事实 dwd.fact_bike_trip</text>
+<text x="940" y="558" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" fill="#17384c" font-weight="400">粒度：一个无业务内容冲突的有效 ride_id</text>
+<text x="940" y="590" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" fill="#17384c" font-weight="400">逻辑键：ride_id</text>
+<text x="940" y="622" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" fill="#17384c" font-weight="400">共享角色键同左；专用：origin/destination_station_key</text>
+<text x="940" y="654" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" fill="#17384c" font-weight="400">bike_type_code；时长秒数（源无真实路线距离）</text>
+<text x="940" y="686" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" fill="#17384c" font-weight="400">同ID同内容去重；同ID冲突阻断</text>
+<line x1="1110" y1="735" x2="1110" y2="840" stroke="#7892a3" stroke-width="2"/>
+<line x1="1440" y1="735" x2="1440" y2="840" stroke="#7892a3" stroke-width="2"/>
+<rect x="895" y="840" width="400" height="140" rx="13" fill="#e4eef8" stroke="#9cb3c2" stroke-width="2"/>
+<text x="915" y="876" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" fill="#17384c" font-weight="700">站点 dim_station</text>
+<text x="915" y="908" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" fill="#17384c" font-weight="400">逻辑键: station_key</text>
+<text x="915" y="940" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" fill="#17384c" font-weight="400">起站 / 终站；期间快照键</text>
+<rect x="1330" y="840" width="325" height="140" rx="13" fill="#e4eef8" stroke="#9cb3c2" stroke-width="2"/>
+<text x="1350" y="876" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" fill="#17384c" font-weight="700">车型 dim_bike_type</text>
+<text x="1350" y="908" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" fill="#17384c" font-weight="400">逻辑键: bike_type_code</text>
+<text x="1350" y="940" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" fill="#17384c" font-weight="400">真实来源车型</text>
+<rect x="70" y="840" width="740" height="140" rx="13" fill="#fff2dc" stroke="#9cb3c2" stroke-width="2"/>
+<text x="90" y="876" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" fill="#17384c" font-weight="700">事实标识与审计（不画为业务维度）</text>
+<text x="90" y="908" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" fill="#17384c" font-weight="400">ride_id可理解为退化维度；出租车trip_key为源行身份</text>
+<text x="90" y="940" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" fill="#17384c" font-weight="400">source_record_key → ODS；batch_id → OPS</text>
+<text x="70" y="1062" font-family="Microsoft YaHei,Arial,sans-serif" font-size="22" fill="#17384c" font-weight="400">角色键示例：start_date_key 与 end_date_key → 同一 dim_date.date_key；不存在事实对事实明细JOIN。</text>
+<text x="70" y="1117" font-family="Microsoft YaHei,Arial,sans-serif" font-size="22" fill="#17384c" font-weight="400">辅助引用：dim_station.zone_key → dim_zone；dim_weather_daily.date_key → dim_date。</text>
+<text x="70" y="1171" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" fill="#17384c" font-weight="400">当前逻辑DIM实际存于 dwd.dim_*。天气数值仅作上下文，不能沿行程行求和；完整键关系见第15号文档。</text>
+</svg>

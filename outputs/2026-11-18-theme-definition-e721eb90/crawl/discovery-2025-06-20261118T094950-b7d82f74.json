@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "run_id": "20261118T094950-b7d82f74",
+  "month": "2025-06",
+  "started_at_utc": "2026-11-18T09:49:50.788562+00:00",
+  "method": "official HTML anchor parsing + public bucket XML listing parsing",
+  "requested_sources": [
+    "citibike_trips"
+  ],
+  "results": [
+    {
+      "source_id": "citibike_trips",
+      "status": "discovered",
+      "object": {
+        "url": "https://s3.amazonaws.com/tripdata/202506-citibike-tripdata.zip",
+        "key": "202506-citibike-tripdata.zip",
+        "bytes": 929043436,
+        "etag": "\"3890935c79ccfe5f8cca115725031182-55\"",
+        "last_modified": "2025-07-06T22:27:06.000Z",
+        "landing_page": "https://citibikenyc.com/system-data",
+        "index_link": "https://s3.amazonaws.com/tripdata/index.html",
+        "listing_endpoint": "https://tripdata.s3.amazonaws.com/",
+        "listing_pages": 1,
+        "parser": "HTML bucket link + namespaced XML Contents/Key"
+      },
+      "catalog_match": true
+    }
+  ],
+  "policy": {
+    "https_host_allowlist": [
+      "citibikenyc.com",
+      "d37ci6vzurychx.cloudfront.net",
+      "s3.amazonaws.com",
+      "tripdata.s3.amazonaws.com",
+      "www.nyc.gov",
+      "www1.nyc.gov"
+    ],
+    "robots": "200: parse rules; 404/410: no rules; all other errors: fail closed",
+    "min_request_interval_seconds": 0.6,
+    "max_attempts_per_request": 2,
+    "max_listing_pages": 10,
+    "max_response_bytes": 8388608,
+    "catalog_identity_must_match": true
+  },
+  "raw_evidence_directory": "work\\2026-11-18-theme-definition-e721eb90\\source-discovery\\20261118T094950-b7d82f74",
+  "passed": true,
+  "finished_at_utc": "2026-11-18T09:50:07.251817+00:00",
+  "requests": [
+    {
+      "request_url": "https://citibikenyc.com/robots.txt",
+      "received_at_utc": "2026-11-18T09:49:57.232527+00:00",
+      "status": 404,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 127091,
+      "sha256": "a6c641f28b75a6d8191e58f6d4949e9631d777095bc07843a0a449c2dea1dddb",
+      "raw_file": "001-response.html"
+    },
+    {
+      "request_url": "https://citibikenyc.com/system-data",
+      "received_at_utc": "2026-11-18T09:50:05.547652+00:00",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 128122,
+      "sha256": "2e8549d331c93793573d968cdf923b00a5085db4b2a897cd848c8e1c80bd2583",
+      "raw_file": "002-response.html"
+    },
+    {
+      "request_url": "https://tripdata.s3.amazonaws.com/robots.txt",
+      "received_at_utc": "2026-11-18T09:50:06.975903+00:00",
+      "status": 404,
+      "content_type": "application/xml",
+      "bytes": 301,
+      "sha256": "193df65ee0b20aa2042e1b60a054d3337a53ecbd8d885a6c5f28182d65f7a7e1",
+      "raw_file": "003-response.xml"
+    },
+    {
+      "request_url": "https://tripdata.s3.amazonaws.com/?list-type=2&prefix=202506&max-keys=1000",
+      "received_at_utc": "2026-11-18T09:50:07.251214+00:00",
+      "status": 200,
+      "content_type": "application/xml",
+      "bytes": 565,
+      "sha256": "529c15c99b6c31d6a515d6078dd92f6adbc876c67b46c56e8e6753999a792973",
+      "raw_file": "004-response.xml"
+    }
+  ]
+}
