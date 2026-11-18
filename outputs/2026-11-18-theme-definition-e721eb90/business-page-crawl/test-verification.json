@@ -1,0 +1,65 @@
+{
+  "checked_at_utc": "2026-11-18T12:00:31.491Z",
+  "passed": true,
+  "scope": "Independent business HTML collector and local-only Python cleaning; source replacement in production warehouse not performed",
+  "node_parser_tests": {
+    "total": 9,
+    "passed": 9,
+    "command": "node --test",
+    "cases": [
+      "URL scope restrictions",
+      "index link discovery and deduplication",
+      "default date and raw time preservation",
+      "colspan alignment and blank cells",
+      "missing timetable failure",
+      "robots rules",
+      "multi-option weekday calendar",
+      "single fixed calendar without date",
+      "rowspan alignment"
+    ]
+  },
+  "python_regression": {
+    "total": 40,
+    "passed": 40,
+    "existing": 35,
+    "new_cleaner": 5,
+    "command": "python -m unittest discover -s tests -v"
+  },
+  "live_crawl": {
+    "pages": 62,
+    "http_requests": 64,
+    "failed": 0,
+    "manifest": "20261118T114451Z-38d2cc/crawl-manifest.json"
+  },
+  "local_cleaning": {
+    "valid_cells": 64362,
+    "quarantined_cells": 23,
+    "raw_nonempty_cells": 64385,
+    "reconciled": true,
+    "source_html_sha_checks": 62,
+    "unique_fact_grains": true,
+    "receipt": "20261118T114451Z-38d2cc/cleaning-verification.json"
+  },
+  "browser": {
+    "passed": true,
+    "pages": 5,
+    "mobile_width": 390,
+    "new_preview": "preview-verification.json",
+    "existing_four": "../verification/page-verification.json",
+    "map_total_retained": 9012795
+  },
+  "report_pdf": {
+    "pages": 14,
+    "images": 9,
+    "source_notice_added": true,
+    "visual_reviewed_pages": 14
+  },
+  "formal_new_warehouse_acceptance": false,
+  "public_checkout_validation": {
+    "passed": true,
+    "node_tests": 9,
+    "python_cleaner_tests": 5,
+    "browser_preview": true,
+    "publication_receipt": "publication-verification.json"
+  }
+}

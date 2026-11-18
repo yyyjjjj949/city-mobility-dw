@@ -144,5 +144,13 @@
     "large_files_above_20MiB": 0,
     "reviewed_fake_credential_test_fixtures": 1,
     "git_diff_check_passed": true
-  }
+  },
+  "latest_teacher_requirement": {
+    "overall_acceptance_passed": false,
+    "status": "New business HTML collection and local cleaning verified; formal warehouse migration pending",
+    "receipt": "../business-page-crawl/requirements-status.json",
+    "trial_verified_pages": 62,
+    "trial_valid_planned_cells": 64362
+  },
+  "passed_scope_note": "Existing passed flag refers to the historical NYC/model/report validation scope. It is not acceptance of the subsequent business-page-source warehouse migration."
 }

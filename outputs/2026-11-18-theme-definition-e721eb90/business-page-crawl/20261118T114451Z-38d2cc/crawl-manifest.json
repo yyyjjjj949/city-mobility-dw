@@ -1,0 +1,2174 @@
+{
+  "schema_version": 1,
+  "run_id": "20261118T114451Z-38d2cc",
+  "started_at_utc": "2026-11-18T11:44:51.466Z",
+  "collector": "Node.js fetch + Cheerio HTML parser",
+  "user_agent": "CityMobilityCourseCrawler/0.1 (educational timetable page collection)",
+  "seed_url": "https://bustimes.org/localities/cambridge-cambs",
+  "scope": "Service links listed on Cambridge locality page; default displayed schedule date only; includes services extending beyond the city",
+  "bulk_dataset_downloads": 0,
+  "api_requests": 0,
+  "requests": [
+    {
+      "url": "https://bustimes.org/robots.txt",
+      "kind": "robots",
+      "requested_at_utc": "2026-11-18T11:44:51.481Z",
+      "status": 200,
+      "content_type": "text/plain",
+      "etag": null,
+      "last_modified": "Wed, 18 Nov 2026 11:22:13 GMT",
+      "response_bytes": 1170,
+      "sha256": "0a8e29a69c0237a6d7555f8a1e71874e9cb385eae3d3ee14d8e4710b82e49287",
+      "body_file": "responses/001.html"
+    },
+    {
+      "url": "https://bustimes.org/localities/cambridge-cambs",
+      "kind": "index",
+      "requested_at_utc": "2026-11-18T11:44:53.692Z",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "etag": null,
+      "last_modified": null,
+      "response_bytes": 64927,
+      "sha256": "81541cdf31f091ca1425b5e24556b703fcd2d80c697b3c02009c9623bb455f90",
+      "body_file": "responses/002.html"
+    },
+    {
+      "url": "https://bustimes.org/services/1-arbury-fulbourn",
+      "kind": "service",
+      "requested_at_utc": "2026-11-18T11:44:55.903Z",
+      "status": 200,
+      "content_type": "text/html",
+      "etag": null,
+      "last_modified": null,
+      "response_bytes": 156977,
+      "sha256": "4ea349b0128397fd7b08367cd5238b4bbe23d91865ad3a5619c6b50f2dc762a4",
+      "body_file": "responses/003.html"
+    },
+    {
+      "url": "https://bustimes.org/services/x1-blue-arrow-peterborough-huntingdon-cambridge",
+      "kind": "service",
+      "requested_at_utc": "2026-11-18T11:44:58.113Z",
+      "status": 200,
+      "content_type": "text/html",
+      "etag": null,
+      "last_modified": null,
+      "response_bytes": 12133,
+      "sha256": "72c1afb4cfcdb54c9513420246e92448a564a5ae31706dd4047d81ad39a6dd0c",
+      "body_file": "responses/004.html"
+    },
+    {
+      "url": "https://bustimes.org/services/2-biggleswade-ickwell-blunham-tempsford-sandy-po-2",
+      "kind": "service",
+      "requested_at_utc": "2026-11-18T11:45:00.325Z",
+      "status": 200,
+      "content_type": "text/html",
+      "etag": null,
+      "last_modified": null,
+      "response_bytes": 39227,
+      "sha256": "400400534c0f8d72a8d25e43d5f63e463ef00b150867cff3236701f14c15f495",
+      "body_file": "responses/005.html"
+    },
+    {
+      "url": "https://bustimes.org/services/2-milton-addenbrookes",
+      "kind": "service",
+      "requested_at_utc": "2026-11-18T11:45:02.536Z",
+      "status": 200,
+      "content_type": "text/html",
+      "etag": null,
+      "last_modified": null,
+      "response_bytes": 92498,
+      "sha256": "267b471673c3dfc9c2d8ea641d1dfc3ff37876fa23da7b8e0ff11316132f94a6",
+      "body_file": "responses/006.html"
+    },
+    {
+      "url": "https://bustimes.org/services/x2-corby-cambridge-rail-station",
+      "kind": "service",
+      "requested_at_utc": "2026-11-18T11:45:04.752Z",
+      "status": 200,
+      "content_type": "text/html",
+      "etag": null,
+      "last_modified": null,
+      "response_bytes": 37312,
+      "sha256": "bacc1e8b513ce3a6d50bb7ebe12f3a389995be524fb010142f32287211acaf28",
+      "body_file": "responses/007.html"
+    },
+    {
+      "url": "https://bustimes.org/services/3-biggleswade-langford-broom-caldecote-biggleswa-2",
+      "kind": "service",
+      "requested_at_utc": "2026-11-18T11:45:06.967Z",
+      "status": 200,
+      "content_type": "text/html",
+      "etag": null,
+      "last_modified": null,
+      "response_bytes": 48293,
+      "sha256": "9b9a101bd596c286e271579dee78b52ce9b64e686b6de4286162defc6c1e24cb",
+      "body_file": "responses/008.html"
+    },
+    {
+      "url": "https://bustimes.org/services/3-fison-road-cherry-hinton",
+      "kind": "service",
+      "requested_at_utc": "2026-11-18T11:45:09.176Z",
+      "status": 200,
+      "content_type": "text/html",
+      "etag": null,
+      "last_modified": null,
+      "response_bytes": 97146,
+      "sha256": "145a33dd8f01afcf6faae608ffff1cfbc50b83f1db0d322fbfdae1129b8bba11",
+      "body_file": "responses/009.html"
+    },
+    {
+      "url": "https://bustimes.org/services/x3-huntingdon-addenbrookes",
+      "kind": "service",
+      "requested_at_utc": "2026-11-18T11:45:11.380Z",
+      "status": 200,
+      "content_type": "text/html",
+      "etag": null,
+      "last_modified": null,
+      "response_bytes": 80169,
+      "sha256": "8b770f57fea119bfe4394f395dd0d8b1f4972d85c7ead65709b7452194ec997d",
+      "body_file": "responses/010.html"
+    },
+    {
+      "url": "https://bustimes.org/services/4-drummer-st-bus-station-bay-10-lower-cambourne-wo",
+      "kind": "service",
+      "requested_at_utc": "2026-11-18T11:45:13.590Z",
+      "status": 200,
+      "content_type": "text/html",
+      "etag": null,
+      "last_modified": null,
+      "response_bytes": 78871,
+      "sha256": "9228097b94afaabe89000c5d3eaf25d4319e9d3de3b1e699d10daeee37940581",
+      "body_file": "responses/011.html"
+    },
+    {
+      "url": "https://bustimes.org/services/5-cambridge-longstanton",
+      "kind": "service",
+      "requested_at_utc": "2026-11-18T11:45:15.797Z",
+      "status": 200,
+      "content_type": "text/html",
+      "etag": null,
+      "last_modified": null,
+      "response_bytes": 55157,
+      "sha256": "ab3d18698614256a3b2a9b065a9b883efcaa8d006d0fb4d524a3375b3e400cee",
+      "body_file": "responses/012.html"
+    },
+    {
+      "url": "https://bustimes.org/services/6-cambridge-oakington",
+      "kind": "service",
+      "requested_at_utc": "2026-11-18T11:45:18.008Z",
+      "status": 200,
+      "content_type": "text/html",
+      "etag": null,
+      "last_modified": null,
+      "response_bytes": 38403,
+      "sha256": "28534a6d0b6c538d78ad2973c1922df45876c8064c537ab7353184e799f41b03",
+      "body_file": "responses/013.html"
+    },
+    {
+      "url": "https://bustimes.org/services/7-saffron-walden-cambridge",
+      "kind": "service",
+      "requested_at_utc": "2026-11-18T11:45:20.221Z",
+      "status": 200,
+      "content_type": "text/html",
+      "etag": null,
+      "last_modified": null,
+      "response_bytes": 87209,
+      "sha256": "b94694a6c3c3102f2608ea34f58a03deaa634fc8d13753822746969d3c2ba332",
+      "body_file": "responses/014.html"
+    },
+    {
+      "url": "https://bustimes.org/services/8-cambridge-chatteris-2",
+      "kind": "service",
+      "requested_at_utc": "2026-11-18T11:45:22.658Z",
+      "status": 200,
+      "content_type": "text/html",
+      "etag": null,
+      "last_modified": null,
+      "response_bytes": 61674,
+      "sha256": "df7ab305a3cb6cb846fc8bb0f0cde84de9742e28e3ac94aaeb56f4fa20690996",
+      "body_file": "responses/015.html"
+    },
+    {
+      "url": "https://bustimes.org/services/8-papworth-everard-cambridge",
+      "kind": "service",
+      "requested_at_utc": "2026-11-18T11:45:24.867Z",
+      "status": 200,
+      "content_type": "text/html",
+      "etag": null,
+      "last_modified": null,
+      "response_bytes": 29963,
+      "sha256": "8579a2b039dc0438716817886715cef08cf3c9e3cd344bcb50fe90378f4d15af",
+      "body_file": "responses/016.html"
+    },
+    {
+      "url": "https://bustimes.org/services/8a-cambridge-orchard-park",
+      "kind": "service",
+      "requested_at_utc": "2026-11-18T11:45:27.080Z",
+      "status": 200,
+      "content_type": "text/html",
+      "etag": null,
+      "last_modified": null,
+      "response_bytes": 34259,
+      "sha256": "4b5184d0e12a861f8a71f3428feb758966ef73b1b753fa7d20309734d7050aea",
+      "body_file": "responses/017.html"
+    },
+    {
+      "url": "https://bustimes.org/services/9-drummer-st-bay-5-littleport-church-ln",
+      "kind": "service",
+      "requested_at_utc": "2026-11-18T11:45:29.289Z",
+      "status": 200,
+      "content_type": "text/html",
+      "etag": null,
+      "last_modified": null,
+      "response_bytes": 54147,
+      "sha256": "e525a4bd98bfa441f74ac659b0e745d8cfb040b04288359ee45377e5d4370400",
+      "body_file": "responses/018.html"
+    },
+    {
+      "url": "https://bustimes.org/services/12-cambridge-bottisham-newmarket",
+      "kind": "service",
+      "requested_at_utc": "2026-11-18T11:45:31.503Z",
+      "status": 200,
+      "content_type": "text/html",
+      "etag": null,
+      "last_modified": null,
+      "response_bytes": 30805,
+      "sha256": "e082542361124b7458d69ba920dbed9399275c36f48deddbb8c99285beb8a132",
+      "body_file": "responses/019.html"
+    },
+    {
+      "url": "https://bustimes.org/services/13-drummer-st-bus-station-bay-6-kedington-mill-roa",
+      "kind": "service",
+      "requested_at_utc": "2026-11-18T11:45:33.716Z",
+      "status": 200,
+      "content_type": "text/html",
+      "etag": null,
+      "last_modified": null,
+      "response_bytes": 80823,
+      "sha256": "16af446dd2c5e3215db398d3c624d6860fa2e3c5ab1758562b22cf813ffdbb0c",
+      "body_file": "responses/020.html"
+    },
+    {
+      "url": "https://bustimes.org/services/13a-haverhill-linton-the-abingtons-cambridge",
+      "kind": "service",
+      "requested_at_utc": "2026-11-18T11:45:35.920Z",
+      "status": 200,
+      "content_type": "text/html",
+      "etag": null,
+      "last_modified": null,
+      "response_bytes": 78986,
+      "sha256": "650a008119984582de1a32d404b221746f0e291d1a2f2dc8abcfc2f47d427015",
+      "body_file": "responses/021.html"
+    },
+    {
+      "url": "https://bustimes.org/services/x13-drummer-st-bus-station-bay-6-kedington-mill-ro",
+      "kind": "service",
+      "requested_at_utc": "2026-11-18T11:45:38.132Z",
+      "status": 200,
+      "content_type": "text/html",
+      "etag": null,
+      "last_modified": null,
+      "response_bytes": 48814,
+      "sha256": "f1930b1029136a07a75983b0ce4897747f789c5107363b8225c221602da4d79c",
+      "body_file": "responses/022.html"
+    },
+    {
+      "url": "https://bustimes.org/services/16a-gt-thurlow-fulbourn-teversham-cambridge",
+      "kind": "service",
+      "requested_at_utc": "2026-11-18T11:45:40.339Z",
+      "status": 200,
+      "content_type": "text/html",
+      "etag": null,
+      "last_modified": null,
+      "response_bytes": 43750,
+      "sha256": "c442e94c4d2d59b3dd8cab4c641c04527eab209fedb4270698231bc0783900a2",
+      "body_file": "responses/023.html"
+    },
+    {
+      "url": "https://bustimes.org/services/17-royston-bassingbourn-guilden-morden",
+      "kind": "service",
+      "requested_at_utc": "2026-11-18T11:45:42.541Z",
+      "status": 200,
+      "content_type": "text/html",
+      "etag": null,
+      "last_modified": null,
+      "response_bytes": 86976,
+      "sha256": "3ed2117c1a5904e8d1e4844c1bd487906f98c6aa80d7982e46fc8692946eb82b",
+      "body_file": "responses/024.html"
+    },
+    {
+      "url": "https://bustimes.org/services/18-cambridge-cambourne-st-neots",
+      "kind": "service",
+      "requested_at_utc": "2026-11-18T11:45:45.025Z",
+      "status": 200,
+      "content_type": "text/html",
+      "etag": null,
+      "last_modified": null,
+      "response_bytes": 70526,
+      "sha256": "e2392d312c3dc28c3104720d4ca34a5b6599b43e34ac917457d0f11fbc85737e",
+      "body_file": "responses/025.html"
+    },
+    {
+      "url": "https://bustimes.org/services/26-cambridge-royston-2",
+      "kind": "service",
+      "requested_at_utc": "2026-11-18T11:45:47.237Z",
+      "status": 200,
+      "content_type": "text/html",
+      "etag": null,
+      "last_modified": null,
+      "response_bytes": 37845,
+      "sha256": "e8bbd4bbc5d3eb5dee41cb5e1b6d1e2d4c4fc390049b1275d8f1c990b1b03879",
+      "body_file": "responses/026.html"
+    },
+    {
+      "url": "https://bustimes.org/services/75-cambridge-orwell-wrestlingworth",
+      "kind": "service",
+      "requested_at_utc": "2026-11-18T11:45:49.448Z",
+      "status": 200,
+      "content_type": "text/html",
+      "etag": null,
+      "last_modified": null,
+      "response_bytes": 48305,
+      "sha256": "c72e9dc3f05789db83e2a014be95ec9d6da4c7ccf812ccc0f947dbb37e048054",
+      "body_file": "responses/027.html"
+    },
+    {
+      "url": "https://bustimes.org/services/x75-cambridge-orwell",
+      "kind": "service",
+      "requested_at_utc": "2026-11-18T11:45:51.658Z",
+      "status": 200,
+      "content_type": "text/html",
+      "etag": null,
+      "last_modified": null,
+      "response_bytes": 45492,
+      "sha256": "bb4aea31e25c60d1f15ba96d69aa3c4c0af114984ac6a41acb017b3800e9ce7b",
+      "body_file": "responses/028.html"
+    },
+    {
+      "url": "https://bustimes.org/services/100-cambridge-city-centre-cambridge-research-park",
+      "kind": "service",
+      "requested_at_utc": "2026-11-18T11:45:53.872Z",
+      "status": 200,
+      "content_type": "text/html",
+      "etag": null,
+      "last_modified": null,
+      "response_bytes": 45111,
+      "sha256": "7bdc0d4fd0c8f5ff1216800f08c635a807a0a8d8a571246329bfa7843e730d16",
+      "body_file": "responses/029.html"
+    },
+    {
+      "url": "https://bustimes.org/services/114-city-centre-grafton-beehive-addenbrookes",
+      "kind": "service",
+      "requested_at_utc": "2026-11-18T11:45:56.077Z",
+      "status": 200,
+      "content_type": "text/html",
+      "etag": null,
+      "last_modified": null,
+      "response_bytes": 33808,
+      "sha256": "7d9190708103a6972408bdfbf5aa94379f765c7119f740d76c34641ccea30964",
+      "body_file": "responses/030.html"
+    },
+    {
+      "url": "https://bustimes.org/services/132-cambridge-saffron-walden",
+      "kind": "service",
+      "requested_at_utc": "2026-11-18T11:45:58.289Z",
+      "status": 200,
+      "content_type": "text/html",
+      "etag": null,
+      "last_modified": null,
+      "response_bytes": 43045,
+      "sha256": "4e9630e01ae10864fe18e82476fd6cefc8e2c11f01a0c15095c4e71134532463",
+      "body_file": "responses/031.html"
+    },
+    {
+      "url": "https://bustimes.org/services/199-cambridge-newnham",
+      "kind": "service",
+      "requested_at_utc": "2026-11-18T11:46:00.496Z",
+      "status": 200,
+      "content_type": "text/html",
+      "etag": null,
+      "last_modified": null,
+      "response_bytes": 14961,
+      "sha256": "cadbc1937ee5a61fa6503c9f33ee503142b6334e6acf786c9a2514b0fc56f7cb",
+      "body_file": "responses/032.html"
+    },
+    {
+      "url": "https://bustimes.org/services/491-london-great-yarmouth",
+      "kind": "service",
+      "requested_at_utc": "2026-11-18T11:46:02.710Z",
+      "status": 200,
+      "content_type": "text/html",
+      "etag": null,
+      "last_modified": null,
+      "response_bytes": 15326,
+      "sha256": "53d04b8ae0ab793ffe5f6aa584b5cdbc74693f688ad63737d402381f54be604c",
+      "body_file": "responses/033.html"
+    },
+    {
+      "url": "https://bustimes.org/services/727-great-yarmouth-heathrow-airport-t5",
+      "kind": "service",
+      "requested_at_utc": "2026-11-18T11:46:04.911Z",
+      "status": 200,
+      "content_type": "text/html",
+      "etag": null,
+      "last_modified": null,
+      "response_bytes": 45751,
+      "sha256": "d2966d9a134c7d2fa153254d2856a7af16af9a533c57ad712cc268c11c73f417",
+      "body_file": "responses/034.html"
+    },
+    {
+      "url": "https://bustimes.org/services/728-great-yarmouth-heathrow-airport-t5",
+      "kind": "service",
+      "requested_at_utc": "2026-11-18T11:46:07.123Z",
+      "status": 200,
+      "content_type": "text/html",
+      "etag": null,
+      "last_modified": null,
+      "response_bytes": 23025,
+      "sha256": "f36d549c33de70dd43d677b9810ae9504321e5b14fa72e22b1275d879b31c980",
+      "body_file": "responses/035.html"
+    },
+    {
+      "url": "https://bustimes.org/services/777-birmingham-stansted-airport-2",
+      "kind": "service",
+      "requested_at_utc": "2026-11-18T11:46:09.338Z",
+      "status": 200,
+      "content_type": "text/html",
+      "etag": null,
+      "last_modified": null,
+      "response_bytes": 18071,
+      "sha256": "d5fee047c0c62cceb6079e47563019c760f89ad374bf08ac57a1b0aee1ff0ab9",
+      "body_file": "responses/036.html"
+    },
+    {
+      "url": "https://bustimes.org/services/786-cambridge-luton-airport",
+      "kind": "service",
+      "requested_at_utc": "2026-11-18T11:46:11.561Z",
+      "status": 200,
+      "content_type": "text/html",
+      "etag": null,
+      "last_modified": null,
+      "response_bytes": 14825,
+      "sha256": "c9928190c05897eeb207d5a395a14346c973f2f4cc68c503983b00b4b1badcc5",
+      "body_file": "responses/037.html"
+    },
+    {
+      "url": "https://bustimes.org/services/813-london-great-yarmouth",
+      "kind": "service",
+      "requested_at_utc": "2026-11-18T11:46:13.771Z",
+      "status": 200,
+      "content_type": "text/html",
+      "etag": null,
+      "last_modified": null,
+      "response_bytes": 16543,
+      "sha256": "e276de104e794ec3457764475ac890503a777450fcbefa53173988f5319ff07e",
+      "body_file": "responses/038.html"
+    },
+    {
+      "url": "https://bustimes.org/services/826-london-cambridge",
+      "kind": "service",
+      "requested_at_utc": "2026-11-18T11:46:15.981Z",
+      "status": 200,
+      "content_type": "text/html",
+      "etag": null,
+      "last_modified": null,
+      "response_bytes": 13731,
+      "sha256": "7582ddf913a4e12b18cd5f3e5117b3eb84d4c2c87edc161e31164473e6ac0bc4",
+      "body_file": "responses/039.html"
+    },
+    {
+      "url": "https://bustimes.org/services/905-st-neots-bedford",
+      "kind": "service",
+      "requested_at_utc": "2026-11-18T11:46:18.193Z",
+      "status": 200,
+      "content_type": "text/html",
+      "etag": null,
+      "last_modified": null,
+      "response_bytes": 36574,
+      "sha256": "f5bb6fed9bd3af93b5aac89154f92d7b5388f3328379c67af5b173ac1d5be0cb",
+      "body_file": "responses/040.html"
+    },
+    {
+      "url": "https://bustimes.org/services/a-trumpington-the-busway-trumpington-park-and-ri-2",
+      "kind": "service",
+      "requested_at_utc": "2026-11-18T11:46:20.406Z",
+      "status": 200,
+      "content_type": "text/html",
+      "etag": null,
+      "last_modified": null,
+      "response_bytes": 103314,
+      "sha256": "97164a511b97668e0ee1d649f23539e55a55b416ccf2f6390dcf100290126e02",
+      "body_file": "responses/041.html"
+    },
+    {
+      "url": "https://bustimes.org/services/b-hinchingbrooke-cambridge",
+      "kind": "service",
+      "requested_at_utc": "2026-11-18T11:46:22.628Z",
+      "status": 200,
+      "content_type": "text/html",
+      "etag": null,
+      "last_modified": null,
+      "response_bytes": 118161,
+      "sha256": "5397695374b4b026f4f19ddc867138d049767d30f9c858a740e60e057139e8ff",
+      "body_file": "responses/042.html"
+    },
+    {
+      "url": "https://bustimes.org/services/b22-peterborough-boomtown-fair",
+      "kind": "service",
+      "requested_at_utc": "2026-11-18T11:46:24.831Z",
+      "status": 200,
+      "content_type": "text/html",
+      "etag": null,
+      "last_modified": null,
+      "response_bytes": 11229,
+      "sha256": "1510d2ace85530b74427e3f8fe99f21971b0737ab3794c1714423f2caa482c35",
+      "body_file": "responses/043.html"
+    },
+    {
+      "url": "https://bustimes.org/services/g61-great-yarmouth-glastonbury-festival",
+      "kind": "service",
+      "requested_at_utc": "2026-11-18T11:46:27.039Z",
+      "status": 200,
+      "content_type": "text/html",
+      "etag": null,
+      "last_modified": null,
+      "response_bytes": 12282,
+      "sha256": "2a9d28afec41a8c884d72546ed535dd03b09e1c348ef466e25a53359e3d3dcea",
+      "body_file": "responses/044.html"
+    },
+    {
+      "url": "https://bustimes.org/services/pr1-cambridge-city-centre-madingley-road-parkride",
+      "kind": "service",
+      "requested_at_utc": "2026-11-18T11:46:29.254Z",
+      "status": 200,
+      "content_type": "text/html",
+      "etag": null,
+      "last_modified": null,
+      "response_bytes": 39468,
+      "sha256": "afcce8926aac613106734101d8ed829c76243a0e8ffb740e07b39a617813395d",
+      "body_file": "responses/045.html"
+    },
+    {
+      "url": "https://bustimes.org/services/pr2-cambridge-city-centre-stetchworth",
+      "kind": "service",
+      "requested_at_utc": "2026-11-18T11:46:31.469Z",
+      "status": 200,
+      "content_type": "text/html",
+      "etag": null,
+      "last_modified": null,
+      "response_bytes": 86592,
+      "sha256": "8dc0cd5002605be5858c042393bf7fd25524582f8ae334ed0599ccad51686848",
+      "body_file": "responses/046.html"
+    },
+    {
+      "url": "https://bustimes.org/services/pr2f-newmarket-rd-park-ride-ditton-walk",
+      "kind": "service",
+      "requested_at_utc": "2026-11-18T11:46:33.683Z",
+      "status": 200,
+      "content_type": "text/html",
+      "etag": null,
+      "last_modified": null,
+      "response_bytes": 15932,
+      "sha256": "6306af1446c866e288a2082df0edd6bec601ec4bae20d21e07e9a085f7cfc887",
+      "body_file": "responses/047.html"
+    },
+    {
+      "url": "https://bustimes.org/services/pr3-cambridge-city-centre-trumpington-parkride",
+      "kind": "service",
+      "requested_at_utc": "2026-11-18T11:46:35.885Z",
+      "status": 200,
+      "content_type": "text/html",
+      "etag": null,
+      "last_modified": null,
+      "response_bytes": 39775,
+      "sha256": "5290a6d991b4fdf3e9449ee7390eb5938883a8592f944b79132f4818e85ac40e",
+      "body_file": "responses/048.html"
+    },
+    {
+      "url": "https://bustimes.org/services/pr4-cambridge-city-centre-babraham-road-parkride",
+      "kind": "service",
+      "requested_at_utc": "2026-11-18T11:46:38.098Z",
+      "status": 200,
+      "content_type": "text/html",
+      "etag": null,
+      "last_modified": null,
+      "response_bytes": 36272,
+      "sha256": "619d4aa2508fa8a7cae1fab6d62855f88789a74021d6be046f2921c0ddce8885",
+      "body_file": "responses/049.html"
+    },
+    {
+      "url": "https://bustimes.org/services/pr5-cambridge-city-centre-milton-parkride",
+      "kind": "service",
+      "requested_at_utc": "2026-11-18T11:46:40.311Z",
+      "status": 200,
+      "content_type": "text/html",
+      "etag": null,
+      "last_modified": null,
+      "response_bytes": 53853,
+      "sha256": "8d28ff6e1854ab8d10d039fa22651dc74635218bd2d8be5cdccab9fee57b0355",
+      "body_file": "responses/050.html"
+    },
+    {
+      "url": "https://bustimes.org/services/t1-huntingdon-cambridge",
+      "kind": "service",
+      "requested_at_utc": "2026-11-18T11:46:42.524Z",
+      "status": 200,
+      "content_type": "text/html",
+      "etag": null,
+      "last_modified": null,
+      "response_bytes": 39418,
+      "sha256": "f9755f394d3c6425d3be946c28a6da77bd75af94e6d19065537da89c3033485b",
+      "body_file": "responses/051.html"
+    },
+    {
+      "url": "https://bustimes.org/services/t2-madingley-rd-pr-newmarket-rd-pr",
+      "kind": "service",
+      "requested_at_utc": "2026-11-18T11:46:44.736Z",
+      "status": 200,
+      "content_type": "text/html",
+      "etag": null,
+      "last_modified": null,
+      "response_bytes": 39125,
+      "sha256": "f8d35c8750c9f56e12fb6fe935c61e633c0ffd5304961ee39f2a539e859d2d20",
+      "body_file": "responses/052.html"
+    },
+    {
+      "url": "https://bustimes.org/services/t3-grantchester-fulbourn",
+      "kind": "service",
+      "requested_at_utc": "2026-11-18T11:46:46.948Z",
+      "status": 200,
+      "content_type": "text/html",
+      "etag": null,
+      "last_modified": null,
+      "response_bytes": 44866,
+      "sha256": "815381461ce284dae92b181ffde23c48dad4e8772eefcadd234f8501a14c78dd",
+      "body_file": "responses/053.html"
+    },
+    {
+      "url": "https://bustimes.org/services/t4-addenbrookes-hospital-bus-station-newmarket-bus",
+      "kind": "service",
+      "requested_at_utc": "2026-11-18T11:46:49.160Z",
+      "status": 200,
+      "content_type": "text/html",
+      "etag": null,
+      "last_modified": null,
+      "response_bytes": 70164,
+      "sha256": "4c31239926e6df5e9214545743f33e347183accad787eda6a5fc1d4bec5d316e",
+      "body_file": "responses/054.html"
+    },
+    {
+      "url": "https://bustimes.org/services/t5-cambridge-burwell-soham",
+      "kind": "service",
+      "requested_at_utc": "2026-11-18T11:46:51.374Z",
+      "status": 200,
+      "content_type": "text/html",
+      "etag": null,
+      "last_modified": null,
+      "response_bytes": 46419,
+      "sha256": "b19d21460b2641220481b3cd7a88e7f8473c05a66bb488662e9ada3a5e9fccf9",
+      "body_file": "responses/055.html"
+    },
+    {
+      "url": "https://bustimes.org/services/t29-peterborough-twickenham-stadium",
+      "kind": "service",
+      "requested_at_utc": "2026-11-18T11:46:53.582Z",
+      "status": 200,
+      "content_type": "text/html",
+      "etag": null,
+      "last_modified": null,
+      "response_bytes": 13519,
+      "sha256": "2f0feb16fef8585f3154bfada56acad41dbd9e123d0228ecae3c6a0518789cb4",
+      "body_file": "responses/056.html"
+    },
+    {
+      "url": "https://bustimes.org/services/u1-girton-corner-biomedical-campus",
+      "kind": "service",
+      "requested_at_utc": "2026-11-18T11:46:55.786Z",
+      "status": 200,
+      "content_type": "text/html",
+      "etag": null,
+      "last_modified": null,
+      "response_bytes": 50694,
+      "sha256": "d94316c37cc883bd6baab05a4a52ede2fea07c4fa89c65b1c83efbab32d43610",
+      "body_file": "responses/057.html"
+    },
+    {
+      "url": "https://bustimes.org/services/u2-eddington-biomedical-campus",
+      "kind": "service",
+      "requested_at_utc": "2026-11-18T11:46:57.994Z",
+      "status": 200,
+      "content_type": "text/html",
+      "etag": null,
+      "last_modified": null,
+      "response_bytes": 53841,
+      "sha256": "71112e0138eace0be8154988ad379ed4e04304e6042cd0fa937b238c922a6f4d",
+      "body_file": "responses/058.html"
+    },
+    {
+      "url": "https://bustimes.org/services/uk066-cambridge-london-stratford-brighton",
+      "kind": "service",
+      "requested_at_utc": "2026-11-18T11:47:00.201Z",
+      "status": 200,
+      "content_type": "text/html",
+      "etag": null,
+      "last_modified": null,
+      "response_bytes": 18334,
+      "sha256": "bdfac5ed691701a13c595eb0a8dda375ddaf5ef503a4770183194f9f7d093712",
+      "body_file": "responses/059.html"
+    },
+    {
+      "url": "https://bustimes.org/services/uk083-norwich-cambridge-birmingham",
+      "kind": "service",
+      "requested_at_utc": "2026-11-18T11:47:02.414Z",
+      "status": 200,
+      "content_type": "text/html",
+      "etag": null,
+      "last_modified": null,
+      "response_bytes": 14516,
+      "sha256": "614face5dc368ef843c236b4254af9739fd298167054042b0a1ee13ba1bb151e",
+      "body_file": "responses/060.html"
+    },
+    {
+      "url": "https://bustimes.org/services/uk950-norwich-cambridge-heathrow",
+      "kind": "service",
+      "requested_at_utc": "2026-11-18T11:47:04.617Z",
+      "status": 200,
+      "content_type": "text/html",
+      "etag": null,
+      "last_modified": null,
+      "response_bytes": 18469,
+      "sha256": "c80a7cd4a379fdf1efe4d4a3d3a03c519219bb1075cb3d730a7a54fca14f7ea3",
+      "body_file": "responses/061.html"
+    },
+    {
+      "url": "https://bustimes.org/services/w6-meppershall-gravenhurst-meppershall-shefford-st",
+      "kind": "service",
+      "requested_at_utc": "2026-11-18T11:47:06.829Z",
+      "status": 200,
+      "content_type": "text/html",
+      "etag": null,
+      "last_modified": null,
+      "response_bytes": 27763,
+      "sha256": "54a2b7d16915736fda6d3e7cfc4ba79bc3ec0e0309505d861b2484c48c87aad2",
+      "body_file": "responses/062.html"
+    },
+    {
+      "url": "https://bustimes.org/services/w6a-meppershall-shillington-stotfold-cambridge",
+      "kind": "service",
+      "requested_at_utc": "2026-11-18T11:47:09.043Z",
+      "status": 200,
+      "content_type": "text/html",
+      "etag": null,
+      "last_modified": null,
+      "response_bytes": 31527,
+      "sha256": "3d5134103851b770739f1825eae9bcd9d1ba4d9df8dc7265de3d32f324754ca8",
+      "body_file": "responses/063.html"
+    },
+    {
+      "url": "https://bustimes.org/services/w29-peterborough-city-centre-wembley-park",
+      "kind": "service",
+      "requested_at_utc": "2026-11-18T11:47:11.256Z",
+      "status": 200,
+      "content_type": "text/html",
+      "etag": null,
+      "last_modified": null,
+      "response_bytes": 13592,
+      "sha256": "511984a47668995fde9f35f95a109cf9a36cd2afec39fa61bcc7e3f032794203",
+      "body_file": "responses/064.html"
+    }
+  ],
+  "successful_pages": [
+    {
+      "url": "https://bustimes.org/services/1-arbury-fulbourn",
+      "service_slug": "1-arbury-fulbourn",
+      "route_name": "1",
+      "schedule_date": "2026-11-18",
+      "tables": 2,
+      "stop_rows": 109,
+      "nonempty_time_cells": 7069,
+      "parsed_file": "service-001.json",
+      "source_response_sha256": "4ea349b0128397fd7b08367cd5238b4bbe23d91865ad3a5619c6b50f2dc762a4",
+      "operators": [
+        {
+          "name": "Stagecoach East",
+          "source_path": "/operators/stagecoach-in-cambridge"
+        }
+      ],
+      "attribution": "Timetable data from Stagecoach East, 18 November 2026",
+      "calendar_id": null,
+      "calendar_label": null,
+      "schedule_scope": "explicit_date"
+    },
+    {
+      "url": "https://bustimes.org/services/x1-blue-arrow-peterborough-huntingdon-cambridge",
+      "service_slug": "x1-blue-arrow-peterborough-huntingdon-cambridge",
+      "route_name": "X1 Blue Arrow",
+      "schedule_date": null,
+      "tables": 2,
+      "stop_rows": 6,
+      "nonempty_time_cells": 28,
+      "parsed_file": "service-002.json",
+      "source_response_sha256": "72c1afb4cfcdb54c9513420246e92448a564a5ae31706dd4047d81ad39a6dd0c",
+      "operators": [
+        {
+          "name": "Whippet Coaches",
+          "source_path": "/operators/go-whippet"
+        }
+      ],
+      "attribution": "Timetable data from bustimes.org",
+      "calendar_id": "9121988",
+      "calendar_label": "Monday to Friday (not bank holidays)",
+      "schedule_scope": "service_calendar"
+    },
+    {
+      "url": "https://bustimes.org/services/2-biggleswade-ickwell-blunham-tempsford-sandy-po-2",
+      "service_slug": "2-biggleswade-ickwell-blunham-tempsford-sandy-po-2",
+      "route_name": "2",
+      "schedule_date": "2026-11-18",
+      "tables": 2,
+      "stop_rows": 93,
+      "nonempty_time_cells": 93,
+      "parsed_file": "service-003.json",
+      "source_response_sha256": "400400534c0f8d72a8d25e43d5f63e463ef00b150867cff3236701f14c15f495",
+      "operators": [
+        {
+          "name": "Ivel Sprinter",
+          "source_path": "/operators/ivel-sprinter"
+        }
+      ],
+      "attribution": "Timetable data from the Traveline National Dataset (TNDS), 17 November 2026",
+      "calendar_id": null,
+      "calendar_label": null,
+      "schedule_scope": "explicit_date"
+    },
+    {
+      "url": "https://bustimes.org/services/2-milton-addenbrookes",
+      "service_slug": "2-milton-addenbrookes",
+      "route_name": "2",
+      "schedule_date": "2026-11-18",
+      "tables": 2,
+      "stop_rows": 79,
+      "nonempty_time_cells": 3842,
+      "parsed_file": "service-004.json",
+      "source_response_sha256": "267b471673c3dfc9c2d8ea641d1dfc3ff37876fa23da7b8e0ff11316132f94a6",
+      "operators": [
+        {
+          "name": "Stagecoach East",
+          "source_path": "/operators/stagecoach-in-cambridge"
+        }
+      ],
+      "attribution": "Timetable data from Stagecoach East, 18 November 2026",
+      "calendar_id": null,
+      "calendar_label": null,
+      "schedule_scope": "explicit_date"
+    },
+    {
+      "url": "https://bustimes.org/services/x2-corby-cambridge-rail-station",
+      "service_slug": "x2-corby-cambridge-rail-station",
+      "route_name": "X2",
+      "schedule_date": "2026-11-18",
+      "tables": 2,
+      "stop_rows": 85,
+      "nonempty_time_cells": 297,
+      "parsed_file": "service-005.json",
+      "source_response_sha256": "bacc1e8b513ce3a6d50bb7ebe12f3a389995be524fb010142f32287211acaf28",
+      "operators": [
+        {
+          "name": "Whippet Coaches",
+          "source_path": "/operators/go-whippet"
+        }
+      ],
+      "attribution": "Timetable data from Whippet Coaches/Bus Open Data Service (BODS), 30 October 2026",
+      "calendar_id": null,
+      "calendar_label": null,
+      "schedule_scope": "explicit_date"
+    },
+    {
+      "url": "https://bustimes.org/services/3-biggleswade-langford-broom-caldecote-biggleswa-2",
+      "service_slug": "3-biggleswade-langford-broom-caldecote-biggleswa-2",
+      "route_name": "3",
+      "schedule_date": "2026-11-18",
+      "tables": 2,
+      "stop_rows": 117,
+      "nonempty_time_cells": 117,
+      "parsed_file": "service-006.json",
+      "source_response_sha256": "9b9a101bd596c286e271579dee78b52ce9b64e686b6de4286162defc6c1e24cb",
+      "operators": [
+        {
+          "name": "Ivel Sprinter",
+          "source_path": "/operators/ivel-sprinter"
+        }
+      ],
+      "attribution": "Timetable data from the Traveline National Dataset (TNDS), 17 November 2026",
+      "calendar_id": null,
+      "calendar_label": null,
+      "schedule_scope": "explicit_date"
+    },
+    {
+      "url": "https://bustimes.org/services/3-fison-road-cherry-hinton",
+      "service_slug": "3-fison-road-cherry-hinton",
+      "route_name": "3",
+      "schedule_date": "2026-11-18",
+      "tables": 2,
+      "stop_rows": 77,
+      "nonempty_time_cells": 4383,
+      "parsed_file": "service-007.json",
+      "source_response_sha256": "145a33dd8f01afcf6faae608ffff1cfbc50b83f1db0d322fbfdae1129b8bba11",
+      "operators": [
+        {
+          "name": "Stagecoach East",
+          "source_path": "/operators/stagecoach-in-cambridge"
+        }
+      ],
+      "attribution": "Timetable data from Stagecoach East, 18 November 2026",
+      "calendar_id": null,
+      "calendar_label": null,
+      "schedule_scope": "explicit_date"
+    },
+    {
+      "url": "https://bustimes.org/services/x3-huntingdon-addenbrookes",
+      "service_slug": "x3-huntingdon-addenbrookes",
+      "route_name": "X3",
+      "schedule_date": "2026-11-18",
+      "tables": 2,
+      "stop_rows": 115,
+      "nonempty_time_cells": 2180,
+      "parsed_file": "service-008.json",
+      "source_response_sha256": "8b770f57fea119bfe4394f395dd0d8b1f4972d85c7ead65709b7452194ec997d",
+      "operators": [
+        {
+          "name": "Whippet Coaches",
+          "source_path": "/operators/go-whippet"
+        }
+      ],
+      "attribution": "Timetable data from Whippet Coaches/Bus Open Data Service (BODS), 30 October 2026",
+      "calendar_id": null,
+      "calendar_label": null,
+      "schedule_scope": "explicit_date"
+    },
+    {
+      "url": "https://bustimes.org/services/4-drummer-st-bus-station-bay-10-lower-cambourne-wo",
+      "service_slug": "4-drummer-st-bus-station-bay-10-lower-cambourne-wo",
+      "route_name": "4",
+      "schedule_date": "2026-11-18",
+      "tables": 2,
+      "stop_rows": 81,
+      "nonempty_time_cells": 2826,
+      "parsed_file": "service-009.json",
+      "source_response_sha256": "9228097b94afaabe89000c5d3eaf25d4319e9d3de3b1e699d10daeee37940581",
+      "operators": [
+        {
+          "name": "Stagecoach East",
+          "source_path": "/operators/stagecoach-in-cambridge"
+        }
+      ],
+      "attribution": "Timetable data from Stagecoach East, 18 November 2026",
+      "calendar_id": null,
+      "calendar_label": null,
+      "schedule_scope": "explicit_date"
+    },
+    {
+      "url": "https://bustimes.org/services/5-cambridge-longstanton",
+      "service_slug": "5-cambridge-longstanton",
+      "route_name": "5",
+      "schedule_date": "2026-11-18",
+      "tables": 2,
+      "stop_rows": 62,
+      "nonempty_time_cells": 1922,
+      "parsed_file": "service-010.json",
+      "source_response_sha256": "ab3d18698614256a3b2a9b065a9b883efcaa8d006d0fb4d524a3375b3e400cee",
+      "operators": [
+        {
+          "name": "Stagecoach East",
+          "source_path": "/operators/stagecoach-in-cambridge"
+        }
+      ],
+      "attribution": "Timetable data from Stagecoach East, 18 November 2026",
+      "calendar_id": null,
+      "calendar_label": null,
+      "schedule_scope": "explicit_date"
+    },
+    {
+      "url": "https://bustimes.org/services/6-cambridge-oakington",
+      "service_slug": "6-cambridge-oakington",
+      "route_name": "6",
+      "schedule_date": "2026-11-18",
+      "tables": 2,
+      "stop_rows": 53,
+      "nonempty_time_cells": 886,
+      "parsed_file": "service-011.json",
+      "source_response_sha256": "28534a6d0b6c538d78ad2973c1922df45876c8064c537ab7353184e799f41b03",
+      "operators": [
+        {
+          "name": "Stagecoach East",
+          "source_path": "/operators/stagecoach-in-cambridge"
+        }
+      ],
+      "attribution": "Timetable data from Stagecoach East, 18 November 2026",
+      "calendar_id": null,
+      "calendar_label": null,
+      "schedule_scope": "explicit_date"
+    },
+    {
+      "url": "https://bustimes.org/services/7-saffron-walden-cambridge",
+      "service_slug": "7-saffron-walden-cambridge",
+      "route_name": "7",
+      "schedule_date": "2026-11-18",
+      "tables": 2,
+      "stop_rows": 99,
+      "nonempty_time_cells": 2852,
+      "parsed_file": "service-012.json",
+      "source_response_sha256": "b94694a6c3c3102f2608ea34f58a03deaa634fc8d13753822746969d3c2ba332",
+      "operators": [
+        {
+          "name": "Stagecoach East",
+          "source_path": "/operators/stagecoach-in-cambridge"
+        }
+      ],
+      "attribution": "Timetable data from Stagecoach East, 18 November 2026",
+      "calendar_id": null,
+      "calendar_label": null,
+      "schedule_scope": "explicit_date"
+    },
+    {
+      "url": "https://bustimes.org/services/8-cambridge-chatteris-2",
+      "service_slug": "8-cambridge-chatteris-2",
+      "route_name": "8",
+      "schedule_date": "2026-11-18",
+      "tables": 2,
+      "stop_rows": 86,
+      "nonempty_time_cells": 1683,
+      "parsed_file": "service-013.json",
+      "source_response_sha256": "df7ab305a3cb6cb846fc8bb0f0cde84de9742e28e3ac94aaeb56f4fa20690996",
+      "operators": [
+        {
+          "name": "Stagecoach East",
+          "source_path": "/operators/stagecoach-in-cambridge"
+        }
+      ],
+      "attribution": "Timetable data from Stagecoach East, 18 November 2026",
+      "calendar_id": null,
+      "calendar_label": null,
+      "schedule_scope": "explicit_date"
+    },
+    {
+      "url": "https://bustimes.org/services/8-papworth-everard-cambridge",
+      "service_slug": "8-papworth-everard-cambridge",
+      "route_name": "8",
+      "schedule_date": null,
+      "tables": 2,
+      "stop_rows": 65,
+      "nonempty_time_cells": 181,
+      "parsed_file": "service-014.json",
+      "source_response_sha256": "8579a2b039dc0438716817886715cef08cf3c9e3cd344bcb50fe90378f4d15af",
+      "operators": [
+        {
+          "name": "Stephensons of Essex",
+          "source_path": "/operators/stephensons-of-essex"
+        }
+      ],
+      "attribution": "Timetable data from Stephensons of Essex/Bus Open Data Service (BODS), 9 November 2026",
+      "calendar_id": null,
+      "calendar_label": "Monday to Saturday",
+      "schedule_scope": "service_calendar"
+    },
+    {
+      "url": "https://bustimes.org/services/8a-cambridge-orchard-park",
+      "service_slug": "8a-cambridge-orchard-park",
+      "route_name": "8A",
+      "schedule_date": "2026-11-18",
+      "tables": 2,
+      "stop_rows": 56,
+      "nonempty_time_cells": 373,
+      "parsed_file": "service-015.json",
+      "source_response_sha256": "4b5184d0e12a861f8a71f3428feb758966ef73b1b753fa7d20309734d7050aea",
+      "operators": [
+        {
+          "name": "Stagecoach East",
+          "source_path": "/operators/stagecoach-in-cambridge"
+        }
+      ],
+      "attribution": "Timetable data from Stagecoach East, 18 November 2026",
+      "calendar_id": null,
+      "calendar_label": null,
+      "schedule_scope": "explicit_date"
+    },
+    {
+      "url": "https://bustimes.org/services/9-drummer-st-bay-5-littleport-church-ln",
+      "service_slug": "9-drummer-st-bay-5-littleport-church-ln",
+      "route_name": "9",
+      "schedule_date": "2026-11-18",
+      "tables": 2,
+      "stop_rows": 103,
+      "nonempty_time_cells": 892,
+      "parsed_file": "service-016.json",
+      "source_response_sha256": "e525a4bd98bfa441f74ac659b0e745d8cfb040b04288359ee45377e5d4370400",
+      "operators": [
+        {
+          "name": "A2B Bus and Coach",
+          "source_path": "/operators/a2b-bus-and-coach"
+        }
+      ],
+      "attribution": "Timetable data from A2B Travel Group Ltd/Bus Open Data Service (BODS), 2 August 2026",
+      "calendar_id": null,
+      "calendar_label": null,
+      "schedule_scope": "explicit_date"
+    },
+    {
+      "url": "https://bustimes.org/services/12-cambridge-bottisham-newmarket",
+      "service_slug": "12-cambridge-bottisham-newmarket",
+      "route_name": "12",
+      "schedule_date": null,
+      "tables": 2,
+      "stop_rows": 48,
+      "nonempty_time_cells": 576,
+      "parsed_file": "service-017.json",
+      "source_response_sha256": "e082542361124b7458d69ba920dbed9399275c36f48deddbb8c99285beb8a132",
+      "operators": [
+        {
+          "name": "Stephensons of Essex",
+          "source_path": "/operators/stephensons-of-essex"
+        }
+      ],
+      "attribution": "Timetable data from Stephensons of Essex/Bus Open Data Service (BODS), 9 November 2026",
+      "calendar_id": null,
+      "calendar_label": "Monday to Saturday",
+      "schedule_scope": "service_calendar"
+    },
+    {
+      "url": "https://bustimes.org/services/13-drummer-st-bus-station-bay-6-kedington-mill-roa",
+      "service_slug": "13-drummer-st-bus-station-bay-6-kedington-mill-roa",
+      "route_name": "13",
+      "schedule_date": "2026-11-18",
+      "tables": 2,
+      "stop_rows": 152,
+      "nonempty_time_cells": 1860,
+      "parsed_file": "service-018.json",
+      "source_response_sha256": "16af446dd2c5e3215db398d3c624d6860fa2e3c5ab1758562b22cf813ffdbb0c",
+      "operators": [
+        {
+          "name": "Stagecoach East",
+          "source_path": "/operators/stagecoach-in-cambridge"
+        }
+      ],
+      "attribution": "Timetable data from Stagecoach East, 18 November 2026",
+      "calendar_id": null,
+      "calendar_label": null,
+      "schedule_scope": "explicit_date"
+    },
+    {
+      "url": "https://bustimes.org/services/13a-haverhill-linton-the-abingtons-cambridge",
+      "service_slug": "13a-haverhill-linton-the-abingtons-cambridge",
+      "route_name": "13A",
+      "schedule_date": "2026-11-18",
+      "tables": 2,
+      "stop_rows": 139,
+      "nonempty_time_cells": 1709,
+      "parsed_file": "service-019.json",
+      "source_response_sha256": "650a008119984582de1a32d404b221746f0e291d1a2f2dc8abcfc2f47d427015",
+      "operators": [
+        {
+          "name": "Stagecoach East",
+          "source_path": "/operators/stagecoach-in-cambridge"
+        }
+      ],
+      "attribution": "Timetable data from Stagecoach East, 18 November 2026",
+      "calendar_id": null,
+      "calendar_label": null,
+      "schedule_scope": "explicit_date"
+    },
+    {
+      "url": "https://bustimes.org/services/x13-drummer-st-bus-station-bay-6-kedington-mill-ro",
+      "service_slug": "x13-drummer-st-bus-station-bay-6-kedington-mill-ro",
+      "route_name": "X13",
+      "schedule_date": "2026-11-18",
+      "tables": 2,
+      "stop_rows": 80,
+      "nonempty_time_cells": 702,
+      "parsed_file": "service-020.json",
+      "source_response_sha256": "f1930b1029136a07a75983b0ce4897747f789c5107363b8225c221602da4d79c",
+      "operators": [
+        {
+          "name": "Stagecoach East",
+          "source_path": "/operators/stagecoach-in-cambridge"
+        }
+      ],
+      "attribution": "Timetable data from Stagecoach East, 18 November 2026",
+      "calendar_id": null,
+      "calendar_label": null,
+      "schedule_scope": "explicit_date"
+    },
+    {
+      "url": "https://bustimes.org/services/16a-gt-thurlow-fulbourn-teversham-cambridge",
+      "service_slug": "16a-gt-thurlow-fulbourn-teversham-cambridge",
+      "route_name": "16A",
+      "schedule_date": null,
+      "tables": 2,
+      "stop_rows": 110,
+      "nonempty_time_cells": 110,
+      "parsed_file": "service-021.json",
+      "source_response_sha256": "c442e94c4d2d59b3dd8cab4c641c04527eab209fedb4270698231bc0783900a2",
+      "operators": [
+        {
+          "name": "A2B Bus and Coach",
+          "source_path": "/operators/a2b-bus-and-coach"
+        }
+      ],
+      "attribution": "Timetable data from A2B Travel Group Ltd/Bus Open Data Service (BODS), 2 August 2026",
+      "calendar_id": "9444941",
+      "calendar_label": "Monday to Friday",
+      "schedule_scope": "service_calendar"
+    },
+    {
+      "url": "https://bustimes.org/services/17-royston-bassingbourn-guilden-morden",
+      "service_slug": "17-royston-bassingbourn-guilden-morden",
+      "route_name": "17",
+      "schedule_date": "2026-11-18",
+      "tables": 2,
+      "stop_rows": 225,
+      "nonempty_time_cells": 784,
+      "parsed_file": "service-022.json",
+      "source_response_sha256": "3ed2117c1a5904e8d1e4844c1bd487906f98c6aa80d7982e46fc8692946eb82b",
+      "operators": [
+        {
+          "name": "A2B Bus and Coach",
+          "source_path": "/operators/a2b-bus-and-coach"
+        }
+      ],
+      "attribution": "Timetable data from A2B Travel Group Ltd/Bus Open Data Service (BODS), 2 August 2026",
+      "calendar_id": null,
+      "calendar_label": null,
+      "schedule_scope": "explicit_date"
+    },
+    {
+      "url": "https://bustimes.org/services/18-cambridge-cambourne-st-neots",
+      "service_slug": "18-cambridge-cambourne-st-neots",
+      "route_name": "18",
+      "schedule_date": "2026-11-18",
+      "tables": 2,
+      "stop_rows": 143,
+      "nonempty_time_cells": 1163,
+      "parsed_file": "service-023.json",
+      "source_response_sha256": "e2392d312c3dc28c3104720d4ca34a5b6599b43e34ac917457d0f11fbc85737e",
+      "operators": [
+        {
+          "name": "Whippet Coaches",
+          "source_path": "/operators/go-whippet"
+        }
+      ],
+      "attribution": "Timetable data from Whippet Coaches/Bus Open Data Service (BODS), 30 October 2026",
+      "calendar_id": null,
+      "calendar_label": null,
+      "schedule_scope": "explicit_date"
+    },
+    {
+      "url": "https://bustimes.org/services/26-cambridge-royston-2",
+      "service_slug": "26-cambridge-royston-2",
+      "route_name": "26",
+      "schedule_date": "2026-11-18",
+      "tables": 2,
+      "stop_rows": 72,
+      "nonempty_time_cells": 492,
+      "parsed_file": "service-024.json",
+      "source_response_sha256": "e8bbd4bbc5d3eb5dee41cb5e1b6d1e2d4c4fc390049b1275d8f1c990b1b03879",
+      "operators": [
+        {
+          "name": "A2B Bus and Coach",
+          "source_path": "/operators/a2b-bus-and-coach"
+        }
+      ],
+      "attribution": "Timetable data from A2B Travel Group Ltd/Bus Open Data Service (BODS), 2 August 2026",
+      "calendar_id": null,
+      "calendar_label": null,
+      "schedule_scope": "explicit_date"
+    },
+    {
+      "url": "https://bustimes.org/services/75-cambridge-orwell-wrestlingworth",
+      "service_slug": "75-cambridge-orwell-wrestlingworth",
+      "route_name": "75",
+      "schedule_date": "2026-11-18",
+      "tables": 2,
+      "stop_rows": 107,
+      "nonempty_time_cells": 346,
+      "parsed_file": "service-025.json",
+      "source_response_sha256": "c72e9dc3f05789db83e2a014be95ec9d6da4c7ccf812ccc0f947dbb37e048054",
+      "operators": [
+        {
+          "name": "A2B Bus and Coach",
+          "source_path": "/operators/a2b-bus-and-coach"
+        }
+      ],
+      "attribution": "Timetable data from A2B Travel Group Ltd/Bus Open Data Service (BODS), 2 August 2026",
+      "calendar_id": null,
+      "calendar_label": null,
+      "schedule_scope": "explicit_date"
+    },
+    {
+      "url": "https://bustimes.org/services/x75-cambridge-orwell",
+      "service_slug": "x75-cambridge-orwell",
+      "route_name": "X75",
+      "schedule_date": "2026-11-18",
+      "tables": 2,
+      "stop_rows": 109,
+      "nonempty_time_cells": 328,
+      "parsed_file": "service-026.json",
+      "source_response_sha256": "bb4aea31e25c60d1f15ba96d69aa3c4c0af114984ac6a41acb017b3800e9ce7b",
+      "operators": [
+        {
+          "name": "A2B Bus and Coach",
+          "source_path": "/operators/a2b-bus-and-coach"
+        }
+      ],
+      "attribution": "Timetable data from A2B Travel Group Ltd/Bus Open Data Service (BODS), 2 August 2026",
+      "calendar_id": null,
+      "calendar_label": null,
+      "schedule_scope": "explicit_date"
+    },
+    {
+      "url": "https://bustimes.org/services/100-cambridge-city-centre-cambridge-research-park",
+      "service_slug": "100-cambridge-city-centre-cambridge-research-park",
+      "route_name": "100",
+      "schedule_date": null,
+      "tables": 2,
+      "stop_rows": 49,
+      "nonempty_time_cells": 1470,
+      "parsed_file": "service-027.json",
+      "source_response_sha256": "7bdc0d4fd0c8f5ff1216800f08c635a807a0a8d8a571246329bfa7843e730d16",
+      "operators": [
+        {
+          "name": "Central Connect",
+          "source_path": "/operators/central-connect"
+        }
+      ],
+      "attribution": "Timetable data from Transport Made Simple/Bus Open Data Service (BODS), 3 November 2026",
+      "calendar_id": "9730601",
+      "calendar_label": "Monday to Friday",
+      "schedule_scope": "service_calendar"
+    },
+    {
+      "url": "https://bustimes.org/services/114-city-centre-grafton-beehive-addenbrookes",
+      "service_slug": "114-city-centre-grafton-beehive-addenbrookes",
+      "route_name": "114",
+      "schedule_date": "2026-11-18",
+      "tables": 2,
+      "stop_rows": 67,
+      "nonempty_time_cells": 246,
+      "parsed_file": "service-028.json",
+      "source_response_sha256": "7d9190708103a6972408bdfbf5aa94379f765c7119f740d76c34641ccea30964",
+      "operators": [
+        {
+          "name": "A2B Bus and Coach",
+          "source_path": "/operators/a2b-bus-and-coach"
+        },
+        {
+          "name": "Star Cabs",
+          "source_path": "/operators/star-cabs"
+        }
+      ],
+      "attribution": "Timetable data from Star Cabs/Bus Open Data Service (BODS), 17 July 2026, A2B Travel Group Ltd/Bus Open Data Service (BODS), 2 August 2026",
+      "calendar_id": null,
+      "calendar_label": null,
+      "schedule_scope": "explicit_date"
+    },
+    {
+      "url": "https://bustimes.org/services/132-cambridge-saffron-walden",
+      "service_slug": "132-cambridge-saffron-walden",
+      "route_name": "132",
+      "schedule_date": "2026-11-22",
+      "tables": 2,
+      "stop_rows": 91,
+      "nonempty_time_cells": 326,
+      "parsed_file": "service-029.json",
+      "source_response_sha256": "4e9630e01ae10864fe18e82476fd6cefc8e2c11f01a0c15095c4e71134532463",
+      "operators": [
+        {
+          "name": "A2B Bus and Coach",
+          "source_path": "/operators/a2b-bus-and-coach"
+        }
+      ],
+      "attribution": "Timetable data from A2B Travel Group Ltd/Bus Open Data Service (BODS), 12 June 2026",
+      "calendar_id": null,
+      "calendar_label": null,
+      "schedule_scope": "explicit_date"
+    },
+    {
+      "url": "https://bustimes.org/services/199-cambridge-newnham",
+      "service_slug": "199-cambridge-newnham",
+      "route_name": "199",
+      "schedule_date": null,
+      "tables": 2,
+      "stop_rows": 18,
+      "nonempty_time_cells": 18,
+      "parsed_file": "service-030.json",
+      "source_response_sha256": "cadbc1937ee5a61fa6503c9f33ee503142b6334e6acf786c9a2514b0fc56f7cb",
+      "operators": [
+        {
+          "name": "C G Myall & Son",
+          "source_path": "/operators/c-g-myall-son"
+        }
+      ],
+      "attribution": "Timetable data from C G Myall & Son/Bus Open Data Service (BODS), 1 May 2026",
+      "calendar_id": null,
+      "calendar_label": "Tuesdays and Fridays",
+      "schedule_scope": "service_calendar"
+    },
+    {
+      "url": "https://bustimes.org/services/491-london-great-yarmouth",
+      "service_slug": "491-london-great-yarmouth",
+      "route_name": "491",
+      "schedule_date": "2026-11-18",
+      "tables": 2,
+      "stop_rows": 9,
+      "nonempty_time_cells": 9,
+      "parsed_file": "service-031.json",
+      "source_response_sha256": "53d04b8ae0ab793ffe5f6aa584b5cdbc74693f688ad63737d402381f54be604c",
+      "operators": [
+        {
+          "name": "National Express",
+          "source_path": "/operators/national-express"
+        }
+      ],
+      "attribution": "Timetable data from the Bus Open Data Service (BODS), 16 November 2026",
+      "calendar_id": null,
+      "calendar_label": null,
+      "schedule_scope": "explicit_date"
+    },
+    {
+      "url": "https://bustimes.org/services/727-great-yarmouth-heathrow-airport-t5",
+      "service_slug": "727-great-yarmouth-heathrow-airport-t5",
+      "route_name": "727",
+      "schedule_date": "2026-11-18",
+      "tables": 2,
+      "stop_rows": 24,
+      "nonempty_time_cells": 438,
+      "parsed_file": "service-032.json",
+      "source_response_sha256": "d2966d9a134c7d2fa153254d2856a7af16af9a533c57ad712cc268c11c73f417",
+      "operators": [
+        {
+          "name": "National Express",
+          "source_path": "/operators/national-express"
+        }
+      ],
+      "attribution": "Timetable data from the Bus Open Data Service (BODS), 16 November 2026",
+      "calendar_id": null,
+      "calendar_label": null,
+      "schedule_scope": "explicit_date"
+    },
+    {
+      "url": "https://bustimes.org/services/728-great-yarmouth-heathrow-airport-t5",
+      "service_slug": "728-great-yarmouth-heathrow-airport-t5",
+      "route_name": "728",
+      "schedule_date": "2026-11-18",
+      "tables": 2,
+      "stop_rows": 19,
+      "nonempty_time_cells": 84,
+      "parsed_file": "service-033.json",
+      "source_response_sha256": "f36d549c33de70dd43d677b9810ae9504321e5b14fa72e22b1275d879b31c980",
+      "operators": [
+        {
+          "name": "National Express",
+          "source_path": "/operators/national-express"
+        }
+      ],
+      "attribution": "Timetable data from the Bus Open Data Service (BODS), 16 November 2026",
+      "calendar_id": null,
+      "calendar_label": null,
+      "schedule_scope": "explicit_date"
+    },
+    {
+      "url": "https://bustimes.org/services/777-birmingham-stansted-airport-2",
+      "service_slug": "777-birmingham-stansted-airport-2",
+      "route_name": "777",
+      "schedule_date": "2026-11-18",
+      "tables": 2,
+      "stop_rows": 12,
+      "nonempty_time_cells": 83,
+      "parsed_file": "service-034.json",
+      "source_response_sha256": "d5fee047c0c62cceb6079e47563019c760f89ad374bf08ac57a1b0aee1ff0ab9",
+      "operators": [
+        {
+          "name": "National Express",
+          "source_path": "/operators/national-express"
+        }
+      ],
+      "attribution": "Timetable data from the Bus Open Data Service (BODS), 16 November 2026",
+      "calendar_id": null,
+      "calendar_label": null,
+      "schedule_scope": "explicit_date"
+    },
+    {
+      "url": "https://bustimes.org/services/786-cambridge-luton-airport",
+      "service_slug": "786-cambridge-luton-airport",
+      "route_name": "786",
+      "schedule_date": "2026-11-18",
+      "tables": 2,
+      "stop_rows": 6,
+      "nonempty_time_cells": 36,
+      "parsed_file": "service-035.json",
+      "source_response_sha256": "c9928190c05897eeb207d5a395a14346c973f2f4cc68c503983b00b4b1badcc5",
+      "operators": [
+        {
+          "name": "National Express",
+          "source_path": "/operators/national-express"
+        }
+      ],
+      "attribution": "Timetable data from the Bus Open Data Service (BODS), 16 November 2026",
+      "calendar_id": null,
+      "calendar_label": null,
+      "schedule_scope": "explicit_date"
+    },
+    {
+      "url": "https://bustimes.org/services/813-london-great-yarmouth",
+      "service_slug": "813-london-great-yarmouth",
+      "route_name": "813",
+      "schedule_date": "2026-12-25",
+      "tables": 2,
+      "stop_rows": 16,
+      "nonempty_time_cells": 58,
+      "parsed_file": "service-036.json",
+      "source_response_sha256": "e276de104e794ec3457764475ac890503a777450fcbefa53173988f5319ff07e",
+      "operators": [
+        {
+          "name": "National Express",
+          "source_path": "/operators/national-express"
+        }
+      ],
+      "attribution": "Timetable data from the Bus Open Data Service (BODS), 16 November 2026",
+      "calendar_id": null,
+      "calendar_label": null,
+      "schedule_scope": "explicit_date"
+    },
+    {
+      "url": "https://bustimes.org/services/826-london-cambridge",
+      "service_slug": "826-london-cambridge",
+      "route_name": "826",
+      "schedule_date": "2026-12-25",
+      "tables": 2,
+      "stop_rows": 8,
+      "nonempty_time_cells": 32,
+      "parsed_file": "service-037.json",
+      "source_response_sha256": "7582ddf913a4e12b18cd5f3e5117b3eb84d4c2c87edc161e31164473e6ac0bc4",
+      "operators": [
+        {
+          "name": "National Express",
+          "source_path": "/operators/national-express"
+        }
+      ],
+      "attribution": "Timetable data from the Bus Open Data Service (BODS), 16 November 2026",
+      "calendar_id": null,
+      "calendar_label": null,
+      "schedule_scope": "explicit_date"
+    },
+    {
+      "url": "https://bustimes.org/services/905-st-neots-bedford",
+      "service_slug": "905-st-neots-bedford",
+      "route_name": "905",
+      "schedule_date": "2026-11-18",
+      "tables": 2,
+      "stop_rows": 40,
+      "nonempty_time_cells": 980,
+      "parsed_file": "service-038.json",
+      "source_response_sha256": "f5bb6fed9bd3af93b5aac89154f92d7b5388f3328379c67af5b173ac1d5be0cb",
+      "operators": [
+        {
+          "name": "Stagecoach East",
+          "source_path": "/operators/stagecoach-in-cambridge"
+        }
+      ],
+      "attribution": "Timetable data from Stagecoach East, 18 November 2026",
+      "calendar_id": null,
+      "calendar_label": null,
+      "schedule_scope": "explicit_date"
+    },
+    {
+      "url": "https://bustimes.org/services/a-trumpington-the-busway-trumpington-park-and-ri-2",
+      "service_slug": "a-trumpington-the-busway-trumpington-park-and-ri-2",
+      "route_name": "A",
+      "schedule_date": "2026-11-18",
+      "tables": 2,
+      "stop_rows": 71,
+      "nonempty_time_cells": 3964,
+      "parsed_file": "service-039.json",
+      "source_response_sha256": "97164a511b97668e0ee1d649f23539e55a55b416ccf2f6390dcf100290126e02",
+      "operators": [
+        {
+          "name": "Stagecoach East",
+          "source_path": "/operators/stagecoach-in-cambridge"
+        }
+      ],
+      "attribution": "Timetable data from Stagecoach East, 18 November 2026",
+      "calendar_id": null,
+      "calendar_label": null,
+      "schedule_scope": "explicit_date"
+    },
+    {
+      "url": "https://bustimes.org/services/b-hinchingbrooke-cambridge",
+      "service_slug": "b-hinchingbrooke-cambridge",
+      "route_name": "B",
+      "schedule_date": "2026-11-18",
+      "tables": 2,
+      "stop_rows": 120,
+      "nonempty_time_cells": 4550,
+      "parsed_file": "service-040.json",
+      "source_response_sha256": "5397695374b4b026f4f19ddc867138d049767d30f9c858a740e60e057139e8ff",
+      "operators": [
+        {
+          "name": "Stagecoach East",
+          "source_path": "/operators/stagecoach-in-cambridge"
+        }
+      ],
+      "attribution": "Timetable data from Stagecoach East, 18 November 2026",
+      "calendar_id": null,
+      "calendar_label": null,
+      "schedule_scope": "explicit_date"
+    },
+    {
+      "url": "https://bustimes.org/services/b22-peterborough-boomtown-fair",
+      "service_slug": "b22-peterborough-boomtown-fair",
+      "route_name": "B22",
+      "schedule_date": "2027-08-11",
+      "tables": 1,
+      "stop_rows": 3,
+      "nonempty_time_cells": 6,
+      "parsed_file": "service-041.json",
+      "source_response_sha256": "1510d2ace85530b74427e3f8fe99f21971b0737ab3794c1714423f2caa482c35",
+      "operators": [
+        {
+          "name": "National Express",
+          "source_path": "/operators/national-express"
+        }
+      ],
+      "attribution": "Timetable data from the Bus Open Data Service (BODS), 16 November 2026",
+      "calendar_id": null,
+      "calendar_label": null,
+      "schedule_scope": "explicit_date"
+    },
+    {
+      "url": "https://bustimes.org/services/g61-great-yarmouth-glastonbury-festival",
+      "service_slug": "g61-great-yarmouth-glastonbury-festival",
+      "route_name": "G61",
+      "schedule_date": "2027-06-23",
+      "tables": 1,
+      "stop_rows": 6,
+      "nonempty_time_cells": 6,
+      "parsed_file": "service-042.json",
+      "source_response_sha256": "2a9d28afec41a8c884d72546ed535dd03b09e1c348ef466e25a53359e3d3dcea",
+      "operators": [
+        {
+          "name": "National Express",
+          "source_path": "/operators/national-express"
+        }
+      ],
+      "attribution": "Timetable data from the Bus Open Data Service (BODS), 16 November 2026",
+      "calendar_id": null,
+      "calendar_label": null,
+      "schedule_scope": "explicit_date"
+    },
+    {
+      "url": "https://bustimes.org/services/pr1-cambridge-city-centre-madingley-road-parkride",
+      "service_slug": "pr1-cambridge-city-centre-madingley-road-parkride",
+      "route_name": "PR1",
+      "schedule_date": "2026-11-18",
+      "tables": 2,
+      "stop_rows": 25,
+      "nonempty_time_cells": 727,
+      "parsed_file": "service-043.json",
+      "source_response_sha256": "afcce8926aac613106734101d8ed829c76243a0e8ffb740e07b39a617813395d",
+      "operators": [
+        {
+          "name": "Stagecoach East",
+          "source_path": "/operators/stagecoach-in-cambridge"
+        }
+      ],
+      "attribution": "Timetable data from Stagecoach East, 18 November 2026",
+      "calendar_id": null,
+      "calendar_label": null,
+      "schedule_scope": "explicit_date"
+    },
+    {
+      "url": "https://bustimes.org/services/pr2-cambridge-city-centre-stetchworth",
+      "service_slug": "pr2-cambridge-city-centre-stetchworth",
+      "route_name": "PR2",
+      "schedule_date": "2026-11-18",
+      "tables": 2,
+      "stop_rows": 76,
+      "nonempty_time_cells": 1011,
+      "parsed_file": "service-044.json",
+      "source_response_sha256": "8dc0cd5002605be5858c042393bf7fd25524582f8ae334ed0599ccad51686848",
+      "operators": [
+        {
+          "name": "Stagecoach East",
+          "source_path": "/operators/stagecoach-in-cambridge"
+        }
+      ],
+      "attribution": "Timetable data from Stagecoach East, 18 November 2026",
+      "calendar_id": null,
+      "calendar_label": null,
+      "schedule_scope": "explicit_date"
+    },
+    {
+      "url": "https://bustimes.org/services/pr2f-newmarket-rd-park-ride-ditton-walk",
+      "service_slug": "pr2f-newmarket-rd-park-ride-ditton-walk",
+      "route_name": "PR2F",
+      "schedule_date": "2026-11-18",
+      "tables": 2,
+      "stop_rows": 13,
+      "nonempty_time_cells": 26,
+      "parsed_file": "service-045.json",
+      "source_response_sha256": "6306af1446c866e288a2082df0edd6bec601ec4bae20d21e07e9a085f7cfc887",
+      "operators": [
+        {
+          "name": "Stagecoach East",
+          "source_path": "/operators/stagecoach-in-cambridge"
+        }
+      ],
+      "attribution": "Timetable data from Stagecoach East, 18 November 2026",
+      "calendar_id": null,
+      "calendar_label": null,
+      "schedule_scope": "explicit_date"
+    },
+    {
+      "url": "https://bustimes.org/services/pr3-cambridge-city-centre-trumpington-parkride",
+      "service_slug": "pr3-cambridge-city-centre-trumpington-parkride",
+      "route_name": "PR3",
+      "schedule_date": "2026-11-18",
+      "tables": 2,
+      "stop_rows": 22,
+      "nonempty_time_cells": 1279,
+      "parsed_file": "service-046.json",
+      "source_response_sha256": "5290a6d991b4fdf3e9449ee7390eb5938883a8592f944b79132f4818e85ac40e",
+      "operators": [
+        {
+          "name": "Stagecoach East",
+          "source_path": "/operators/stagecoach-in-cambridge"
+        }
+      ],
+      "attribution": "Timetable data from Stagecoach East, 18 November 2026",
+      "calendar_id": null,
+      "calendar_label": null,
+      "schedule_scope": "explicit_date"
+    },
+    {
+      "url": "https://bustimes.org/services/pr4-cambridge-city-centre-babraham-road-parkride",
+      "service_slug": "pr4-cambridge-city-centre-babraham-road-parkride",
+      "route_name": "PR4",
+      "schedule_date": "2026-11-18",
+      "tables": 2,
+      "stop_rows": 24,
+      "nonempty_time_cells": 712,
+      "parsed_file": "service-047.json",
+      "source_response_sha256": "619d4aa2508fa8a7cae1fab6d62855f88789a74021d6be046f2921c0ddce8885",
+      "operators": [
+        {
+          "name": "Stagecoach East",
+          "source_path": "/operators/stagecoach-in-cambridge"
+        }
+      ],
+      "attribution": "Timetable data from Stagecoach East, 18 November 2026",
+      "calendar_id": null,
+      "calendar_label": null,
+      "schedule_scope": "explicit_date"
+    },
+    {
+      "url": "https://bustimes.org/services/pr5-cambridge-city-centre-milton-parkride",
+      "service_slug": "pr5-cambridge-city-centre-milton-parkride",
+      "route_name": "PR5",
+      "schedule_date": "2026-11-18",
+      "tables": 2,
+      "stop_rows": 47,
+      "nonempty_time_cells": 1539,
+      "parsed_file": "service-048.json",
+      "source_response_sha256": "8d28ff6e1854ab8d10d039fa22651dc74635218bd2d8be5cdccab9fee57b0355",
+      "operators": [
+        {
+          "name": "Stagecoach East",
+          "source_path": "/operators/stagecoach-in-cambridge"
+        }
+      ],
+      "attribution": "Timetable data from Stagecoach East, 18 November 2026",
+      "calendar_id": null,
+      "calendar_label": null,
+      "schedule_scope": "explicit_date"
+    },
+    {
+      "url": "https://bustimes.org/services/t1-huntingdon-cambridge",
+      "service_slug": "t1-huntingdon-cambridge",
+      "route_name": "T1",
+      "schedule_date": "2026-11-18",
+      "tables": 2,
+      "stop_rows": 56,
+      "nonempty_time_cells": 876,
+      "parsed_file": "service-049.json",
+      "source_response_sha256": "f9755f394d3c6425d3be946c28a6da77bd75af94e6d19065537da89c3033485b",
+      "operators": [
+        {
+          "name": "Whippet Coaches",
+          "source_path": "/operators/go-whippet"
+        }
+      ],
+      "attribution": "Timetable data from Whippet Coaches/Bus Open Data Service (BODS), 30 October 2026",
+      "calendar_id": null,
+      "calendar_label": null,
+      "schedule_scope": "explicit_date"
+    },
+    {
+      "url": "https://bustimes.org/services/t2-madingley-rd-pr-newmarket-rd-pr",
+      "service_slug": "t2-madingley-rd-pr-newmarket-rd-pr",
+      "route_name": "T2",
+      "schedule_date": "2026-11-18",
+      "tables": 2,
+      "stop_rows": 56,
+      "nonempty_time_cells": 896,
+      "parsed_file": "service-050.json",
+      "source_response_sha256": "f8d35c8750c9f56e12fb6fe935c61e633c0ffd5304961ee39f2a539e859d2d20",
+      "operators": [
+        {
+          "name": "Stagecoach East",
+          "source_path": "/operators/stagecoach-in-cambridge"
+        }
+      ],
+      "attribution": "Timetable data from Stagecoach East, 18 November 2026",
+      "calendar_id": null,
+      "calendar_label": null,
+      "schedule_scope": "explicit_date"
+    },
+    {
+      "url": "https://bustimes.org/services/t3-grantchester-fulbourn",
+      "service_slug": "t3-grantchester-fulbourn",
+      "route_name": "T3",
+      "schedule_date": "2026-11-18",
+      "tables": 2,
+      "stop_rows": 68,
+      "nonempty_time_cells": 1086,
+      "parsed_file": "service-051.json",
+      "source_response_sha256": "815381461ce284dae92b181ffde23c48dad4e8772eefcadd234f8501a14c78dd",
+      "operators": [
+        {
+          "name": "Stagecoach East",
+          "source_path": "/operators/stagecoach-in-cambridge"
+        }
+      ],
+      "attribution": "Timetable data from Stagecoach East, 18 November 2026",
+      "calendar_id": null,
+      "calendar_label": null,
+      "schedule_scope": "explicit_date"
+    },
+    {
+      "url": "https://bustimes.org/services/t4-addenbrookes-hospital-bus-station-newmarket-bus",
+      "service_slug": "t4-addenbrookes-hospital-bus-station-newmarket-bus",
+      "route_name": "T4",
+      "schedule_date": "2026-11-18",
+      "tables": 2,
+      "stop_rows": 137,
+      "nonempty_time_cells": 1679,
+      "parsed_file": "service-052.json",
+      "source_response_sha256": "4c31239926e6df5e9214545743f33e347183accad787eda6a5fc1d4bec5d316e",
+      "operators": [
+        {
+          "name": "Stagecoach East",
+          "source_path": "/operators/stagecoach-in-cambridge"
+        }
+      ],
+      "attribution": "Timetable data from Stagecoach East, 18 November 2026",
+      "calendar_id": null,
+      "calendar_label": null,
+      "schedule_scope": "explicit_date"
+    },
+    {
+      "url": "https://bustimes.org/services/t5-cambridge-burwell-soham",
+      "service_slug": "t5-cambridge-burwell-soham",
+      "route_name": "T5",
+      "schedule_date": "2026-11-18",
+      "tables": 2,
+      "stop_rows": 82,
+      "nonempty_time_cells": 984,
+      "parsed_file": "service-053.json",
+      "source_response_sha256": "b19d21460b2641220481b3cd7a88e7f8473c05a66bb488662e9ada3a5e9fccf9",
+      "operators": [
+        {
+          "name": "A2B Bus and Coach",
+          "source_path": "/operators/a2b-bus-and-coach"
+        }
+      ],
+      "attribution": "Timetable data from A2B Travel Group Ltd/Bus Open Data Service (BODS), 2 August 2026",
+      "calendar_id": null,
+      "calendar_label": null,
+      "schedule_scope": "explicit_date"
+    },
+    {
+      "url": "https://bustimes.org/services/t29-peterborough-twickenham-stadium",
+      "service_slug": "t29-peterborough-twickenham-stadium",
+      "route_name": "T29",
+      "schedule_date": "2026-11-21",
+      "tables": 2,
+      "stop_rows": 8,
+      "nonempty_time_cells": 8,
+      "parsed_file": "service-054.json",
+      "source_response_sha256": "2f0feb16fef8585f3154bfada56acad41dbd9e123d0228ecae3c6a0518789cb4",
+      "operators": [
+        {
+          "name": "National Express",
+          "source_path": "/operators/national-express"
+        }
+      ],
+      "attribution": "Timetable data from the Bus Open Data Service (BODS), 16 November 2026",
+      "calendar_id": null,
+      "calendar_label": null,
+      "schedule_scope": "explicit_date"
+    },
+    {
+      "url": "https://bustimes.org/services/u1-girton-corner-biomedical-campus",
+      "service_slug": "u1-girton-corner-biomedical-campus",
+      "route_name": "U1",
+      "schedule_date": "2026-11-18",
+      "tables": 2,
+      "stop_rows": 59,
+      "nonempty_time_cells": 1622,
+      "parsed_file": "service-055.json",
+      "source_response_sha256": "d94316c37cc883bd6baab05a4a52ede2fea07c4fa89c65b1c83efbab32d43610",
+      "operators": [
+        {
+          "name": "Whippet Coaches",
+          "source_path": "/operators/go-whippet"
+        }
+      ],
+      "attribution": "Timetable data from Whippet Coaches/Bus Open Data Service (BODS), 30 October 2026",
+      "calendar_id": null,
+      "calendar_label": null,
+      "schedule_scope": "explicit_date"
+    },
+    {
+      "url": "https://bustimes.org/services/u2-eddington-biomedical-campus",
+      "service_slug": "u2-eddington-biomedical-campus",
+      "route_name": "U2",
+      "schedule_date": "2026-11-18",
+      "tables": 2,
+      "stop_rows": 66,
+      "nonempty_time_cells": 1623,
+      "parsed_file": "service-056.json",
+      "source_response_sha256": "71112e0138eace0be8154988ad379ed4e04304e6042cd0fa937b238c922a6f4d",
+      "operators": [
+        {
+          "name": "Whippet Coaches",
+          "source_path": "/operators/go-whippet"
+        }
+      ],
+      "attribution": "Timetable data from Whippet Coaches/Bus Open Data Service (BODS), 30 October 2026",
+      "calendar_id": null,
+      "calendar_label": null,
+      "schedule_scope": "explicit_date"
+    },
+    {
+      "url": "https://bustimes.org/services/uk066-cambridge-london-stratford-brighton",
+      "service_slug": "uk066-cambridge-london-stratford-brighton",
+      "route_name": "UK066",
+      "schedule_date": "2026-11-18",
+      "tables": 2,
+      "stop_rows": 14,
+      "nonempty_time_cells": 88,
+      "parsed_file": "service-057.json",
+      "source_response_sha256": "bdfac5ed691701a13c595eb0a8dda375ddaf5ef503a4770183194f9f7d093712",
+      "operators": [
+        {
+          "name": "FlixBus",
+          "source_path": "/operators/flixbus"
+        }
+      ],
+      "attribution": "Timetable data from FlixBus, 15 November 2026",
+      "calendar_id": null,
+      "calendar_label": null,
+      "schedule_scope": "explicit_date"
+    },
+    {
+      "url": "https://bustimes.org/services/uk083-norwich-cambridge-birmingham",
+      "service_slug": "uk083-norwich-cambridge-birmingham",
+      "route_name": "UK083",
+      "schedule_date": "2026-11-18",
+      "tables": 2,
+      "stop_rows": 8,
+      "nonempty_time_cells": 16,
+      "parsed_file": "service-058.json",
+      "source_response_sha256": "614face5dc368ef843c236b4254af9739fd298167054042b0a1ee13ba1bb151e",
+      "operators": [
+        {
+          "name": "FlixBus",
+          "source_path": "/operators/flixbus"
+        }
+      ],
+      "attribution": "Timetable data from FlixBus, 15 November 2026",
+      "calendar_id": null,
+      "calendar_label": null,
+      "schedule_scope": "explicit_date"
+    },
+    {
+      "url": "https://bustimes.org/services/uk950-norwich-cambridge-heathrow",
+      "service_slug": "uk950-norwich-cambridge-heathrow",
+      "route_name": "UK950",
+      "schedule_date": "2026-11-18",
+      "tables": 2,
+      "stop_rows": 14,
+      "nonempty_time_cells": 86,
+      "parsed_file": "service-059.json",
+      "source_response_sha256": "c80a7cd4a379fdf1efe4d4a3d3a03c519219bb1075cb3d730a7a54fca14f7ea3",
+      "operators": [
+        {
+          "name": "FlixBus",
+          "source_path": "/operators/flixbus"
+        }
+      ],
+      "attribution": "Timetable data from FlixBus, 15 November 2026",
+      "calendar_id": null,
+      "calendar_label": null,
+      "schedule_scope": "explicit_date"
+    },
+    {
+      "url": "https://bustimes.org/services/w6-meppershall-gravenhurst-meppershall-shefford-st",
+      "service_slug": "w6-meppershall-gravenhurst-meppershall-shefford-st",
+      "route_name": "W6",
+      "schedule_date": "2026-11-25",
+      "tables": 2,
+      "stop_rows": 54,
+      "nonempty_time_cells": 54,
+      "parsed_file": "service-060.json",
+      "source_response_sha256": "54a2b7d16915736fda6d3e7cfc4ba79bc3ec0e0309505d861b2484c48c87aad2",
+      "operators": [
+        {
+          "name": "Wanderbus",
+          "source_path": "/operators/wanderbus"
+        }
+      ],
+      "attribution": "Timetable data from the Traveline National Dataset (TNDS), 17 November 2026",
+      "calendar_id": null,
+      "calendar_label": null,
+      "schedule_scope": "explicit_date"
+    },
+    {
+      "url": "https://bustimes.org/services/w6a-meppershall-shillington-stotfold-cambridge",
+      "service_slug": "w6a-meppershall-shillington-stotfold-cambridge",
+      "route_name": "W6A",
+      "schedule_date": "2026-11-25",
+      "tables": 2,
+      "stop_rows": 65,
+      "nonempty_time_cells": 65,
+      "parsed_file": "service-061.json",
+      "source_response_sha256": "3d5134103851b770739f1825eae9bcd9d1ba4d9df8dc7265de3d32f324754ca8",
+      "operators": [
+        {
+          "name": "Wanderbus",
+          "source_path": "/operators/wanderbus"
+        }
+      ],
+      "attribution": "Timetable data from the Traveline National Dataset (TNDS), 17 November 2026",
+      "calendar_id": null,
+      "calendar_label": null,
+      "schedule_scope": "explicit_date"
+    },
+    {
+      "url": "https://bustimes.org/services/w29-peterborough-city-centre-wembley-park",
+      "service_slug": "w29-peterborough-city-centre-wembley-park",
+      "route_name": "W29",
+      "schedule_date": "2027-06-18",
+      "tables": 2,
+      "stop_rows": 8,
+      "nonempty_time_cells": 8,
+      "parsed_file": "service-062.json",
+      "source_response_sha256": "511984a47668995fde9f35f95a109cf9a36cd2afec39fa61bcc7e3f032794203",
+      "operators": [
+        {
+          "name": "National Express",
+          "source_path": "/operators/national-express"
+        }
+      ],
+      "attribution": "Timetable data from the Bus Open Data Service (BODS), 16 November 2026",
+      "calendar_id": null,
+      "calendar_label": null,
+      "schedule_scope": "explicit_date"
+    }
+  ],
+  "failed_pages": [],
+  "discovered_service_urls": [
+    "https://bustimes.org/services/1-arbury-fulbourn",
+    "https://bustimes.org/services/x1-blue-arrow-peterborough-huntingdon-cambridge",
+    "https://bustimes.org/services/2-biggleswade-ickwell-blunham-tempsford-sandy-po-2",
+    "https://bustimes.org/services/2-milton-addenbrookes",
+    "https://bustimes.org/services/x2-corby-cambridge-rail-station",
+    "https://bustimes.org/services/3-biggleswade-langford-broom-caldecote-biggleswa-2",
+    "https://bustimes.org/services/3-fison-road-cherry-hinton",
+    "https://bustimes.org/services/x3-huntingdon-addenbrookes",
+    "https://bustimes.org/services/4-drummer-st-bus-station-bay-10-lower-cambourne-wo",
+    "https://bustimes.org/services/5-cambridge-longstanton",
+    "https://bustimes.org/services/6-cambridge-oakington",
+    "https://bustimes.org/services/7-saffron-walden-cambridge",
+    "https://bustimes.org/services/8-cambridge-chatteris-2",
+    "https://bustimes.org/services/8-papworth-everard-cambridge",
+    "https://bustimes.org/services/8a-cambridge-orchard-park",
+    "https://bustimes.org/services/9-drummer-st-bay-5-littleport-church-ln",
+    "https://bustimes.org/services/12-cambridge-bottisham-newmarket",
+    "https://bustimes.org/services/13-drummer-st-bus-station-bay-6-kedington-mill-roa",
+    "https://bustimes.org/services/13a-haverhill-linton-the-abingtons-cambridge",
+    "https://bustimes.org/services/x13-drummer-st-bus-station-bay-6-kedington-mill-ro",
+    "https://bustimes.org/services/16a-gt-thurlow-fulbourn-teversham-cambridge",
+    "https://bustimes.org/services/17-royston-bassingbourn-guilden-morden",
+    "https://bustimes.org/services/18-cambridge-cambourne-st-neots",
+    "https://bustimes.org/services/26-cambridge-royston-2",
+    "https://bustimes.org/services/75-cambridge-orwell-wrestlingworth",
+    "https://bustimes.org/services/x75-cambridge-orwell",
+    "https://bustimes.org/services/100-cambridge-city-centre-cambridge-research-park",
+    "https://bustimes.org/services/114-city-centre-grafton-beehive-addenbrookes",
+    "https://bustimes.org/services/132-cambridge-saffron-walden",
+    "https://bustimes.org/services/199-cambridge-newnham",
+    "https://bustimes.org/services/491-london-great-yarmouth",
+    "https://bustimes.org/services/727-great-yarmouth-heathrow-airport-t5",
+    "https://bustimes.org/services/728-great-yarmouth-heathrow-airport-t5",
+    "https://bustimes.org/services/777-birmingham-stansted-airport-2",
+    "https://bustimes.org/services/786-cambridge-luton-airport",
+    "https://bustimes.org/services/813-london-great-yarmouth",
+    "https://bustimes.org/services/826-london-cambridge",
+    "https://bustimes.org/services/905-st-neots-bedford",
+    "https://bustimes.org/services/a-trumpington-the-busway-trumpington-park-and-ri-2",
+    "https://bustimes.org/services/b-hinchingbrooke-cambridge",
+    "https://bustimes.org/services/b22-peterborough-boomtown-fair",
+    "https://bustimes.org/services/g61-great-yarmouth-glastonbury-festival",
+    "https://bustimes.org/services/pr1-cambridge-city-centre-madingley-road-parkride",
+    "https://bustimes.org/services/pr2-cambridge-city-centre-stetchworth",
+    "https://bustimes.org/services/pr2f-newmarket-rd-park-ride-ditton-walk",
+    "https://bustimes.org/services/pr3-cambridge-city-centre-trumpington-parkride",
+    "https://bustimes.org/services/pr4-cambridge-city-centre-babraham-road-parkride",
+    "https://bustimes.org/services/pr5-cambridge-city-centre-milton-parkride",
+    "https://bustimes.org/services/t1-huntingdon-cambridge",
+    "https://bustimes.org/services/t2-madingley-rd-pr-newmarket-rd-pr",
+    "https://bustimes.org/services/t3-grantchester-fulbourn",
+    "https://bustimes.org/services/t4-addenbrookes-hospital-bus-station-newmarket-bus",
+    "https://bustimes.org/services/t5-cambridge-burwell-soham",
+    "https://bustimes.org/services/t29-peterborough-twickenham-stadium",
+    "https://bustimes.org/services/u1-girton-corner-biomedical-campus",
+    "https://bustimes.org/services/u2-eddington-biomedical-campus",
+    "https://bustimes.org/services/uk066-cambridge-london-stratford-brighton",
+    "https://bustimes.org/services/uk083-norwich-cambridge-birmingham",
+    "https://bustimes.org/services/uk950-norwich-cambridge-heathrow",
+    "https://bustimes.org/services/w6-meppershall-gravenhurst-meppershall-shefford-st",
+    "https://bustimes.org/services/w6a-meppershall-shillington-stotfold-cambridge",
+    "https://bustimes.org/services/w29-peterborough-city-centre-wembley-park"
+  ],
+  "data_files": {
+    "local_work_run_directory": "work/2026-11-18-theme-definition-e721eb90/business-page-crawl/20261118T114451Z-38d2cc"
+  },
+  "passed": true,
+  "robots": {
+    "status": 200,
+    "sha256": "0a8e29a69c0237a6d7555f8a1e71874e9cb385eae3d3ee14d8e4710b82e49287",
+    "minimum_request_interval_ms": 2200
+  },
+  "index_title": "Cambridge, Cambs",
+  "selected_service_count": 62,
+  "selection_truncated": false,
+  "finished_at_utc": "2026-11-18T11:47:11.933Z",
+  "successful_service_pages": 62,
+  "failed_service_pages": 0,
+  "stop_rows": 3932,
+  "nonempty_time_cells": 64385,
+  "parser_revision": "calendar-and-rowspan-aware-v3",
+  "reparsed_at_utc": "2026-11-18T11:53:10.233Z",
+  "reparse_network_requests": 0
+}

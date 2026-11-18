@@ -1,0 +1,28 @@
+{
+  "updated_at_utc": "2026-11-18T11:56:12.122Z",
+  "overall_new_requirement_acceptance_passed": false,
+  "status": "business_html_collection_verified_warehouse_migration_pending",
+  "request": "Replace directory/file-download-based core acquisition with genuine business webpage records; separate acquisition from warehouse Python cleaning",
+  "old_9012795_trip_data_role": "Retained historical baseline; not relabeled as crawled business records",
+  "implemented": {
+    "independent_node_collector": true,
+    "business_html_pages": 62,
+    "local_python_cleaning": true,
+    "planned_time_cells": 64362,
+    "raw_cell_reconciliation": true,
+    "source_provenance": true,
+    "preview": true
+  },
+  "remaining": [
+    "Choose and confirm final business scope for formal warehouse migration",
+    "Update fact grain, shared dimensions and physical contracts",
+    "Build new DIM/DWD/DWS/ADS and decision-focused analyses",
+    "Update model figures, dictionary and formal report consistently",
+    "Integrate independent collector snapshots with offline scheduling and run acceptance",
+    "Accumulate allowed default-page snapshots for cross-day analysis"
+  ],
+  "source_run_id": "20261118T114451Z-38d2cc",
+  "no_old_warehouse_overwrite": true,
+  "new_runtime_package_created": false,
+  "ppt_created": false
+}

@@ -1,0 +1,7 @@
+import fs from 'node:fs/promises';import path from 'node:path';import {parseService} from './parse.mjs';
+const project=path.resolve('..','..'),chat='2026-11-18-theme-definition-e721eb90',runId=process.argv[2],run=path.join(project,'work',chat,'business-page-crawl',runId),pub=path.join(project,'outputs',chat,'business-page-crawl',runId);
+const manifest=JSON.parse(await fs.readFile(path.join(run,'crawl-manifest.json'),'utf8'));
+for(const s of manifest.successful_pages){const old=JSON.parse(await fs.readFile(path.join(run,s.parsed_file),'utf8'));const parsed=parseService(await fs.readFile(path.join(run,old.source_response_file),'utf8'),old.source_url);for(const k of ['snapshot_run_id','fetched_at_utc','source_response_sha256','source_response_file'])parsed[k]=old[k];await fs.writeFile(path.join(run,s.parsed_file),JSON.stringify(parsed));s.calendar_id=parsed.calendar_id;s.calendar_label=parsed.calendar_label;s.schedule_scope=parsed.schedule_scope;}
+manifest.scope='Service links listed on Cambridge locality page; default displayed date or service calendar only; includes services extending beyond city';
+manifest.parser_revision='calendar-and-rowspan-aware-v3';manifest.reparsed_at_utc=new Date().toISOString();manifest.reparse_network_requests=0;
+for(const target of [path.join(run,'crawl-manifest.json'),path.join(pub,'crawl-manifest.json')])await fs.writeFile(target,JSON.stringify(manifest,null,2)+'\n');console.log(JSON.stringify({local_reparsed_pages:manifest.successful_pages.length,network_requests:0}));

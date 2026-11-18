@@ -1,0 +1,33 @@
+{
+  "checked_at_utc": "2026-11-18T12:05:21.076Z",
+  "passed": true,
+  "scope": "Public collector source, samples, source-review documentation and old-report requirement notice; not acceptance of full new warehouse migration",
+  "files_reviewed": 35,
+  "text_files_scanned": 34,
+  "markdown_local_links_checked": 108,
+  "broken_local_links": [],
+  "secret_findings": [],
+  "files_over_20MiB": 0,
+  "node_lock_install_and_tests_in_public_checkout": {
+    "passed": true,
+    "tests": 9
+  },
+  "python_cleaner_tests_in_public_checkout": {
+    "passed": true,
+    "tests": 5
+  },
+  "preview_browser_in_public_checkout": {
+    "passed": true,
+    "route_rows": 62,
+    "mobile_width": 390,
+    "local_links": 4
+  },
+  "exclusions": [
+    "node_modules",
+    "third-party full HTML",
+    "full planned-stop-times CSV",
+    "full route-stop snapshot CSV"
+  ],
+  "new_requirement_overall_acceptance_passed": false,
+  "csv_newlines": "LF for reproducible SHA256 in Git"
+}

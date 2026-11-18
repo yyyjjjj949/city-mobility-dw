@@ -1,0 +1,18 @@
+{
+  "name": "city-mobility-business-page-collector",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Independent public bus timetable HTML collector; separate from warehouse Python cleaning",
+  "scripts": {
+    "test": "node --test",
+    "crawl": "node crawl.mjs"
+  },
+  "engines": {
+    "node": ">=24.5"
+  },
+  "dependencies": {
+    "cheerio": "1.2.0",
+    "robots-parser": "3.0.1"
+  }
+}

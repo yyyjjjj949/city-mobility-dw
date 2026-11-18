@@ -1,6 +1,6 @@
 {
   "passed": true,
-  "checked_at_utc": "2026-11-18T10:44:04.014178+00:00",
+  "checked_at_utc": "2026-11-18T11:58:23.381575+00:00",
   "scope": "Offline HTML rendering, interactions and existing map regression",
   "pages": [
     {
@@ -17,13 +17,13 @@
     },
     {
       "file": "outputs/2026-11-18-theme-definition-e721eb90/report/城市出行离线数仓项目报告.html",
-      "local_links": 18,
+      "local_links": 19,
       "images": 9,
       "mobile_no_overflow": true
     },
     {
       "file": "outputs/2026-11-18-theme-definition-e721eb90/交付入口.html",
-      "local_links": 20,
+      "local_links": 23,
       "images": 0,
       "mobile_no_overflow": true
     }

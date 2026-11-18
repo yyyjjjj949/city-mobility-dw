@@ -1,28 +1,28 @@
 {
-  "checked_at_utc": "2026-11-18T10:45:25.273205+00:00",
+  "checked_at_utc": "2026-11-18T11:58:31.240160+00:00",
   "pages": 14,
   "page_details": [
     {
       "page": 1,
-      "text_chars": 1164,
+      "text_chars": 1141,
       "embedded_images": 0,
       "nonempty": true
     },
     {
       "page": 2,
-      "text_chars": 1280,
+      "text_chars": 1207,
       "embedded_images": 0,
       "nonempty": true
     },
     {
       "page": 3,
-      "text_chars": 1102,
+      "text_chars": 1146,
       "embedded_images": 0,
       "nonempty": true
     },
     {
       "page": 4,
-      "text_chars": 192,
+      "text_chars": 315,
       "embedded_images": 1,
       "nonempty": true
     },
@@ -88,7 +88,7 @@
     }
   ],
   "all_nonempty": true,
-  "pdf_bytes": 1814404,
+  "pdf_bytes": 1817011,
   "question_heading_presence": {
     "T01-Q01": true,
     "T01-Q02": true,
@@ -107,6 +107,6 @@
   "embedded_image_occurrences": 9,
   "rendered_pages": 14,
   "visually_reviewed_pages": 14,
-  "visual_review": "Reviewed both current contact sheets for all 14 pages and full-size updated validation page 13; no clipped tables, missing figures, blank pages or footer overlap",
+  "visual_review": "Reviewed all 14 current pages via both contact sheets plus full-size first page with subsequent teacher-requirement notice; no clipped tables, missing figures, blank pages or footer overlap",
   "passed": true
 }

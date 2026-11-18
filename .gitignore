@@ -29,3 +29,9 @@ __pycache__/
 .idea/
 .vscode/
 *.log
+
+# Independent business-page collection
+node_modules/
+outputs/2026-11-18-theme-definition-e721eb90/business-page-crawl/*/planned-stop-times.csv
+outputs/2026-11-18-theme-definition-e721eb90/business-page-crawl/*/route-stop-snapshot.csv
+outputs/2026-11-18-theme-definition-e721eb90/business-page-crawl/*/quarantined-cells.csv
