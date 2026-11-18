@@ -1,9 +1,10 @@
 {
+  "checked_at_utc": "2026-11-18T10:45:25.273205+00:00",
   "pages": 14,
   "page_details": [
     {
       "page": 1,
-      "text_chars": 1143,
+      "text_chars": 1164,
       "embedded_images": 0,
       "nonempty": true
     },
@@ -75,19 +76,19 @@
     },
     {
       "page": 13,
-      "text_chars": 1220,
+      "text_chars": 1340,
       "embedded_images": 0,
       "nonempty": true
     },
     {
       "page": 14,
-      "text_chars": 1193,
+      "text_chars": 1372,
       "embedded_images": 0,
       "nonempty": true
     }
   ],
   "all_nonempty": true,
-  "pdf_bytes": 1807477,
+  "pdf_bytes": 1814404,
   "question_heading_presence": {
     "T01-Q01": true,
     "T01-Q02": true,
@@ -102,8 +103,10 @@
     "T03-Q02": true,
     "T03-Q03": true
   },
-  "passed": true,
+  "recovery_content_present": true,
+  "embedded_image_occurrences": 9,
   "rendered_pages": 14,
   "visually_reviewed_pages": 14,
-  "visual_review": "All page contact sheets reviewed for clipping, image placement, table boundaries and blank pages"
+  "visual_review": "Reviewed both current contact sheets for all 14 pages and full-size updated validation page 13; no clipped tables, missing figures, blank pages or footer overlap",
+  "passed": true
 }

@@ -1,0 +1,46 @@
+{
+  "checked_at": "2026-11-18T10:31:49.395Z",
+  "status": "resolved_and_verified",
+  "repair_completed": true,
+  "reason": "Missing HKLM AppPath restored to the verified existing installation",
+  "missing_key": "HKLM\\SOFTWARE\\Docker Inc.\\Docker Desktop",
+  "planned_value": {
+    "AppPath": "D:\\CodexData\\apps\\DockerDesktop"
+  },
+  "data_vhdx_present": true,
+  "data_vhdx_bytes": 20843593728,
+  "docker_signature_valid": true,
+  "reinstall_performed": false,
+  "data_reset_performed": false,
+  "initial_consent_attempt": "Windows initially canceled the UAC launch; user subsequently ran the prepared repair entry and granted normal administrator consent",
+  "resolved_at_local": "2026-11-18T18:33:27+08:00",
+  "live_service_validation": {
+    "passed": true,
+    "checks": 12,
+    "receipt": "docker-environment-repair.json"
+  },
+  "recovered_pipeline": {
+    "passed": true,
+    "tasks": 10,
+    "receipt": "docker-pipeline-recovery.json"
+  },
+  "repair_guide": "../../../docs/21-Docker安装登记恢复与验收.md",
+  "repair_helper_distribution": "Machine-specific helper retained locally; not included in public source checkout",
+  "updated_at_utc": "2026-11-18T10:44:45.328Z",
+  "retired_realtime_containers": {
+    "checked_at_utc": "2026-11-18T10:46:29.540Z",
+    "containers": [
+      {
+        "name": "city-mobility-dw-kafka-1",
+        "state": "exited",
+        "restart_policy": "no"
+      },
+      {
+        "name": "city-mobility-dw-kafka-init-1",
+        "state": "exited",
+        "restart_policy": "no"
+      }
+    ],
+    "removed": false
+  }
+}

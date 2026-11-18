@@ -1,0 +1,84 @@
+{
+  "checked_at_utc": "2026-11-18T10:38:09.441147+00:00",
+  "dag_id": "city_mobility_historical_daily",
+  "dag_run_id": "scheduled__2026-11-14T18:00:00+00:00",
+  "state": "success",
+  "start_date": "2026-11-18T10:34:15.170789Z",
+  "end_date": "2026-11-18T10:36:47.997171Z",
+  "tasks": [
+    {
+      "task_id": "verify_ods",
+      "state": "success",
+      "try_number": 1,
+      "start_date": "2026-11-18T10:35:40.805209Z",
+      "end_date": "2026-11-18T10:35:47.992585Z"
+    },
+    {
+      "task_id": "build_dwd",
+      "state": "success",
+      "try_number": 1,
+      "start_date": "2026-11-18T10:35:48.801515Z",
+      "end_date": "2026-11-18T10:35:49.956897Z"
+    },
+    {
+      "task_id": "verify_dwd",
+      "state": "success",
+      "try_number": 1,
+      "start_date": "2026-11-18T10:35:50.976564Z",
+      "end_date": "2026-11-18T10:36:15.419883Z"
+    },
+    {
+      "task_id": "build_marts",
+      "state": "success",
+      "try_number": 1,
+      "start_date": "2026-11-18T10:36:15.595043Z",
+      "end_date": "2026-11-18T10:36:17.766039Z"
+    },
+    {
+      "task_id": "register_dashboards",
+      "state": "success",
+      "try_number": 1,
+      "start_date": "2026-11-18T10:36:17.842037Z",
+      "end_date": "2026-11-18T10:36:29.138314Z"
+    },
+    {
+      "task_id": "verify_charts",
+      "state": "success",
+      "try_number": 1,
+      "start_date": "2026-11-18T10:36:29.988186Z",
+      "end_date": "2026-11-18T10:36:35.227075Z"
+    },
+    {
+      "task_id": "export_map",
+      "state": "success",
+      "try_number": 1,
+      "start_date": "2026-11-18T10:36:35.845953Z",
+      "end_date": "2026-11-18T10:36:38.040757Z"
+    },
+    {
+      "task_id": "export_preview",
+      "state": "success",
+      "try_number": 1,
+      "start_date": "2026-11-18T10:36:39.089226Z",
+      "end_date": "2026-11-18T10:36:41.266718Z"
+    },
+    {
+      "task_id": "inspect_project",
+      "state": "success",
+      "try_number": 1,
+      "start_date": "2026-11-18T10:36:42.282511Z",
+      "end_date": "2026-11-18T10:36:47.440579Z"
+    },
+    {
+      "task_id": "ingest_ods",
+      "state": "success",
+      "try_number": 2,
+      "start_date": "2026-11-18T10:35:25.427397Z",
+      "end_date": "2026-11-18T10:35:39.846386Z"
+    }
+  ],
+  "passed": true,
+  "scope": "Existing scheduled run executed after Docker recovery; all ten tasks actually ran on 2026-11-18. DWD/marts reused verified fixed builds; no forced full business recomputation.",
+  "run_id_note": "The November 14 timestamp in dag_run_id is a schedule identifier. Actual task execution occurred on November 18.",
+  "new_manual_run_triggered": false
+}

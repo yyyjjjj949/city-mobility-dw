@@ -1,0 +1,24 @@
+{
+  "checked_at_utc": "2026-11-18T10:48:12.745Z",
+  "scope": "Docker recovery documentation and regenerated report; business code unchanged from previously tested commit b4679b8a7e650f6df3f76ca0430c9d3a4f62c253",
+  "passed": true,
+  "markdown_local_links_checked": 96,
+  "broken_links": [],
+  "public_html_browser_check": {
+    "passed": true,
+    "pages": 4,
+    "receipt_scope": "Actual browser check executed in public checkout; same report, entry and original map totals"
+  },
+  "pdf": {
+    "passed": true,
+    "pages": 14,
+    "images": 9,
+    "visually_reviewed_pages": 14
+  },
+  "files_reviewed": 14,
+  "scanned_text_files": 13,
+  "credential_findings": [],
+  "files_above_20MiB": 0,
+  "local_repair_helpers_distributed": false,
+  "git_diff_check_passed": true
+}

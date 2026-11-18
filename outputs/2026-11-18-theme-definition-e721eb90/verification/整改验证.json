@@ -1,7 +1,7 @@
 {
   "passed": true,
-  "verified_at_utc": "2026-11-18T10:12:44.781Z",
-  "scope": "Report and implementation remediation; offline model/data/code/page verification; no new live service acceptance",
+  "verified_at_utc": "2026-11-18T10:46:29.538Z",
+  "scope": "Report and remediation verification including offline model/data/code/pages plus current Docker/project-service and scheduled-pipeline recovery; no forced full batch rebuild or new prolonged stability test",
   "month": "2025-06",
   "release_id": "fa3ddf3a864140a7b6893836d3215a39",
   "regression_tests": {
@@ -88,9 +88,20 @@
     "receipt": "pdf-verification.json"
   },
   "runtime_environment": {
-    "ready": false,
-    "issue": "Docker Windows machine installation registration missing; startup blocked",
-    "new_live_dag_run": false,
+    "ready": true,
+    "previous_issue": "Docker Windows installation AppPath registration was missing",
+    "resolved_at_local": "2026-11-18T18:33:27+08:00",
+    "repair": "Restored only machine AppPath to existing signed D: installation after normal Windows administrator consent",
+    "service_checks_passed": 12,
+    "service_receipt": "docker-environment-repair.json",
+    "new_manual_dag_run": false,
+    "recovered_scheduled_pipeline": {
+      "passed": true,
+      "tasks": 10,
+      "actual_start_local": "2026-11-18T18:34:15+08:00",
+      "actual_end_local": "2026-11-18T18:36:48+08:00",
+      "receipt": "docker-pipeline-recovery.json"
+    },
     "historical_service_acceptance_date": "2026-11-14",
     "reset_or_uninstall_performed": false
   },
@@ -117,7 +128,13 @@
     "references": 25,
     "pages": 4,
     "markdown_links": 128,
-    "receipt": "public-checkout-verification.json"
+    "receipt": "public-checkout-verification.json",
+    "recovery_document_recheck": {
+      "passed": true,
+      "markdown_links": 96,
+      "pages": 4,
+      "receipt": "docker-recovery-publication-verification.json"
+    }
   },
   "publication_review": {
     "passed": true,

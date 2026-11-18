@@ -1,12 +1,12 @@
 <!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>城市出行离线数仓项目报告</title><style>@page{size:A4;margin:18mm 17mm 18mm}*{box-sizing:border-box}body{font:15px/1.8 "Microsoft YaHei","PingFang SC",sans-serif;color:#203644;margin:0;background:#eef2f4}main{max-width:1000px;margin:32px auto;padding:40px 48px;background:#fff}h1{color:#132c3b;font-size:30px;line-height:1.45;margin-top:8px}h2{font-size:22px;border-bottom:1px solid #bacdd7;padding-bottom:8px;margin-top:34px;break-after:avoid}h3{font-size:18px;margin-top:24px;break-after:avoid}p{orphans:3;widows:3}a{color:#146d91;overflow-wrap:anywhere}table{border-collapse:collapse;width:100%;font-size:13px;margin:14px 0;table-layout:auto}td,th{border:1px solid #c8d5dc;padding:8px 10px;text-align:left;vertical-align:top;overflow-wrap:anywhere}th{background:#eaf2f3}tr{break-inside:avoid}thead{display:table-header-group}img{max-width:100%;height:auto;max-height:235mm;object-fit:contain;display:block;margin:18px auto;break-inside:avoid}pre{background:#f3f6f7;padding:15px;white-space:pre-wrap;overflow-wrap:anywhere;font-size:12px}code{font:12px/1.6 Consolas,monospace;overflow-wrap:anywhere}blockquote{border-left:3px solid #689caa;padding:4px 14px;color:#45606f;margin:14px 0}.toolbar{background:#123e50;color:white;padding:14px 24px}.toolbar button{font:inherit;padding:6px 15px;cursor:pointer}.toolbar a{color:white;margin-left:18px}@media(max-width:700px){main{margin:0;padding:20px 15px}h1{font-size:25px}table{font-size:11px}td,th{padding:5px}}@media print{body{background:#fff;font-size:10pt;line-height:1.7}main{margin:0;max-width:none;padding:0}.toolbar{display:none}h1{font-size:23pt}h2{font-size:16pt}h3{font-size:12pt}table{font-size:8pt}td,th{padding:5px 6px}a{color:#203644;text-decoration:none}pre{font-size:8pt}img{max-height:215mm}}</style></head><body><div class="toolbar"><button onclick="window.print()">打印或保存PDF</button><a href="城市出行离线数仓项目报告.md" download>Markdown</a><a href="../交付入口.html">交付入口</a></div><main><h1 id="_1">城市出行离线数据仓库系统的设计与实现</h1>
-<p>项目报告 · 2026年11月18日<br />
-分析期间：2025年6月（纽约当地开始日期）<br />
-数据范围：Yellow Taxi、Citi Bike、中央公园日天气与官方区域信息<br />
+<p>项目报告 · 2026年11月18日<br>
+分析期间：2025年6月（纽约当地开始日期）<br>
+数据范围：Yellow Taxi、Citi Bike、中央公园日天气与官方区域信息<br>
 源码仓库：<a href="https://github.com/yyyjjjj949/city-mobility-dw">yyyjjjj949/city-mobility-dw</a></p>
 <h2 id="_2">摘要</h2>
 <p>本项目面向城市历史出行分析，以纽约公开数据构建可追溯的离线数据仓库。系统通过Python采集官方文件，以Spark和Delta Lake完成原始入仓、明细清洗与公共汇总，使用ClickHouse提供已验证指标查询，并以Superset和离线地图展示结果。设计采用Kimball维度建模的业务过程、粒度、维度、事实四步法，参考阿里公共模型与分层复用思路，明确ODS、逻辑DIM/DWD、DWS、ADS及管理旁路OPS的职责。</p>
 <p>当前已验证的完整月为2025年6月，共接收9,082,305条原始行程，得到9,012,795条有效行程，其中出租车4,254,337条、共享单车4,758,458条。两张事务事实共享日期、分钟、区域、交通方式及日天气上下文，骑行还使用站点与车型维度，形成两个行程星型及整体事实星座。本轮围绕三个分析主题落实12个业务问题，增加周类型对比、方式内小时占比、选定区域小时规律及OD集中度，并实施真实官方页面与公开目录解析。</p>
-<p>分析显示，两类行程的观测小时峰值不同，出租车集中在当地18时，骑行集中在17时；热点区域与OD联系也呈现不同分布。天气比较按方式与周类型使用各自基准，并明确单站日观测、样本有限及非因果边界。本报告区分2026年11月14日历史全链路验收与2026年11月18日本轮可复现分析、结构核对及采集验证，不以旧记录证明服务当前健康。</p>
+<p>分析显示，两类行程的观测小时峰值不同，出租车集中在当地18时，骑行集中在17时；热点区域与OD联系也呈现不同分布。天气比较按方式与周类型使用各自基准，并明确单站日观测、样本有限及非因果边界。本报告区分2026年11月14日历史验收与2026年11月18日本轮分析、模型及采集验证，并追加当日18:33后的安装登记修复、现场服务与调度恢复验收，不以旧记录替代现场检查。</p>
 <p><strong>关键词</strong>：离线数仓；维度建模；事实星座；公共汇总；出行分析；数据质量</p>
 <h2 id="1">1. 需求、分析主题与项目范围</h2>
 <h3 id="11">1.1 使用场景与业务价值</h3>
@@ -384,9 +384,19 @@
 <td>2026-11-14：地图、筛选、两次全流程、失败阻断、重启及15分钟46次探测记录</td>
 <td>仅证明当时所测结果，不证明当前服务健康、多日稳定或断电恢复</td>
 </tr>
+<tr>
+<td>Docker与服务恢复</td>
+<td>2026-11-18：18:33恢复AppPath，18:35的12项现场检查通过</td>
+<td>引擎、五个服务、实际行程查询、发布指针、BI登录和调度健康</td>
+</tr>
+<tr>
+<td>十步调度恢复</td>
+<td>2026-11-18：18:34:15—18:36:48，排队计划实例十步均成功</td>
+<td>DWD/指标复用原已验证构建；没有强制重算或新增多日稳定性测试</td>
+</tr>
 </tbody>
 </table>
-<p>本轮当前Docker运行环境未就绪，Windows系统级安装注册信息缺失，因此没有完成本轮服务全链路重新执行，不把离线文件读取或旧JSON当作服务恢复验收。新增主题分析、模型核查和报告可在不依赖运行服务的情况下复现；若要演示Superset、ClickHouse与Airflow，应先恢复Docker环境，再执行项目状态检查和服务验收。该环境问题与模型/分析正确性分别记录。</p>
+<p>本轮初次复核时，Docker因Windows系统级安装登记缺失而不能启动。2026年11月18日18:33，在用户通过正常UAC授权后，仅恢复已有D盘安装的AppPath；18:35完成12项现场服务检查，原9,012,795条已发布行程、版本指针、4个看板与19张图表保留。恢复后处理的计划实例于18:34—18:36完成十步链路，DWD和指标幂等复用已验证构建。该实例ID内的11月14日日期为计划标识，其任务实际执行时间均在11月18日；没有强制重新全量计算、卸载或清空数据。本轮服务恢复和2026年11月14日历史故障/稳定性验收分别记录，详见<a href="../../../docs/21-Docker安装登记恢复与验收.md">恢复说明</a>。</p>
 <p>本轮测试与采集回执见交付目录对应JSON；最终集成结果见<code>outputs/2026-11-18-theme-definition-e721eb90/verification/整改验证.json</code>，以仓库提交中实际记录为准。本报告不预先填写未执行的服务通过项。</p>
 <h3 id="82">8.2 教师检查问题与整改对应</h3>
 <table>
@@ -446,4 +456,5 @@ python tools/build_project_report.py
 <li>阿里云DataWorks. <a href="https://help.aliyun.com/zh/dataworks/user-guide/perform-dimensional-modeling">维度建模</a>. 访问日期：2026-11-18；其中数据域示意引用《大数据之路：阿里巴巴大数据实践》。</li>
 </ol>
 <p>项目依据：<a href="../01-分析主题与业务问题定义.md">主题定义</a>、<a href="../../../docs/14-Kimball案例借鉴与事实表设计.md">四步设计</a>、<a href="../../../docs/15-业务总线矩阵与概念逻辑物理模型.md">模型与矩阵</a>、<a href="../../../docs/16-分层职责与指标口径复核.md">分层与指标</a>、<a href="../../../docs/17-数仓开发生命周期与追溯示例.md">生命周期</a>、<a href="../../../docs/18-三个主题的数据分析结论.md">12问分析</a>、<a href="../../../docs/19-官方数据爬取与采集说明.md">爬取说明</a>。</p>
-<p>数值与复核依据：<a href="../analysis/analysis-results.json">分析结果</a>、<a href="../analysis/source-provenance.json">来源版本与SHA</a>、<a href="../model/model-design-review.json">模型核对</a>、<a href="../model/reference-manifest.json">参考来源回执</a>、<a href="../crawl/latest.json">爬取回执</a>、<a href="../../offline-verification.json">历史验收</a>。</p></main></body></html>
+<p>数值与复核依据：<a href="../analysis/analysis-results.json">分析结果</a>、<a href="../analysis/source-provenance.json">来源版本与SHA</a>、<a href="../model/model-design-review.json">模型核对</a>、<a href="../model/reference-manifest.json">参考来源回执</a>、<a href="../crawl/latest.json">爬取回执</a>、<a href="../../offline-verification.json">历史验收</a>。</p>
+<p>恢复补充依据：<a href="../verification/docker-environment-repair.json">现场服务验收</a>、<a href="../verification/docker-pipeline-recovery.json">十步调度恢复</a>。</p></main></body></html>

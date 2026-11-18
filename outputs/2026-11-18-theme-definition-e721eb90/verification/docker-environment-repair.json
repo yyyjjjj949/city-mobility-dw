@@ -1,0 +1,175 @@
+{
+  "passed": true,
+  "checked_at_utc": "2026-11-18T10:34:55.913182+00:00",
+  "scope": "Current Docker engine, original project services and existing published data; no new batch recomputation or prolonged stability test",
+  "checks": [
+    {
+      "name": "machine_installation_path",
+      "passed": true,
+      "evidence": "D:\\CodexData\\apps\\DockerDesktop"
+    },
+    {
+      "name": "data_folder_on_original_d_drive",
+      "passed": true,
+      "evidence": "D:\\CodexData\\data\\docker-desktop"
+    },
+    {
+      "name": "original_vhdx_present",
+      "passed": true,
+      "evidence": {
+        "path": "D:\\CodexData\\data\\docker-desktop\\disk\\docker_data.vhdx",
+        "bytes": 20843593728
+      }
+    },
+    {
+      "name": "docker_linux_engine_ready",
+      "passed": true,
+      "evidence": {
+        "ServerVersion": "29.9.2",
+        "OSType": "linux",
+        "Images": 9,
+        "Containers": 7,
+        "ContainersRunning": 5
+      }
+    },
+    {
+      "name": "original_verified_images_retained",
+      "passed": true,
+      "evidence": [
+        {
+          "image": "postgres:17-alpine",
+          "matches": true
+        },
+        {
+          "image": "clickhouse/clickhouse-server:25.8",
+          "matches": true
+        },
+        {
+          "image": "apache/superset:6.1.0",
+          "matches": true
+        },
+        {
+          "image": "apache/spark:4.0.5-python3",
+          "matches": true
+        },
+        {
+          "image": "apache/airflow:3.3.2-python3.11",
+          "matches": true
+        }
+      ]
+    },
+    {
+      "name": "five_project_services_ready",
+      "passed": true,
+      "evidence": [
+        {
+          "Name": "city-mobility-dw-airflow-1",
+          "Service": "airflow",
+          "State": "running",
+          "Health": "healthy"
+        },
+        {
+          "Name": "city-mobility-dw-clickhouse-1",
+          "Service": "clickhouse",
+          "State": "running",
+          "Health": "healthy"
+        },
+        {
+          "Name": "city-mobility-dw-postgres-1",
+          "Service": "postgres",
+          "State": "running",
+          "Health": "healthy"
+        },
+        {
+          "Name": "city-mobility-dw-spark-1",
+          "Service": "spark",
+          "State": "running",
+          "Health": ""
+        },
+        {
+          "Name": "city-mobility-dw-superset-1",
+          "Service": "superset",
+          "State": "running",
+          "Health": "healthy"
+        }
+      ]
+    },
+    {
+      "name": "existing_published_trips_retained",
+      "passed": true,
+      "evidence": [
+        {
+          "transport_code": "citibike",
+          "trips": 4758458
+        },
+        {
+          "transport_code": "taxi_yellow",
+          "trips": 4254337
+        }
+      ]
+    },
+    {
+      "name": "original_release_pointers_retained",
+      "passed": true,
+      "evidence": [
+        {
+          "dataset_id": "historical",
+          "release_id": "fa3ddf3a864140a7b6893836d3215a39"
+        },
+        {
+          "dataset_id": "quality",
+          "release_id": "fa3ddf3a864140a7b6893836d3215a39"
+        }
+      ]
+    },
+    {
+      "name": "superset_http_health",
+      "passed": true,
+      "evidence": {
+        "status": 200
+      }
+    },
+    {
+      "name": "original_dashboards_and_charts_retained",
+      "passed": true,
+      "evidence": {
+        "dashboard": 4,
+        "chart": 19
+      }
+    },
+    {
+      "name": "airflow_database_scheduler_processor",
+      "passed": true,
+      "evidence": {
+        "metadatabase": {
+          "status": "healthy"
+        },
+        "scheduler": {
+          "status": "healthy",
+          "latest_scheduler_heartbeat": "2026-11-18T10:34:57.371028+00:00"
+        },
+        "triggerer": {
+          "status": "healthy",
+          "latest_triggerer_heartbeat": "2026-11-18T10:34:56.050006+00:00"
+        },
+        "dag_processor": {
+          "status": "healthy",
+          "latest_dag_processor_heartbeat": "2026-11-18T10:34:55.514316+00:00"
+        }
+      }
+    },
+    {
+      "name": "original_local_task_worker_running",
+      "passed": true,
+      "evidence": {
+        "running": true,
+        "pid": 23320,
+        "checked_at_utc": "2026-11-18T10:35:03.767404+00:00",
+        "current_task": null
+      }
+    }
+  ],
+  "data_reset": false,
+  "reinstall_performed": false,
+  "finished_at_utc": "2026-11-18T10:35:05.484650+00:00"
+}
